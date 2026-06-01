@@ -1,0 +1,21 @@
+{
+  "wave": 2,
+  "launched_at": "2026-05-21T06:18:34.931670+00:00",
+  "threads": {
+    "RQ5-folder-as-ontology": {
+      "run_id": "trun_da4211ace2c146329d2f69432c48e30e",
+      "status": "completed",
+      "finished_at": "2026-05-21T06:41:18.741226+00:00"
+    },
+    "RQ4-K-taxonomy": {
+      "run_id": "trun_da4211ace2c14632b51e10242ef6ed41",
+      "status": "completed",
+      "finished_at": "2026-05-21T06:38:14.220698+00:00"
+    },
+    "RQ6-resilience-creativity-axes": {
+      "run_id": "trun_da4211ace2c14632953576430b5dee85",
+      "status": "completed",
+      "finished_at": "2026-05-21T06:41:18.727230+00:00"
+    }
+  }
+}

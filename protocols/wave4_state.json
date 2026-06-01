@@ -1,0 +1,18 @@
+{
+  "wave": 4,
+  "launched_at": "2026-05-24T11:05:30.708796+00:00",
+  "threads": {
+    "RQ10-seam-as-primitive": {
+      "run_id": null,
+      "status": "launch_error: Error code: 402 - {'type': 'error', 'error': {'ref_id': 'bf7e462f-e50c-494d-8d70-b440f55632ef', 'message': 'Insufficient credit in account, please check your plan and billing details. You can add more funds from the billing page at https://platform.parallel.ai/settings?tab=billing and check for pricing details at https://platform.parallel.ai/pricing.', 'detail': None}}"
+    },
+    "RQ9-k-class-form": {
+      "run_id": null,
+      "status": "launch_error: Error code: 402 - {'type': 'error', 'error': {'ref_id': '3fa084e1-14f6-4dbb-ac2c-d0f8001bcf20', 'message': 'Insufficient credit in account, please check your plan and billing details. You can add more funds from the billing page at https://platform.parallel.ai/settings?tab=billing and check for pricing details at https://platform.parallel.ai/pricing.', 'detail': None}}"
+    },
+    "RQ12-seam-cost": {
+      "run_id": null,
+      "status": "launch_error: Error code: 402 - {'type': 'error', 'error': {'ref_id': 'fce396f5-7c61-4360-bea6-8a612d0cb2ac', 'message': 'Insufficient credit in account, please check your plan and billing details. You can add more funds from the billing page at https://platform.parallel.ai/settings?tab=billing and check for pricing details at https://platform.parallel.ai/pricing.', 'detail': None}}"
+    }
+  }
+}

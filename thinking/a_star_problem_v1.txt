@@ -1,0 +1,81 @@
+PROBLEM
+
+Define a universal mathematical framework for project architecture, call it A*, such that for any project P with intent I, lifecycle stage L, project class K, and team vector T, the function A*(I, L, K, T) yields an optimal joint specification of:
+
+  (a) folder structure
+  (b) naming scheme
+  (c) archival policy
+  (d) persistence routing across stores (filesystem, in-memory caches, Drive, Neo4j, QDrant, and equivalents)
+
+The optimization target is econometric: minimize a 9-dimensional cost vector
+
+  C(A, P) = (
+    c_find,          time to find any artifact
+    c_modify,        time to change any artifact
+    c_storage,       bytes on disk and cloud
+    c_money,         dollar cost of operating the architecture
+    c_onboard,       time for a new contributor (human or agent) to be productive
+    c_drift,         integrity drift rate without active intervention
+    c_reverse,       cost of undoing a mistaken operation
+    c_loss,          probability per unit time of misplacement, overwrite, orphan, dead link
+    c_derive         cost of regenerating derived views when a source of truth changes
+  )
+
+subject to integrity constraints:
+  i.   single source of truth per fact (duplication is redundant, not authoritative)
+  ii.  archival reversibility (anything archived can be brought back)
+  iii. ontology coherence per folder (every folder declares its scope)
+
+The team vector decomposes as T = (T_human, T_agent_internal, T_agent_external) where:
+  T_human = (headcount, distinct hierarchical roles)
+  T_agent_internal = count of our own agents and scripts that read or write
+  T_agent_external = count of third-party agents and scripts that read or write
+
+CENTRAL OPEN PROBLEM
+
+What is the functional form of A*? Candidates to evaluate, propose, or reject:
+  - Scalar weighted-sum minimization with learned weights
+  - Pareto frontier with operator-selected preference point
+  - Category-theoretic limit (architecture as a universal construction over a diagram of constraints)
+  - Learned function (a small model that maps (I, L, K, T) to a structure proposal)
+  - Compositional: A* = composition of smaller A_i over sub-projects, with explicit gluing
+  - Something else worth inventing
+
+You are free to propose original constructs where prior literature is silent or insufficient. The goal is the best achievable framework, not the best synthesizable framework.
+
+SUB-THESES TO TEST, REFINE, OR REJECT
+
+  1. Architecture is a function. Find the function.
+  2. Every folder is a small ontology with declared scope.
+  3. Duplication is made redundant: one source per fact, all else derived views.
+  4. Archival is a first-class operation, not deferred cleanup.
+  5. Folder shape is derivable from a project's mathematical profile (K, I, L, T).
+
+REQUIRED OUTPUTS
+
+  1. One, two, or three candidate functional forms for A*, each with explicit trade-offs and the conditions under which it dominates.
+  2. A taxonomy of project classes K (research, product, pipeline, archive, hybrid, and any others the analysis surfaces) with characteristic profiles on the 9-vector.
+  3. The set of primitive operations on an architecture (move, split, merge, archive, derive, link, deprecate, fork, and any others).
+  4. The correlation structure of C: which axes move together, which trade off, what is the practical rank of C, can it be collapsed?
+  5. For each c_i: is it measurable as written, or does it need an operational proxy? Propose the proxy if needed.
+  6. Explicit relationship to S(M,T) (the existing simplicity-times-fit measure for model selection in routing research): which parts of A* inherit, which diverge, where is A* a generalization vs a sibling construct?
+  7. A list of open research questions that the deep-research pass must answer for A* to be computable.
+  8. Honest delineation of what cannot be answered without empirical data. Buuuk is the v0 testbed: a real, fragmented project that will be used to validate.
+
+CONSTRAINTS ON THE FRAMEWORK
+
+  - Do not reinvent where prior art suffices. Cite, integrate, or explicitly diverge from: Parnas 1972 (modular decomposition criteria), Brooks (essential vs accidental complexity), Christopher Alexander (Pattern Language, Timeless Way), Diataxis (Procida, documentation by user intent), Ranganathan (5 laws of library science, faceted classification), DDD bounded contexts (Evans, Vernon), Conway's Law, OAIS / PREMIS (archival reference models), Rosenfeld and Morville (information architecture), category theory in software design.
+  - Must be testable on a real fragmented project (Buuuk waterfall + Buuuk content + audits + Drive mirror) as the v0 validation.
+  - Must scale from solo to small team. Team size enters as a parameter, not an assumption.
+  - The cost function C must be computable. Each c_i must have at least a candidate measurement procedure, even if approximate.
+
+DELIVERABLE
+
+A first-principles plus systems-thinking analysis that:
+  - Decomposes the problem to its primitives
+  - Proposes (not just synthesizes) candidate functional forms
+  - Identifies the highest-leverage open questions for the subsequent deep-research pass
+  - Surfaces hidden assumptions, blind spots, and risks in the framing itself
+  - Notes which parts of the framework will likely require original construction vs literature synthesis
+
+This is foundational work for the P0P Neural agent ecosystem. The output of this thinking pass directly shapes the scope of the subsequent literature deep-dive and ultimately the design of a new neural agent: project-architect.

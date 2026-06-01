@@ -1,0 +1,577 @@
+{
+  "output": {
+    "basis": [
+      {
+        "field": "answer",
+        "reasoning": "",
+        "citations": [
+          {
+            "url": "http://coursehero.com/file/252817886/The-SPACE-of-Developer-Productivitydocx",
+            "excerpts": [
+              "This framework, called SPACE, captures the most important dimensions of developer productivity"
+            ],
+            "title": "The SPACE of Developer Productivity.docx"
+          },
+          {
+            "url": "https://blog.codacy.com/space-framework",
+            "excerpts": [
+              "Learn about the five dimensions of the SPACE framework for measuring developer productivity and how they can be evaluated."
+            ],
+            "title": "SPACE Framework: How to Measure Developer Productivity - Codacy"
+          },
+          {
+            "url": "https://cleverx.com/guides/developer-experience-research-methods-a-complete-guide-for-product-and-ux-teams/",
+            "excerpts": [
+              "How to research developer experience (DevEx). Covers a comparison table of DX research methods, SPACE and DevEx framework integration, cognitive load measurement, flow state research, feedback loop analysis, and DORA metric interpretation."
+            ],
+            "title": "Developer experience research methods: a complete guide for ..."
+          },
+          {
+            "url": "http://linkedin.com/in/devexgirl",
+            "excerpts": [
+              "DX is an engineering intelligence platform designed by leading researchers."
+            ],
+            "title": "Addison Hiles - Developer Productivity & AI Enablement ..."
+          },
+          {
+            "url": "http://theworkademy.com/employee-onboarding-software",
+            "excerpts": [
+              "Compare the best employee onboarding software in 2026. Reduce time-to-productivity by 70% with automated onboarding. Workademy: 4 weeks \u2192 3 days at\nReduce time -to- productivity by 70% with automated onboarding . Workademy: 4 weeks \u2192 3 days at"
+            ],
+            "title": "Best Employee Onboarding Software 2026"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2310.09508v1",
+            "excerpts": [
+              "This paper aims to address this gap by defining and deriving a metric to evaluate the findability of documents as perceived by end-users. Through experiments, we demonstrate the varying impact of diferent retrieval models and collections on the findability of documents."
+            ],
+            "title": "Findability: A Novel Measure of Information Accessibility"
+          },
+          {
+            "url": "http://linkedin.com/company/teckchek",
+            "excerpts": [
+              "IKM has built knowledge measurement solutions for over 40 years"
+            ],
+            "title": "IKM TeckChek"
+          },
+          {
+            "url": "https://www.apqc.org/resources/blog/knowledge-management-metrics",
+            "excerpts": [
+              "APQC defines KM measurement as the process of linking adoption metrics (like participation) with business outcomes (like efficiency gains). It\u2019s not easy\u2014but according to APQC\u2019s Understanding Knowledge Management Measurement guide, it\u2019s both possible and necessary for proving value."
+            ],
+            "title": "Knowledge Management Metrics | APQC"
+          },
+          {
+            "url": "https://kstolee.github.io/assets/papers/stolee2025FSE.pdf",
+            "excerpts": [
+              "That paper had first-hand accounts for why those developers were using code search and highlighted how often and in what situations developers were searching for code. In the past decade, much has changed in the landscape of developer support."
+            ],
+            "title": "10 Years Later: Revisiting How Developers Search for Code"
+          },
+          {
+            "url": "https://www.informationarchitected.com/resources/whitepapers/findability-and-information-architecture-primer/",
+            "excerpts": [
+              "This report focuses on the dangers of assuming that search (enterprise search, federated search, application search, parametric search, etc.) is the answer to your findability problems."
+            ],
+            "title": "Findability and Information Architecture Primer | Information ..."
+          },
+          {
+            "url": "http://vfunction.com/blog/architectural-observability-accelerates-app-modernization",
+            "excerpts": [
+              "Adding modern architectural observability tools allows development teams to assess architectural drift in parallel with technical debt."
+            ],
+            "title": "Accelerate Modernization with Architectural Observability"
+          },
+          {
+            "url": "http://iso.org/standard/35733.html",
+            "excerpts": [
+              "2. A product quality model composed of eight characteristics (which are further subdivided into subcharacteristics) that relate to static properties of software and dynamic properties of the computer system.\nISO/IEC 25010:2011 defines: The characteristics defined by both models are relevant to all software products and computer systems."
+            ],
+            "title": "ISO/IEC 25010:2011 - Systems and software engineering"
+          },
+          {
+            "url": "https://www.iso.org/obp/ui#!iso:std:iso-iec:25010:ed-2:v1:en",
+            "excerpts": [
+              "The procedures used to develop this document and those intended for its further maintenance are described in the ISO/IEC Directives, Part 1. In particular, the different approval criteria needed for the different types of document should be noted."
+            ],
+            "title": "ISO/IEC 25010:2023 (en), Systems and software engineering ..."
+          },
+          {
+            "url": "https://www.sciencedirect.com/science/article/pii/S0164121217302121",
+            "excerpts": [
+              "Their study addresses code debt, environmental debt, knowledge distribution and documentation debt, and testing debt and with a specific focus on design and architectural debt."
+            ],
+            "title": "Managing architectural technical debt: A unified model and ..."
+          },
+          {
+            "url": "https://ieeexplore.ieee.org/document/10092705",
+            "excerpts": [
+              "The elicited metrics are organized into a catalog, which associates them with the specific quality attributes they aim to measure. We contribute also an MDE framework that generates web views facilitating the analysis of architectures."
+            ],
+            "title": "Quality Metrics in Software Architecture | IEEE Conference ..."
+          },
+          {
+            "url": "https://erode.dev/",
+            "excerpts": [
+              "Erode analyzes code changes against your architecture model using AI, making undeclared dependencies and structural drift visible while you code and during review."
+            ],
+            "title": "Erode - Architecture Drift Detection for Code Changes"
+          },
+          {
+            "url": "https://ieeexplore.ieee.org/document/10207153",
+            "excerpts": [
+              "Abstract: During long-term software evolution, it is inevitable that an accumulation of changes leads to architectural erosion and debt. Diverse metric-based methods have been developed to identify architectural problems that violate design principles and degrade software maintainability."
+            ],
+            "title": "Identifying Code Changes for Architecture Decay via a Metric ..."
+          },
+          {
+            "url": "https://www.sciencedirect.com/science/article/pii/S0950584915000270",
+            "excerpts": [
+              "Objective This paper aims to assess the level of architecture conformance achieved by professional architects using Reflexion Modelling, and to determine how the approach could be extended to improve its suitability for this task."
+            ],
+            "title": "Real-Time Reflexion Modelling in architecture reconciliation ..."
+          },
+          {
+            "url": "http://mault.ai/terms",
+            "excerpts": [
+              "t provides software tools that assist with:\n* AI-powered code integrity checks\n* Structural memory and project architecture enforcement\n* Real-time detectors for architectural drift and inconsistencies"
+            ],
+            "title": "Terms of Service"
+          },
+          {
+            "url": "https://archiet.com/features/drift-detection",
+            "excerpts": [
+              "Archiet monitors your codebase against your architecture blueprint on every push. Get notified via Slack the moment structural, security, or compliance drift is detected."
+            ],
+            "title": "Drift Detection \u2014 Archiet"
+          },
+          {
+            "url": "https://www.datacamp.com/tutorial/cocomo-model",
+            "excerpts": [
+              "Learn how the COCOMO model estimates software effort, cost, and schedule using formulas and KLOC. Covers Basic, Intermediate, Detailed, and COCOMO II."
+            ],
+            "title": "COCOMO Model: Formula, Types, and Cost Estimation"
+          },
+          {
+            "url": "https://link.springer.com/article/10.1007/s11334-025-00614-4",
+            "excerpts": [
+              "Our work addresses this gap by introducing a multi-level, measures-driven CIA framework that quantifies change impacts at three distinct granularity levels\u2014functional, control structure, and process\u2014within the same methodology."
+            ],
+            "title": "A multi-level measures-driven change impact analysis approach ..."
+          },
+          {
+            "url": "https://www.sciencedirect.com/science/article/pii/S016412121600056X",
+            "excerpts": [
+              "We developed the metrics based on Martin's principles and indirect responsibility. The new developed indirect coupling metrics are tested and validated. The experimental study includes seven large well-known open source systems. The new metrics are highly correlated to maintenance and testing effort."
+            ],
+            "title": "Using indirect coupling metrics to predict package ..."
+          },
+          {
+            "url": "https://www.geeksforgeeks.org/software-engineering/software-engineering-cocomo-model/",
+            "excerpts": [
+              "The Basic COCOMO model is a straightforward way to estimate the effort needed for a software development project. It uses a simple mathematical formula to predict how many person-months of work are required based on the size of the project, measured in thousands of lines of code (KLOC)."
+            ],
+            "title": "COCOMO Model - Software Engineering - GeeksforGeeks"
+          },
+          {
+            "url": "https://www.sciencedirect.com/science/article/pii/S016412122030282X",
+            "excerpts": [
+              "Change Impact Analysis (CIA) is the process of exploring the tentative effects of a change in other parts of a system. CIA is considered beneficial in practice, since it reduces cost of maintenance and the risk of software development failures."
+            ],
+            "title": "Change impact analysis: A systematic mapping study"
+          },
+          {
+            "url": "https://www.statsig.com/perspectives/rollback-costs-no-metrics-software",
+            "excerpts": [
+              "Ever felt like you're stuck in a loop of launching and then rolling back software updates? You're not alone. The hidden costs of these reversals can be substantial, eroding trust within teams and frustrating users. Let's dive into why this happens and how you can avoid it."
+            ],
+            "title": "The Hidden Cost of Rolling Back Without Metrics - statsig.com"
+          },
+          {
+            "url": "https://git-scm.com/docs/git-revert",
+            "excerpts": [
+              "This flag applies the changes necessary to revert the named commits to your working tree and the index, but does not make the commits. In addition, when this option is used, your index does not have to match the HEAD commit."
+            ],
+            "title": "Git - git-revert Documentation"
+          },
+          {
+            "url": "https://theindustryanalyst.com/the-hidden-cost-of-reversibility-in-infrastructure-technology/",
+            "excerpts": [
+              "In theory, reversible systems allow components to be replaced without disrupting the whole. In practice, reversibility introduces new layers of cost, complexity, and risk that are often invisible at decision time."
+            ],
+            "title": "TIA Research-The Hidden Cost of Reversibility in ..."
+          },
+          {
+            "url": "https://www.linkedin.com/advice/0/how-do-you-measure-cost-efficiency-deployment",
+            "excerpts": [
+              "Learn how to measure the cost and efficiency of deployment rollback by considering key aspects such as time, risk, frequency, automation, metrics, and best practices."
+            ],
+            "title": "Deployment Rollback: How to Measure Cost and Efficiency"
+          },
+          {
+            "url": "https://www.geeksforgeeks.org/git/how-to-revert-a-commit-with-git-revert/",
+            "excerpts": [
+              "Instead of deleting or rewriting history, Git provides the git revert command to safely undo a specific commit by creating a new one that reverses its changes. This method maintains a clear and auditable project history, making it ideal for collaborative shared repositories."
+            ],
+            "title": "How To Revert A Commit With Git Revert? - GeeksforGeeks"
+          },
+          {
+            "url": "https://rebels.cs.uwaterloo.ca/papers/msr2024_mcintosh.pdf",
+            "excerpts": [
+              "In this tutorial, we discuss why it is desirable to restore the incremental build features of the past. We also describe past and ongoing work that strives to make DevOps pipelines operate incrementally again. Finally, we discuss perceived barriers to adoption that our past solutions have faced."
+            ],
+            "title": "Mining Our Way Back to Incremental Builds for DevOps Pipelines"
+          },
+          {
+            "url": "http://github.com/moby/buildkit/issues/1742",
+            "excerpts": [
+              "When building images with changed build args (VERSION, COMMIT_HASH, etc), the cache for the first stage is dropped completely. Also, change of"
+            ],
+            "title": "Cache miss for the first stage of multi-stage build #1742"
+          },
+          {
+            "url": "http://nxmlabs.com/",
+            "excerpts": [
+              "Reusable CI/CD build pipeline automates your software delivery process.\nutomated Recovery**\nFully automates the security recovery process from simple device crypto key regeneration all the way up to automated CI/CD pipelin"
+            ],
+            "title": "NXM Labs Inc."
+          },
+          {
+            "url": "https://www.pathtoproject.com/blog/20260413-headless-cache-invalidation-architecture-for-enterprise-content-platforms",
+            "excerpts": [
+              "Learn how to design headless cache invalidation architecture across CMS events, frontend rendering layers, CDN caches, and search indexing without relying on expensive full rebuilds."
+            ],
+            "title": "Headless Cache Invalidation Architecture for Enterprise ..."
+          },
+          {
+            "url": "http://materialize.com/",
+            "excerpts": [
+              "Materialize lets your team use SQL to create up-to-the-second views into any element of your business, helping you operate confidently in dynamic\n## Integrate data from any source\n## Introducing Materialize\n## Rapidly deploy new use cases with fresh data\n## Use SQL to create real-time data products\nOperate confidently with live data"
+            ],
+            "title": "Materialize: The Live Data Layer for Apps and AI Agents"
+          },
+          {
+            "url": "https://www.fairinstitute.org/hubfs/Standards%20Artifacts/Factor%20Analysis%20of%20Information%20Risk%20(FAIR)%20Standard%20v3.0%20(January%202025).pdf",
+            "excerpts": [
+              "Based on a first-principles approach, the FAIR Model decomposes risk into its fundamental components, enabling better analytic focus, data application, and quantitative risk measurement and management. This offers a clearer pathway to understanding and cost-effectively managing exposure to loss."
+            ],
+            "title": "Factor Analysis of Information Risk (FAIR) Standard v3.0 ..."
+          },
+          {
+            "url": "http://optimizesmart.com/how-to-find-404-pages-broken-links-in-ga4",
+            "excerpts": [
+              "Create a new exploration report in your GA4 property to track 404 pages (broken links). Download the report in Google Sheets and work on fixing broken links."
+            ],
+            "title": "How to find 404 pages (broken links) in GA4"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Link_rot",
+            "excerpts": [
+              "A link that no longer resolves at the intended target may be called broken or dead. The rate of link rot is a subject of study and research due to its significance to the internet 's ability to preserve information. Estimates of that rate vary dramatically between studies."
+            ],
+            "title": "Link rot - Wikipedia"
+          },
+          {
+            "url": "https://github.com/Hazardous-God/orphanhunter",
+            "excerpts": [
+              "Find unused PHP, HTML, JS, CSS, and TS files that waste space and create security risks. Detect overlapping CSS rules, redundant styles, and unused selectors across your stylesheets. Scan databases for broken references, linking errors, and data integrity issues."
+            ],
+            "title": "GitHub - Hazardous-God/orphanhunter: Your web project a ..."
+          },
+          {
+            "url": "http://github.com/americanexpress",
+            "excerpts": [
+              "Showing 10 of 88 repositories\nearlybird Public\nEarlyBird is a sensitive data detection tool capable of scanning source code repositories for clear text password violations, PII, outdated cryptography methods, key files and more.\nUh oh! There was an"
+            ],
+            "title": "American Express \u00b7 GitHub"
+          },
+          {
+            "url": "https://www.youngju.dev/blog/devops/2026-03-14-developer-cognitive-load-devex-team-topology.en",
+            "excerpts": [
+              "A practical guide to systematically measuring and improving Developer Experience (DevEx) by combining Cognitive Load Theory, the SPACE framework, and Team Topologies patterns."
+            ],
+            "title": "Managing Developer Cognitive Load and Team Topologies: A ..."
+          },
+          {
+            "url": "http://clinicaltrials.gov/study-basics/how-to-read-study-record",
+            "excerpts": [
+              "The format is \"NCT\" followed by an 8-digit number (for example, NCT00000419). Also called the ClinicalTrials.gov identifier."
+            ],
+            "title": "How to Read a Study Record | ClinicalTrials.gov"
+          },
+          {
+            "url": "http://engineering.zoominfo.com/powering-innovation-zoominfos-developer-centric-productivity-transformation",
+            "excerpts": [
+              "e track a variety of toolchain metrics including pull request volume, DORA metrics (Deployment Frequency, Lead"
+            ],
+            "title": "ZoomInfo's Developer-Centric Productivity Transformation"
+          },
+          {
+            "url": "https://newsletter.getdx.com/p/ai-cuts-developer-onboarding-time-in-half",
+            "excerpts": [
+              "To investigate, I analyzed data from six multinational enterprises and measured how quickly new hires reached their 10th pull request (PR)\u2014an established metric for tracking ramp-up time."
+            ],
+            "title": "AI cuts onboarding time in half for new hires in the enterprise"
+          },
+          {
+            "url": "https://www.aihr.com/hr-glossary/time-to-productivity/",
+            "excerpts": [
+              "What is time to productivity? Time to productivity is a recruitment metric that measures the time it takes for new hires to reach the desired level of performance in their role, demonstrating the necessary skills, knowledge, and ability to perform key tasks independently."
+            ],
+            "title": "Time To Productivity: Definition & How to Calculate | HR Glossary"
+          },
+          {
+            "url": "https://www.finops.org/wg/introduction-cloud-unit-economics/",
+            "excerpts": [
+              "This paper is an introduction to the practical application and a methodology of cloud unit economics and teaches how to quantify the associated cost and usage metrics of elasticity."
+            ],
+            "title": "Introduction to Cloud Unit Economics - FinOps"
+          },
+          {
+            "url": "http://developers.preservica.com/api-reference/3-upload-content-s3-compatible",
+            "excerpts": [
+              "The API web application provides a subset of S3 endpoints for content upload including support for multi-part upload. This allows the use of 3rd party"
+            ],
+            "title": "Upload Content (S3 Compatible)"
+          },
+          {
+            "url": "https://aws.amazon.com/blogs/storage/optimize-storage-costs-by-analyzing-api-operations-on-amazon-s3/",
+            "excerpts": [
+              "I detail how to visualize S3 charges related to API requests (operations), identify buckets incurring API request charges, dive deep into API calls being made to S3 buckets, and common steps to optimize API request charges."
+            ],
+            "title": "Optimize storage costs by analyzing API operations on Amazon S3"
+          },
+          {
+            "url": "http://youtube.com/watch?v=dThoN5u3c7w",
+            "excerpts": [
+              "In this livestream, we'll break down essential KPIs including cost per transaction, resource utilization rates, and ROI calculations that matter most for cloud financial management.\nJoin us for an in-depth exploration of the key metrics that drive AWS cost efficiency."
+            ],
+            "title": "Cloud Cost Efficiency I The Keys to AWS Optimization | S16 E2 - YouTube"
+          },
+          {
+            "url": "http://withorb.com/blog/finops-roles-and-responsibilities",
+            "excerpts": [
+              "FinOps is the practice of managing and optimizing cloud costs\nCost savings:** FinOps helps identify areas of wast\nFinancial accountability:** With FinOps, you track cloud spending and usage in real tim"
+            ],
+            "title": "FinOps roles, responsibilities, and team structure - Orb Billing"
+          },
+          {
+            "url": "http://github.com/SpoonLabs",
+            "excerpts": [
+              "A tool for mining commits from Git repositories and diffs to automatically extract code change pattern instances and features with ast analysis."
+            ],
+            "title": "SpoonLabs"
+          },
+          {
+            "url": "http://linkedin.com/posts/nemean-solutions_nemean-solutions-llc-and-agile-defense-form-activity-7257743414551547905-K7Ws",
+            "excerpts": [
+              "Where DevOps Meets SOX 1\ufe0f\u20e3 Version Control Systems (Git, GitHub, Bitbucket) Every change is logged, reviewed, and traceable. Commit IDs, pull requests"
+            ],
+            "title": "Nemean Solutions, LLC's Post"
+          },
+          {
+            "url": "https://link.springer.com/chapter/10.1007/978-3-031-75236-0_29",
+            "excerpts": [
+              "A tool called GitSight Pro was developed to mine GitHub repositories, providing visualizations of team contributions, developers\u2019 pace, and contributions by experience level."
+            ],
+            "title": "Mining of Repositories to Understand Productivity in Remote ..."
+          },
+          {
+            "url": "https://axify.io/blog/git-analytics",
+            "excerpts": [
+              "Relying too heavily on Git-based metrics without context can result in misleading insights and even incentivize the wrong behaviors. This article is for you if you\u2019re ready to examine Git Analytics tools critically and separate valuable insights from misleading metrics."
+            ],
+            "title": "Git Analytics: Challenges, Tools & Key Metrics"
+          },
+          {
+            "url": "http://lunaroutpost.com/software",
+            "excerpts": [
+              "Lunar Outpost's software suite\u2014Stargate, Starweave, and Spark\u2014delivers a scalable, integrated operations platform that unifies mission control, autonomous coordination, networking, and AI-driven decision support."
+            ],
+            "title": "Software | Lunar Outpost"
+          },
+          {
+            "url": "http://rocketreach.co/nehemiah-security-management_b5595894f68b02f2",
+            "excerpts": [
+              "The Nehemiah Security management team includes Dave Hooks (Chief Technical ... Nomsa Dladla_khumalo. Executive Director at Nehemiah Security. Gauteng"
+            ],
+            "title": "Nehemiah Security Management Team | Org Chart"
+          },
+          {
+            "url": "http://threatconnect.com/news/threatconnect-acquires-cyber-risk-quantification-pioneer-nehemiah-security",
+            "excerpts": [
+              "ARLINGTON, VA \u2013 September 10, 2020** \u2013 ThreatConnect Inc.\u00ae, the leader in reducing complexity and enabling better decision making in cybersecurity, today announces the acquisition of Nehemiah Security, Inc, (\"Nehemiah\") a pioneer in the rapidly growing Cyber Risk Quantification (CRQ) space.\nOn August 18, 2020, ThreatConnect through its purchaser entity, NS Holdings LLC, acquired substantially all of the assets and assumed selected liabilities of Nehemiah.\nSep 10, 2020 \u2014 ThreatConnect acquires cyber risk quantification pioneer Nehemiah Security. Creates the world's only cybersecurity platform aligning the entire security\nThreatConnect Risk Quantifier (RQ \u2013 formerly Nehemiah Risk Quantifier) enables the identification of the risks that matter most to the organization by quantifying them based on potential financial or operational impact, unifying security and the business to a common goal. T"
+            ],
+            "title": "ThreatConnect Acquires Risk Quantification Pioneer Nehemiah Security"
+          },
+          {
+            "url": "https://www.archives.gov/preservation/digital-preservation/risk",
+            "excerpts": [
+              "NARA developed its Digital Preservation Framework to document and share recommended preservation actions based on its electronic record holdings and current capabilities."
+            ],
+            "title": "Digital Preservation Framework for Risk Assessment and ..."
+          },
+          {
+            "url": "http://medium.com/%40nehemiahsecure",
+            "excerpts": [
+              "Read writing from Nehemiah Security on Medium. Transforming how organizations secure technology by scientifically measuring #risk, predicting #cyberattack"
+            ],
+            "title": "Nehemiah Security"
+          },
+          {
+            "url": "https://web.engr.oregonstate.edu/~sarmaa/wp-content/uploads/2020/08/Technical_Report.pdf",
+            "excerpts": [
+              "This study aims to shed light on how entropy evolves as software ages and the relationship between entropy evolution and project evolution in terms of the number of contributors and number of methods and files."
+            ],
+            "title": "The Evolution of Software Entropy in Open Source projects: An ..."
+          },
+          {
+            "url": "https://www.sciencedirect.com/topics/computer-science/branching-factor",
+            "excerpts": [
+              "To work with large graphs that are too large to store, time complexity of BFS is defined in terms of edge traversal required for the nodes at depth x as O (b(x+1)), where b is the branching factor. Generally, branching factor of graph is defined as average number of neighbors."
+            ],
+            "title": "Branching Factor - an overview | ScienceDirect Topics"
+          },
+          {
+            "url": "http://github.com/allenai/spoc-robot-training",
+            "excerpts": [
+              "This repository contains the code and data for the paper \"Imitating Shortest Paths"
+            ],
+            "title": "allenai/spoc-robot-training: SPOC: Imitating Shortest Paths ..."
+          },
+          {
+            "url": "https://wellarchitected.github.com/library/architecture/recommendations/scaling-git-repositories/repository-architecture-strategy/",
+            "excerpts": [
+              "By leveraging these GitHub Platform products, features, and technologies, teams can implement a robust and efficient repository architecture strategy that enhances collaboration, maintains high code quality, and ensures seamless deployment processes."
+            ],
+            "title": "Exploring repository architecture strategy \u2013 GitHub Well ..."
+          },
+          {
+            "url": "https://www.javacodegeeks.com/2026/03/the-thermodynamics-of-software-entropy-why-all-code-tends-toward-disorder.html",
+            "excerpts": [
+              "Shannon-derived source code change entropy provides a quantitative metric: the more scattered changes are across a codebase, the higher the informational disorder, and the harder the system becomes to maintain."
+            ],
+            "title": "The Thermo\u00addynamics of Software Entropy: Why All Code Tends ..."
+          },
+          {
+            "url": "http://dora.dev/guides/dora-metrics",
+            "excerpts": [
+              "DORA's software delivery performance metrics focus on a team's ability to deliver software safely, quickly, and efficiently.\nDORA has identified five software delivery performance metrics that provide an effective way of measuring the outcomes of the software delivery"
+            ],
+            "title": "DORA's software delivery performance metrics"
+          },
+          {
+            "url": "http://thoughtworks.com/en-br/radar/techniques/dora-metrics",
+            "excerpts": [
+              "The metrics defined by the DORA research program have been widely adopted and have proven to be strong leading indicators of how a delivery organization is performing. These include change lead time, deployment frequency, mean time to restore (MTTR), change failure rate and a newer fifth metric, rework rate."
+            ],
+            "title": "DORA metrics | Technology Radar | Thoughtworks Brazil"
+          },
+          {
+            "url": "https://cloud.google.com/blog/products/devops-sre/using-the-four-keys-to-measure-your-devops-performance",
+            "excerpts": [
+              "At a high level, Deployment Frequency and Lead Time for Changes measure velocity, while Change Failure Rate and Time to Restore Service measure stability. And by measuring these values, and continuously iterating to improve on them, a team can achieve significantly better business outcomes. DORA, for example, uses these metrics to identify Elite, High, Medium and Low performing teams, and"
+            ],
+            "title": "Use Four Keys metrics like change failure rate to measure ..."
+          },
+          {
+            "url": "https://openpracticelibrary.com/blog/accelerate-metrics-software-delivery-performance-measurement/",
+            "excerpts": [
+              "What are the Accelerate Metrics? The DORA/Accelerate metrics were devised by Nicole Forsgren, Jez Humble and Gene Kim, using data and evidence from the annual State Of DevOps reports, and codified in the book \u201cAccelerate\u201d, published in 2018. The name \"DORA Metrics\" stems from the organisation founded by Nicole Forsgren and Gene Kim in 2015, \"DevOps Research and Assessment\", later bought by"
+            ],
+            "title": "Accelerate and DORA Metrics - Software Delivery Performance ..."
+          },
+          {
+            "url": "http://getdx.com/blog/dora-metrics",
+            "excerpts": [
+              "DORA metrics are four key performance indicators that measure software delivery performance: deployment frequency, lead time for changes, change failure rate, and mean time to recover (MTTR)."
+            ],
+            "title": "What are DORA metrics? Complete guide to measuring DevOps ..."
+          },
+          {
+            "url": "https://www.researchgate.net/figure/Percentage-of-time-that-developers-spent-on-online-searching_fig1_315887516",
+            "excerpts": [
+              "We evaluate our approach in eight different settings, and consistently observe significant performance improvements for both code generation and code search."
+            ],
+            "title": "Percentage of time that developers spent on online searching"
+          },
+          {
+            "url": "https://dl.acm.org/doi/10.1145/1985793.1985911",
+            "excerpts": [
+              "We propose a novel and unified theory based on the premise that we can study developer's information seeking strategies in light of the foraging principles that evolved to help our animal ancestors to find food."
+            ],
+            "title": "Information foraging as a foundation for code navigation ..."
+          },
+          {
+            "url": "http://codebridge.tech/articles/the-hidden-costs-of-ai-generated-software-why-it-works-isnt-enough",
+            "excerpts": [
+              "Feb 3, 2026 \u2014 A 2025 METR study found a 39\u201344% perception gap\u2014developers felt 20% faster but measured 19% slower in real-world codebases. The hidden cost is the 9% of time"
+            ],
+            "title": "The Hidden Costs of AI-Generated Code in 2026"
+          },
+          {
+            "url": "https://research.google.com/pubs/archive/43835.pdf",
+            "excerpts": [
+              "Google Mountain View, CA, USA supertri@google.com Kathryn T. Stolee Iowa State University Ames, IA, USA kstolee@iastate.edu"
+            ],
+            "title": "How Developers Search for Code: A Case Study"
+          },
+          {
+            "url": "https://homepages.uc.edu/~niunn/papers/ICSE11-NIER.pdf",
+            "excerpts": [
+              "The need to ease program comprehension and reduce the cost of code navigation has led us to propose a novel and unified information foraging model. We traced the model\u2019s root to food foraging and conducted a preliminary study to test the model\u2019s underlying tenets."
+            ],
+            "title": "Information Foraging as a Foundation for Code Navigation ..."
+          },
+          {
+            "url": "https://www.cs.ubc.ca/~murphy/papers/rm/fse95.html",
+            "excerpts": [
+              "The paper provides a formal characterization of reflexion models, discusses practical aspects of the approach, and relates experiences of applying the approach and tools to a number of different systems."
+            ],
+            "title": "Gail Murphy: Software Reflexion Models"
+          },
+          {
+            "url": "https://devops.com/ai-driven-drift-detection-in-aws-terraform-meets-intelligence/",
+            "excerpts": [
+              "This architectural paradigm cohesively integrates foundational IaC capabilities with cutting-edge artificial intelligence and machine learning (AI/ML): Foundational Drift Detection: Leveraging Terraform state differences (terraform show) and comprehensive AWS Config snapshots to establish a robust baseline of configuration integrity."
+            ],
+            "title": "AI-Driven Drift Detection in AWS: Terraform Meets Intelligence"
+          },
+          {
+            "url": "https://ieeexplore.ieee.org/document/8530025/references",
+            "excerpts": [
+              "Murphy et al. introduced the idea of reflexion models in 1995 to overcome this problem. Their approach is today widely used for architecture conformance checking and reconstruction."
+            ],
+            "title": "Reflexion Models for State Machine Extraction and Verification"
+          }
+        ],
+        "confidence": ""
+      }
+    ],
+    "content": "# Defensible Measurement Procedures for Nine Architectural Cost Axes\n\n## Executive Summary\n\n- **Findability Has a Formal IR Metric**: Sinha et al. (2023) define findability as f(d) = (1/|Q_d|) * sum(xi(p_dq, c)), a user-oriented metric distinct from retrievability, validated on TREC and MS MARCO benchmarks -> Adapt this formula to repository search by treating files as documents and developer queries as information needs.\n- **Change Impact Analysis Covers 111 Methods**: Kretsou et al. (2021) systematically mapped 111 CIA papers, finding that indirect coupling metrics are \"highly correlated to maintenance and testing effort\" across seven open-source systems -> Use afferent/efferent coupling as a passive proxy for c_modify.\n- **Developer Onboarding Now Has a Quantitative Benchmark**: DX research across six multinational enterprises established the 10th pull request as an onboarding milestone, with AI-assisted developers reaching it in 49 days versus 91 days for non-users -> Adopt \"time to 10th PR\" as the operational definition of c_onboard productivity.\n- **Architectural Drift Is Measurable but Inherently Retrospective**: Software entropy increases in approximately 76% of open-source projects studied (n=158), with a median cross-correlation lag of 7-10 weeks between project activity changes and entropy shifts -> c_drift requires a trailing-window measurement design; real-time prediction remains research-grade.\n- **FAIR v3.0 Provides a First-Principles Risk Decomposition**: The FAIR standard decomposes loss event frequency into Contact Frequency x Probability of Action x Susceptibility, enabling quantitative c_loss estimation in financial terms -> Map repository events (overwrites, orphans, dead links) to FAIR's threat-event taxonomy for defensible probability estimates.\n- **FinOps Unit Economics Directly Addresses c_money**: The FinOps Foundation's cloud unit economics framework defines cost-per-core-hour, cost-per-GB-RAM, and cost-per-transaction as standard measurement units -> Attribute architecture-specific costs by tagging cloud resources to repository structure.\n- **Software Entropy Correlates Moderately with Project Evolution**: Mannan et al. (2020) found median cross-correlations of 0.45 (methods), 0.36 (developers), and 0.35 (files) with Shannon entropy across 158 projects -> Entropy is a cheap, per-file proxy but not a strong standalone predictor for any single cost axis.\n- **Incremental Build Research Quantifies c_derive**: McIntosh (MSR 2024) documents how cold CI builds in ephemeral containers render incremental builds \"inert,\" making full regeneration the default -> Measure c_derive as wall-clock time of full rebuild minus incremental rebuild, tracked from CI logs.\n- **Three Axes Require Fresh Invention**: c_reverse, c_loss, and c_derive lack direct published measurement procedures and require hybrid or novel designs, making them the highest-uncertainty axes in the framework.\n- **Passive Measurement Can Cover Seven of Nine Axes**: Git log mining, filesystem scanning, and CI log parsing yield usable signals for all axes except c_find and c_onboard, which require at minimum semi-active instrumentation (search-query logging, PR timestamp tracking).\n\n---\n\n## The Nine-Axis Measurement Framework: Summary Table\n\n| Axis | (a) Published Procedures | (b) Units | (c) Key Confounders | (d) Status | (f) Difficulty |\n|------|-------------------------|-----------|---------------------|------------|----------------|\n| c_find | Sinha et al. findability metric [IR]; Sadowski et al. code search [SE]; Pirolli information foraging [HCI]; APQC search success rate [KM] | seconds-per-task | User expertise, query formulation skill, search tool quality, familiarity with repo | HYBRID | 3 |\n| c_modify | Kretsou et al. CIA survey [SE]; Almugrin et al. coupling metrics [SE]; COCOMO II [SE]; ISO 25010 maintainability [SE Standards] | person-minutes-per-change | Change complexity, developer skill, dependency depth, test coverage, tooling | LITERATURE | 2 |\n| c_storage | FinOps unit economics [Cloud Economics]; AWS S3 cost analysis [Cloud Economics] | bytes (GB) | Compression, deduplication, derived-view ratio, archive policies, storage class | LITERATURE | 1 |\n| c_money | FinOps cloud unit economics [Cloud Economics]; DORA metrics [DevOps] | USD-per-month | Multi-tenancy attribution, shared infrastructure, pricing model changes, discount tiers | LITERATURE | 2 |\n| c_onboard | Tacho/DX 10th PR metric [DevEx]; AIHR time-to-productivity [HR]; SPACE framework [DevEx] | calendar-days-to-Nth-PR | Prior experience, team support, documentation quality, AI tool access, project complexity | HYBRID | 3 |\n| c_drift | Murphy et al. reflexion models [SE]; Mannan et al. software entropy [SE]; Jin et al. metric forest [SE]; Besker et al. ATD model [SE] | delta-integrity-score-per-week | Refactoring activity, team size changes, feature velocity, measurement interval | HYBRID | 4 |\n| c_reverse | DORA Failed Deployment Recovery Time [DevOps]; git revert [Version Control]; Statsig rollback cost [DevOps] | minutes-per-undo + probability-of-side-effect | Operation type, dependency graph complexity, VCS history depth, test coverage | INVENT | 4 |\n| c_loss | FAIR v3.0 loss event frequency [Risk Mgmt]; Link rot half-life studies [Archival Science]; NARA risk framework [Archival Science] | events-per-artifact-per-month | Repository size, link density, contributor churn, automation coverage | HYBRID | 4 |\n| c_derive | McIntosh incremental builds [SE]; Materialized view maintenance [Database Systems] | seconds-per-regeneration + USD-per-regeneration | Dependency graph size, cache hit rate, CI environment (cold vs warm), artifact type | INVENT | 3 |\n\nThe table reveals a clear gradient: storage and money are directly measurable from infrastructure telemetry (difficulty 1-2), while drift, reverse, and loss require composite metrics assembled from multiple signals (difficulty 4). The two INVENT axes - c_reverse and c_derive - lack any single published procedure that maps directly to the axis definition.\n\n---\n\n## c_find: Locating Artifacts in Repository Architectures\n\n### Published Measurement Procedures\n\nThe most rigorous framework comes from information retrieval. Sinha, Mall, and Roy (2023) define **findability** as f(d) = (1/|Q_d|) * sum(xi(p_dq, c)), where xi is a \"convenience function\" modeling user willingness to explore search results up to a rank threshold c. Two specific convenience functions are validated: exponential decay xi = e^(-(p-1)/3) and the inverse law xi = 1/p. The metric is validated on TREC Robust and MS MARCO benchmarks using BM25, LM-Dir, and DFR-PL2 retrieval models, with parameters including average query length k=4 and rank tolerance c=100 (Sinha et al., 2023 [6]). Mean Findability and Findability Bias (quantified via the Gini coefficient) provide system-level aggregates.\n\nFrom software engineering, Sadowski et al. at Google documented how developers search for code, establishing that developers perform code searches many times per day as a core workflow activity (Sadowski et al., 2015 [73]). Stolee et al. (2025) revisited this a decade later, finding that search behaviors have shifted significantly with more complex queries and diverse tool usage (Stolee et al., 2025 [9]). Pirolli and Card's **Information Foraging Theory** from cognitive science models developer navigation as following \"information scents\" - patches of high-value cues that guide exploration (Pirolli, 2011 [71]). APQC's knowledge management metrics track search success rate and search frequency as organizational-level findability indicators (APQC [8]).\n\n### Proposed Measurement Design\n\n**Units**: seconds-per-task (for timed known-item retrieval tasks) or findability score (0-1 continuous, using the Sinha et al. formula).\n\n**Confounders**: User expertise level, familiarity with the specific repository, query formulation ability, search tool quality (IDE search vs. grep vs. GitHub search), file naming conventions, and directory depth. The Sinha et al. metric controls for query variability by averaging across a query set Q_d, but the query generation strategy itself (\"popular+discriminative\" term selection) may not transfer directly to repository search contexts.\n\n**Status**: HYBRID. The IR findability metric requires adaptation: repository \"documents\" are files/folders, \"queries\" must be synthesized from realistic developer information needs, and the convenience function parameters need calibration against repository search tools rather than web search engines. **Limitation**: The metric captures search-result-rank findability but not the cognitive cost of understanding whether a found artifact is the correct one.\n\n---\n\n## c_modify: Measuring the Cost of Planned Changes\n\n### Published Measurement Procedures\n\nChange Impact Analysis (CIA) is the most mature literature. Kretsou et al. (2021) systematically mapped **111 primary studies**, finding that CIA benefits span corrective, perfective, preventive, and adaptive maintenance. They identify a critical gap: \"There is a need to provide direct metrics for the quantification of CIA parameters\" - most existing metrics are indirect proxies (Kretsou et al., 2021 [25]).\n\nAlmugrin, Albattah, and Melton (2016) developed indirect coupling metrics based on Martin's package design principles. **Afferent coupling** (Ca) measures import links and responsibility; **efferent coupling** (Ce) measures export links and dependency. These predict maintenance effort: in experiments across seven open-source systems (including Tomcat and Hadoop), the new metrics were \"highly correlated to maintenance and testing effort,\" with package maintenance measured as the number of changes over time. Variables included REVISION count, package size, and revised lines of code (RLOC), all log-transformed (Almugrin et al., 2016 [23]).\n\nCOCOMO II provides macro-level estimation via Effort = a x (KLOC)^b, with an Effort Adjustment Factor (EAF) derived from fifteen cost drivers (Boehm, COCOMO [21]). ISO/IEC 25010:2023 defines maintainability as a quality characteristic with sub-characteristics including modularity, reusability, analyzability, modifiability, and testability (ISO 25010:2023 [13]).\n\n### Proposed Measurement Design\n\n**Units**: person-minutes-per-change, decomposed into (a) time to locate dependencies, (b) time to apply modification, (c) time to verify no regressions.\n\n**Confounders**: Change complexity (single-file edit vs. cross-cutting concern), developer expertise, test suite coverage (higher coverage increases verification time but reduces risk), dependency graph density, and whether the change is in a hotspot (frequently modified) file.\n\n**Status**: LITERATURE. Multiple validated approaches exist, though none provides a single \"c_modify score\" - assembly is required. Coupling metrics serve as the strongest passive proxy, measurable from static analysis without user instrumentation.\n\n---\n\n## c_storage: Bytes Occupied by Architecture\n\n### Published Measurement Procedures\n\nThe FinOps Foundation's Cloud Unit Economics framework provides the most actionable methodology. It defines **cost-per-stored-item** as often more meaningful than cost-per-GB because the latter may not reflect savings from compression (FinOps, 2024 [46]). AWS provides tooling for analyzing S3 API operations, enabling measurement of storage costs attributable to specific API call patterns (PUT, COPY, POST, GET) (AWS S3 Cost Analysis [48]).\n\n**Units**: bytes (GB or TB) for raw measurement; cost-per-stored-artifact for normalized comparison.\n\n**Confounders**: Compression ratios, deduplication (especially in git packfiles), derived-view-to-source ratio, archive/cold-storage policies, git history depth (shallow clones vs. full history), and binary asset management (LFS vs. in-repo).\n\n**Status**: LITERATURE. Direct measurement via `du`, `git count-objects`, cloud billing APIs. This is the most trivially measurable axis. **Difficulty: 1.**\n\n---\n\n## c_money: Dollar Cost of Operating the Architecture\n\n### Published Measurement Procedures\n\nThe FinOps Cloud Unit Economics framework is the authoritative industry standard. It categorizes metrics into three layers: **technical** (cost per core-hour, cost per GB RAM), **financial** (contribution margin, Customer Lifetime Value), and **business** (cost per weekly active user, cost per million transactions) (FinOps, 2024 [46]). The framework emphasizes that marginal cost - the cost of one additional unit of business activity - is the key metric for optimization.\n\nDORA metrics complement this by measuring the delivery pipeline's efficiency: Deployment Frequency, Change Lead Time, Failed Deployment Recovery Time, and Change Fail Rate. The fifth metric, Deployment Rework Rate, tracks unplanned deployments from production incidents (DORA, 2024 [65]). High-performing teams excel on all five simultaneously rather than trading speed for stability.\n\n**Units**: USD-per-month, decomposed into storage fees, API call fees, CI/CD compute costs, and persistence-layer costs.\n\n**Confounders**: Multi-tenancy (shared infrastructure makes attribution difficult), reserved-instance vs. on-demand pricing, discount tiers, regional pricing variation, and the boundary problem (what counts as \"architecture cost\" vs. \"application cost\").\n\n**Status**: LITERATURE. Cloud billing APIs, CI/CD platform cost reports, and resource tagging provide direct measurement. The main challenge is attribution, not measurement. **Difficulty: 2.**\n\n---\n\n## c_onboard: Time for New Contributors to Become Productive\n\n### Published Measurement Procedures\n\nThe most concrete empirical benchmark comes from DX research. Laura Tacho analyzed data from **six multinational enterprises** and measured how quickly new hires reached their **10th pull request** - \"an established metric for tracking ramp-up time.\" Engineers using AI daily reached this milestone in **49 days** versus **91 days** for non-AI users. Weekly AI users took 73.5 days; monthly users took 84 days (Tacho/DX, 2025 [44]).\n\nAIHR defines Time to Productivity (TTP) as the date of full productivity minus the employee's start date, distinguishing it from Time to Proficiency (mastery of advanced skills) (AIHR [45]). The SPACE framework captures onboarding under its \"Efficiency and Flow\" dimension, measuring handoffs and delays in a process (Forsgren et al., SPACE [2]). Cognitive Load Theory, applied to developer experience, emphasizes that intrinsic complexity of the architecture directly impacts onboarding time (Cognitive Load + DevEx [41]).\n\n### Proposed Measurement Design\n\n**Operational definition of \"productive\"**: A contributor is productive when they have merged their Nth non-trivial pull request (recommended N=10 based on DX research) or when they can complete a standardized task set without assistance. For AI agents, \"productive\" means successfully executing an end-to-end modification workflow (find artifact, modify, verify, commit) with less than 20% error rate.\n\n**Units**: calendar-days-to-Nth-PR.\n\n**Confounders**: Prior experience with the technology stack, quality of documentation, team mentoring intensity, AI tool access, project complexity, and PR size distribution (small fix PRs vs. feature PRs).\n\n**Status**: HYBRID. The 10th PR metric is validated in industry but requires adaptation for the architecture-specific context (onboarding to a repository structure vs. to a team). **Difficulty: 3.**\n\n---\n\n## c_drift: Rate of Architectural Integrity Decay\n\n### Published Measurement Procedures\n\nMurphy, Notkin, and Sullivan (1995) introduced **reflexion models** that compare a high-level architectural model against source code, classifying relationships as convergences (matches), divergences (unexpected dependencies), or absences (missing expected dependencies). The approach was demonstrated on NetBSD (250,000 lines of C) in \"only a few hours\" (Murphy et al., 1995 [75]). This remains the foundational approach for architecture conformance checking.\n\nMannan et al. (2020) studied **software entropy** evolution across **158 open-source Java projects**, finding that **76% showed statistically significant increasing entropy trends**. Shannon entropy H(X) = -sum(P(x_i) * log2(P(x_i))) is computed per-file and aggregated weekly. Median cross-correlations with project metrics were: **0.45 (total methods), 0.36 (active contributors), 0.35 (total files)**. The average lag was **7.48 to 10.51 weeks**, meaning project activity changes precede entropy shifts (Mannan et al., 2020 [60]). Jin et al. (2023) extended this with a **Metric Forest Structure** that links implementation-level metrics to architectural decay patterns (Jin et al., 2023 [17]).\n\nBesker, Martini, and Bosch (2018) modeled Architectural Technical Debt using **principal** (remediation cost) and **interest** (ongoing extra effort), finding developers waste an average of **23% of their time** due to technical debt, with maintenance consuming **50-70% of total effort** (Besker et al., 2018 [14]).\n\n### Proposed Measurement Design\n\n**Units**: delta-integrity-score-per-week, where the integrity score is a composite of (a) reflexion model divergence count, (b) Shannon entropy, and (c) coupling metric drift from baseline.\n\n**Confounders**: Active refactoring (which temporarily increases entropy before reducing it), team size changes, feature velocity, and the \"measurement disturbs the system\" problem - knowing drift is measured changes behavior.\n\n**Status**: HYBRID. Reflexion models and entropy are well-published but must be composed into a single drift rate metric. The key limitation is that reflexion models require a human-defined high-level model as input. **Difficulty: 4.**\n\n---\n\n## c_reverse: Cost of Undoing Mistaken Operations\n\n### Published Measurement Procedures\n\nDORA's **Failed Deployment Recovery Time** (replacing the older MTTR) measures the time to restore service after a failed deployment, serving as the closest standardized metric (DORA, 2024 [65]). Git revert creates an inverse commit that maintains full history, providing a mechanical undo capability, but the documentation focuses on procedure rather than cost measurement (Git Revert [27]).\n\nStatsig's analysis of rollback costs identifies \"decreased team morale and thousands of lost engineering hours\" as hidden costs, emphasizing that \"without solid metrics, you're left guessing the reasons behind failures\" (Statsig, 2026 [26]). The Industry Analyst documents that \"reversibility introduces new layers of cost, complexity, and risk that are often invisible at decision time\" in infrastructure contexts (TIA Research [28]).\n\n### Proposed Measurement Design\n\n**Units**: composite of minutes-to-complete-undo + probability-of-side-effect (0-1).\n\n**Proposed procedure**: (1) Classify operations into types (file move, deletion, rename, restructure). (2) For each type, measure: time to identify affected dependencies (from git log analysis), time to execute reversal, and number of downstream artifacts requiring update. (3) Risk component estimated from historical revert-then-fix-forward frequency in git log.\n\n**Confounders**: Operation type (rename is low-risk, restructure is high-risk), dependency graph density, test coverage, VCS history depth, and whether the operation has been propagated to downstream consumers.\n\n**Status**: INVENT. No published procedure directly measures \"cost of undoing a file move.\" DORA's recovery time is the closest analog but targets deployment failures, not file-level operations. **Limitation**: The risk component is inherently probabilistic and can only be calibrated from historical incident data. **Difficulty: 4.**\n\n---\n\n## c_loss: Probability of Artifact Misplacement or Corruption\n\n### Published Measurement Procedures\n\nThe **FAIR Standard v3.0** (January 2025) provides the most rigorous framework. It decomposes risk into Loss Event Frequency (LEF) = Threat Event Frequency (TEF) x Susceptibility. TEF itself decomposes into Contact Frequency (CF) x Probability of Action (PoA). Loss Magnitude splits into Primary Loss and Secondary Loss, with six forms of loss: productivity, response costs, replacement costs, fines/judgments, reputation damage, and competitive advantage loss (FAIR v3.0%20Standard%20v3.0%20(January%202025).pdf)).\n\nFrom archival science, link rot studies provide empirical baselines: a 2002 study found approximately **3% of digital library objects became inaccessible after one year**, equating to a half-life of approximately 23 years. On the general web, approximately **1 link per 200 breaks each week**. A 2023 Million Dollar Homepage study found 28% of links returned errors, 45% were redirected, and only 27% loaded directly (Link Rot, Wikipedia [38]). NARA's Digital Preservation Framework provides format-level risk assessment with risk matrices for over 700 file formats (NARA [58]).\n\n### Proposed Measurement Design\n\n**Units**: events-per-artifact-per-month (misplacement, overwrite, orphan, dead-link counted separately).\n\n**Proposed procedure**: (1) Scan for orphan files (files not referenced by any other artifact) using tools like OrphanHunter (OrphanHunter [39]). (2) Parse git log for overwrite events (same file path modified by different authors within a short window). (3) Validate internal links/references for dead-link detection. (4) Compute event frequency per artifact per time window using FAIR's LEF decomposition.\n\n**Confounders**: Repository size (larger repos have more surface area), contributor churn rate, automation coverage (CI checks catch some events), and the detection problem - undetected losses are by definition unmeasured.\n\n**Status**: HYBRID. FAIR provides the probability framework but targets cybersecurity threats; adaptation to repository artifact events requires mapping the FAIR taxonomy to file-level operations. Link rot baselines from archival science provide calibration data. **Difficulty: 4.**\n\n---\n\n## c_derive: Cost of Regenerating Derived Views\n\n### Published Measurement Procedures\n\nMcIntosh (MSR 2024) documents the fundamental tension: incremental builds traverse dependency graphs and invoke only affected commands, but modern CI pipelines using ephemeral containers start from \"cold\" builds, \"rendering the incremental builds inert.\" This makes full regeneration the default cost (McIntosh, 2024 [31]). Build specifications (Makefiles, CMakeLists.txt) declare dependencies that dictate command ordering, and \"underspecified build systems\" with missing dependency expressions cause sporadic failures during parallel execution.\n\nFrom database systems, **materialized view maintenance** provides the theoretical foundation: when a source relation changes, derived views must be updated. The cost depends on the view definition complexity and the change's scope. Materialize provides real-time incremental view maintenance as a commercial implementation (Materialize [35]). Cache invalidation architecture for enterprise systems documents event-driven invalidation strategies that avoid expensive full rebuilds (PathToProject, 2026 [34]).\n\n### Proposed Measurement Design\n\n**Units**: seconds-per-regeneration (time) + USD-per-regeneration (cost), measured per derived-view type.\n\n**Proposed procedure**: (1) Enumerate derived views (indexes, caches, embeddings, summaries, compiled outputs). (2) For each, trigger regeneration after a single-source-file change and measure wall-clock time and compute cost from CI billing. (3) Compare full-rebuild time vs. incremental time (if available). (4) Weight by change frequency from git log.\n\n**Confounders**: Cache warm/cold state, CI environment specs (CPU, memory), parallelism degree, dependency graph completeness, and artifact type heterogeneity.\n\n**Status**: INVENT. Build-system literature measures build time but not the broader category of \"derived views\" (embeddings, summaries). Database materialized-view maintenance provides the theory but no direct repository-applicable procedure. **Limitation**: The derived-view inventory must be manually defined - there is no automated way to discover all derived artifacts in an arbitrary repository. **Difficulty: 3.**\n\n---\n\n## Task 10: Fundamentally Retrospective or Non-Measurable Axes\n\nThree axes present fundamental temporal measurement challenges:\n\n**c_drift is inherently retrospective.** Architectural integrity decay can only be quantified after it has occurred. Mannan et al. (2020) found an average lag of **7.48-10.51 weeks** between project activity changes and entropy shifts, meaning drift is detected well after the causal events. Reflexion model divergences accumulate silently until someone runs the conformance check. The implication is that c_drift cannot be measured in real-time; it requires a trailing-window design (e.g., compare integrity score at t versus t-4 weeks). Continuous integration of drift detection tools like Erode (Erode [16]) can reduce the measurement lag but not eliminate it.\n\n**c_loss has a detection asymmetry.** By definition, undetected losses are unmeasured. The FAIR model acknowledges this by treating loss frequency as a probabilistic estimate rather than a census. Link rot studies demonstrate that decay rates vary by context (3% per year in curated digital libraries vs. approximately 25% per year on the open web). For repository artifacts, the true loss rate is always greater than or equal to the detected rate, creating a systematic undercount. Retrospective discovery (finding orphans or dead links during a periodic audit) is the only way to approximate the true rate.\n\n**c_reverse has a counterfactual problem.** The \"risk\" component of c_reverse asks: what would have gone wrong if the undo had been imperfect? This is inherently counterfactual and can only be estimated from historical incident data. A repository with no history of failed reversals has no data to calibrate risk, yet the risk is not zero.\n\n**c_find is measurable in real-time** but only under controlled conditions (user studies with timed tasks). Passive measurement of findability requires search query logs, which many repositories do not generate.\n\n---\n\n## Task 11: Sub-Architecture Structural Proxies and Their Correlations\n\n### Tree-Level Metrics\n\n| Proxy Metric | Computation | Measurable Per-File/Folder | Known Correlations |\n|---|---|---|---|\n| Shannon entropy | H(X) = -sum(P(x_i) log2 P(x_i)) per file | Yes (per-file, aggregate to project) | Moderate: 0.45 with total methods, 0.36 with contributors, 0.35 with files (Mannan et al., 2020) |\n| Directory depth | Max/mean path length from root | Yes (per-file) | Hypothesized proxy for c_find (deeper = harder to navigate); no direct empirical validation found |\n| Branching factor | Mean children per directory node | Yes (per-folder) | Hypothesized proxy for c_find; high branching increases visual scanning cost |\n| Afferent coupling (Ca) | Count of inbound dependency links per package | Yes (per-package/folder) | \"Highly correlated to maintenance effort\" (Almugrin et al., 2016) |\n| Efferent coupling (Ce) | Count of outbound dependency links per package | Yes (per-package/folder) | Correlated to testing effort and change propagation (Almugrin et al., 2016) |\n| Code churn | Lines added + deleted per file per time period | Yes (per-file) | Proxy for c_modify (high-churn files need frequent changes); tracked by git analytics tools |\n| File age / staleness | Time since last modification | Yes (per-file) | Potential proxy for c_loss (stale files more likely to be orphaned) and c_drift (unmaintained areas accumulate debt) |\n\nEntropy stands out as the most empirically validated sub-architecture proxy. In 158 open-source projects, 76% showed statistically significant increasing trends, and the metric can be computed at the file level and aggregated upward (Mannan et al., 2020 [60]). However, the correlations are moderate (0.35-0.45), meaning entropy alone explains less than 25% of variance in project evolution metrics. Coupling metrics (Ca, Ce) have stronger predictive validity for c_modify specifically but require dependency analysis tools rather than simple filesystem scanning.\n\n**Key gap**: No published study directly correlates directory depth or branching factor with any of the nine cost axes. These remain theoretically motivated proxies awaiting empirical validation.\n\n---\n\n## Task 12: Passive vs. Active Measurement Strategies\n\n### Passive Measurement (No User Instrumentation Required)\n\n| Signal Source | Measurable Axes | Method |\n|---|---|---|\n| git log | c_modify (churn, change frequency), c_drift (entropy over time), c_loss (overwrite patterns), c_onboard (time to Nth commit/PR), c_reverse (revert frequency) | Parse commit history for file-level change patterns, author timelines, revert commits |\n| Filesystem scan | c_storage (du, file counts), c_find (depth, branching), c_loss (orphan detection), c_drift (staleness analysis) | Walk directory tree; compute structural metrics; scan for unreferenced files |\n| CI/CD logs | c_money (compute time, build costs), c_derive (build duration, cache hit rates), c_reverse (rollback frequency) | Parse build timestamps, resource usage, deployment events |\n| Dependency manifests | c_modify (coupling analysis), c_drift (dependency freshness) | Parse package.json, requirements.txt, Makefile for dependency graphs |\n| Cloud billing APIs | c_money (direct costs), c_storage (storage tier costs) | Query AWS Cost Explorer, GCP Billing, Azure Cost Management |\n| Internal link scanning | c_loss (dead link detection) | Crawl markdown links, import statements, config references for broken targets |\n\nGit analytics tools like Axify track commits, PRs, cycle time, and rework rate, but warn that \"relying too heavily on Git-based metrics without context can result in misleading insights and even incentivize the wrong behaviors\" (Axify, 2025 [54]). The SPACE framework researchers similarly caution against using activity metrics in isolation.\n\n### Active Measurement (Requires User Studies or Instrumentation)\n\n| Method | Measurable Axes | Requirement |\n|---|---|---|\n| Timed known-item retrieval tasks | c_find | Controlled user study with standardized search tasks |\n| Modification task experiments | c_modify | Developers perform specified changes while being timed |\n| Search query logging | c_find | Instrument IDE/search tool to capture queries and success/failure |\n| Onboarding diary studies | c_onboard | New contributors self-report milestones over weeks |\n| Architecture review sessions | c_drift | Expert panel evaluates conformance against intended design |\n| Chaos engineering experiments | c_reverse, c_loss | Deliberately introduce faults and measure recovery |\n\nThe critical distinction: passive measurement yields historical patterns and structural properties, while active measurement captures the human-experienced cost that the axes ultimately represent. Passive proxies are necessary but not sufficient - they estimate what the human cost would be without directly observing it.\n\n---\n\n## Task 13: Minimum-Viable Passive Measurement Instrument\n\n### Tool Design: ArchCost Analyzer\n\nA tool that estimates all nine c_i for an arbitrary repository using passive signals only would require the following inputs and produce the following outputs:\n\n**Required Inputs:**\n1. **Git repository** (full clone with history) - for commit log, file history, revert detection, author timelines\n2. **Filesystem access** (working tree) - for directory structure, file sizes, link scanning\n3. **CI/CD log export** (optional but strongly recommended) - for build times, deployment events, compute costs\n4. **Cloud billing data** (optional) - for direct cost attribution\n5. **Dependency manifests** (auto-detected) - package.json, requirements.txt, Makefile, etc.\n\n**Per-Axis Estimation Strategy:**\n\n| Axis | Passive Estimation Method | Confidence |\n|---|---|---|\n| c_find | Directory depth + branching factor + naming entropy; calibrated against findability benchmarks | Low (no direct validation) |\n| c_modify | Coupling analysis from imports/dependencies + historical churn rate + mean change-set size from git log | Medium |\n| c_storage | du -sh + git count-objects --size-pack + enumerate derived artifacts | High |\n| c_money | CI log compute-hours x unit cost + cloud billing tagged to repo | High (if billing data available) |\n| c_onboard | Time-to-Nth-commit for historical new contributors extracted from git log | Medium |\n| c_drift | Shannon entropy trend over sliding 4-week windows + dependency freshness score | Medium |\n| c_reverse | Historical revert frequency + mean revert-to-fix-forward ratio + dependency fan-out of reverted files | Low-Medium |\n| c_loss | Orphan file count + dead internal link count + overwrite collision rate from git log | Medium |\n| c_derive | CI build time after single-file changes (from CI log) + derived artifact enumeration | Medium (if CI logs available) |\n\n**Architecture:**\nThe tool would run as a CLI that (1) clones or accesses the repo, (2) walks the filesystem computing structural metrics, (3) parses the full git log extracting temporal patterns, (4) performs static dependency analysis, (5) optionally ingests CI and billing data, and (6) produces a JSON report with estimated c_i values, confidence intervals, and data-quality flags for each axis.\n\n**Critical limitations**: c_find and c_reverse estimates from passive signals alone have low confidence because they are fundamentally about human-experienced costs that structural proxies can only approximate. The tool should flag these axes as \"requires active validation\" in its output.\n\n---\n\n## Synthesis: Cross-Cutting Patterns and Measurement Trade-offs\n\nThree fundamental tensions emerge across the nine axes.\n\n**The passive-active gap.** Axes that measure human-experienced costs (c_find, c_modify, c_onboard, c_reverse) are best measured through active user studies but most practically estimated through passive proxies. The correlation between passive proxies and actual human costs is moderate at best (r = 0.35-0.45 for entropy, \"highly correlated\" but unquantified for coupling metrics). This means any passive-only measurement instrument systematically trades validity for feasibility. Organizations should use passive measurement for continuous monitoring and periodic active measurement for calibration.\n\n**The retrospective-prospective divide.** c_drift, c_loss, and c_reverse are inherently backward-looking: drift can only be measured after it has occurred, losses after they are detected, and reversal costs after reversals are attempted. Prospective estimation requires either simulation (computationally expensive) or extrapolation from historical rates (assumes stationarity). The 7-10 week lag identified by Mannan et al. (2020) for entropy means that even \"real-time\" drift monitoring is actually detecting changes that began two months earlier.\n\n**The attribution boundary problem.** c_money and c_storage require clear boundaries around what constitutes \"the architecture\" versus \"the application.\" In cloud environments with shared infrastructure, multi-tenancy makes per-architecture attribution approximate rather than exact. The FinOps framework addresses this with resource tagging, but tagging coverage is typically incomplete. Similarly, c_derive depends on a complete inventory of derived artifacts, which no automated tool can fully enumerate.\n\nComparing measurement maturity across the nine axes reveals that infrastructure-observable axes (c_storage, c_money) are essentially solved problems with direct measurement from billing APIs and filesystem tools. Process-observable axes (c_modify, c_onboard, c_drift) have strong published frameworks requiring assembly. Human-experience axes (c_find, c_reverse) and probabilistic axes (c_loss) remain the frontier, requiring either fresh invention or careful adaptation of adjacent-field frameworks. The gap between the best-understood axis (c_storage, difficulty 1) and the least-understood (c_reverse, difficulty 4) represents roughly a decade of measurement-science maturity.\n\n---\n\n## Measurement Risks: Where Uncertainty Is Highest\n\n| Axis | Risk Level | Primary Source of Uncertainty |\n|---|---|---|\n| c_reverse | **Very High** | No published measurement procedure; risk component is counterfactual; no passive signal directly measures undo cost |\n| c_loss | **Very High** | Detection asymmetry (undetected losses are unmeasured); FAIR adaptation to file-level events is untested; base rates vary by orders of magnitude across contexts |\n| c_drift | **High** | Requires human-defined architectural model for reflexion analysis; entropy is a moderate proxy (r < 0.5); 7-10 week measurement lag |\n| c_find | **High** | Passive proxies (depth, branching) lack empirical validation against actual search times; active measurement requires costly user studies |\n| c_onboard | **Medium** | 10th PR metric is validated but coarse; does not distinguish architecture-specific onboarding from general team onboarding; confounded by mentoring quality |\n| c_derive | **Medium** | Derived artifact inventory must be manually defined; cold vs. warm CI state creates measurement noise; heterogeneous artifact types resist single-metric aggregation |\n| c_modify | **Low-Medium** | Coupling metrics are validated but indirect; change complexity varies enormously; task decomposition (find + modify + verify) complicates single-number reporting |\n| c_money | **Low** | Attribution boundary is the main challenge; direct measurement is available when billing data is accessible |\n| c_storage | **Very Low** | Direct measurement via filesystem tools; primary uncertainty is in defining what to include (history, LFS, derived views) |\n\nThe two highest-risk axes - c_reverse and c_loss - share a common characteristic: they measure events that are rare, consequential, and partially unobservable. This is precisely the domain where the FAIR standard's probabilistic approach adds the most value, but also where calibration data is scarcest. Organizations adopting this measurement framework should invest disproportionate validation effort on these two axes and accept wider confidence intervals in their estimates.\n\n---\n\n## References\n\n1. *The SPACE of Developer Productivity.docx*. http://coursehero.com/file/252817886/The-SPACE-of-Developer-Productivitydocx\n2. *SPACE Framework: How to Measure Developer Productivity - Codacy*. https://blog.codacy.com/space-framework\n3. *Developer experience research methods: a complete guide for ...*. https://cleverx.com/guides/developer-experience-research-methods-a-complete-guide-for-product-and-ux-teams/\n4. *Addison Hiles - Developer Productivity & AI Enablement ...*. http://linkedin.com/in/devexgirl\n5. *Best Employee Onboarding Software 2026*. http://theworkademy.com/employee-onboarding-software\n6. *Findability: A Novel Measure of Information Accessibility*. https://arxiv.org/pdf/2310.09508v1\n7. *IKM TeckChek*. http://linkedin.com/company/teckchek\n8. *Knowledge Management Metrics | APQC*. https://www.apqc.org/resources/blog/knowledge-management-metrics\n9. *10 Years Later: Revisiting How Developers Search for Code*. https://kstolee.github.io/assets/papers/stolee2025FSE.pdf\n10. *Findability and Information Architecture Primer | Information ...*. https://www.informationarchitected.com/resources/whitepapers/findability-and-information-architecture-primer/\n11. *Accelerate Modernization with Architectural Observability*. http://vfunction.com/blog/architectural-observability-accelerates-app-modernization\n12. *ISO/IEC 25010:2011 - Systems and software engineering*. http://iso.org/standard/35733.html\n13. *ISO/IEC 25010:2023 (en), Systems and software engineering ...*. https://www.iso.org/obp/ui#!iso:std:iso-iec:25010:ed-2:v1:en\n14. *Managing architectural technical debt: A unified model and ...*. https://www.sciencedirect.com/science/article/pii/S0164121217302121\n15. *Quality Metrics in Software Architecture | IEEE Conference ...*. https://ieeexplore.ieee.org/document/10092705\n16. *Erode - Architecture Drift Detection for Code Changes*. https://erode.dev/\n17. *Identifying Code Changes for Architecture Decay via a Metric ...*. https://ieeexplore.ieee.org/document/10207153\n18. *Real-Time Reflexion Modelling in architecture reconciliation ...*. https://www.sciencedirect.com/science/article/pii/S0950584915000270\n19. *Terms of Service*. http://mault.ai/terms\n20. *Drift Detection \u2014 Archiet*. https://archiet.com/features/drift-detection\n21. *COCOMO Model: Formula, Types, and Cost Estimation*. https://www.datacamp.com/tutorial/cocomo-model\n22. *A multi-level measures-driven change impact analysis approach ...*. https://link.springer.com/article/10.1007/s11334-025-00614-4\n23. *Using indirect coupling metrics to predict package ...*. https://www.sciencedirect.com/science/article/pii/S016412121600056X\n24. *COCOMO Model - Software Engineering - GeeksforGeeks*. https://www.geeksforgeeks.org/software-engineering/software-engineering-cocomo-model/\n25. *Change impact analysis: A systematic mapping study*. https://www.sciencedirect.com/science/article/pii/S016412122030282X\n26. *The Hidden Cost of Rolling Back Without Metrics - statsig.com*. https://www.statsig.com/perspectives/rollback-costs-no-metrics-software\n27. *Git - git-revert Documentation*. https://git-scm.com/docs/git-revert\n28. *TIA Research-The Hidden Cost of Reversibility in ...*. https://theindustryanalyst.com/the-hidden-cost-of-reversibility-in-infrastructure-technology/\n29. *Deployment Rollback: How to Measure Cost and Efficiency*. https://www.linkedin.com/advice/0/how-do-you-measure-cost-efficiency-deployment\n30. *How To Revert A Commit With Git Revert? - GeeksforGeeks*. https://www.geeksforgeeks.org/git/how-to-revert-a-commit-with-git-revert/\n31. *Mining Our Way Back to Incremental Builds for DevOps Pipelines*. https://rebels.cs.uwaterloo.ca/papers/msr2024_mcintosh.pdf\n32. *Cache miss for the first stage of multi-stage build #1742*. http://github.com/moby/buildkit/issues/1742\n33. *NXM Labs Inc.*. http://nxmlabs.com/\n34. *Headless Cache Invalidation Architecture for Enterprise ...*. https://www.pathtoproject.com/blog/20260413-headless-cache-invalidation-architecture-for-enterprise-content-platforms\n35. *Materialize: The Live Data Layer for Apps and AI Agents*. http://materialize.com/\n36. *Factor Analysis of Information Risk (FAIR) Standard v3.0 ...*. https://www.fairinstitute.org/hubfs/Standards%20Artifacts/Factor%20Analysis%20of%20Information%20Risk%20(FAIR)%20Standard%20v3.0%20(January%202025).pdf\n37. *How to find 404 pages (broken links) in GA4*. http://optimizesmart.com/how-to-find-404-pages-broken-links-in-ga4\n38. *Link rot - Wikipedia*. https://en.wikipedia.org/wiki/Link_rot\n39. *GitHub - Hazardous-God/orphanhunter: Your web project a ...*. https://github.com/Hazardous-God/orphanhunter\n40. *American Express \u00b7 GitHub*. http://github.com/americanexpress\n41. *Managing Developer Cognitive Load and Team Topologies: A ...*. https://www.youngju.dev/blog/devops/2026-03-14-developer-cognitive-load-devex-team-topology.en\n42. *How to Read a Study Record | ClinicalTrials.gov*. http://clinicaltrials.gov/study-basics/how-to-read-study-record\n43. *ZoomInfo's Developer-Centric Productivity Transformation*. http://engineering.zoominfo.com/powering-innovation-zoominfos-developer-centric-productivity-transformation\n44. *AI cuts onboarding time in half for new hires in the enterprise*. https://newsletter.getdx.com/p/ai-cuts-developer-onboarding-time-in-half\n45. *Time To Productivity: Definition & How to Calculate | HR Glossary*. https://www.aihr.com/hr-glossary/time-to-productivity/\n46. *Introduction to Cloud Unit Economics - FinOps*. https://www.finops.org/wg/introduction-cloud-unit-economics/\n47. *Upload Content (S3 Compatible)*. http://developers.preservica.com/api-reference/3-upload-content-s3-compatible\n48. *Optimize storage costs by analyzing API operations on Amazon S3*. https://aws.amazon.com/blogs/storage/optimize-storage-costs-by-analyzing-api-operations-on-amazon-s3/\n49. *Cloud Cost Efficiency I The Keys to AWS Optimization | S16 E2 - YouTube*. http://youtube.com/watch?v=dThoN5u3c7w\n50. *FinOps roles, responsibilities, and team structure - Orb Billing*. http://withorb.com/blog/finops-roles-and-responsibilities\n51. *SpoonLabs*. http://github.com/SpoonLabs\n52. *Nemean Solutions, LLC's Post*. http://linkedin.com/posts/nemean-solutions_nemean-solutions-llc-and-agile-defense-form-activity-7257743414551547905-K7Ws\n53. *Mining of Repositories to Understand Productivity in Remote ...*. https://link.springer.com/chapter/10.1007/978-3-031-75236-0_29\n54. *Git Analytics: Challenges, Tools & Key Metrics*. https://axify.io/blog/git-analytics\n55. *Software | Lunar Outpost*. http://lunaroutpost.com/software\n56. *Nehemiah Security Management Team | Org Chart*. http://rocketreach.co/nehemiah-security-management_b5595894f68b02f2\n57. *ThreatConnect Acquires Risk Quantification Pioneer Nehemiah Security*. http://threatconnect.com/news/threatconnect-acquires-cyber-risk-quantification-pioneer-nehemiah-security\n58. *Digital Preservation Framework for Risk Assessment and ...*. https://www.archives.gov/preservation/digital-preservation/risk\n59. *Nehemiah Security*. http://medium.com/%40nehemiahsecure\n60. *The Evolution of Software Entropy in Open Source projects: An ...*. https://web.engr.oregonstate.edu/~sarmaa/wp-content/uploads/2020/08/Technical_Report.pdf\n61. *Branching Factor - an overview | ScienceDirect Topics*. https://www.sciencedirect.com/topics/computer-science/branching-factor\n62. *allenai/spoc-robot-training: SPOC: Imitating Shortest Paths ...*. http://github.com/allenai/spoc-robot-training\n63. *Exploring repository architecture strategy \u2013 GitHub Well ...*. https://wellarchitected.github.com/library/architecture/recommendations/scaling-git-repositories/repository-architecture-strategy/\n64. *The Thermo\u00addynamics of Software Entropy: Why All Code Tends ...*. https://www.javacodegeeks.com/2026/03/the-thermodynamics-of-software-entropy-why-all-code-tends-toward-disorder.html\n65. *DORA's software delivery performance metrics*. http://dora.dev/guides/dora-metrics\n66. *DORA metrics | Technology Radar | Thoughtworks Brazil*. http://thoughtworks.com/en-br/radar/techniques/dora-metrics\n67. *Use Four Keys metrics like change failure rate to measure ...*. https://cloud.google.com/blog/products/devops-sre/using-the-four-keys-to-measure-your-devops-performance\n68. *Accelerate and DORA Metrics - Software Delivery Performance ...*. https://openpracticelibrary.com/blog/accelerate-metrics-software-delivery-performance-measurement/\n69. *What are DORA metrics? Complete guide to measuring DevOps ...*. http://getdx.com/blog/dora-metrics\n70. *Percentage of time that developers spent on online searching*. https://www.researchgate.net/figure/Percentage-of-time-that-developers-spent-on-online-searching_fig1_315887516\n71. *Information foraging as a foundation for code navigation ...*. https://dl.acm.org/doi/10.1145/1985793.1985911\n72. *The Hidden Costs of AI-Generated Code in 2026*. http://codebridge.tech/articles/the-hidden-costs-of-ai-generated-software-why-it-works-isnt-enough\n73. *How Developers Search for Code: A Case Study*. https://research.google.com/pubs/archive/43835.pdf\n74. *Information Foraging as a Foundation for Code Navigation ...*. https://homepages.uc.edu/~niunn/papers/ICSE11-NIER.pdf\n75. *Gail Murphy: Software Reflexion Models*. https://www.cs.ubc.ca/~murphy/papers/rm/fse95.html\n76. *AI-Driven Drift Detection in AWS: Terraform Meets Intelligence*. https://devops.com/ai-driven-drift-detection-in-aws-terraform-meets-intelligence/\n77. *Reflexion Models for State Machine Extraction and Verification*. https://ieeexplore.ieee.org/document/8530025/references\n",
+    "type": "text",
+    "beta_fields": null
+  },
+  "run": {
+    "created_at": "2026-05-20T23:21:02.366022Z",
+    "is_active": false,
+    "modified_at": "2026-05-20T23:35:40.570348Z",
+    "processor": "ultra2x",
+    "run_id": "trun_da4211ace2c14632888cf20a8fae36b0",
+    "status": "completed",
+    "error": null,
+    "metadata": {
+      "protocol": "A_STAR",
+      "thread_id": "RQ3-per-c-measurement"
+    },
+    "task_group_id": null,
+    "warnings": [
+      {
+        "message": "enable_events unset for ultra2x. Setting to true by default. Consider setting to false explicitly if you do not want to track events for streaming.",
+        "type": "warning",
+        "detail": null
+      }
+    ],
+    "interaction_id": "trun_da4211ace2c14632888cf20a8fae36b0"
+  }
+}
