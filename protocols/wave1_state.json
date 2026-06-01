@@ -1,0 +1,21 @@
+{
+  "wave": 1,
+  "launched_at": "2026-05-20T23:21:02.151242+00:00",
+  "threads": {
+    "RQ3-per-c-measurement": {
+      "run_id": "trun_da4211ace2c14632888cf20a8fae36b0",
+      "status": "completed",
+      "finished_at": "2026-05-20T23:36:28.317008+00:00"
+    },
+    "RQ2-optimization-vs-csp-vs-cop": {
+      "run_id": "trun_da4211ace2c146328939999ec5d2a587",
+      "status": "completed",
+      "finished_at": "2026-05-20T23:41:30.158062+00:00"
+    },
+    "RQ1-rank-of-C": {
+      "run_id": "trun_da4211ace2c146328dea4fbe28c7d20b",
+      "status": "completed",
+      "finished_at": "2026-05-20T23:39:29.487932+00:00"
+    }
+  }
+}

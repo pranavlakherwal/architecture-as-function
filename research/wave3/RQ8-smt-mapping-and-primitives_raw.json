@@ -1,0 +1,594 @@
+{
+  "output": {
+    "basis": [
+      {
+        "field": "answer",
+        "reasoning": "",
+        "citations": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Akaike_information_criterion",
+            "excerpts": [
+              "To apply AIC in practice, we start with a set of candidate models, and then find the models' corresponding AIC values. There will almost always be information lost due to using a candidate model to represent the \"true model,\" i.e. the process that generated the data."
+            ],
+            "title": "Akaike information criterion - Wikipedia"
+          },
+          {
+            "url": "https://www.jstor.org/stable/2685777",
+            "excerpts": [
+              "The minimum description length (MDL) principle articu- lated in the last decade by Rissanen and his co-workers yields new criteria for statistical model selection. MDL cri-teria permit data-based choices from among alternative sta-tistical descriptions of data without necessarily assuming that the data were sampled randomly."
+            ],
+            "title": "Model Selection Using the Minimum Description Length Principle"
+          },
+          {
+            "url": "http://homepages.cwi.nl/~paulv/course-kc/mdlintro.pdf",
+            "excerpts": [
+              "This tutorial provides an overview of and introduction to Rissanen's Minimum De- scription Length (MDL) Principl"
+            ],
+            "title": "[PDF] A Tutorial Introduction to the Minimum Description Length Principle"
+          },
+          {
+            "url": "https://deepwiki.com/Z3Prover/z3/4.3-objective-optimization",
+            "excerpts": [
+              "Overview of the Optimization Framework The optimization framework in Z3 is centered around the opt::context. It manages hard constraints, soft constraints (MaxSMT), and arithmetic objectives (Maximize/Minimize). For arithmetic objectives, Z3 primarily uses the optsmt engine, which interacts with theory solvers that implement the theory_opt"
+            ],
+            "title": "Objective Optimization | Z3Prover/z3 | DeepWiki"
+          },
+          {
+            "url": "https://www.sciencedirect.com/science/article/pii/S0167947313002776",
+            "excerpts": [
+              "Criteria for the selection of models such as the Akaike information criterion (AIC), the corrected Akaike information criterion (AICc) and the Bayesian information criterion (BIC), are often used to select models in various fields."
+            ],
+            "title": "Information criteria: How do they behave in different models?"
+          },
+          {
+            "url": "https://refactoring.com/catalog/",
+            "excerpts": [
+              "This catalog of refactorings includes those refactorings described in my original book on Refactoring, together with the Ruby Edition."
+            ],
+            "title": "Using the Catalog - Refactoring"
+          },
+          {
+            "url": "https://www.sciencedirect.com/science/article/pii/S0167642323000606",
+            "excerpts": [
+              "Even though evolutionary architecture can be applied to support constant changes, many challenges have been posed, as discussed in Section 2.2 and it still lacks the tools to support evolution planning. Many researchers have tried to automate refactoring software architecture and planning software evolution, as discussed in detail in Section 7."
+            ],
+            "title": "Software evolutionary architecture: Automated planning for ..."
+          },
+          {
+            "url": "https://ieeexplore.ieee.org/document/1265817",
+            "excerpts": [
+              "Abstract: We provide an extensive overview of existing research in the field of software refactoring."
+            ],
+            "title": "A survey of software refactoring | IEEE Journals & Magazine ..."
+          },
+          {
+            "url": "https://refactoring.guru/extract-class",
+            "excerpts": [
+              "Classes always start out clear and easy to understand. They do their job and mind their own business as it were, without butting into the work of other classes. But as the program expands, a method is added and then a field... and eventually, some classes are performing more responsibilities than ever envisioned."
+            ],
+            "title": "Extract Class - Refactoring.Guru"
+          },
+          {
+            "url": "https://ieeexplore.ieee.org/document/11267057",
+            "excerpts": [
+              "Software architecture is the abstraction of a software system, that significantly influences software development and maintenance. As software evolves, continuous changes could deviate its architecture from the original design, leading to architecture degradation that causes a decline in software quality. Architecture refactoring becomes necessary to address or mitigate architecture"
+            ],
+            "title": "Exploring and Analyzing Software Architecture Refactoring in ..."
+          },
+          {
+            "url": "http://groups.google.com/g/sqlalchemy-alembic/c/vrofUOaxvh0/m/gTa8GNMbjiUJ",
+            "excerpts": [
+              "The alembic op.add_column() associates it with a table internally."
+            ],
+            "title": "add_column does not modify table.columns? - Google Groups"
+          },
+          {
+            "url": "https://docs.liquibase.com/secure/reference-guide-5-1-1/init-update-and-rollback-commands/rollback",
+            "excerpts": [
+              "The <rollback> tag describes how to roll back a change using SQL statements, Change Types, or a reference to a previous changeset. You can use any Change Type in the <rollback> element, such as dropTable, sql, and sqlFile:"
+            ],
+            "title": "rollback - Liquibase"
+          },
+          {
+            "url": "http://docs.liquibase.com/commands/rollback/rollback.html",
+            "excerpts": [
+              "When you run `rollback` , Liquibase will roll back sequentially all the deployed changes until it reaches the tag row in the DATABASECHANGELOG table.\nYou must specify a tag with the `tag` command or the `tagDatabase` Change Type in your changelog file for `rollback` to work.\nrollback - Liquibase Docs\nThe rollback command is typically used to revert all changes that were made to the database after the tag you specify."
+            ],
+            "title": "rollback - Liquibase Docs"
+          },
+          {
+            "url": "https://documentation.red-gate.com/fd/migrations-271585107.html",
+            "excerpts": [
+              "Within a single migration run, all pending versioned migrations are applied in order first followed by any repeatable migrations that have changed. Repeatable migrations are applied in the order of their description."
+            ],
+            "title": "Migrations - Redgate Flyway - Product Documentation"
+          },
+          {
+            "url": "http://tealhq.com/job/senior-database-administrator_7ea1a8d5f374f011f558c70ec5aea71e17565",
+            "excerpts": [
+              "Experience with CI/CD-based schema migrations (DbUp, Flyway, or similar) an"
+            ],
+            "title": "Senior Database Administrator @ OCTAGOS HEALTH, INC."
+          },
+          {
+            "url": "https://fortelabs.com/blog/para/",
+            "excerpts": [
+              "Four top-level folders \u2013 Projects, Areas, Resources, and Archives \u2013 each containing a small number of subfolders dedicated to each active project, area of responsibility, resource, and archive in your life."
+            ],
+            "title": "The PARA Method: The Simple System for Organizing Your ..."
+          },
+          {
+            "url": "http://thomasjfrank.com/templates/para-method-template-for-notion",
+            "excerpts": [
+              "Tiago Forte's PARA Method is designed to work within any tool. It comprises four folders: Projects; Areas ; Resources; Archives."
+            ],
+            "title": "PARA Method Template for Notion (Building a Second Brain)"
+          },
+          {
+            "url": "https://linkedin.com/in/sayaniiiiiii",
+            "excerpts": [
+              "Connection Count: 500 | Follower Count: 3467 | Title: Data Engineer | Headline: Serving Notice Period (LWD - 24/10/2025) | Data Engineer at Wipro | Databricks Certified Data Engineer | PySpark | Azure DataBricks | Azure Data Factory |  Python | SQL | AWS Certified Data Engineer Associate | Company Name: Wipro | Experience: Wipro  2023-07-01  Client - British Petroleum (BP), UK (July 2023 - Jan 2025) Contributions - -> Implemented Medallion Architecture on Databricks, designing a structured Bronze-Silver-Gold Data Pipeline that improved the data pipeline by 40% for analytical workloads. -> Designed and maintained scalable ETL/ELT workflows using Azure Data Factory (ADF) and Databricks to process structured and unstructured data, achieving a 30% improvement in pipeline reliability and throughput. -> Engineered dimensional models with SCD Type 2 to maintain historical state of assets, enabling root-cause analysis and reliability tracking, which accelerated issue resolution time by 35%. ->"
+            ],
+            "title": "Sayani Dutta"
+          },
+          {
+            "url": "http://github.com/canon-protocol",
+            "excerpts": [
+              "An open protocol for defining, versioning, and sharing semantic ontologies across distributed publishers - Canon Protocol"
+            ],
+            "title": "Canon Protocol"
+          },
+          {
+            "url": "http://github.com/somrajroy/medallion",
+            "excerpts": [
+              "The medallion architecture organizes data into bronze (raw), silver (clean), and gold (business-ready). By segmenting data into distinct layers, this"
+            ],
+            "title": "Medallion Architecture for Data Engineering projects"
+          },
+          {
+            "url": "http://accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=k232393",
+            "excerpts": [
+              "Z3 Waterline Purification Straws, Dental Unit Water Purification Cartridge. Applicant. Proedge Dental Products, Inc."
+            ],
+            "title": "510(k) Premarket Notification - FDA"
+          },
+          {
+            "url": "https://github.com/Z3Prover/z3",
+            "excerpts": [
+              "It is optionally possible to use GMP for multi-precision integers, but Z3 contains its own self-contained multi-precision functionality. Python is required to build Z3."
+            ],
+            "title": "GitHub - Z3Prover/z3: The Z3 Theorem Prover \u00b7 GitHub"
+          },
+          {
+            "url": "http://shop.benco.com/Product/5455-045/z3-waterline-purification-straw-box-of-2",
+            "excerpts": [
+              "Z3\u00ae Waterline Purification Straw Box of 2 \u00b7 $289.99"
+            ],
+            "title": "Z3\u00ae Waterline Purification Straw Box of 2"
+          },
+          {
+            "url": "https://microsoft.github.io/z3guide/docs/optimization/combiningobjectives/",
+            "excerpts": [
+              "To override lexicographic priorities, set the option opt.priority to Pareto. If we just want to find the optimal value for each objective, set the option opt.priority to box. Many optimization problems require solving multiple objectives."
+            ],
+            "title": "Combining Objectives | Online Z3 Guide - GitHub Pages"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Solomonoff%27s_theory_of_inductive_inference",
+            "excerpts": [
+              "However, Solomonoff's theory does provide an objective criterion for deciding among the current scientific theories explaining a given set of observations. Solomonoff's induction naturally formalizes Occam's razor [4][5][6][7][8] by assigning larger prior credences to theories that require a shorter algorithmic description."
+            ],
+            "title": "Solomonoff's theory of inductive inference - Wikipedia"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Bayesian_information_criterion",
+            "excerpts": [
+              "Both BIC and AIC attempt to resolve this problem by introducing a penalty term for the number of parameters in the model; the penalty term is larger in BIC than in AIC for sample sizes greater than 7."
+            ],
+            "title": "Bayesian information criterion - Wikipedia"
+          },
+          {
+            "url": "http://sites.warnercnr.colostate.edu/wp-content/uploads/sites/73/2017/05/Burnham-and-Anderson-2004-SMR.pdf",
+            "excerpts": [
+              "AIC can be justified as Bayesian using a \"savvy\" prior on models that is a function of sample size and the number of model parameters."
+            ],
+            "title": "[PDF] Understanding AIC and BIC in Model Selection | Multimodel Inference"
+          },
+          {
+            "url": "https://www.raysolomonoff.com/publications/isis96.pdf",
+            "excerpts": [
+              "For practical induction we use a set of approximations of increasing power to approach ALP. This set is called Resource Bounded Probability (RBP), and it constitutes a general solution to the problem of practical induction. Some of its properties are quite di\u00aeerent from those of ALP."
+            ],
+            "title": "Does Algorithmic Probability Solve the Problem of Induction?"
+          },
+          {
+            "url": "https://dl.acm.org/doi/10.1145/361598.361623",
+            "excerpts": [
+              "This paper discusses modularization as a mechanism for improving the flexibility and comprehensibility of a system while allowing the shortening of its development time. The effectiveness of a \u201cmodularization\u201d is dependent upon the criteria used in dividing the system into modules."
+            ],
+            "title": "On the criteria to be used in decomposing systems into ..."
+          },
+          {
+            "url": "https://books.google.com/books/about/Software_Architecture_in_Practice.html?id=qNnPEAAAQBAJ",
+            "excerpts": [
+              "With insights for utilizing architecture to optimize key quality attributes--including performance, modifiability, security, availability, interoperability, testability, usability, deployability, and more--this guide explains how to manage and refine existing architectures, transform them to solve new problems, and build reusable architectures"
+            ],
+            "title": "Software Architecture in Practice - Len Bass, Paul Clements ..."
+          },
+          {
+            "url": "http://profeuttec.yolasite.com/resources/Patrones%20de%20dise%C3%B1o%20-%20Erich%20Gamma.pdf",
+            "excerpts": [
+              "Es un libro de patrones de dise\u00f1o que describe soluciones simples y elegantes a problemas espec\u00edficos del dise\u00f1o de software orientado a objetos. Los patrones"
+            ],
+            "title": "Elementos de software orientado a objetos reutilizable"
+          },
+          {
+            "url": "https://www.pearson.com/en-us/subject-catalog/p/design-patterns-elements-of-reusable-object-oriented-software/P200000009480/9780321700698",
+            "excerpts": [
+              "The authors begin by describing what patterns are and how they can help you design object-oriented software. They then go on to systematically name, explain, evaluate, and catalog recurring designs in object-oriented systems."
+            ],
+            "title": "Design Patterns: Elements of Reusable Object-Oriented Software"
+          },
+          {
+            "url": "https://link.springer.com/content/pdf/10.1007/978-3-642-59412-0_25.pdf",
+            "excerpts": [
+              "Many successful designs can be seen as successful applications of abstraction or information hiding. On the other hand, most industrial software developers do not apply the Idea and many consider It unrealistic."
+            ],
+            "title": "On the Criteria to be Used in Decomposing Systems into Modules"
+          },
+          {
+            "url": "http://datacamp.com/tutorial/normalization-in-sql",
+            "excerpts": [
+              "Learn how to normalize SQL databases from 1NF through 5NF. This guide covers each normal form with real-world examples, comparison tables, and best practices"
+            ],
+            "title": "Normalization in SQL (1NF - 5NF): A Beginner's Guide"
+          },
+          {
+            "url": "https://dl.acm.org/doi/10.1145/945645.945669",
+            "excerpts": [
+              "In this paper we present an approach to model ontology evolution as reconfiguration-design problem solving. The problem is reduced to a graph search where the nodes are evolving ontologies and the edges represent the changes that transform the source node into the target node."
+            ],
+            "title": "Ontology evolution as reconfiguration-design problem solving"
+          },
+          {
+            "url": "https://www.digitalocean.com/community/tutorials/database-normalization",
+            "excerpts": [
+              "Master database normalization to minimize data redundancy and enhance integrity. Explore 1NF, 2NF, 3NF, and BCNF through practical examples and actionable SQ"
+            ],
+            "title": "Database Normalization: 1NF, 2NF, 3NF & BCNF Examples"
+          },
+          {
+            "url": "https://ceur-ws.org/Vol-71/Klein.pdf",
+            "excerpts": [
+              "Abstract Support for ontology evolution becomes extremely important in distributed development and use of on-tologies. Information about change can be repre-sented in many different ways. We describe these different representations and propose a framework that integrates them. We show how different repre-sentations in the framework are related by describ-ing some techniques and heuristics that"
+            ],
+            "title": "A Component-Based Framework For Ontology Evolution"
+          },
+          {
+            "url": "http://prisma.io/docs/orm/prisma-migrate/workflows/development-and-production",
+            "excerpts": [
+              "Triggers the generation of artifacts (for example, Prisma Client). The migrate dev command will prompt you to reset the database in the following scenarios:."
+            ],
+            "title": "Development and production | Prisma Documentation"
+          },
+          {
+            "url": "https://docs.djangoproject.com/en/6.0/ref/migration-operations/",
+            "excerpts": [
+              "Pass the RunPython.noop method to code or reverse_code when you want the operation not to do anything in the given direction. This is especially useful in making the operation reversible."
+            ],
+            "title": "Migration Operations | Django documentation"
+          },
+          {
+            "url": "https://www.prisma.io/docs/orm/prisma-migrate/workflows/generating-down-migrations",
+            "excerpts": [
+              "When generating a migration SQL file, you may wish to also create a \"down migration\" SQL file that reverses the schema changes in the corresponding \"up migration\" file. Note that \"down migrations\" are also sometimes called \"migration rollbacks\"."
+            ],
+            "title": "Generating down migrations | Prisma Documentation"
+          },
+          {
+            "url": "http://neon.com/docs/guides/prisma-migrations",
+            "excerpts": [
+              "Prisma Migrate requires a direct connection to perform schema changes. The pooled connection is used by your application at runtime. Configure prisma.config.ts."
+            ],
+            "title": "Schema migrations with Prisma and Neon - Neon Docs"
+          },
+          {
+            "url": "https://stackoverflow.com/questions/73839299/django-migrations-runpython-reverse-function",
+            "excerpts": [
+              "When you are undoing migrations and running them backwards the reverse function will be used. As mentioned you can reverse all migrations by specifying zero as the migration."
+            ],
+            "title": "Django migrations RunPython reverse function - Stack Overflow"
+          },
+          {
+            "url": "https://docs.liquibase.com/commands/rollback/rollback.html",
+            "excerpts": [],
+            "title": "rollback - Liquibase"
+          },
+          {
+            "url": "http://sei.cmu.edu/",
+            "excerpts": [
+              "the SEI is a federally funded research and development center managed by Carnegie Mellon University."
+            ],
+            "title": "Software Engineering Institute - Carnegie Mellon University"
+          },
+          {
+            "url": "https://www.pearson.com/en-au/subject-catalog/p/design-patterns-elements-of-reusable-object-oriented-software/P200000009480/9780321700698",
+            "excerpts": [
+              "Previously undocumented, these 23 patterns allow designers to create more flexible, elegant, and ultimately reusable designs without having to rediscover the design solutions themselves. The authors begin by describing what patterns are and how they can help you design object-oriented software."
+            ],
+            "title": "Design Patterns: Elements of Reusable Object-Oriented Software"
+          },
+          {
+            "url": "http://javier8a.com/itc/bd1/articulo.pdf",
+            "excerpts": [
+              "In this book, Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides introduce the principles of design patterns and then offer a catalog of such patterns"
+            ],
+            "title": "Design Patterns Elements of Reusable Object-Oriented Software"
+          },
+          {
+            "url": "https://mateuszmarczak.com/blog/2025/10/03/parnas-modularity.html",
+            "excerpts": [
+              "Product flexibility \u2013 single module can change in isolation without impact on other modules. Comprehensibility \u2013 modules with clear responsibilities and contained functionality are easier to understand. Those benefits are desired by software engineers but having modules in a system is not enough."
+            ],
+            "title": "Parnas on Modularity | mateuszmarczak"
+          },
+          {
+            "url": "https://quality.arc42.org/articles/sei-quality-model",
+            "excerpts": [
+              "Len Bass, Paul Clements and Rick Kazman from the Software Engineering Institute (SEI) have authored the \u201cSoftware Architecture in Practice\u201d book, which saw its fourth edition in 2022. A core message within their 400+ page book is the following: Software architecture enables system\u2019s quality Within their fourth edition, the authors present a modernized approach to software quality"
+            ],
+            "title": "SEI Quality Model"
+          },
+          {
+            "url": "https://www.geeksforgeeks.org/machine-learning/how-does-l1-and-l2-regularization-prevent-overfitting/",
+            "excerpts": [
+              "These include methods like dropout, which randomly removes neurons during training, adaptive regularization to adjust regularization strength based on data, and early stopping to halt training when performance plateaus, along with experimenting with different architectures and applying L1 or L2 regularization for controlling overfitting."
+            ],
+            "title": "How does L1 and L2 regularization prevent overfitting ..."
+          },
+          {
+            "url": "http://jmlr.org/papers/v15/srivastava14a.html",
+            "excerpts": [
+              "# Dropout: A Simple Way to Prevent Neural Networks from Overfitting\n[beta](http://jmlr.org/beta/papers/v15/srivastava14a.html)\nby N Srivastava \u00b7 2014 \u00b7 Cited by 62727 \u2014 Dropout is a technique for addressing this problem. The key idea is to randomly drop units (along with their connections) from the neural network during"
+            ],
+            "title": "A Simple Way to Prevent Neural Networks from Overfitting"
+          },
+          {
+            "url": "https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html",
+            "excerpts": [
+              "The synthetic feature weight is subject to L1 or L2 regularization as all other features. To lessen the effect of regularization on synthetic feature weight (and therefore on the intercept) intercept_scaling has to be increased."
+            ],
+            "title": "LogisticRegression \u2014 scikit-learn 1.8.0 documentation"
+          },
+          {
+            "url": "https://www.sanfoundry.com/regularization-techniques-l1-l2-dropout/",
+            "excerpts": [
+              "In Machine Learning, regularization helps prevent overfitting by controlling model complexity and reducing variance. Techniques like L1 (Lasso), L2 (Ridge), and Dropout improve a model\u2019s ability to generalize, making it more robust and reliable on unseen data."
+            ],
+            "title": "Regularization Techniques: L1, L2, Dropout (ML context)"
+          },
+          {
+            "url": "https://www.cs.toronto.edu/~rsalakhu/papers/srivastava14a.pdf",
+            "excerpts": [
+              "Dropout can be seen as a way of adding noise to the states of hidden units in a neural network. In this section, we explore the class of models that arise as a result of marginalizing this noise."
+            ],
+            "title": "Dropout: A Simple Way to Prevent Neural Networks from Over tting"
+          },
+          {
+            "url": "https://z3prover.github.io/api/html/classz3py_1_1_optimize.html",
+            "excerpts": [
+              "Detailed Description Optimize API provides methods for solving using objective functions and weighted soft constraints Definition at line 8194 of file z3py.py."
+            ],
+            "title": "Z3: Optimize Class Reference - GitHub Pages"
+          },
+          {
+            "url": "http://z3controls.com/about.php",
+            "excerpts": [
+              "Address:\n4261-A14, Unit 290\nHwy 7 East\nMarkham, Ontario\nCanada\nL3R 9W6\nAt Z3 Controls, we believe that energy management should be easy and affordable for everyone! We are passionate about optimizing energy use by employing\nContacting Z3 Controls. Phone: 1-877-454-4436 (Toll Free). By Email: info@z3controls.com. Address: 4261-A14, Unit 290. Hwy 7 East Markham, Ontario\n[](https://www.facebook.com/Z3Controls)"
+            ],
+            "title": "About Z3"
+          },
+          {
+            "url": "https://microsoft.github.io/z3guide/docs/optimization/softconstraints/",
+            "excerpts": [
+              "Soft Constraints The (assert-soft formula [:weight numeral] [:id id]) command asserts a weighted soft constraint. The weight must be a positive natural number, but is optional. If omitted, the weight is set to 1."
+            ],
+            "title": "Soft Constraints | Online Z3 Guide - GitHub Pages"
+          },
+          {
+            "url": "https://z3prover.github.io/api/html/classz3_1_1optimize.html",
+            "excerpts": [
+              "unsigned Z3_API Z3_optimize_assert_soft (Z3_context c, Z3_optimize o, Z3_ast a, Z3_string weight, Z3_symbol id)"
+            ],
+            "title": "Z3: optimize Class Reference - GitHub Pages"
+          },
+          {
+            "url": "https://stackoverflow.com/questions/77742069/z3-optimize-and-soft-constraints",
+            "excerpts": [
+              "I tried with another solver, and I get the same results, noticing that there are multiple best scoring solutions. If I remove s.add_soft(x, exp(-(1-p))) then there is only one answer, and the correct one."
+            ],
+            "title": "z3py - z3 optimize and soft constraints - Stack Overflow"
+          },
+          {
+            "url": "https://alembic.sqlalchemy.org/en/latest/ops.html",
+            "excerpts": [],
+            "title": "Operation Reference \u2014 Alembic 1.18.4 documentation"
+          },
+          {
+            "url": "https://ceur-ws.org/Vol-62/EON2002_Stojanovic.pdf",
+            "excerpts": [
+              "Users\u2019 requirements can change after the ontology is initially built, requiring that the existing ontology evolve to meet the new requirements. The necessity to support change management can be derived from many real-word applications, since they typically operate in changeable environments."
+            ],
+            "title": "Microsoft Word - WPM$2031.doc - CEUR-WS.org"
+          },
+          {
+            "url": "https://link.springer.com/article/10.1007/s10115-003-0137-2",
+            "excerpts": [
+              "There are several dimensions along which compatibility between versions must be considered. The set of change operations for ontologies is different. We must develop automatic techniques for finding similarities and differences between versions."
+            ],
+            "title": "Ontology Evolution: Not the Same as Schema Evolution - Springer"
+          },
+          {
+            "url": "http://man7.org/linux/man-pages/man1/mv.1.html",
+            "excerpts": [
+              "Rename SOURCE to DEST, or move SOURCE(s) to DIRECTORY. Mandatory arguments to long options are mandatory for short options too."
+            ],
+            "title": "mv(1) - Linux manual page"
+          },
+          {
+            "url": "https://git-scm.com/docs/git-mv",
+            "excerpts": [
+              "Move or rename a file, directory, or symlink. In the first form, it renames <source>, which must exist and be either a file, symlink or directory, to <destination>. In the second form, <destination-directory> has to be an existing directory; the given sources will be moved into this directory."
+            ],
+            "title": "Git - git-mv Documentation"
+          },
+          {
+            "url": "https://www.databricks.com/blog/what-is-medallion-architecture",
+            "excerpts": [
+              "Learn how medallion architecture organizes data into Bronze, Silver, and Gold layers to improve data quality in your lakehouse. Get started today."
+            ],
+            "title": "What is Medallion Architecture? - Databricks"
+          },
+          {
+            "url": "http://dufrain.co.uk/partnerships/our-databricks-business/databricks-ai-adoption",
+            "excerpts": [
+              "Cov\u00e9a Insurance. Data Architecture: Designed a scalable Databricks platform with Bronze, Silver, and Gold layer"
+            ],
+            "title": "Databricks \u2013 AI Adoption"
+          },
+          {
+            "url": "https://www.datacamp.com/tutorial/denormalization",
+            "excerpts": [
+              "Learn when and how to use denormalization in databases to boost read performance. Understand its trade-offs, techniques, and best use cases in SQL."
+            ],
+            "title": "Denormalization in Databases: When and How to Use It"
+          },
+          {
+            "url": "https://noahvnct.substack.com/p/learning-the-zettelkasten-method",
+            "excerpts": [
+              "You create permanent notes from your literature note by extracting each different idea you\u2019ve reformulated into single notes. You connect your permanent notes together."
+            ],
+            "title": "Learning The Zettelkasten Method is Easy, Actually"
+          },
+          {
+            "url": "http://web-highlights.com/blog/master-your-second-brain-part-1-how-to-use-the-para-method",
+            "excerpts": [
+              "or example , \"project + Write Article About Second Brain \". Areas : Tag your highlights with \" area + [ area name]\". For example , \" area + Health\"."
+            ],
+            "title": "Organize Your Second Brain: How to Use the PARA Method"
+          },
+          {
+            "url": "https://zk.zettel.page/types-of-notes",
+            "excerpts": [
+              "when it\u2019s time to process them at the end of the day, you will sort through these notes, pick out useful, interesting, or relevant ideas, and either transform them into permanent notes, or discard/archive them."
+            ],
+            "title": "Types of Notes - PKM Zettelkasten"
+          },
+          {
+            "url": "http://medium.com/practice-in-public/mastering-the-para-method-and-how-to-take-it-to-new-heights-d48afa1d13b0",
+            "excerpts": [
+              "PARA which stands for Projects, Areas, Resources, and Archives, is a method of folder organisation, which is focused on actionability."
+            ],
+            "title": "A No-Nonsense Guide to the PARA Method - Medium"
+          },
+          {
+            "url": "http://en.wikipedia.org/wiki/First_normal_form",
+            "excerpts": [
+              "First normal form (1NF ) is the most basic level of database normalization defined by English computer scientist Edgar F. Codd, the inventor of the"
+            ],
+            "title": "First normal form"
+          },
+          {
+            "url": "https://www.ibm.com/think/topics/database-normalization",
+            "excerpts": [
+              "Database normalization is a database design process that organizes data into specific table structures. It helps to improve data integrity, prevent data anomalies, minimize data redundancy and bolster query performance. Normalization optimizes tables in database management systems (DBMS) to meet what are known as normal forms: sets of rules governing how attributes are organized within a table"
+            ],
+            "title": "What is database normalization? - IBM"
+          },
+          {
+            "url": "http://cleanlist.ai/blog/2026-04-12-data-normalization-complete-guide",
+            "excerpts": [
+              "The rule of thumb: normalize your operational database (the CRM, the transaction store). Denormalize your analytics layer (the reporting"
+            ],
+            "title": "Data Normalization: The Complete Guide With Examples [2026]"
+          },
+          {
+            "url": "http://en.wikipedia.org/wiki/Category%3ADatabase_normalization",
+            "excerpts": [
+              "Category:Database normalization \u00b7 Unnormalized form (UNF) \u00b7 First normal form (1NF) \u00b7 Second normal form (2NF) \u00b7 Third normal form (3NF) \u00b7 Elementary key normal"
+            ],
+            "title": "Category:Database normalization"
+          },
+          {
+            "url": "http://coveros.com/services/agile-devops-transformation",
+            "excerpts": [
+              "Our expert consultants bring real-world software delivery experience\u2014guiding architecture, testing, and delivery of secure, reliable software applications."
+            ],
+            "title": "Software Consulting Services | AI, DevSecOps, Quality | Coveros"
+          },
+          {
+            "url": "https://prl.khoury.northeastern.edu/img/p-tr-1971.pdf",
+            "excerpts": [
+              "The effectiveness of a \"modularization\" is dependent upon the criteria used in dividing the system into modules. Two system design problems are presented, and for each, both a conventional and unconventional decomposition are described."
+            ],
+            "title": "On the criteria to be used in decomposing systems into modules"
+          },
+          {
+            "url": "https://grokipedia.com/page/software_architecture_analysis_method",
+            "excerpts": [
+              "The Software Architecture Analysis Method (SAAM) originated in the early 1990s at the Software Engineering Institute (SEI) at Carnegie Mellon University, driven by the need to evaluate software architectures for quality attributes like modifiability before full system implementation, particularly in defense-related projects where maintenance"
+            ],
+            "title": "Software architecture analysis method \u2014 Grokipedia"
+          },
+          {
+            "url": "http://medium.com/%40aiwithakashgoyal/beyond-simple-extraction-how-production-grade-ontologies-transform-graphrag-from-prototype-to-333742fa41a6",
+            "excerpts": [
+              "Ontology-Driven GraphRAG: A Framework for Zero-Noise ...\nBuilding a self-improving knowledge graph that doesn't just store data, it understands, validates, and evolves it."
+            ],
+            "title": "Ontology-Driven GraphRAG: A Framework for Zero-Noise Knowledge Extraction | by Akash Goyal | Medium"
+          },
+          {
+            "url": "https://www.researchgate.net/profile/Michel-Klein/publication/248289911_Ontology_Evolution_Not_the_Same_as_Schema_Evolution/links/00b7d52272abdccdf9000000/Ontology-Evolution-Not-the-Same-as-Schema-Evolution.pdf",
+            "excerpts": [
+              "Therefore, analysis of schema-change operations, which considers only effects on instance data, is not directly applicable to ontologies. 3 Implications for Evolution and Versioning of Ontologies"
+            ],
+            "title": "Ontology Evolution: Not the Same as Schema Evolution"
+          },
+          {
+            "url": "http://arxiv.org/html/2510.20345v1",
+            "excerpts": [
+              "# LLM-empowered knowledge graph construction: A survey\nAcross these stages, three trends emerge: (1) the evolution from static schemas to dynamic induction , (2) the integration of pipeline modularity into generative unification , and (3) the transition from symbolic rigidity to semantic adaptability .\nAdaKGC (Ye et al., [2023]\nComprehensive and hybrid frameworks unify schema-level and instance-level fusion within a single, end-to-end workflow, moving beyond traditional modular pipelines toward integrated, prompt-driven architectures.\nDespite remarkable progress, challenges remain in scalability, reliability, and continual adaptation.\nLKD-KGC (Sun et al., [2025]\nLLM-empowered knowledge graph construction: A survey - arXiv\nOct 23, 2025 \u00b7 In light of these rapid advances, this paper presents a comprehensive survey of LLM-driven knowledge graph construction. We systematically\nLLMs4Life (Fathallah et al., [2024]\nNeOn-GPT (Fathallah et al., [2025]\nOpen Information Extraction (OIE) extends structured generative methods toward schema-free extraction, aiming to discover all possible entity\u2013relation\u2013object triples from text without relying on predefined types.\nSection 3 reviews LLM-enhanced ontology construction, encompassing both top-down paradigms (LLMs as ontology assistants) and bottom-up paradigms (KGs for LLMs).\nSection 4 presents LLM-driven knowledge extraction, comparing schema-based and schema-free methodologies.\nThis survey presents a comprehensive overview of how Large Language Models (LLMs) are transforming Knowledge Graph (KG) construction across ontology engineering, knowledge extraction, and knowledge fusion."
+            ],
+            "title": "LLM-empowered knowledge graph construction: A survey - arXiv"
+          }
+        ],
+        "confidence": ""
+      }
+    ],
+    "content": "# A* v0 Routing Reduction and Primitive Outputs\n\n## Executive Summary\n\n- **Routing Reduction**: `S(M,T)` has **3 factors** - gates, weighted utilities, and a simplicity prior - while A* has **7 C_core axes** and a **6-part T vector** by the v0 specification -> define `S(M,T)` as the `K = routing` profile of A*, not as a separate architecture function.\n\n- **Objective Collapse**: Z3 Optimize supports weighted soft constraints, objective functions, and **3** objective-priority modes - lexicographic, Pareto, and box Soft Constraints | Online Z3 Guide [56] Combining Objectives | Online Z3 Guide [24] Z3 Optimize API [54] -> implement `S(M,T)` as one scalarized Optimize objective only when structural degrees of freedom are fixed.\n\n- **Simplicity Prior**: MDL, Solomonoff induction, AIC/BIC, dropout, Parnas information hiding, and architecture quality-attribute theory all penalize unnecessary complexity MDL Tutorial [3] Solomonoff [28] Burnham and Anderson [27] Parnas [76] -> add `H_simp` to A* as a soft regularizer, not as a hard constraint.\n\n- **Strict Generalization Boundary**: `S(M,T)` returns a selected model or route, while A* must emit an architecture state, diagnostics, and executable deltas -> use the reduction only for fixed-folder, fixed-persistence routing decisions.\n\n- **Primitive Minimality**: The **17** candidate primitive names in the prompt compile cleanly to **9** v0 primitives -> keep the solver output small, machine-executable, reversible where required, and use macros for split, merge, rename, tagging, and promotion.\n\n- **Migration-Tool Pattern**: Alembic, Django, Prisma, Liquibase, and Flyway converge on versioned operations, upgrade/downgrade or reverse logic, rollback, and migration history Alembic Operations [59] Django Migration Operations [39] Prisma Down Migrations [40] Liquibase Rollback [43] Flyway Migrations [14] -> A* should emit a transaction with a primitive plan and rollback plan, not a naked final state.\n\n- **Knowledge-Architecture Pattern**: PARA uses **4** top-level categories, medallion architecture uses **3** refinement layers, and the GoF design-patterns book catalogs **23** recurring patterns PARA Method [16] Databricks Medallion Architecture [64] Design Patterns [45] -> make archive, promote, cache, manifest, and relation updates first-class architecture operations.\n\n- **Semantic Versioning Risk**: Ontology evolution literature distinguishes change logs, structural diffs, and minimal transformation sets Klein and Noy [37] -> A* should store both the human audit log and the minimal machine-executable transformation set.\n\n- **Closing Gaps**: v0 still needs policies for incremental tuning vs full re-derivation, operator overrides, observed-cost learning, infeasibility diagnostics, permission boundaries, and self-versioning -> flag these as synthesis blockers before freezing the A* v0 document.\n\n## Part A - `S(M,T)` Is the Routing-Profile Special Case of A*\n\n### The substitution map makes `M` a degenerate architecture candidate\n\nThe clean way to close the formal gap is to treat routing as a restricted A* profile. Let:\n\n```text\nx = (I, L, K, T)\nOmega(x) = architecture candidates available under input x\nA in Omega(x) = one candidate architecture\nC_core(A,x) = <c_1(A,x), ..., c_7(A,x)>\nG_j(A,x) in {0,1} = hard integrity constraint j\n```\n\nThe prompt names `c_modify` and `c_drift` but does not name all **7** `C_core` axes. In this memo, `c_1 ... c_7` are placeholders for the canonical v0 axis names. Where a concrete regularizer is needed, I use `c_modify` and `c_drift` because the prompt identifies them as likely compatible with `H_i`.\n\n| `S(M,T)` term | A* term | Formal substitution | Design meaning |\n|---|---|---|---|\n| `M` | `A_M` | `M <-> A_M`, where `A_M` is an architecture candidate whose only free decision is selected model or route | A model is a degenerate architecture. |\n| `T` | `(I,L,K,T)` | `T_route <-> x = (I,L,K = routing,T)` | Routing context becomes the full A* input bundle. |\n| `gate_j(M,T)` | `G_j(A_M,x)` | `gate_j(M,T) = 1 iff G_j(A_M,x) = 1` | Must-have routing gates become hard integrity constraints. |\n| `prod_j gate_j` | Feasibility filter | `prod_j gate_j = 1 iff all G_j = 1` | A failed gate is an infeasible architecture. |\n| `phi_i(M,T)` | Negative cost utility | `phi_i(A_M,x) = norm_i(-c_i(A_M,x))` | Soft routing features are normalized benefits from lower architecture cost. |\n| `w_i` | Soft objective weights | `w_i = lambda_i(K,T)` | Weights are profile-calibrated by constraint class and task vector. |\n| `H_i(M,T)` | `H_simp(A_M,x)` | `H_simp` is a function of complexity, entropy, `c_modify`, and `c_drift` | The routing simplicity prior becomes an architecture regularizer. |\n| `beta` | Regularization strength | `beta = beta(K,T)` | Simplicity pressure varies by lifecycle and profile. |\n\nZ3 supports this representation because Optimize can combine hard constraints with objective functions and weighted soft constraints Soft Constraints | Online Z3 Guide [56] Z3 Optimize API [54]. Its support for lexicographic, Pareto, and box objective modes also means A* does not have to collapse all profiles to a single scalar when that would hide trade-offs Combining Objectives | Online Z3 Guide [24].\n\n### The reduction proof uses fixed structure and one remaining decision variable\n\nStart from the general A* constrained optimization problem:\n\n```text\nA*(I,L,K,T) = arg opt over A in Omega(I,L,K,T)\n              subject to G_j(A,I,L,K,T) = 1 for all j\n              optimizing C_core(A,I,L,K,T) and diagnostics D\n```\n\nNow impose the routing restriction:\n\n```text\nK = routing\nfolder_structure = F_0\nnaming_scheme = N_0\narchival_policy = R_0\npersistence_layer = P_0\n```\n\nUnder these restrictions, A* no longer searches over folders, names, archive rules, or persistence locations. Its candidate set collapses to:\n\n```text\nOmega_routing(x) = {A_M : M in candidate_models(T)}\n```\n\nEach `A_M` differs only by the selected model or route. The hard constraints become routing gates:\n\n```text\nG_j(A_M,x) = gate_j(M,T)\n```\n\nTherefore:\n\n```text\nA_M is feasible under A*\niff all G_j(A_M,x) = 1\niff prod_j gate_j(M,T) = 1\n```\n\nNext convert costs to utilities:\n\n```text\nphi_i(A_M,x) = norm_i(-c_i(A_M,x))\nU(A_M,x) = sum_i w_i * phi_i(A_M,x)\n```\n\nThen add a simplicity term compatible with `c_modify` and `c_drift`:\n\n```text\nH_simp(A_M,x) =\n  alpha_modify * c_modify(A_M,x)\n  + alpha_drift * c_drift(A_M,x)\n  + alpha_struct * structural_entropy(A_M,x)\n  + alpha_rel * relation_count_penalty(A_M,x)\n```\n\nThe restricted A* scalar objective is:\n\n```text\nScore(A_M,x) =\n  [prod_j G_j(A_M,x)]\n  * [sum_i w_i * phi_i(A_M,x)]\n  * exp(-beta * H_simp(A_M,x))\n```\n\nSubstituting `G_j(A_M,x) = gate_j(M,T)` and `A_M <-> M` yields:\n\n```text\nScore(A_M,x) = S(M,T)\n```\n\nThus:\n\n```text\nargmax_M S(M,T) = A*(I,L,K = routing,T)\n```\n\nprovided that the architecture search space is fixed except for model or route selection.\n\nIf `U(A_M,x) > 0`, the multiplicative score can also be implemented as the monotone log objective:\n\n```text\nlog U(A_M,x) - beta * H_simp(A_M,x)\n```\n\nThat is useful because Optimize can maximize rational or arithmetic expressions without needing to reason directly about `exp`. If utilities can be zero or negative, v0 should either shift utilities into a positive range or precompute the scalar score outside Z3 and expose it as a fixed-point objective.\n\n### Five cases where the reduction is not valid\n\n| Boundary condition | `S(M,T)` can express it? | A* can express it? | Why it matters |\n|---|---:|---:|---|\n| Discrete structural outputs | No | Yes | `S` chooses a model; A* creates, moves, archives, and annotates architecture artifacts. |\n| Multi-objective trade-offs | Weakly | Yes | Z3 supports lexicographic, Pareto, and box objective handling Combining Objectives | Online Z3 Guide [24]. A scalar score can hide non-dominated alternatives. |\n| Hard constraints with side effects | No | Yes | A gate can say \"reversible\", but A* must emit archive, manifest, inverse, and validation operations. |\n| Lifecycle-stage modulation | Usually folded into features | Yes | `T_human`, `T_agent_internal`, `T_agent_external`, `T_onboard`, `T_reverse`, and `T_devex` can change both constraints and weights. |\n| Team-vector enrichment | No | Yes | The same architecture can have different onboarding or devex costs for different teams. |\n\nThe failure case is not a flaw in the reduction. It defines its boundary. `S(M,T)` is a decision rule over fixed candidates; A* is a discrete architecture synthesis and execution-planning function.\n\n### Simplicity should flow back into A*\n\nThe strongest concept to import from `S(M,T)` is the explicit simplicity prior. The MDL principle selects the model that minimizes the description length of the model plus the data encoded with the model MDL Tutorial [3]. Solomonoff induction gives the deeper Occam-style prior by assigning higher prior weight to shorter algorithmic descriptions Solomonoff [28]. AIC and BIC are model-selection criteria that balance fit and complexity Burnham and Anderson [27].\n\nMachine-learning regularization provides a practical analogy. Dropout reduces overfitting by randomly dropping units and their connections during training Dropout JMLR [50]. A* should not literally use dropout, but the architectural analogy is direct: avoid solutions that work only because of brittle special-case dependencies.\n\nSoftware architecture adds the domain-specific reason. Parnas argued that modularization should improve flexibility and comprehensibility through information hiding Parnas [76]. Bass, Clements, and Kazman frame architecture as the enabler of quality attributes such as modifiability, testability, deployability, availability, and performance SEI Quality Model [48]. The Gang of Four design-patterns catalog also shows the value of named reusable structures over ad hoc reinvention Design Patterns [45].\n\nRecommended v0 regularizer:\n\n```text\nH_simp(A,x) =\n  alpha_1 * structure_count(A)\n  + alpha_2 * relation_count(A)\n  + alpha_3 * manifest_entropy(A)\n  + alpha_4 * c_modify(A,x)\n  + alpha_5 * c_drift(A,x)\n```\n\nUse it in **3** places, with different strengths:\n\n| Placement | Role | Recommendation |\n|---|---|---|\n| Soft objective in `C` | Visible to Optimize and diagnostics | Default placement. |\n| Search regularizer | Prunes candidates that add unnecessary structure | Use cautiously to avoid blocking creative candidates. |\n| Pareto tie-breaker | Chooses simpler candidates among non-dominated states | Always safe as a final tie-break. |\n\nDecision: add `H_simp` as a soft objective and Pareto tie-breaker. Do not make it a hard integrity constraint, because archive trails, manifests, and lineage edges may look complex while being required for reversibility.\n\n### Precise v0 definition\n\nRecommended definition:\n\n```text\nA* is a constrained architecture synthesis function that maps\n(I, L, K, T) to an architecture state A and diagnostics D by selecting\nor constructing discrete structural decisions over folder structure,\nnaming scheme, archival policy, manifest metadata, source-of-truth\nregistration, and persistence routing, subject to hard integrity\nconstraints and profile-calibrated soft objectives over C_core.\n\nThe routing score S(M,T) is the special case of A* obtained when\nK = routing; folder structure, naming scheme, archival policy, and\npersistence layer are fixed; the only free decision is the selected\nmodel or route M; routing gates are hard integrity constraints;\nC_core costs are converted into weighted positive utilities phi_i;\nand an optional simplicity regularizer H_simp is applied\nmultiplicatively or by an equivalent monotone log transform.\n```\n\n## Part B - Literature Survey Behind the Primitive Set\n\n### Nine source families converge on state-plus-delta architecture change\n\nThe literature does not provide one perfect catalog of \"folder architecture primitives\", but several mature domains converge on the same pattern: named operations, versioned state transitions, validation, reversibility, and audit.\n\n| Source family | Relevant evidence | A* design implication |\n|---|---|---|\n| Fowler refactoring catalog | Fowler's catalog gives named transformations such as extract, move, rename, and inline Refactoring Catalog [6]. | Use named operations, but adapt code-level refactorings to architecture-level artifacts. |\n| Refactoring research | Mens and Tourwe survey refactoring as structural improvement, while evolutionary architecture research uses automated planning to generate refactoring sequences A Survey of Software Refactoring [8] Software Evolutionary Architecture [7]. | A* should output a sequence or plan, not only one operation. |\n| Schema migration | Alembic uses operations in `upgrade()` and `downgrade()`; Django uses declarative operations with reverse logic; Prisma supports down migrations; Liquibase supports rollback; Flyway uses versioned and undo migrations Alembic Operations [59] Django Migration Operations [39] Prisma Down Migrations [40] Liquibase Rollback [43] Flyway Migrations [14]. | A* primitives need pre-conditions, post-conditions, and inverse or rollback semantics. |\n| Folder restructuring | Git `mv` moves or renames files, directories, or symlinks Git mv [63]. | Treat rename as a special case of move. |\n| Knowledge organization | PARA organizes digital material into Projects, Areas, Resources, and Archives PARA Method [16]. Zettelkasten processes fleeting notes into permanent linked notes or discards/archive them Zettelkasten Note Types [69]. | Include archive, promote, tag, and relation operations. |\n| Database normalization | Normalization organizes tables to improve integrity, prevent anomalies, and minimize redundancy IBM Database Normalization [72]. | Split overloaded containers when redundancy or ambiguity creates drift. |\n| Denormalization | Denormalization reintroduces redundancy to improve read performance DataCamp Denormalization [66]. | Allow derived cache copies, but mark them non-canonical. |\n| Medallion architecture | Databricks describes Bronze, Silver, and Gold layers for progressive data refinement Databricks Medallion Architecture [64]. | Model source, cleaned, and derived layers explicitly. |\n| Ontology evolution | Stojanovic and Motik discuss elementary and composite ontology changes; Klein and Noy distinguish logs, diffs, and minimal transformation sets Stojanovic and Motik [60] Klein and Noy [37]. | Emit minimal transformation sets while preserving full audit logs. |\n\nThe decision-ready insight is that A* should be neither a pure scorer nor a pure file-manipulation script. It should be a constrained planner that emits the smallest sufficient transformation set, backed by audit metadata.\n\n### Local adapters for the missing v0 names\n\nThe prompt says A* has **7** `C_core` axes and **7** `K` classes, but it names only `c_modify`, `c_drift`, `K = routing`, and a AgencyA-class example. To keep the primitive table precise without inventing canonical names, this memo uses local adapters.\n\nLocal `C_core` reporting adapter:\n\n```text\nC7 = [\n  c_find,\n  c_modify,\n  c_integrity,\n  c_reverse,\n  c_drift,\n  c_storage,\n  c_devex\n]\n```\n\nLocal `K` adapter:\n\n```text\nK_route\nK_human\nK_agent_internal\nK_agent_external\nK_onboard\nK_reverse\nK_devex\n```\n\nReplace these with the canonical Wave 1-3 names if they differ. The primitive semantics do not depend on the labels.\n\nLocal integrity-constraint adapter:\n\n```text\nIC1 - Canonicality:\n  every governed artifact has exactly one source of truth, or an explicit\n  derived/cache/exception status.\n\nIC2 - Reversibility:\n  state-changing operations are reversible, archived, or explicitly scheduled\n  as irreversible with approval.\n\nIC3 - Manifest Consistency:\n  folders, artifacts, metadata, persistence routes, and graph relations match\n  the manifest and can be executed by an agent or script.\n```\n\n### Recommended minimal primitive set has 9 operations, not 17\n\nRecommended solver-emitted primitives:\n\n1. `CREATE_FOLDER`\n2. `ARCHIVE_FOLDER`\n3. `MOVE_ARTIFACT`\n4. `DUPLICATE_TO_CACHE`\n5. `SET_SOURCE_OF_TRUTH`\n6. `UPDATE_MANIFEST`\n7. `UPSERT_RELATION`\n8. `MIGRATE_PERSISTENCE`\n9. `SCHEDULE_DESTRUCTION`\n\nThe remaining candidates become macros or typed instances:\n\n| Candidate operation | v0 treatment | Reason |\n|---|---|---|\n| `RENAME_ARTIFACT` | Macro over `MOVE_ARTIFACT` | Git treats move and rename as one operation family Git mv [63]. |\n| `SPLIT_FOLDER` | Macro: `CREATE_FOLDER` plus `MOVE_ARTIFACT` plus `UPDATE_MANIFEST` | Split is composite. |\n| `MERGE_FOLDERS` | Macro: `MOVE_ARTIFACT` plus `ARCHIVE_FOLDER` plus `UPDATE_MANIFEST` | Merge is composite. |\n| `PROMOTE_DERIVED_TO_SOURCE` | Macro: `SET_SOURCE_OF_TRUTH` plus optional `MOVE_ARTIFACT` and `UPDATE_MANIFEST` | Promotion changes canonicality and metadata. |\n| `REGISTER_SOURCE_OF_TRUTH` | Typed `SET_SOURCE_OF_TRUTH` | Same primitive with `status = registered`. |\n| `RETIRE_SOURCE_OF_TRUTH` | Typed `SET_SOURCE_OF_TRUTH` | Same primitive with `status = retired`. |\n| `ATTACH_MANIFEST` | Typed `UPDATE_MANIFEST` | Manifest creation is a manifest update from null. |\n| `ADD_FACET` | Typed `UPSERT_RELATION` | Facet is a metadata relation. |\n| `ADD_TAG` | Typed `UPSERT_RELATION` | Tag is a metadata relation. |\n| `ADD_GRAPH_RELATION` | Typed `UPSERT_RELATION` | Graph edge is a relation. |\n\nThe minimal set is complete for v0 because it covers the core mutation types: create container, retire container, relocate artifact, create derived copy, change canonicality, change metadata, change graph relations, change persistence backend, and schedule irreversible removal.\n\n### Per-primitive pre-conditions and post-conditions\n\n| Primitive | Inputs | Effect | Pre-conditions | Post-conditions |\n|---|---|---|---|---|\n| `CREATE_FOLDER` | `folder_id`, `path`, `purpose`, `owner`, optional `manifest_ref` | Creates an addressable container. | Parent exists; path is unused; naming policy passes. | Folder exists; purpose and ownership are recorded or explicitly unmanaged. |\n| `ARCHIVE_FOLDER` | `folder_id`, `archive_path`, `reason`, `retention_policy`, `manifest_ref` | Moves an inactive folder to an archive namespace. | Folder exists; no active canonical source is silently hidden. | Archive path exists; old path, new path, reason, timestamp, and restore path are recorded. |\n| `MOVE_ARTIFACT` | `artifact_id`, `from_path`, `to_path`, `reference_update_policy` | Moves or renames an artifact. | Source exists; destination is valid; references are discoverable or explicitly scoped out. | Artifact exists at destination; manifest and references are updated or exceptions logged. |\n| `DUPLICATE_TO_CACHE` | `source_artifact_id`, `cache_path`, `derivation_rule`, `ttl`, `invalidator` | Creates a non-canonical derived copy. | Source of truth is known; derivation rule exists. | Cache exists; manifest records `derived_from`, TTL, and invalidation rule. |\n| `SET_SOURCE_OF_TRUTH` | `artifact_id`, `scope`, `status`, `supersedes`, `reason` | Registers, retires, or promotes canonical authority. | Artifact exists; conflict check passes. | Exactly one canonical source per scope, or an explicit exception exists. |\n| `UPDATE_MANIFEST` | `manifest_id`, `patch`, `schema_version`, `validator`, optional `inverse_patch` | Creates or changes manifest metadata. | Patch validates against schema. | Manifest version advances; affected artifacts match metadata. |\n| `UPSERT_RELATION` | `subject_id`, `relation_type`, `object_id_or_value`, `operation`, `confidence`, `provenance` | Adds, updates, or removes a tag, facet, lineage edge, dependency, or graph relation. | Subject exists; relation type is allowed; object exists unless literal. | Relation graph validates; provenance is recorded. |\n| `MIGRATE_PERSISTENCE` | `artifact_or_collection_id`, `from_backend`, `to_backend`, `mapping`, `verification_query`, `rollback_route` | Moves or reroutes persistence across filesystem, database, object store, vector store, cache, or index. | Source reachable; target provisioned; mapping and verification exist. | Target contains verified data; route manifest points to target; old route is retained or retired by policy. |\n| `SCHEDULE_DESTRUCTION` | `artifact_or_folder_id`, `destruction_time`, `retention_policy`, `approver`, `pre_destroy_archive` | Schedules deletion behind a retention and approval gate. | Artifact exists; policy permits destruction; archive requirement is evaluated. | Destruction is pending, not immediate; rollback window and approval are recorded. |\n\n### Per-primitive cost effects, reversibility, integrity risks, and K use cases\n\nLegend: `-` lowers cost, `+` raises cost, `0` is neutral, `+/-` is context-dependent.\n\n| Primitive | C7 effect `[find, modify, integrity, reverse, drift, storage, devex]` | Reversibility | Misuse can violate | Typical K use |\n|---|---|---|---|---|\n| `CREATE_FOLDER` | `[-, -, +/-, 0, +/-, +, +/-]` | Always reversible if empty; reversible with move/archive if non-empty. | IC3 if manifest is not updated; IC1 if folder implies false authority. | `K_onboard`, `K_devex`, `K_route`, AgencyA source/cache setup. |\n| `ARCHIVE_FOLDER` | `[+, -, -, -, -, +/-, -]` | Reversible if archive path and manifest are retained. | IC1 if active source is archived; IC2 if restore path is missing; IC3 if links break. | `K_reverse`, `K_human`, lifecycle closure. |\n| `MOVE_ARTIFACT` | `[-, +/-, +/-, 0, +/-, 0, +/-]` | Reversible if original path and reference diff are logged. | IC1 if authority changes accidentally; IC3 if references are stale. | `K_onboard`, `K_devex`, `K_agent_internal`. |\n| `DUPLICATE_TO_CACHE` | `[-, +, +/-, +/-, +, +, -]` | Reversible by deleting or archiving cache because source remains. | IC1 if cache is mistaken for source; IC3 if derivation is missing. | `K_agent_external`, `K_devex`, medallion-like derived layer. |\n| `SET_SOURCE_OF_TRUTH` | `[-, -, -, +/-, -, 0, +]` | Reversible if prior authority state and old source are retained. | IC1 directly; IC2 if prior source is destroyed; IC3 if manifest diverges. | `K_route`, `K_reverse`, AgencyA source promotion. |\n| `UPDATE_MANIFEST` | `[-, -, -, -, -, +/-, +]` | Reversible if inverse patch or prior version is retained. | IC3 directly; IC1 if source metadata is wrong. | All K classes, especially `K_agent_internal` and `K_onboard`. |\n| `UPSERT_RELATION` | `[-, +/-, +/-, -, +/-, +, +/-]` | Reversible if old edge value is logged. | IC1 if relation asserts false authority; IC3 if graph becomes inconsistent. | Zettelkasten links, ontology relations, tags, facets, retrieval. |\n| `MIGRATE_PERSISTENCE` | `[-, +/-, +/-, +/-, +/-, +/-, +/-]` | Reversible if old backend or export snapshot is retained. | IC1 if authority moves silently; IC2 if rollback route is missing; IC3 if route manifest is wrong. | `K_route`, `K_agent_internal`, `K_agent_external`, scale transition. |\n| `SCHEDULE_DESTRUCTION` | `[0, -, +/-, -, -, -, +]` before execution | Reversible before deadline; irreversible after destruction unless archived. | IC2 directly; IC1 if canonical artifact is scheduled; IC3 if schedule is omitted. | `K_reverse`, compliance cleanup, cache expiry, archival hygiene. |\n\nThe main trade-off is that operations that improve findability or devex can increase storage, manifest burden, or modification cost. That is why A* should report per-axis deltas instead of hiding them in a single score.\n\n## Composition - A* Should Emit a Transactional Plan, Not One Primitive\n\nA real architecture change is almost always a sequence. `SPLIT_FOLDER`, for example, compiles to `CREATE_FOLDER`, multiple `MOVE_ARTIFACT` operations, `UPSERT_RELATION` updates, and `UPDATE_MANIFEST`. Migration systems validate this approach: Alembic uses upgrade and downgrade functions; Django supports reversible operation definitions; Prisma supports down migrations; Liquibase rolls back to tags; Flyway uses versioned and undo migrations Alembic Operations [59] Django Migration Operations [39] Prisma Down Migrations [40] Liquibase Rollback [43] Flyway Migrations [14].\n\nOntology evolution points to the same conclusion. Klein and Noy distinguish a full change log from a transformation set, and define the minimal transformation set as the sufficient operations needed to transition between versions Klein and Noy [37]. A* should therefore output the minimal executable transformation set while retaining the full diagnostic trace.\n\nRecommended architecture:\n\n```text\nLayer 1 - COP model:\n  Z3 Optimize selects target architecture variables.\n\nLayer 2 - Delta compiler:\n  Compare A_current to A_target and compile differences into primitives.\n\nLayer 3 - Transaction renderer:\n  Topologically sort operations, attach pre-checks, inverse operations,\n  rollback plan, validations, diagnostics, and human rationale.\n```\n\nZ3 emits a model, not a filesystem migration script. Therefore A* should emit:\n\n```text\nA_target + primitive_transaction + diagnostics D\n```\n\nnot just:\n\n```text\nA_target\n```\n\n### Operator-facing YAML for a small AgencyA-class transformation\n\n```yaml\na_star_output:\n  spec_version: \"a-star-v0\"\n  run_id: \"2026-05-21-agencya-demo\"\n\n  input_fingerprint:\n    I_hash: \"sha256:...\"\n    L_hash: \"sha256:...\"\n    K: \"agencya\"\n    T_profile:\n      T_human: \"high\"\n      T_agent_internal: \"medium\"\n      T_agent_external: \"low\"\n      T_onboard: \"high\"\n      T_reverse: \"high\"\n      T_devex: \"medium\"\n\n  solver:\n    engine: \"hybrid-cop-z3-optimize\"\n    objective_mode: \"lex_then_weighted_sum\"\n    z3_priority: \"lex\"\n    status: \"sat\"\n\n  target_architecture:\n    folders:\n      - path: \"knowledge/source\"\n        purpose: \"canonical human-authored source material\"\n      - path: \"knowledge/cache\"\n        purpose: \"derived agent-readable summaries\"\n      - path: \"knowledge/archive\"\n        purpose: \"inactive or superseded material\"\n    source_of_truth:\n      scope: \"agencya/customer-onboarding\"\n      artifact_id: \"artifact.customer_onboarding_md\"\n      path: \"knowledge/source/customer-onboarding.md\"\n    persistence_routes:\n      source: \"filesystem\"\n      cache: \"filesystem\"\n    manifest:\n      path: \"architecture.manifest.yaml\"\n      schema_version: \"0.1\"\n\n  primitive_plan:\n    transaction_id: \"txn-agencya-001\"\n    atomic_commit: true\n    rollback_required: true\n    operations:\n      - id: \"op1\"\n        primitive: \"CREATE_FOLDER\"\n        inputs:\n          path: \"knowledge/source\"\n          purpose: \"canonical source layer\"\n        inverse:\n          primitive: \"ARCHIVE_FOLDER\"\n          condition: \"only_if_empty\"\n\n      - id: \"op2\"\n        primitive: \"CREATE_FOLDER\"\n        inputs:\n          path: \"knowledge/cache\"\n          purpose: \"derived cache layer\"\n        inverse:\n          primitive: \"ARCHIVE_FOLDER\"\n          condition: \"only_if_empty\"\n\n      - id: \"op3\"\n        primitive: \"MOVE_ARTIFACT\"\n        depends_on: [\"op1\"]\n        inputs:\n          artifact_id: \"artifact.customer_onboarding_md\"\n          from_path: \"notes/inbox/customer-onboarding.md\"\n          to_path: \"knowledge/source/customer-onboarding.md\"\n          reference_update_policy: \"update_manifest_and_relative_links\"\n        inverse:\n          primitive: \"MOVE_ARTIFACT\"\n          inputs:\n            from_path: \"knowledge/source/customer-onboarding.md\"\n            to_path: \"notes/inbox/customer-onboarding.md\"\n\n      - id: \"op4\"\n        primitive: \"SET_SOURCE_OF_TRUTH\"\n        depends_on: [\"op3\"]\n        inputs:\n          artifact_id: \"artifact.customer_onboarding_md\"\n          scope: \"agencya/customer-onboarding\"\n          status: \"registered\"\n          reason: \"source note is canonical for this topic\"\n\n      - id: \"op5\"\n        primitive: \"DUPLICATE_TO_CACHE\"\n        depends_on: [\"op2\", \"op4\"]\n        inputs:\n          source_artifact_id: \"artifact.customer_onboarding_md\"\n          cache_path: \"knowledge/cache/customer-onboarding.summary.md\"\n          derivation_rule: \"summarize_for_agent_retrieval\"\n          ttl: \"30d\"\n          invalidator: \"source_hash_change\"\n\n      - id: \"op6\"\n        primitive: \"UPSERT_RELATION\"\n        depends_on: [\"op5\"]\n        inputs:\n          subject_id: \"knowledge/cache/customer-onboarding.summary.md\"\n          relation_type: \"derived_from\"\n          object_id_or_value: \"artifact.customer_onboarding_md\"\n          confidence: 1.0\n          provenance: \"a-star-v0\"\n\n      - id: \"op7\"\n        primitive: \"UPDATE_MANIFEST\"\n        depends_on: [\"op1\", \"op2\", \"op3\", \"op4\", \"op5\", \"op6\"]\n        inputs:\n          manifest_id: \"architecture.manifest.yaml\"\n          schema_version: \"0.1\"\n          patch:\n            add_folders:\n              - \"knowledge/source\"\n              - \"knowledge/cache\"\n            register_source:\n              scope: \"agencya/customer-onboarding\"\n              path: \"knowledge/source/customer-onboarding.md\"\n            add_cache:\n              path: \"knowledge/cache/customer-onboarding.summary.md\"\n              derived_from: \"knowledge/source/customer-onboarding.md\"\n\n  expected_C_core_delta:\n    c_find: -0.30\n    c_modify: -0.10\n    c_integrity: -0.25\n    c_reverse: -0.05\n    c_drift: -0.20\n    c_storage: 0.08\n    c_devex: -0.12\n\n  constraints_validated:\n    IC1_canonicality:\n      status: \"pass\"\n      evidence: \"one source_of_truth registered for agencya/customer-onboarding\"\n    IC2_reversibility:\n      status: \"pass\"\n      evidence: \"all moves have inverse operations; cache is derived\"\n    IC3_manifest_consistency:\n      status: \"pass\"\n      evidence: \"manifest patch covers folders, source, cache, and relation\"\n\n  diagnostics:\n    D_resilience:\n      rollback_plan: \"present\"\n      archive_required: false\n      destructive_operations: 0\n    D_creativity:\n      novelty: \"low\"\n      rationale: \"uses source/cache layering without adding a new persistence backend\"\n    infeasibility:\n      unsat_core: []\n      violated_soft_constraints: []\n\n  rationale: >\n    The transformation separates canonical source notes from derived\n    agent-readable cache artifacts. It improves findability,\n    source-of-truth clarity, and drift control at the cost of a small\n    storage increase.\n```\n\nThe example uses a medallion-like source/cache distinction, but keeps persistence fixed. That makes it a AgencyA-class transformation rather than a full persistence migration.\n\n## Part C - Closing Gaps Before the v0 Synthesis Document\n\n| Gap | Failure mode if ignored | Recommendation |\n|---|---|---|\n| Incremental tuning vs full re-derivation | Small weight changes cause architecture churn or inconsistent local patches. | Use incremental tuning when no hard constraint changes and delta cost is below a churn threshold; use full re-derivation for source-of-truth, persistence, or integrity changes. |\n| Operator overrides | Humans can force unsafe architectures without traceability. | Allow soft-objective override with reason, approver, and expiry; require waiver plus rollback plan for hard-constraint override. |\n| Observed-cost learning | Predicted `C_core` deltas never improve after deployment. | Log predicted vs observed deltas, rollback events, find time, modification time, drift incidents, and agent failures; recalibrate `K`, `T`, weights, and `beta`. |\n| A* self-versioning | Future A* changes cannot reproduce old decisions. | Record `spec_version`, solver version, primitive schema version, `C_core` schema version, `K` profile version, and manifest schema version in every run. |\n| Infeasibility diagnostics | Solver returns no useful guidance when constraints conflict. | Return no architecture on `unsat`; return failed constraints, relaxations, minimum waiver set, and remediation options. |\n| Permission model | Machine-executable operations can modify or destroy state without authority. | Add dry-run, capability manifest, approval gates, and separate permissions for migration, canonicality, and destruction. |\n| Measurement of `C_core` | Weights become decorative because axis values are not comparable. | For each axis, define unit, range, normalization, measurement source, confidence, owner, and update cadence. |\n| Macro expansion audit | Operators approve `SPLIT_FOLDER` without seeing destructive substeps. | Render macros for humans, but validate and execute the compiled primitive plan. |\n\nThe most important unresolved issue is feedback. A* v0 can predict that a folder split lowers `c_find`, but only observed usage can confirm whether humans and agents actually find artifacts faster. The v0 spec should therefore treat deployment outcomes as calibration data, not as anecdotal feedback.\n\nThe second major issue is override governance. Architecture functions are advisory until an operator can safely disagree. The correct pattern is not to block disagreement; it is to record why the override happened, which hard or soft constraints were waived, how long the waiver lasts, and how rollback works.\n\n## Synthesis - The Final A* Relationship\n\n| Framework | Mechanism | Output | Scope | Trade-off | A* decision |\n|---|---|---|---|---|---|\n| `S(M,T)` | Gate product, weighted utility sum, simplicity prior | Selected model or route | Fixed candidates | Simple and explainable, but not structural | Embed as `K = routing`. |\n| A* COP | Hard constraints plus multi-objective optimization | Architecture state plus diagnostics | Structural synthesis | Expressive, but needs delta compilation | Use for all non-routing architecture decisions. |\n| Simplicity prior | MDL, Solomonoff, AIC/BIC, regularization | Complexity-adjusted objective | Model and architecture selection | Prevents overfit, but can punish necessary audit structure | Add `H_simp` as soft objective and tie-breaker. |\n| Primitive transaction | Minimal transformation set with inverse plan | Executable architecture delta | Repo, metadata, persistence, and graph changes | Operationally safe, but more verbose | Emit target state plus primitive transaction. |\n| Feedback loop | Observed outcomes recalibrate weights | Updated `K`, `T`, `beta`, and cost priors | Post-deployment learning | Improves accuracy, but requires governance | Version and audit all learning. |\n\nThe core tension is scalar elegance vs operational accountability. `S(M,T)` is powerful because it compresses routing into one number. A* cannot stop there because architecture decisions produce side effects: files move, folders appear, manifests change, caches are derived, sources of truth are registered, and rollback obligations are created.\n\nThe second tension is simplicity vs reversibility. A pure simplicity prior would penalize archives, manifests, and lineage edges because they add structure. But those structures are often what make an architecture safe. Therefore `H_simp` should penalize unnecessary complexity, not necessary auditability.\n\nFinal closing statement:\n\n```text\nA* generalizes S(M,T) from scalar candidate routing to constrained,\ndiagnosed, and executable architecture synthesis. Routing is recovered\nwhen the architecture search space is restricted to fixed-structure\nmodel candidates and the A* objective is scalarized into the gated,\nweighted, simplicity-regularized score S. Outside that restriction,\nA* emits structural target states and primitive transactions over\nfolders, artifacts, metadata, source-of-truth registrations, archival\npolicy, and persistence routes, while preserving hard integrity\nconstraints and exposing diagnostics for human and agent operators.\n```\n\n## References\n\n1. *Akaike information criterion - Wikipedia*. https://en.wikipedia.org/wiki/Akaike_information_criterion\n2. *Model Selection Using the Minimum Description Length Principle*. https://www.jstor.org/stable/2685777\n3. [[PDF] A Tutorial Introduction to the Minimum Description Length Principle](http://homepages.cwi.nl/~paulv/course-kc/mdlintro.pdf)\n4. *Objective Optimization | Z3Prover/z3 | DeepWiki*. https://deepwiki.com/Z3Prover/z3/4.3-objective-optimization\n5. *Information criteria: How do they behave in different models?*. https://www.sciencedirect.com/science/article/pii/S0167947313002776\n6. *Using the Catalog - Refactoring*. https://refactoring.com/catalog/\n7. *Software evolutionary architecture: Automated planning for ...*. https://www.sciencedirect.com/science/article/pii/S0167642323000606\n8. *A survey of software refactoring | IEEE Journals & Magazine ...*. https://ieeexplore.ieee.org/document/1265817\n9. *Extract Class - Refactoring.Guru*. https://refactoring.guru/extract-class\n10. *Exploring and Analyzing Software Architecture Refactoring in ...*. https://ieeexplore.ieee.org/document/11267057\n11. *add_column does not modify table.columns? - Google Groups*. http://groups.google.com/g/sqlalchemy-alembic/c/vrofUOaxvh0/m/gTa8GNMbjiUJ\n12. *rollback - Liquibase*. https://docs.liquibase.com/secure/reference-guide-5-1-1/init-update-and-rollback-commands/rollback\n13. *rollback - Liquibase Docs*. http://docs.liquibase.com/commands/rollback/rollback.html\n14. *Migrations - Redgate Flyway - Product Documentation*. https://documentation.red-gate.com/fd/migrations-271585107.html\n15. *Senior Database Administrator @ OCTAGOS HEALTH, INC.*. http://tealhq.com/job/senior-database-administrator_7ea1a8d5f374f011f558c70ec5aea71e17565\n16. *The PARA Method: The Simple System for Organizing Your ...*. https://fortelabs.com/blog/para/\n17. *PARA Method Template for Notion (Building a Second Brain)*. http://thomasjfrank.com/templates/para-method-template-for-notion\n18. *Sayani Dutta*. https://linkedin.com/in/sayaniiiiiii\n19. *Canon Protocol*. http://github.com/canon-protocol\n20. *Medallion Architecture for Data Engineering projects*. http://github.com/somrajroy/medallion\n21. *510(k) Premarket Notification - FDA*. http://accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=k232393\n22. *GitHub - Z3Prover/z3: The Z3 Theorem Prover \u00b7 GitHub*. https://github.com/Z3Prover/z3\n23. *Z3\u00ae Waterline Purification Straw Box of 2*. http://shop.benco.com/Product/5455-045/z3-waterline-purification-straw-box-of-2\n24. *Combining Objectives | Online Z3 Guide - GitHub Pages*. https://microsoft.github.io/z3guide/docs/optimization/combiningobjectives/\n25. *Solomonoff's theory of inductive inference - Wikipedia*. https://en.wikipedia.org/wiki/Solomonoff%27s_theory_of_inductive_inference\n26. *Bayesian information criterion - Wikipedia*. https://en.wikipedia.org/wiki/Bayesian_information_criterion\n27. [[PDF] Understanding AIC and BIC in Model Selection | Multimodel Inference](http://sites.warnercnr.colostate.edu/wp-content/uploads/sites/73/2017/05/Burnham-and-Anderson-2004-SMR.pdf)\n28. *Does Algorithmic Probability Solve the Problem of Induction?*. https://www.raysolomonoff.com/publications/isis96.pdf\n29. *On the criteria to be used in decomposing systems into ...*. https://dl.acm.org/doi/10.1145/361598.361623\n30. *Software Architecture in Practice - Len Bass, Paul Clements ...*. https://books.google.com/books/about/Software_Architecture_in_Practice.html?id=qNnPEAAAQBAJ\n31. *Elementos de software orientado a objetos reutilizable*. http://profeuttec.yolasite.com/resources/Patrones%20de%20dise%C3%B1o%20-%20Erich%20Gamma.pdf\n32. *Design Patterns: Elements of Reusable Object-Oriented Software*. https://www.pearson.com/en-us/subject-catalog/p/design-patterns-elements-of-reusable-object-oriented-software/P200000009480/9780321700698\n33. *On the Criteria to be Used in Decomposing Systems into Modules*. https://link.springer.com/content/pdf/10.1007/978-3-642-59412-0_25.pdf\n34. *Normalization in SQL (1NF - 5NF): A Beginner's Guide*. http://datacamp.com/tutorial/normalization-in-sql\n35. *Ontology evolution as reconfiguration-design problem solving*. https://dl.acm.org/doi/10.1145/945645.945669\n36. *Database Normalization: 1NF, 2NF, 3NF & BCNF Examples*. https://www.digitalocean.com/community/tutorials/database-normalization\n37. *A Component-Based Framework For Ontology Evolution*. https://ceur-ws.org/Vol-71/Klein.pdf\n38. *Development and production | Prisma Documentation*. http://prisma.io/docs/orm/prisma-migrate/workflows/development-and-production\n39. *Migration Operations | Django documentation*. https://docs.djangoproject.com/en/6.0/ref/migration-operations/\n40. *Generating down migrations | Prisma Documentation*. https://www.prisma.io/docs/orm/prisma-migrate/workflows/generating-down-migrations\n41. *Schema migrations with Prisma and Neon - Neon Docs*. http://neon.com/docs/guides/prisma-migrations\n42. *Django migrations RunPython reverse function - Stack Overflow*. https://stackoverflow.com/questions/73839299/django-migrations-runpython-reverse-function\n43. *rollback - Liquibase*. https://docs.liquibase.com/commands/rollback/rollback.html\n44. *Software Engineering Institute - Carnegie Mellon University*. http://sei.cmu.edu/\n45. *Design Patterns: Elements of Reusable Object-Oriented Software*. https://www.pearson.com/en-au/subject-catalog/p/design-patterns-elements-of-reusable-object-oriented-software/P200000009480/9780321700698\n46. *Design Patterns Elements of Reusable Object-Oriented Software*. http://javier8a.com/itc/bd1/articulo.pdf\n47. *Parnas on Modularity | mateuszmarczak*. https://mateuszmarczak.com/blog/2025/10/03/parnas-modularity.html\n48. *SEI Quality Model*. https://quality.arc42.org/articles/sei-quality-model\n49. *How does L1 and L2 regularization prevent overfitting ...*. https://www.geeksforgeeks.org/machine-learning/how-does-l1-and-l2-regularization-prevent-overfitting/\n50. *A Simple Way to Prevent Neural Networks from Overfitting*. http://jmlr.org/papers/v15/srivastava14a.html\n51. *LogisticRegression \u2014 scikit-learn 1.8.0 documentation*. https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html\n52. *Regularization Techniques: L1, L2, Dropout (ML context)*. https://www.sanfoundry.com/regularization-techniques-l1-l2-dropout/\n53. *Dropout: A Simple Way to Prevent Neural Networks from Over tting*. https://www.cs.toronto.edu/~rsalakhu/papers/srivastava14a.pdf\n54. *Z3: Optimize Class Reference - GitHub Pages*. https://z3prover.github.io/api/html/classz3py_1_1_optimize.html\n55. *About Z3*. http://z3controls.com/about.php\n56. *Soft Constraints | Online Z3 Guide - GitHub Pages*. https://microsoft.github.io/z3guide/docs/optimization/softconstraints/\n57. *Z3: optimize Class Reference - GitHub Pages*. https://z3prover.github.io/api/html/classz3_1_1optimize.html\n58. *z3py - z3 optimize and soft constraints - Stack Overflow*. https://stackoverflow.com/questions/77742069/z3-optimize-and-soft-constraints\n59. *Operation Reference \u2014 Alembic 1.18.4 documentation*. https://alembic.sqlalchemy.org/en/latest/ops.html\n60. *Microsoft Word - WPM$2031.doc - CEUR-WS.org*. https://ceur-ws.org/Vol-62/EON2002_Stojanovic.pdf\n61. *Ontology Evolution: Not the Same as Schema Evolution - Springer*. https://link.springer.com/article/10.1007/s10115-003-0137-2\n62. *mv(1) - Linux manual page*. http://man7.org/linux/man-pages/man1/mv.1.html\n63. *Git - git-mv Documentation*. https://git-scm.com/docs/git-mv\n64. *What is Medallion Architecture? - Databricks*. https://www.databricks.com/blog/what-is-medallion-architecture\n65. *Databricks \u2013 AI Adoption*. http://dufrain.co.uk/partnerships/our-databricks-business/databricks-ai-adoption\n66. *Denormalization in Databases: When and How to Use It*. https://www.datacamp.com/tutorial/denormalization\n67. *Learning The Zettelkasten Method is Easy, Actually*. https://noahvnct.substack.com/p/learning-the-zettelkasten-method\n68. *Organize Your Second Brain: How to Use the PARA Method*. http://web-highlights.com/blog/master-your-second-brain-part-1-how-to-use-the-para-method\n69. *Types of Notes - PKM Zettelkasten*. https://zk.zettel.page/types-of-notes\n70. *A No-Nonsense Guide to the PARA Method - Medium*. http://medium.com/practice-in-public/mastering-the-para-method-and-how-to-take-it-to-new-heights-d48afa1d13b0\n71. *First normal form*. http://en.wikipedia.org/wiki/First_normal_form\n72. *What is database normalization? - IBM*. https://www.ibm.com/think/topics/database-normalization\n73. [Data Normalization: The Complete Guide With Examples [2026]](http://cleanlist.ai/blog/2026-04-12-data-normalization-complete-guide)\n74. *Category:Database normalization*. http://en.wikipedia.org/wiki/Category%3ADatabase_normalization\n75. *Software Consulting Services | AI, DevSecOps, Quality | Coveros*. http://coveros.com/services/agile-devops-transformation\n76. *On the criteria to be used in decomposing systems into modules*. https://prl.khoury.northeastern.edu/img/p-tr-1971.pdf\n77. *Software architecture analysis method \u2014 Grokipedia*. https://grokipedia.com/page/software_architecture_analysis_method\n78. *Ontology-Driven GraphRAG: A Framework for Zero-Noise Knowledge Extraction | by Akash Goyal | Medium*. http://medium.com/%40aiwithakashgoyal/beyond-simple-extraction-how-production-grade-ontologies-transform-graphrag-from-prototype-to-333742fa41a6\n79. *Ontology Evolution: Not the Same as Schema Evolution*. https://www.researchgate.net/profile/Michel-Klein/publication/248289911_Ontology_Evolution_Not_the_Same_as_Schema_Evolution/links/00b7d52272abdccdf9000000/Ontology-Evolution-Not-the-Same-as-Schema-Evolution.pdf\n80. *LLM-empowered knowledge graph construction: A survey - arXiv*. http://arxiv.org/html/2510.20345v1\n",
+    "type": "text",
+    "beta_fields": null
+  },
+  "run": {
+    "created_at": "2026-05-21T07:57:04.532934Z",
+    "is_active": false,
+    "modified_at": "2026-05-21T08:19:22.159204Z",
+    "processor": "ultra2x",
+    "run_id": "trun_da4211ace2c14632a9526b843ccf230a",
+    "status": "completed",
+    "error": null,
+    "metadata": {
+      "protocol": "A_STAR",
+      "thread_id": "RQ8-smt-mapping-and-primitives"
+    },
+    "task_group_id": null,
+    "warnings": [
+      {
+        "message": "enable_events unset for ultra2x. Setting to true by default. Consider setting to false explicitly if you do not want to track events for streaming.",
+        "type": "warning",
+        "detail": null
+      }
+    ],
+    "interaction_id": "trun_da4211ace2c14632a9526b843ccf230a"
+  }
+}

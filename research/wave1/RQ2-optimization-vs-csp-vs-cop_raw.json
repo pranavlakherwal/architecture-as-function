@@ -1,0 +1,500 @@
+{
+  "output": {
+    "basis": [
+      {
+        "field": "answer",
+        "reasoning": "",
+        "citations": [
+          {
+            "url": "https://link.springer.com/content/pdf/10.1007/978-3-319-98334-9_38.pdf",
+            "excerpts": [
+              "Many attempts have been made to apply machine learning techniques to constraint satisfaction problems (CSPs). However, none of them have made use of the recent advances in deep learning."
+            ],
+            "title": "Towards Effective Deep Learning for Constraint Satisfaction ..."
+          },
+          {
+            "url": "http://arxiv.org/abs/1903.04671",
+            "excerpts": [
+              "by D Selsam \u00b7 2019 \u00b7 Cited by 191 \u2014 In this work, we train a simplified NeuroSAT architecture to directly predict the unsatisfiable cores of real problems."
+            ],
+            "title": "Guiding High-Performance SAT Solvers with Unsat-Core ..."
+          },
+          {
+            "url": "https://arxiv.org/html/2508.20978v1",
+            "excerpts": [
+              "In this paper, we introduced a neuro-symbolic architecture and a dedicated loss function for learning how to solve discrete reasoning and optimization problems."
+            ],
+            "title": "Efficient Neuro-Symbolic Learning of Constraints & Objective"
+          },
+          {
+            "url": "https://dl.acm.org/doi/10.1145/3716368.3735251",
+            "excerpts": [
+              "To support CDCL solvers in addressing both SAT and UNSAT instances, we propose the framework as shown in Fig. 1 that integrates a neural network with a SAT solver."
+            ],
+            "title": "Enhancing Modern SAT Solver With Machine Learning Method"
+          },
+          {
+            "url": "https://idm-lab.org/bib/abstracts/papers/cp18.pdf",
+            "excerpts": [
+              "Many attempts have been made to apply machine learning techniques to constraint satisfaction problems (CSPs). However, none of them have made use of the recent advances in deep learning. In this paper, we apply deep learning to predict the satis abilities of CSPs."
+            ],
+            "title": "Towards Effective Deep Learning forConstraint Satisfaction ..."
+          },
+          {
+            "url": "https://www.ijcai.org/proceedings/2025/0295.pdf",
+            "excerpts": [
+              "The maximum satisfiability problem (MaxSAT) is a crucial combinatorial optimization problem with widespread applications across various critical do-mains. This paper presents CASHWMaxSAT, an efficient core-guided MaxSAT solver based on two novel ideas."
+            ],
+            "title": "An Efficient Core-Guided Solver for Weighted Partial MaxSAT"
+          },
+          {
+            "url": "http://ppl.stanford.edu/papers/mascots19_dse_slides.pdf",
+            "excerpts": [
+              "Design Space Exploration -- and Its Application to Computer Hardware Engineering - Luigi Nardi, Ph.D. Stanford University @Google, July 30, 2019"
+            ],
+            "title": "Design Space Exploration - Stanford University"
+          },
+          {
+            "url": "https://kindatechnical.com/constraint-programming/lesson-8-constraint-optimization-problems-cop.html",
+            "excerpts": [
+              "Understanding the basics of COPs is essential as they form the foundation for more complex problems in constraint programming. In the next section, we will delve deeper into specific solving techniques and their applications."
+            ],
+            "title": "Lesson 8: Constraint Optimization Problems (COP)"
+          },
+          {
+            "url": "https://dl.acm.org/doi/10.24963/ijcai.2025/295",
+            "excerpts": [
+              "The maximum satisfiability problem (MaxSAT) is a crucial combinatorial optimization problem with widespread applications across various critical domains. This paper presents CASHWMaxSAT, an efficient core-guided MaxSAT solver based on two novel ideas."
+            ],
+            "title": "An efficient core-guided solver for weighted partial MaxSAT"
+          },
+          {
+            "url": "https://www.sciencedirect.com/topics/computer-science/design-space-exploration",
+            "excerpts": [
+              "A comprehensive design exploration model has to locate the optimal amounts of results for different metrics and workloads in a large and high-resolution design space."
+            ],
+            "title": "Design-Space Exploration - an overview | ScienceDirect Topics"
+          },
+          {
+            "url": "http://gepa-ai.github.io/gepa",
+            "excerpts": [
+              "Optimize any text \u2014 prompts, code, agent architectures, configurations \u2014 using LLM-based reflection and Pareto-efficient evolutionary search."
+            ],
+            "title": "Optimize Anything with LLMs - GEPA"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2401.04192",
+            "excerpts": [
+              "Section 2 briefly introduces software architecture optimization methods, as well as the concepts and ter-minology related to the interactive evolutionary computation (IEC) and its application to SBSE."
+            ],
+            "title": "Interactive Multi-Objective Evolutionary Optimization of ..."
+          },
+          {
+            "url": "http://pmc.ncbi.nlm.nih.gov/articles/PMC11728188",
+            "excerpts": [
+              "Combining NSGA - II with neural networks, the approach efficiently identified promising AMP candidates and accurately predicted their antibacterial effectiveness."
+            ],
+            "title": "Multi-Objective Optimization Accelerates the De Novo Design ..."
+          },
+          {
+            "url": "https://www.glarysoft.com/how-to/the-10-most-effective-folder-structure-optimization-strategies-for-windows-systems-2/",
+            "excerpts": [
+              "For intermediate users, refining your folder structure goes beyond simple sorting; it\u2019s about building scalable, intuitive hierarchies and taking advantage of Windows tools. This article presents ten advanced yet practical folder organization strategies, complete with actionable steps and real-world examples."
+            ],
+            "title": "The 10 Most Effective Folder Structure Optimization ..."
+          },
+          {
+            "url": "https://link.springer.com/article/10.1007/s10462-023-10526-z",
+            "excerpts": [
+              "The purpose of this paper is to summarize and explore the literature on NSGA-II and another version called NSGA-III, a reference-point based many-objective NSGA-II approach. In this paper, we first introduce the concept of multi-objective optimization and the foundation of NSGA-II."
+            ],
+            "title": "A comprehensive survey on NSGA-II for multi-objective ..."
+          },
+          {
+            "url": "https://avchauzov.github.io/blog/2025/architecture-design-constraint-satisfaction/",
+            "excerpts": [
+              "Engineers select technologies before defining constraints, but this inverts the design process. The result is predictable: systems that cannot be built within budget, systems the team cannot maintain, or systems that solve the wrong problem."
+            ],
+            "title": "Architecture design: a constraint-satisfaction approach ..."
+          },
+          {
+            "url": "https://www.researchgate.net/publication/345726845_Ontologies_in_Knowledge_Organization",
+            "excerpts": [
+              "Abstract Two perspectives on ontologies coexist in knowledge organization systems spectrum."
+            ],
+            "title": "(PDF) Ontologies in Knowledge Organization - ResearchGate"
+          },
+          {
+            "url": "https://deepwiki.com/Z3Prover/z3/2-core-smt-solver-architecture",
+            "excerpts": [
+              "This document describes the core architecture of Z3's SMT (Satisfiability Modulo Theories) solver. It covers the integration between the SAT (propositional satisfiability) solver and theory solvers, showing how formulas are internalized, propagated, and solved."
+            ],
+            "title": "Core SMT Solver Architecture | Z3Prover/z3 | DeepWiki"
+          },
+          {
+            "url": "http://microsoft.com/en-us/research/project/z3-3",
+            "excerpts": [
+              "SMT solvers rely on a tight integration of specialized engines of proof. Each engine owns a piece of the global puzzle and implements specialized algorithms.\nZ3 is a solver for symbolic logic, a foundation for many software engineering tools."
+            ],
+            "title": "Z3 - Microsoft Research"
+          },
+          {
+            "url": "http://nature.com/articles/s41598-025-21222-z",
+            "excerpts": [
+              "To this end, this paper proposes a knowledge graph -enhanced retrieval generation model (KG- RAG ). By constructing graph neural networks and\nre the versatility and portability of KG, this study constructs custom ontologies (ontology) tailored for specific task domains (such as science Q&A, legal Q&A, medical Q&A), defining common entity types (like \"scholar,\" \"institution,\" \"disease\") and attribute relationships (such as \"research direction,\" \"affiliated unit,\" \"treatment method\"), and supports user-defined extensions\nOntology design and extensibility.\nResearch on the construction and application of retrieval ...\nby S Wang \u00b7 2025 \u00b7 Cited by 6 \u2014 To this end, this paper proposes a knowledge graph -enhanced retrieval generation model (KG- RAG ). By constructing graph neural networks and"
+            ],
+            "title": "Research on the construction and application of retrieval ..."
+          },
+          {
+            "url": "https://link.springer.com/article/10.1007/s00521-024-09960-z",
+            "excerpts": [
+              "Four main features of neuro-symbolic AI are discussed, including representation, learning, reasoning, and decision-making. Finally, we discuss the many applications of neuro-symbolic AI, including question answering, robotics, computer vision, healthcare, and more."
+            ],
+            "title": "Neuro-symbolic artificial intelligence: a survey - Springer"
+          },
+          {
+            "url": "https://github.com/dselsam/neurosat",
+            "excerpts": [
+              "NeuroSAT is an experimental SAT solver that is learned using single-bit supervision only. We train it as a classifier to predict satisfiability of random SAT problems and it learns to search for satisfying assignments to explain that bit of supervision."
+            ],
+            "title": "GitHub - dselsam/neurosat: NeuroSAT: Learning a SAT Solver ..."
+          },
+          {
+            "url": "http://github.com/eth-sri/fastsmt",
+            "excerpts": [
+              "FastSMT is a tool to augment your SMT solver by learning to optimize its performance for your dataset of formulas. Our tool is built on top of Z3 SMT solver"
+            ],
+            "title": "eth-sri/fastsmt: Learning to Solve SMT Formulas Fast - GitHub"
+          },
+          {
+            "url": "http://arxiv.org/abs/1802.03685",
+            "excerpts": [
+              "by D Selsam \u00b7 2018 \u00b7 Cited by 656 \u2014 We present NeuroSAT, a message passing neural network that learns to solve SAT problems after only being trained as a classifier to predict satisfiability."
+            ],
+            "title": "Learning a SAT Solver from Single-Bit Supervision"
+          },
+          {
+            "url": "https://fastsmt.ethz.ch/",
+            "excerpts": [
+              "Augment your SMT solver by learning to optimize its performance for your dataset of formulas. We learned strategies on five different benchmarks AProVE, lepzig, hycomp, core and Sage2. These contain formulas of varying complexity across 3 logics QF_NRA, QF_BV and QF_NIA."
+            ],
+            "title": "FastSMT: Learning to Speed-up SMT Solvers"
+          },
+          {
+            "url": "https://www.academia.edu/57294570/ReMax_A_MaxSAT_aided_Product_Re_Configurator",
+            "excerpts": [
+              "We introduce a product configurator with the ability of optimal re-configuration built on MaxSAT as the background engine. A product configurator supported by a SAT solver can provide an an-swer at any time about which components are selectable and which are not."
+            ],
+            "title": "ReMax \u2013 A MaxSAT aided Product (Re-)Configurator"
+          },
+          {
+            "url": "http://en.wikipedia.org/wiki/HiGHS_optimization_solver",
+            "excerpts": [
+              "HiGHS is open-source software to solve linear programming (LP), mixed-integer programming (MIP), and convex quadratic programming (QP) models."
+            ],
+            "title": "HiGHS optimization solver"
+          },
+          {
+            "url": "https://cdn.aaai.org/AAAI/2006/AAAI06-005.pdf",
+            "excerpts": [
+              "In this paper, we extend Dynamic Backtracking and similar backjumping-based CSP search algorithms to solve WCCSPs by utilizing activity constraints and soft constraints in order to quickly prune infeasible and suboptimal regions of the search space."
+            ],
+            "title": "Extending Dynamic Backtracking to Solve Weighted Conditional CSPs"
+          },
+          {
+            "url": "https://ieeexplore.ieee.org/document/10285116",
+            "excerpts": [
+              "Our MILP approach always yields optimal deployment solutions. A case study is presented to demonstrate the benefits of using repeaters based on the optimal solutions of the MILP."
+            ],
+            "title": "A Mixed-Integer Linear Programming Approach to Deploying Base ..."
+          },
+          {
+            "url": "https://www.researchgate.net/publication/265601520_ReMax_-_A_MaxSAT_aided_product_re-configurator",
+            "excerpts": [
+              "With MaxSAT we can compute the minimal number of changes of component selections to enable the desired component again. We implemented a product configurator \u2014 called ReMax \u2014 using"
+            ],
+            "title": "(PDF) ReMax - A MaxSAT aided product (re-)configurator"
+          },
+          {
+            "url": "http://ilasp.com/",
+            "excerpts": [
+              "Our main system, ILASP (Inductive Learning of Answer Set Programs), which gave the company its name"
+            ],
+            "title": "ILASP"
+          },
+          {
+            "url": "https://csi.pressbooks.pub/lis/chapter/classification/",
+            "excerpts": [
+              "With this system, knowledge is divided into twenty-one broad categories \u2013 labeled A-Z (omitting I, O, W, X, and Y). These categories are then subdivided by adding one or two additional letters and a set of numbers. This alpha-numeric system uses specific subclasses for a variety of the main classes."
+            ],
+            "title": "Classification and Cataloging \u2013 Introduction to Library and ..."
+          },
+          {
+            "url": "https://bloomfire.com/blog/how-to-organize-a-knowledge-base/",
+            "excerpts": [
+              "Master how to organize a knowledge base effectively. Learn best practices for structure, content, and search to boost efficiency & user satisfaction."
+            ],
+            "title": "How to Organize a Knowledge Base: A Step-by-Step Guide"
+          },
+          {
+            "url": "http://beei.org/index.php/EEI/article/download/202/106",
+            "excerpts": [
+              "In field of ontology matching, each node signifies a hypothesis that entity e1i in the first ontology can be matched with an entity e1j in the second ontology and the connection between two nodes corresponds to constraint between their hypotheses."
+            ],
+            "title": "Semantic Constraints Satisfaction Based Improved Quality of ..."
+          },
+          {
+            "url": "http://census.gov/naics?chart=2017&details=541512&input=541512",
+            "excerpts": [
+              "541512 Computer Systems Design Services. This U.S. industry comprises establishments primarily engaged in planning and designing computer systems that"
+            ],
+            "title": "North American Industry Classification System (NAICS) U.S. ..."
+          },
+          {
+            "url": "https://link.springer.com/chapter/10.1007/978-3-031-37189-9_39",
+            "excerpts": [
+              "In this paper, we introduce and evaluate a computational method to support the design of realistic apartment complex layouts with heterogeneous and non-convex building footprints, using constraints based on realistic regulations and custom goals to address design preferences."
+            ],
+            "title": "A Physics-Based Constraint Solver for the Site Layout ..."
+          },
+          {
+            "url": "http://hexaly.com/or-tools",
+            "excerpts": [
+              "Hexaly is more than a traditional Constraint Programming (CP) solver. This is an hybrid between Mixed-Integer Programming (MIP), Non-Linear Programming (NLP), and Constraint Programming (CP)."
+            ],
+            "title": "OR-Tools vs. Hexaly"
+          },
+          {
+            "url": "https://docs.minizinc.dev/en/stable/solvers.html",
+            "excerpts": [
+              "It supports many of MiniZinc\u2019s global constraints natively, and has support for integer, set and float variables. Gecode supports a number of constraints and search annotations that are not part of the MiniZinc standard library."
+            ],
+            "title": "3.5. Solving Technologies and Solver Backends \u2014 The MiniZinc ..."
+          },
+          {
+            "url": "https://openbenchmarking.org/test/pts/z3",
+            "excerpts": [
+              "The Z3 Theorem Prover / SMT solver is developed by Microsoft Research under the MIT license. To run this test with the Phoronix Test Suite, the basic command is: phoronix-test-suite benchmark z3."
+            ],
+            "title": "Z3 Theorem Prover Benchmark - OpenBenchmarking.org"
+          },
+          {
+            "url": "https://microsoft.github.io/z3guide/docs/optimization/intro/",
+            "excerpts": [
+              "This section describes a feature exposed by Z3 that lets users formulate objective functions directly with Z3. Under the hood is a portfolio of approaches for solving linear optimization problems over SMT formulas, MaxSMT, and their combinations."
+            ],
+            "title": "Introduction | Online Z3 Guide - GitHub Pages"
+          },
+          {
+            "url": "https://link.springer.com/article/10.1007/s10664-022-10265-9",
+            "excerpts": [
+              "Our main contribution is an investigation of the performance of off-the-shelf # SAT solvers on computing the number of valid configurations for industrial feature models. We empirically evaluate 21 publicly available # SAT solvers on 130 feature models from 15 subject systems."
+            ],
+            "title": "Evaluating state-of-the-art # SAT solvers on industrial ..."
+          },
+          {
+            "url": "http://docs.timefold.ai/timefold-solver/0.8.x/configuration/configuration",
+            "excerpts": [
+              "Every element in the solver configuration XML is available as a *Config class or a property on a *Config class in the package namespace ai.timefold.solver.core."
+            ],
+            "title": "Timefold configuration | Timefold Solver 0.8.42"
+          },
+          {
+            "url": "https://www.complang.tuwien.ac.at/raab/constraint_solvers.pdf",
+            "excerpts": [
+              "This paper gives an overview on the basics of constraint programming, and then presents various approaches and implementations to the automatic generation of valid software configurations using constraint solvers."
+            ],
+            "title": "Using Constraint Solvers to Find Valid Software Configurations"
+          },
+          {
+            "url": "http://potassco.com/",
+            "excerpts": [
+              "Clingo is a powerful Answer Set Programming (ASP) grounder and solver from the Potassco project, the team led by Prof. Dr. Torsten Schaub at the University of Potsdam.\nOur conflict-driven optimization AI translates your domain knowledge into automated, transparent decisions.\nOur rule-based AI transforms your staffing expertise into automated, transparent decisions.\nWe build custom AI solutions for large organizations facing complex optimization challenges that can't be solved with off-the-shelf software.\nYour rules.\nOur AI.\nThe best decision."
+            ],
+            "title": "Your rules. Our AI. The best decision. - Potassco Solutions"
+          },
+          {
+            "url": "https://link.springer.com/subjects/answer-set-programming-and-knowledge-representation",
+            "excerpts": [
+              "Uncover the latest and most impactful research in Answer Set Programming and Knowledge Representation. Explore pioneering discoveries, insightful ideas and new methods from leading researchers in the field."
+            ],
+            "title": "Answer Set Programming and Knowledge Representation"
+          },
+          {
+            "url": "https://www.cs.uni-potsdam.de/~torsten/hybris.pdf",
+            "excerpts": [
+              "In this tutorial, we describe how both issues are addressed in the ASP system clingo. At first, we outline features of clingo\u2019s application programming inter-face (API) that are essential for multi-shot ASP solving, a technique for dealing with continuously changing logic programs."
+            ],
+            "title": "A Tutorial on Hybrid Answer Set Solving with clingo"
+          },
+          {
+            "url": "https://www.nature.com/nature-index/topics/l4/answer-set-programming-and-knowledge-representation",
+            "excerpts": [
+              "Answer Set Programming (ASP) is a declarative paradigm rooted in logic programming and non-monotonic reasoning, in which problems are encoded as logic programmes whose stable models, or"
+            ],
+            "title": "Answer Set Programming and Knowledge Representation"
+          },
+          {
+            "url": "https://www.cs.utexas.edu/~vl/teaching/378/firmf.pdf",
+            "excerpts": [
+              "This document explains how to use the declarative programming tool clingo, based on the programming method called answer set programming (ASP). This method is oriented towards combinatorial search problems, where the goal is to nd a solution among a large, but nite, number of possibilities."
+            ],
+            "title": "Programming with CLINGO"
+          },
+          {
+            "url": "http://en.wikipedia.org/wiki/Satisfiability_modulo_theories",
+            "excerpts": [
+              "SMT solvers such as Z3 and cvc5 have been used as a building block for a wide range of applications across computer science, including in automated theorem proving, program analysis, program verification, and software testing."
+            ],
+            "title": "Satisfiability modulo theories - Wikipedia"
+          },
+          {
+            "url": "https://www.philipzucker.com/z3-rise4fun/optimization.html",
+            "excerpts": [
+              "Under the hood is a portfolio of approaches for solving linear optimization problems over SMT formulas, MaxSMT, and their combinations. Z3's programmatic API exposes all available optimization features. Follow this link for a tutorial on using optimization features from F#."
+            ],
+            "title": "Objective functions in Z3 - Hey There Buddo!"
+          },
+          {
+            "url": "https://z3prover.github.io/api/html/ml/Z3.Optimize.html",
+            "excerpts": [
+              "Parse an SMT-LIB2 string with assertions, soft constraints and optimization objectives. Add the parsed constraints and objectives to the optimization context. Return the set of asserted formulas on the optimization context. Return objectives on the optimization context."
+            ],
+            "title": "Z3.Optimize - GitHub Pages"
+          },
+          {
+            "url": "https://microsoft.github.io/z3guide/docs/optimization/arithmeticaloptimization/",
+            "excerpts": [
+              "The (maximize t) command instructs check-sat to produce a model that maximizes the value of term t. The type of t must be either Int, Real, or BitVec. The (minimize t) command instructs check-sat to produce a model that minimizes the value of term t."
+            ],
+            "title": "Arithmetical Optimization | Online Z3 Guide - GitHub Pages"
+          },
+          {
+            "url": "https://arxiv.org/abs/2501.05435",
+            "excerpts": [
+              "The inclusion criteria targeted peer-reviewed papers published between 2020 and 2024. Papers were screened for relevance to Neuro-Symbolic AI, with further inclusion based on the availability of associated codebases to ensure reproducibility."
+            ],
+            "title": "[2501.05435] Neuro-Symbolic AI in 2024: A Systematic Review"
+          },
+          {
+            "url": "https://ar5iv.labs.arxiv.org/html/1506.08905",
+            "excerpts": [
+              "Abstract Conflict-Driven Clause-Learning (CDCL) SAT solvers crucially depend on the Variable State Independent Decaying Sum (VSIDS) branching heuristic for their performance. Although VSIDS was proposed nearly fifteen years ago, and many other branching heuristics for SAT solving have since been proposed, VSIDS remains one of the most effective branching heuristics. Despite its widespread use"
+            ],
+            "title": "[1506.08905] Understanding VSIDS Branching Heuristics in ..."
+          },
+          {
+            "url": "http://chandra.ie.cuhk.edu.hk/bio.html",
+            "excerpts": [
+              "research interests and contributions focus on developing ideas, tools, and techniques to address families of combinatorial and non-convex optimization problems, primarily within the information sciences."
+            ],
+            "title": "About \u2013 Prof. Chandra Nair"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2303.01141v3",
+            "excerpts": [
+              "In this work, we present an approach to train neural networks which can enforce a wide variety of constraints and guarantee that the constraint is satisfied by all possible predictions."
+            ],
+            "title": "arXiv:2303.01141v3 [cs.LG] 14 Dec 2023"
+          },
+          {
+            "url": "https://www.sciencedirect.com/science/article/pii/S1574013726000110",
+            "excerpts": [
+              "Gradient-based optimization of integrated neural-symbolic systems would enable end-to-end training of complete neuro-symbolic pipelines, potentially improving both performance and coherence."
+            ],
+            "title": "Neuro-symbolic agentic AI: Architectures, integration ..."
+          },
+          {
+            "url": "https://www.sciencedirect.com/science/article/pii/S0164121216301996",
+            "excerpts": [
+              "This work aims at providing a novel mathematical approach to this problem presenting a queuing theory based Mixed Integer Linear Program (MILP) to find a promising multi-cloud configuration for a given software architecture."
+            ],
+            "title": "A mixed integer linear programming optimization approach for ..."
+          },
+          {
+            "url": "https://dl.acm.org/doi/10.1145/2379776.2379787",
+            "excerpts": [
+              "In the past five years there has been a dramatic increase in work on Search-Based Software Engineering (SBSE), an approach to Software Engineering (SE) in which Search-Based Optimization (SBO) algorithms are used to address problems in SE."
+            ],
+            "title": "Search-based software engineering: Trends, techniques and ..."
+          },
+          {
+            "url": "https://arxiv.org/pdf/2603.24033v2",
+            "excerpts": [
+              "This work aims to improve the efficiency of solving mixed-integer linear programming problems, which may benefit applications such as logistics, scheduling, resource allocation, and energy system optimization."
+            ],
+            "title": "SRG: Score-based Relaxation-guided Generation for Mixed ..."
+          },
+          {
+            "url": "http://highs.dev/",
+            "excerpts": [
+              "HiGHS is high performance serial and parallel software for solving large-scale sparse linear programming (LP), mixed-integer programming (MIP) and quadratic"
+            ],
+            "title": "HiGHS - High-performance parallel linear optimization software"
+          },
+          {
+            "url": "http://pmc.ncbi.nlm.nih.gov/articles/PMC8293838",
+            "excerpts": [
+              "We provide an overview over the methods that use ontologies to compute similarity and incorporate them in machine learning methods; in particular, we outline how semantic similarity measures and ontology embeddings can exploit the background knowledge in ontologies and how ontologies can provide constraints that improve machine learning models."
+            ],
+            "title": "Semantic similarity and machine learning with ontologies - PMC"
+          },
+          {
+            "url": "https://imt-mines-albi.hal.science/hal-03536894/document",
+            "excerpts": [
+              "In this work, we focus on the integration of two formalisms: ontology and Constraint Satisfaction Problem (CSP). The ontology provides a shared understanding of the different items that compose products. It is useful to structure, formalize and capitalize knowledge and reuse it."
+            ],
+            "title": "Integration of Ontologies and Constraint Satisfaction ..."
+          },
+          {
+            "url": "https://pages.cs.wisc.edu/~anhai/papers/glue-vldbj.pdf",
+            "excerpts": [
+              "We introduce relaxation labeling to the ontology-match-ing context, and show that it can be adapted to efficiently exploit a broad range of common knowledge and domain constraints to further improve matching accuracy."
+            ],
+            "title": "Learning to Match Ontologies on the Semantic Web"
+          },
+          {
+            "url": "http://janzz.technology/our-products-and-solutions",
+            "excerpts": [
+              "Discover our proven products and SaaS solutions JANZZon!, JANZZsme!, JANZZ.jobs and JANZZjobsAPI in the areas of ontology and semantic matching."
+            ],
+            "title": "Our Products and Solutions - JANZZ.technology"
+          },
+          {
+            "url": "https://ieeexplore.ieee.org/document/9672918",
+            "excerpts": [
+              "In this work, the domain is a product or system configuration. We focus on ontologies, Constraint Satisfaction Problems (CSPs), and their integration. The aim i"
+            ],
+            "title": "Integration of Ontologies and Constraint Satisfaction ..."
+          }
+        ],
+        "confidence": ""
+      }
+    ],
+    "content": "# Constraint-First Optimization for A* Architecture Decisions\n\n## Executive Summary\n\n- **Hybrid COP/MaxSAT Fits A***: Z3 Optimize supports hard constraints via assert and soft objectives via assert-soft with lexicographic, Pareto, or box priorities Introduction | Online Z3 Guide [40] -> Use a hybrid Constraint Optimization Problem (COP) with MaxSMT in v0.\n- **Hard-Constraint Guarantees Are Non-Negotiable**: SMT/MaxSMT natively enforces integrity constraints and can surface unsat cores for debugging Z3 - Microsoft Research [19] -> Model single-source-of-truth, archival reversibility, and ontology coherence as hard assertions.\n- **Multi-Objective Handling Is Built-In**: Z3 supports lexicographic, Pareto, and box modes for multiple objectives; weights on assert-soft map cleanly to preferences Introduction | Online Z3 Guide [40] -> Start lexicographic; optionally enumerate Pareto slices for operator review.\n- **Discrete Decisions Require Symbolic Reasoning**: Evolutionary MOEAs used in software architecture discard infeasible mutations to enforce constraints Interactive Multi-Objective Evolutionary Optimization of Software Architectures [12] -> Avoid purely continuous or heuristic-first approaches for v0; keep them as adjuncts.\n- **Interpretability Favors Constraint-Based**: Ontology+CSP integration shows how hierarchical structure and rules explain choices, with arc-consistency filtering and compatibility tables Integration of Ontologies and CSP for Product Configuration [63] -> Expose which constraints bind and which soft clauses drive the selected shape.\n- **ILP Works for Quantitative Subproblems**: A MILP model for multi-cloud deployment achieved 50% optimization time reduction and 37% cost reduction vs. heuristics A MILP Approach for Multi-Cloud Capacity Allocation [58] -> Use ILP as a sidecar for numeric routing or capacity sub-decisions.\n- **Solver Maturity Is High at Our Scale**: MiniZinc targets multiple backends (Gecode, Chuffed, OR-Tools, HiGHS, CPLEX, Gurobi) and Z3 is production-grade MiniZinc Solvers [38] Z3 - Microsoft Research [19] -> Expect sub-second to minutes at 5-200 primitives.\n- **Learning-Guided Solving Is a v1 Upgrade**: FastSMT reports up to 100x speedups on Z3 by learning strategies on domain formulas FastSMT [25] -> Plan to learn solver strategies from A* logs if latency becomes a bottleneck.\n- **Closest Adjacent Applications Confirm Feasibility**: MaxSAT-based product (re-)configuration and industrial feature-model SAT evaluations demonstrate viability for discrete configuration problems ReMax Product Re-Configurator [26] Industrial Feature-Model SAT Evaluation [41] -> Adopt config-style modeling of architecture primitives and constraints.\n- **Gap: Direct Folder Hierarchy Optimization**: No paper optimizes folder/naming/persistence end-to-end; ontology and configuration work are adjacent Integration of Ontologies and CSP [63] -> Prototype on AgencyA and refine objectives and soft constraints empirically.\n\n## Family 1: Continuous Optimization - Mature Multi-Objective Tooling, Weak Discrete Guarantee\n\nObservation. Continuous and metaheuristic methods cast design as multi-objective optimization, seeking Pareto frontiers over conflicting quality metrics. Ramirez et al. encode architectures from UML class diagrams and use an interactive MOEA (compared against NSGA-II) to optimize metrics such as ICD, ERP, and GCR; feasibility is preserved by discarding or repairing infeasible mutations Interactive Multi-Objective Evolutionary Optimization of Software Architectures [12]. In deployment and capacity planning, MILP can encode queuing-based constraints and delivers significant speed and cost improvements versus heuristics A MILP Approach for Multi-Cloud Capacity Allocation [58].\n\nMechanism. MOEAs (NSGA-II, MOEA/D) provide native Pareto exploration and interactive steering but treat hard constraints indirectly, via penalty terms, repair operators, or feasibility-preserving encodings. Classical mathematical programming handles constraints exactly when the structure matches linear or convex forms, but many architecture decisions are discrete and symbolic, pushing models toward MIP with big-M or logical encodings.\n\nImplications. For A*, where hard integrity rules must not be violated and outputs are symbolic structures, a continuous-first approach risks silent constraint violations unless wrapped in feasibility repairs or coupled with a symbolic constraint layer. It does, however, shine where quantitative subproblems dominate (e.g., capacity, latency budgets) and for generating interpretable Pareto frontiers for human trade-off.\n\n- Typical formulations: MOEA over discrete encodings; MILP over linearized quantities; RL over learned policies for design actions Interactive MOEA Software Architectures [12] A MILP Approach [58].\n- Maturity: High in engineering; NSGA-II widely surveyed; commercial solvers Gurobi/CPLEX and open-source HiGHS mature for LP/MIP HiGHS [61].\n- Complexity: NP-hard in general for MIP; MOEAs are heuristic with no optimality guarantee; practical at our scale with careful modeling.\n- Interpretability: Pareto plots and metric attributions help; no proof traces for hard infeasibility.\n- Incremental tuning: Retune weights or constraints often requires re-solving; RL retraining is heavier.\n- Adding constraints: Generally requires model refactoring or re-derivation of penalties/encodings.\n\nCase study. Ramirez et al. show iMOEA discovers component partitions with human-in-the-loop preferences but enforces constraints by rejecting unfeasible individuals, not by native proof obligations Interactive MOEA Software Architectures [12]. This makes it a useful exploration aid, not a validator of integrity rules.\n\nStrongest FOR. Best native handling and visualization of multi-objective trade-offs across many candidate structures NSGA-II Survey [15].\n\nStrongest AGAINST. Cannot guarantee hard constraints without auxiliary mechanisms; discrete symbolic structure is awkward for pure continuous formulations Interactive MOEA Software Architectures [12].\n\n## Family 2: Constraint Satisfaction - Native Hard Guarantees, Limited Optimization\n\nObservation. CSP, SAT/SMT, and ASP encode variables over finite domains with logical constraints. SMT extends SAT with background theories (arithmetic, sets), allowing precise statements about structure and quantities. Systems such as Z3 and cvc5 are industrial-strength; MiniZinc offers a modeling layer targeting CP/MIP/SAT backends; clingo provides ASP with optimization statements Z3 - Microsoft Research [19] MiniZinc Solvers [38] Potassco Clingo [44].\n\nMechanism. Hard constraints are first-class; solvers produce models or unsat cores explaining conflicts. Multi-objective optimization is not native in plain SAT/SMT but can be layered: MaxSMT with weighted soft constraints, lexicographic priorities, or external iterative schemes. In knowledge organization, ontologies (hierarchies, types) integrate with CSP to turn concept rules and compatibility tables into enforceable constraints with arc-consistency filtering Integration of Ontologies and CSP [63].\n\nImplications. For A*, mapping integrity rules to assertions yields hard guarantees and explanations for infeasibility. Objectives can be scalarized or handled via MaxSMT in Z3 Optimize. The approach is compositional: adding a new rule means adding a new assertion. This supports operator trust and day-2 evolvability.\n\n- Typical formulations: SAT encodings, SMT over arithmetic and sets, ASP rules, CP models with global constraints.\n- Maturity: High; Z3 widely used across software tooling; MiniZinc targets Gecode, Chuffed, OR-Tools, HiGHS, CPLEX, Gurobi Z3 - Microsoft Research [19] MiniZinc Solvers [38].\n- Complexity: NP-complete in theory; very practical at 5-200 primitives; industrial feature-model analyses confirm scalability Industrial Feature-Model SAT Evaluation [41].\n- Interpretability: Unsat cores, minimal explanations; constraint names serve as rationale.\n- Incremental tuning: Add conjuncts, adjust soft-constraint weights; supports multi-shot solving.\n- Adding constraints: Purely additive; no re-derivation of encodings needed.\n\nCase study. Amini et al. integrate Prot\u00e9g\u00e9 ontologies and CSP by mapping properties to variables and compatibility tables to SWRL rules, then enforcing arc-consistency to filter domains. Ontology captures hierarchy; CSP captures admissible combinations Integration of Ontologies and CSP [63].\n\nStrongest FOR. Native hard-constraint enforcement and explanations build operator trust Z3 - Microsoft Research [19].\n\nStrongest AGAINST. Multi-objective optimization is add-on; without MaxSMT/Optimize layers, support is limited.\n\n## Family 3: Hybrid Constraint Optimization - Hard Constraints Meet Objective Minimization\n\nObservation. Hybrid methods combine CSP/SMT for feasibility with optimization layers for preferences: COP extends CSP by adding an objective function; MaxSAT/MaxSMT introduce soft clauses with weights; MIP handles numeric substructures. Z3 Optimize unifies these by letting users assert hard constraints, assert-soft weighted preferences, and choose lexicographic, Pareto, or box aggregation Introduction | Online Z3 Guide [40] Objective Functions in Z3 [50].\n\nMechanism. In Z3, assert encodes hard constraints; assert-soft encodes soft clauses with optional weights and group IDs; the Optimize module drives lexicographic or Pareto search. Under the hood, Z3 blends Simplex for arithmetic with MaxSAT engines such as Fu-Malik (unweighted) and WPM2/HSMAX (weighted) Objective Functions in Z3 [50]. COP models in MiniZinc compile to FlatZinc for CP/MIP backends (Gecode, Chuffed, OR-Tools, HiGHS, CPLEX, Gurobi) MiniZinc Solvers [38]. MaxSAT has been used in re-configuration to minimize the number of changes while re-enabling feasibility ReMax Product Re-Configurator [26]. Recent IJCAI work advances weighted partial MaxSAT solvers CASHWMaxSAT, IJCAI 2025 [6].\n\nImplications. For A*, encode integrity requirements as hard SMT constraints; express the 9D cost as soft objectives with weights or priorities; let the solver find feasible, minimally violating shapes with explanations. This yields both guarantees and actionable trade-offs.\n\n- Typical formulations: COP with hard feasibility and soft cost; weighted partial MaxSAT; MIP sidecar for numeric routing.\n- Maturity: High and improving; Z3 Optimize is stable; MiniZinc bridges to multiple solvers; MaxSAT solvers continue to improve Introduction | Online Z3 Guide [40] MiniZinc Solvers [38] CASHWMaxSAT, IJCAI 2025 [6].\n- Complexity: NP-hard in general; practical for small to medium instances; strong pruning from constraints.\n- Interpretability: Clear separation of must vs. prefer; unsat cores and objective contributions support explanations.\n- Incremental tuning: Adjust weights, add soft clauses, or promote soft to hard without re-encoding core model.\n- Adding constraints: Add new assert; side-effect confined to feasible set search.\n\nStrongest FOR. Unifies hard guarantees with principled multi-objective optimization in one workflow Introduction | Online Z3 Guide [40].\n\nStrongest AGAINST. Interactions between soft weights and hard constraints can be subtle; requires disciplined modeling and debugging.\n\n## Published Applications to Architecture and Knowledge Organization\n\n- Continuous optimization. Ramirez et al. demonstrate interactive MOEA-based discovery of component architectures from UML, balancing ICD, ERP, and GCR; constraints are enforced by feasibility-preserving mutation or rejection Interactive Multi-Objective Evolutionary Optimization of Software Architectures [12]. Ciavotta et al. formulate multi-cloud deployment as a queuing-theory-based MILP, achieving a 50% reduction in optimization time and 37% cost savings in their study A MILP Approach for Multi-Cloud Capacity Allocation [58]. SBSE surveys document widespread use of MOEAs in software engineering Search-Based Software Engineering Survey [59].\n- CSP. Architecture as constraint satisfaction is argued and structured into objective, boundary, and trade-off layers in practice-focused writing Architecture as Constraint Satisfaction [16]. Ontology+CSP integration maps domain hierarchies and compatibility rules into solvable models with arc-consistency Integration of Ontologies and CSP [63]. Constraint solvers have been surveyed for software configuration Constraint Solvers for Software Configuration [43]. Industrial feature-model studies evaluate SAT scalability on 130 models across 15 systems Industrial Feature-Model SAT Evaluation [41].\n- Hybrid. MaxSAT-based product (re-)configuration computes minimal change sets ReMax Product Re-Configurator [26]. Weighted partial MaxSAT advances core-guided performance CASHWMaxSAT, IJCAI 2025 [6]. Z3 Optimize unifies SMT and multi-objective capabilities Introduction | Online Z3 Guide [40].\n\nHonest gaps. We found no paper that directly optimizes folder hierarchies, naming schemes, and persistence routing as a single problem. Ontology alignment and configuration are closest analogs; library classification remains primarily manual and policy-driven.\n\n## Trade-Off Comparison Table\n\n| Family | Hard-Constraint Enforcement | Multi-Objective Handling | Interpretability | Incremental Tuning | Solver Maturity (5-200 primitives) | Expected Wall-Clock | Human Learning Curve | Agent Learning Curve |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| Continuous Optimization | Poor to Fair - hard constraints via penalties/repairs; MIP exact but modeling is brittle | Excellent - native Pareto fronts (NSGA-II), scalarizations | Fair - Pareto plots, metric attributions; no proof traces | Fair - retune weights, re-solve; RL retraining costly | Good - mature MOEAs and MILP solvers NSGA-II Survey [15] HiGHS [61] | Seconds to hours depending on encoding; MIP scales with integrality | Moderate - understanding Pareto and penalties | Moderate - fitness APIs straightforward |\n| Constraint Satisfaction | Excellent - first-class hard constraints, unsat cores Z3 - Microsoft Research [19] | Fair - requires MaxSMT or external scalarization | Good to Excellent - unsat cores, named constraints | Excellent - add conjuncts; multi-shot solving | Excellent - Z3/MiniZinc used widely MiniZinc Solvers [38] | Sub-second to minutes at this scale | Moderate - constraint modeling mindset | Excellent - Z3Py, MiniZinc APIs |\n| Hybrid COP/MaxSAT | Excellent - hard via assert; soft via assert-soft | Good to Excellent - lexicographic/Pareto/box in Z3 Optimize Z3 Guide [40] | Excellent - must vs prefer separation; objective contributions | Excellent - adjust weights, promote soft to hard | Excellent - Optimize plus CP/MIP backends MiniZinc Solvers [38] | Seconds to minutes; MaxSAT engines efficient CASHWMaxSAT [6] | Moderate - learn hard/soft idioms | Excellent - structured Optimize API |\n\nTakeaways. A* needs uncompromising hard-constraint enforcement and interpretable trade-offs. Hybrid COP/MaxSAT gives both in one workflow. Continuous methods remain useful for exploratory Pareto insight and numeric subproblems but should not anchor v0.\n\n## Neuro-Symbolic and Learning-Guided Constraint Optimization (2020-Present)\n\nObservation. Neuro-symbolic systems augment symbolic solvers with learned guidance or replace parts of the reasoning with differentiable surrogates. NeuroSAT learns a SAT procedure from single-bit supervision, establishing the feasibility of learned search in satisfiability Learning a SAT Solver from Single-Bit Supervision [24]. FastSMT learns solver strategies tailored to datasets of formulas and reports up to 100x speedups relative to a Z3 baseline FastSMT [25]. A systematic review catalogs neuro-symbolic approaches and emphasizes representation, learning, reasoning, and decision-making trends Neuro-symbolic AI: A Survey [21] Neuro-Symbolic AI in 2024: A Systematic Review [53]. Defresne et al. present a differentiable architecture that learns both constraints and objectives via a probabilistic loss, pushing the combinatorial solver out of the training loop for scalability, yet using exact inference at test time on tasks like Sudoku and Min-Cut/Max-Cut Efficient Neuro-Symbolic Learning of Constraints & Objective [3]. Recent work also investigates integrating neural predictors into CDCL SAT solvers to assist branching on both SAT and UNSAT instances Enhancing Modern SAT Solver With Machine Learning Method [4].\n\nApplicability to A*. For domain sizes of 5-200 primitives, classical SMT/MaxSMT will typically be fast enough. However, FastSMT-like strategy learning is attractive for v1 if latency SLOs are missed. Neuro-symbolic learning of constraints/objectives can bootstrap soft-cost shaping from historical operator choices, while keeping Z3 as the enforcement backstop. Embedding a solver in training loops is costly; prefer learning guidance offline and applying it as solver policies at inference time.\n\nRisks. Learned heuristics can misgeneralize; always gate with hard SMT assertions. Keep a fallback to canonical Optimize strategies and track per-instance performance to avoid regressions.\n\n## v0 Recommendation and v1 Evolution Path\n\nv0 functional form (recommended). Hybrid COP/MaxSMT in Z3 Optimize.\n- Decision variables: discrete architectural primitives for folder hierarchy, naming templates, archival policies, and store-routing choices.\n- Hard constraints: integrity assertions for single source of truth, archival reversibility, and folder-level ontology coherence.\n- Soft objectives: 9D cost vector as weighted assert-soft objectives. Start with lexicographic priority reflecting business-criticality; optionally sweep Pareto modes for operator choice Z3 Guide [40].\n- Correlated costs: because the effective rank is 4-5, aggregate redundant metrics or tie-break lexicographically to reduce dominance cycling.\n- Explanations: enable unsat core extraction and tag each soft assertion with human-readable :id for rationale. Summarize per-solution contributions to each cost term.\n- Numeric subproblems: when needed, call an ILP sidecar (e.g., HiGHS/Gurobi) for capacity or cost routing within the same pipeline HiGHS [61] A MILP Approach [58].\n\nOperator workflow. Present 3-7 Pareto-representative solutions with per-constraint satisfaction and per-objective deltas. Allow pinning of substructures and re-solve under these decisions, mirroring interactive MOEA practices but with hard guarantees Interactive MOEA Software Architectures [12].\n\nv1 evolution. Introduce learning-guided strategies and richer soft-cost learning.\n- FastSMT-style policy learning across A* instances to reduce wall-clock FastSMT [25].\n- Preference learning to tune assert-soft weights from operator selections; keep a safety floor of lexicographic priorities.\n- Multi-shot, streaming constraints via clingo multi-shot or Z3 incremental contexts for continuous lifecycles A Tutorial on Hybrid Answer Set Solving with clingo [46].\n\nRedesign triggers. Move to a redesigned v1 when any of the following are true: (1) p95 solve time exceeds SLOs despite strategy learning, (2) operators report inadequate explanations or inability to modify solutions locally, (3) constraint churn forces frequent re-modeling that would be simplified by a different formalism, (4) the problem scale moves beyond a few hundred primitives, suggesting decomposition or specialized encodings.\n\n## Formal Equivalence: A* and S(M,T)\n\nDefine S(M,T) = Product_j gate_j(M,T) * Sum_i w_i * phi_i(M,T) * exp(-beta * H_i).\n\n- Gates as hard constraints. If any gate_j = 0, the configuration is invalid. In A*, this is assert gate_j, i.e., a hard SMT clause. This removes all infeasible M from the search space.\n- Soft objective. Sum_i w_i * phi_i(M,T) corresponds to weighted assert-soft objectives in MaxSMT. Z3 Optimize minimizes or maximizes weighted sums or uses lexicographic priorities over multiple objectives Introduction | Online Z3 Guide [40].\n- Complexity penalty. The factor exp(-beta * H_i) is a monotone transformation of adding beta * H_i as a soft penalty in the objective (since log is monotone): maximizing S is equivalent to minimizing -log S = -Sum_i log(w_i * phi_i) + beta * H_i over feasible M. In practice, one avoids logs by directly adding a soft penalty on H_i with weight beta.\n\nConclusion. S(M,T) is a special case of Hybrid COP/MaxSMT A* where gates are encoded as hard constraints and the scalarized objective combines weighted performance terms with a complexity penalty. If S is kept multiplicative for interpretability, an equivalent additive objective exists under a monotone transform, preserving argmax/argmin equivalence within the feasible set.\n\n## Synthesis: Cross-Cutting Insights and Decision Framework\n\n- Mechanism. Continuous methods explore trade-offs but require surrogate feasibility; CSP/SMT enforces feasibility with explanations; Hybrid COP/MaxSAT composes both. This triad indicates a natural division of labor: use CSP for validity, Optimize for preferences, MOEA/ILP adjuncts for exploration or numeric subproblems.\n- Scope and trade-offs. Continuous covers broad, fuzzy trade spaces; CSP is precise but needs scalarization; Hybrid balances both with moderate modeling complexity. Evidence from architecture MOEAs and deployment MILPs shows gains on quantitative subproblems, while ontology+CSP confirms symbolic structural rules benefit from constraint propagation.\n- Time horizon. v0 must earn trust via guarantees and explanations; v1 can add learned guidance to reduce latency. Learning-guided solvers are promising but remain adjuncts; they do not replace the enforcement layer.\n\nRecommendation. Adopt Hybrid COP/MaxSMT for v0; reserve continuous exploration for optional operator-facing what-ifs; plan a v1 that learns solver strategies and preference weights without weakening hard guarantees.\n\n## Unanswered Questions for AgencyA v0 Testbed\n\n- Objective shaping. Which subset of the 9D costs truly drives operator acceptance? Empirically estimate effective rank and set lexicographic tiers.\n- Weights and priorities. What weight schedules produce stable, interpretable outcomes across intents and lifecycle stages?\n- Explanation UX. Which explanation artifacts (unsat cores, binding constraints, marginal cost deltas) best support operator edits?\n- Incremental edit patterns. How often do operators pin substructures and re-solve? Measure re-solve latencies under multi-shot optimization.\n- Constraint coverage. Do the initial hard constraints fully capture reversibility and ontology coherence, or are additional invariants needed?\n- Store-routing submodel. Does an ILP sidecar outperform pure SMT arithmetic on persistence routing for our data volumes?\n- Generalization across T. Do T_human vs. T_agent_external require different soft-cost priors to achieve acceptance?\n\n## References\n\n1. *Towards Effective Deep Learning for Constraint Satisfaction ...*. https://link.springer.com/content/pdf/10.1007/978-3-319-98334-9_38.pdf\n2. *Guiding High-Performance SAT Solvers with Unsat-Core ...*. http://arxiv.org/abs/1903.04671\n3. *Efficient Neuro-Symbolic Learning of Constraints & Objective*. https://arxiv.org/html/2508.20978v1\n4. *Enhancing Modern SAT Solver With Machine Learning Method*. https://dl.acm.org/doi/10.1145/3716368.3735251\n5. *Towards Effective Deep Learning forConstraint Satisfaction ...*. https://idm-lab.org/bib/abstracts/papers/cp18.pdf\n6. *An Efficient Core-Guided Solver for Weighted Partial MaxSAT*. https://www.ijcai.org/proceedings/2025/0295.pdf\n7. *Design Space Exploration - Stanford University*. http://ppl.stanford.edu/papers/mascots19_dse_slides.pdf\n8. *Lesson 8: Constraint Optimization Problems (COP)*. https://kindatechnical.com/constraint-programming/lesson-8-constraint-optimization-problems-cop.html\n9. *An efficient core-guided solver for weighted partial MaxSAT*. https://dl.acm.org/doi/10.24963/ijcai.2025/295\n10. *Design-Space Exploration - an overview | ScienceDirect Topics*. https://www.sciencedirect.com/topics/computer-science/design-space-exploration\n11. *Optimize Anything with LLMs - GEPA*. http://gepa-ai.github.io/gepa\n12. *Interactive Multi-Objective Evolutionary Optimization of ...*. https://arxiv.org/pdf/2401.04192\n13. *Multi-Objective Optimization Accelerates the De Novo Design ...*. http://pmc.ncbi.nlm.nih.gov/articles/PMC11728188\n14. *The 10 Most Effective Folder Structure Optimization ...*. https://www.glarysoft.com/how-to/the-10-most-effective-folder-structure-optimization-strategies-for-windows-systems-2/\n15. *A comprehensive survey on NSGA-II for multi-objective ...*. https://link.springer.com/article/10.1007/s10462-023-10526-z\n16. *Architecture design: a constraint-satisfaction approach ...*. https://avchauzov.github.io/blog/2025/architecture-design-constraint-satisfaction/\n17. *(PDF) Ontologies in Knowledge Organization - ResearchGate*. https://www.researchgate.net/publication/345726845_Ontologies_in_Knowledge_Organization\n18. *Core SMT Solver Architecture | Z3Prover/z3 | DeepWiki*. https://deepwiki.com/Z3Prover/z3/2-core-smt-solver-architecture\n19. *Z3 - Microsoft Research*. http://microsoft.com/en-us/research/project/z3-3\n20. *Research on the construction and application of retrieval ...*. http://nature.com/articles/s41598-025-21222-z\n21. *Neuro-symbolic artificial intelligence: a survey - Springer*. https://link.springer.com/article/10.1007/s00521-024-09960-z\n22. *GitHub - dselsam/neurosat: NeuroSAT: Learning a SAT Solver ...*. https://github.com/dselsam/neurosat\n23. *eth-sri/fastsmt: Learning to Solve SMT Formulas Fast - GitHub*. http://github.com/eth-sri/fastsmt\n24. *Learning a SAT Solver from Single-Bit Supervision*. http://arxiv.org/abs/1802.03685\n25. *FastSMT: Learning to Speed-up SMT Solvers*. https://fastsmt.ethz.ch/\n26. *ReMax \u2013 A MaxSAT aided Product (Re-)Configurator*. https://www.academia.edu/57294570/ReMax_A_MaxSAT_aided_Product_Re_Configurator\n27. *HiGHS optimization solver*. http://en.wikipedia.org/wiki/HiGHS_optimization_solver\n28. *Extending Dynamic Backtracking to Solve Weighted Conditional CSPs*. https://cdn.aaai.org/AAAI/2006/AAAI06-005.pdf\n29. *A Mixed-Integer Linear Programming Approach to Deploying Base ...*. https://ieeexplore.ieee.org/document/10285116\n30. *(PDF) ReMax - A MaxSAT aided product (re-)configurator*. https://www.researchgate.net/publication/265601520_ReMax_-_A_MaxSAT_aided_product_re-configurator\n31. *ILASP*. http://ilasp.com/\n32. *Classification and Cataloging \u2013 Introduction to Library and ...*. https://csi.pressbooks.pub/lis/chapter/classification/\n33. *How to Organize a Knowledge Base: A Step-by-Step Guide*. https://bloomfire.com/blog/how-to-organize-a-knowledge-base/\n34. *Semantic Constraints Satisfaction Based Improved Quality of ...*. http://beei.org/index.php/EEI/article/download/202/106\n35. *North American Industry Classification System (NAICS) U.S. ...*. http://census.gov/naics?chart=2017&details=541512&input=541512\n36. *A Physics-Based Constraint Solver for the Site Layout ...*. https://link.springer.com/chapter/10.1007/978-3-031-37189-9_39\n37. *OR-Tools vs. Hexaly*. http://hexaly.com/or-tools\n38. *3.5. Solving Technologies and Solver Backends \u2014 The MiniZinc ...*. https://docs.minizinc.dev/en/stable/solvers.html\n39. *Z3 Theorem Prover Benchmark - OpenBenchmarking.org*. https://openbenchmarking.org/test/pts/z3\n40. *Introduction | Online Z3 Guide - GitHub Pages*. https://microsoft.github.io/z3guide/docs/optimization/intro/\n41. *Evaluating state-of-the-art # SAT solvers on industrial ...*. https://link.springer.com/article/10.1007/s10664-022-10265-9\n42. *Timefold configuration | Timefold Solver 0.8.42*. http://docs.timefold.ai/timefold-solver/0.8.x/configuration/configuration\n43. *Using Constraint Solvers to Find Valid Software Configurations*. https://www.complang.tuwien.ac.at/raab/constraint_solvers.pdf\n44. *Your rules. Our AI. The best decision. - Potassco Solutions*. http://potassco.com/\n45. *Answer Set Programming and Knowledge Representation*. https://link.springer.com/subjects/answer-set-programming-and-knowledge-representation\n46. *A Tutorial on Hybrid Answer Set Solving with clingo*. https://www.cs.uni-potsdam.de/~torsten/hybris.pdf\n47. *Answer Set Programming and Knowledge Representation*. https://www.nature.com/nature-index/topics/l4/answer-set-programming-and-knowledge-representation\n48. *Programming with CLINGO*. https://www.cs.utexas.edu/~vl/teaching/378/firmf.pdf\n49. *Satisfiability modulo theories - Wikipedia*. http://en.wikipedia.org/wiki/Satisfiability_modulo_theories\n50. *Objective functions in Z3 - Hey There Buddo!*. https://www.philipzucker.com/z3-rise4fun/optimization.html\n51. *Z3.Optimize - GitHub Pages*. https://z3prover.github.io/api/html/ml/Z3.Optimize.html\n52. *Arithmetical Optimization | Online Z3 Guide - GitHub Pages*. https://microsoft.github.io/z3guide/docs/optimization/arithmeticaloptimization/\n53. [[2501.05435] Neuro-Symbolic AI in 2024: A Systematic Review](https://arxiv.org/abs/2501.05435)\n54. [[1506.08905] Understanding VSIDS Branching Heuristics in ...](https://ar5iv.labs.arxiv.org/html/1506.08905)\n55. *About \u2013 Prof. Chandra Nair*. http://chandra.ie.cuhk.edu.hk/bio.html\n56. [arXiv:2303.01141v3 [cs.LG] 14 Dec 2023](https://arxiv.org/pdf/2303.01141v3)\n57. *Neuro-symbolic agentic AI: Architectures, integration ...*. https://www.sciencedirect.com/science/article/pii/S1574013726000110\n58. *A mixed integer linear programming optimization approach for ...*. https://www.sciencedirect.com/science/article/pii/S0164121216301996\n59. *Search-based software engineering: Trends, techniques and ...*. https://dl.acm.org/doi/10.1145/2379776.2379787\n60. *SRG: Score-based Relaxation-guided Generation for Mixed ...*. https://arxiv.org/pdf/2603.24033v2\n61. *HiGHS - High-performance parallel linear optimization software*. http://highs.dev/\n62. *Semantic similarity and machine learning with ontologies - PMC*. http://pmc.ncbi.nlm.nih.gov/articles/PMC8293838\n63. *Integration of Ontologies and Constraint Satisfaction ...*. https://imt-mines-albi.hal.science/hal-03536894/document\n64. *Learning to Match Ontologies on the Semantic Web*. https://pages.cs.wisc.edu/~anhai/papers/glue-vldbj.pdf\n65. *Our Products and Solutions - JANZZ.technology*. http://janzz.technology/our-products-and-solutions\n66. *Integration of Ontologies and Constraint Satisfaction ...*. https://ieeexplore.ieee.org/document/9672918\n",
+    "type": "text",
+    "beta_fields": null
+  },
+  "run": {
+    "created_at": "2026-05-20T23:21:02.366535Z",
+    "is_active": false,
+    "modified_at": "2026-05-20T23:40:41.560147Z",
+    "processor": "ultra2x",
+    "run_id": "trun_da4211ace2c146328939999ec5d2a587",
+    "status": "completed",
+    "error": null,
+    "metadata": {
+      "protocol": "A_STAR",
+      "thread_id": "RQ2-optimization-vs-csp-vs-cop"
+    },
+    "task_group_id": null,
+    "warnings": [
+      {
+        "message": "enable_events unset for ultra2x. Setting to true by default. Consider setting to false explicitly if you do not want to track events for streaming.",
+        "type": "warning",
+        "detail": null
+      }
+    ],
+    "interaction_id": "trun_da4211ace2c146328939999ec5d2a587"
+  }
+}

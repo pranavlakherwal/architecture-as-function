@@ -1,0 +1,1940 @@
+k_class: outbound-pipeline
+primitives:
+- op: UPDATE_MANIFEST
+  target: .claude
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'Soft objective: manifest reduces c_drift and c_modify.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: .claude
+- op: UPDATE_MANIFEST
+  target: <root>
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'Soft objective: manifest reduces c_drift and c_modify.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: <root>
+- op: UPDATE_MANIFEST
+  target: agents
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: agents
+- op: UPDATE_MANIFEST
+  target: briefs
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'Soft objective: manifest reduces c_drift and c_modify.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: briefs
+- op: UPDATE_MANIFEST
+  target: canon
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: canon
+- op: UPDATE_MANIFEST
+  target: canon/seed_data
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'Soft objective: manifest reduces c_drift and c_modify.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: canon/seed_data
+- op: UPDATE_MANIFEST
+  target: core
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: core
+- op: UPDATE_MANIFEST
+  target: design/css
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: design/css
+- op: UPDATE_MANIFEST
+  target: design/elements/data_presentation
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: design/elements/data_presentation
+- op: UPDATE_MANIFEST
+  target: design/elements/data_visualization
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: design/elements/data_visualization
+- op: UPDATE_MANIFEST
+  target: design/elements/email_brief
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: design/elements/email_brief
+- op: UPDATE_MANIFEST
+  target: design/elements/flow_relationship
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: design/elements/flow_relationship
+- op: UPDATE_MANIFEST
+  target: design/elements/multi_document
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: design/elements/multi_document
+- op: UPDATE_MANIFEST
+  target: design/elements/narrative_structure
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: design/elements/narrative_structure
+- op: UPDATE_MANIFEST
+  target: design/elements/page_chrome
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: design/elements/page_chrome
+- op: UPDATE_MANIFEST
+  target: design/elements/slide_presentation
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: design/elements/slide_presentation
+- op: UPDATE_MANIFEST
+  target: design/templates
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'Soft objective: manifest reduces c_drift and c_modify.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: design/templates
+- op: UPDATE_MANIFEST
+  target: design/tokens
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'Soft objective: manifest reduces c_drift and c_modify.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: design/tokens
+- op: UPDATE_MANIFEST
+  target: gtm
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'Soft objective: manifest reduces c_drift and c_modify.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: gtm
+- op: UPDATE_MANIFEST
+  target: gtm/output
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'Soft objective: manifest reduces c_drift and c_modify.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: gtm/output
+- op: UPDATE_MANIFEST
+  target: gtm/phase0
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'Soft objective: manifest reduces c_drift and c_modify.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: gtm/phase0
+- op: UPDATE_MANIFEST
+  target: gtm/phase1
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'Soft objective: manifest reduces c_drift and c_modify.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: gtm/phase1
+- op: UPDATE_MANIFEST
+  target: gtm/phase2
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: gtm/phase2
+- op: UPDATE_MANIFEST
+  target: gtm/phase3
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'Soft objective: manifest reduces c_drift and c_modify.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: gtm/phase3
+- op: UPDATE_MANIFEST
+  target: gtm/phase4
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'Soft objective: manifest reduces c_drift and c_modify.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: gtm/phase4
+- op: UPDATE_MANIFEST
+  target: gtm/test_campaign
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: gtm/test_campaign
+- op: UPDATE_MANIFEST
+  target: gtm/waterfall
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: gtm/waterfall
+- op: UPDATE_MANIFEST
+  target: gtm/waterfall/agentic
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: gtm/waterfall/agentic
+- op: UPDATE_MANIFEST
+  target: gtm/waterfall/agentic/tests
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: gtm/waterfall/agentic/tests
+- op: UPDATE_MANIFEST
+  target: gtm/waterfall/agentic/triggers
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: gtm/waterfall/agentic/triggers
+- op: UPDATE_MANIFEST
+  target: gtm/waterfall/analytics
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: gtm/waterfall/analytics
+- op: UPDATE_MANIFEST
+  target: gtm/waterfall/analytics/exporters
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: gtm/waterfall/analytics/exporters
+- op: UPDATE_MANIFEST
+  target: gtm/waterfall/analytics/feedback
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: gtm/waterfall/analytics/feedback
+- op: UPDATE_MANIFEST
+  target: gtm/waterfall/analytics/snapshots
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: gtm/waterfall/analytics/snapshots
+- op: UPDATE_MANIFEST
+  target: gtm/waterfall/docs
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'Soft objective: manifest reduces c_drift and c_modify.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: gtm/waterfall/docs
+- op: UPDATE_MANIFEST
+  target: gtm/waterfall/input
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: gtm/waterfall/input
+- op: UPDATE_MANIFEST
+  target: gtm/waterfall/output
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'Soft objective: manifest reduces c_drift and c_modify.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: gtm/waterfall/output
+- op: UPDATE_MANIFEST
+  target: gtm/waterfall/output/archive_c4
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: gtm/waterfall/output/archive_c4
+- op: UPDATE_MANIFEST
+  target: gtm/waterfall/output/c8_artifacts
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: gtm/waterfall/output/c8_artifacts
+- op: UPDATE_MANIFEST
+  target: gtm/waterfall/output/campaign_1_backup
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: gtm/waterfall/output/campaign_1_backup
+- op: UPDATE_MANIFEST
+  target: gtm/waterfall/output/campaign_3_backup
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: gtm/waterfall/output/campaign_3_backup
+- op: UPDATE_MANIFEST
+  target: gtm/waterfall/output/w3_prompts
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: gtm/waterfall/output/w3_prompts
+- op: UPDATE_MANIFEST
+  target: gtm/waterfall/phase_w0
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'Soft objective: manifest reduces c_drift and c_modify.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: gtm/waterfall/phase_w0
+- op: UPDATE_MANIFEST
+  target: gtm/waterfall/phase_w1
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'Soft objective: manifest reduces c_drift and c_modify.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: gtm/waterfall/phase_w1
+- op: UPDATE_MANIFEST
+  target: gtm/waterfall/phase_w2
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'Soft objective: manifest reduces c_drift and c_modify.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: gtm/waterfall/phase_w2
+- op: UPDATE_MANIFEST
+  target: gtm/waterfall/phase_w3
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'Soft objective: manifest reduces c_drift and c_modify.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: gtm/waterfall/phase_w3
+- op: UPDATE_MANIFEST
+  target: gtm/waterfall/phase_w3/prompts
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: gtm/waterfall/phase_w3/prompts
+- op: UPDATE_MANIFEST
+  target: gtm/waterfall/phase_w4
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'Soft objective: manifest reduces c_drift and c_modify.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: gtm/waterfall/phase_w4
+- op: UPDATE_MANIFEST
+  target: gtm/waterfall/phase_w5
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: gtm/waterfall/phase_w5
+- op: UPDATE_MANIFEST
+  target: gtm/waterfall/phase_wu
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: gtm/waterfall/phase_wu
+- op: UPDATE_MANIFEST
+  target: gtm/waterfall/phase_wu/data
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: gtm/waterfall/phase_wu/data
+- op: UPDATE_MANIFEST
+  target: gtm/waterfall/phase_wu/data/cache
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'Soft objective: manifest reduces c_drift and c_modify.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: gtm/waterfall/phase_wu/data/cache
+- op: UPDATE_MANIFEST
+  target: gtm/waterfall/phase_wu/data/out
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: gtm/waterfall/phase_wu/data/out
+- op: UPDATE_MANIFEST
+  target: gtm/waterfall/phase_wu/data/out/post_migration_apr17
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: gtm/waterfall/phase_wu/data/out/post_migration_apr17
+- op: UPDATE_MANIFEST
+  target: gtm/waterfall/phase_wu/data/pruned
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: gtm/waterfall/phase_wu/data/pruned
+- op: UPDATE_MANIFEST
+  target: gtm/waterfall/phase_wu/discover
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: gtm/waterfall/phase_wu/discover
+- op: UPDATE_MANIFEST
+  target: gtm/waterfall/phase_wu/discover/sources
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: gtm/waterfall/phase_wu/discover/sources
+- op: UPDATE_MANIFEST
+  target: gtm/waterfall/phase_wu/io
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'Soft objective: manifest reduces c_drift and c_modify.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: gtm/waterfall/phase_wu/io
+- op: UPDATE_MANIFEST
+  target: gtm/waterfall/phase_wu/lookalike
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: gtm/waterfall/phase_wu/lookalike
+- op: UPDATE_MANIFEST
+  target: gtm/waterfall/phase_wu/people
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: gtm/waterfall/phase_wu/people
+- op: UPDATE_MANIFEST
+  target: gtm/waterfall/phase_wu/signals
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: gtm/waterfall/phase_wu/signals
+- op: UPDATE_MANIFEST
+  target: gtm/waterfall/phase_wv
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'Soft objective: manifest reduces c_drift and c_modify.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: gtm/waterfall/phase_wv
+- op: UPDATE_MANIFEST
+  target: output
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'Soft objective: manifest reduces c_drift and c_modify.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: output
+- op: UPDATE_MANIFEST
+  target: output/ds_company_profile_20260302_122018
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'Soft objective: manifest reduces c_drift and c_modify.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: output/ds_company_profile_20260302_122018
+- op: UPDATE_MANIFEST
+  target: output/ds_company_profile_20260302_122018/iter_01
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: output/ds_company_profile_20260302_122018/iter_01
+- op: UPDATE_MANIFEST
+  target: output/ds_company_profile_20260302_122100
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'Soft objective: manifest reduces c_drift and c_modify.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: output/ds_company_profile_20260302_122100
+- op: UPDATE_MANIFEST
+  target: output/ds_company_profile_20260302_122100/iter_01
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: output/ds_company_profile_20260302_122100/iter_01
+- op: UPDATE_MANIFEST
+  target: output/showcase
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'Soft objective: manifest reduces c_drift and c_modify.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: output/showcase
+- op: UPDATE_MANIFEST
+  target: protocols
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: protocols
+- op: UPDATE_MANIFEST
+  target: results
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'Soft objective: manifest reduces c_drift and c_modify.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: results
+- op: UPDATE_MANIFEST
+  target: results/OGV-BEIP-001_v2
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: results/OGV-BEIP-001_v2
+- op: UPDATE_MANIFEST
+  target: results/OGV-BEIP-001_v2/deliverables
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'Soft objective: manifest reduces c_drift and c_modify.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: results/OGV-BEIP-001_v2/deliverables
+- op: UPDATE_MANIFEST
+  target: results/OGV-BMAT-001
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'Soft objective: manifest reduces c_drift and c_modify.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: results/OGV-BMAT-001
+- op: UPDATE_MANIFEST
+  target: results/OGV-BMAT-001/deliverables
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: results/OGV-BMAT-001/deliverables
+- op: UPDATE_MANIFEST
+  target: results/OGV-DESIGN-002_v2
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: results/OGV-DESIGN-002_v2
+- op: UPDATE_MANIFEST
+  target: results/OGV-JLL-001
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: results/OGV-JLL-001
+- op: UPDATE_MANIFEST
+  target: results/OGV-PGOLF-001_v2
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: results/OGV-PGOLF-001_v2
+- op: UPDATE_MANIFEST
+  target: results/OGV-SEMI-001
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: results/OGV-SEMI-001
+- op: UPDATE_MANIFEST
+  target: results/OGV-SEMI-001/deliverables
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: results/OGV-SEMI-001/deliverables
+- op: UPDATE_MANIFEST
+  target: results/OGV-SEMI-001/synthesis
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: results/OGV-SEMI-001/synthesis
+- op: UPDATE_MANIFEST
+  target: results/OGV-SEQ-001_v3
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: results/OGV-SEQ-001_v3
+- op: UPDATE_MANIFEST
+  target: results/OGV-SEQ-001_v3/deliverables
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: results/OGV-SEQ-001_v3/deliverables
+- op: UPDATE_MANIFEST
+  target: results/OGV-SMC-001-E
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: results/OGV-SMC-001-E
+- op: UPDATE_MANIFEST
+  target: results/OGV-SMC-001-E/deliverables
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: results/OGV-SMC-001-E/deliverables
+- op: UPDATE_MANIFEST
+  target: results/OGV-SMC-001_v2
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: results/OGV-SMC-001_v2
+- op: UPDATE_MANIFEST
+  target: results/OGV-SMC-001_v2/deliverables
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: results/OGV-SMC-001_v2/deliverables
+- op: UPDATE_MANIFEST
+  target: results/OGV-SMC-001_v2/extracted
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: results/OGV-SMC-001_v2/extracted
+- op: UPDATE_MANIFEST
+  target: results/OGV-SMC-001_v2/plans
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: results/OGV-SMC-001_v2/plans
+- op: UPDATE_MANIFEST
+  target: results/OGV-SMC-001_v2/renders
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: results/OGV-SMC-001_v2/renders
+- op: UPDATE_MANIFEST
+  target: results/OGV-SMI-001
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: results/OGV-SMI-001
+- op: UPDATE_MANIFEST
+  target: results/OGV-SMI-001/P1
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: results/OGV-SMI-001/P1
+- op: UPDATE_MANIFEST
+  target: results/OGV-SMI-001/P2
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: results/OGV-SMI-001/P2
+- op: UPDATE_MANIFEST
+  target: results/OGV-SMI-001/extracted
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: results/OGV-SMI-001/extracted
+- op: UPDATE_MANIFEST
+  target: results/OGV-SMI-001/synthesis
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: results/OGV-SMI-001/synthesis
+- op: UPDATE_MANIFEST
+  target: results/OGV-SMI-001/synthesis/L6
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: results/OGV-SMI-001/synthesis/L6
+- op: UPDATE_MANIFEST
+  target: results/OGV-SST-001_v2
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: results/OGV-SST-001_v2
+- op: UPDATE_MANIFEST
+  target: results/OGV-SST-001_v2/deliverables
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'Soft objective: manifest reduces c_drift and c_modify.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: results/OGV-SST-001_v2/deliverables
+- op: UPDATE_MANIFEST
+  target: results/P0P-ICP-001
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: results/P0P-ICP-001
+- op: UPDATE_MANIFEST
+  target: results/P0P-ICP-001/fonts
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: results/P0P-ICP-001/fonts
+- op: UPDATE_MANIFEST
+  target: results/PT-GTM-001-S1_v2
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: results/PT-GTM-001-S1_v2
+- op: UPDATE_MANIFEST
+  target: results/PT-GTM-001_v2
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: results/PT-GTM-001_v2
+- op: UPDATE_MANIFEST
+  target: scripts
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: scripts
+- op: UPDATE_MANIFEST
+  target: tests
+  inputs:
+    create_with_template: true
+    required_fields:
+    - scope
+    - exclusions
+    - allowed_artifact_types
+    - owner
+    - lifecycle_status
+    - required_metadata
+    - outbound_relations
+    - review_cadence
+    - retention
+  rationale: 'IC3: stable boundary requires manifest.'
+  inverse:
+    op: DELETE_MANIFEST
+    target: tests
+- op: SET_SOURCE_OF_TRUTH
+  target: design/elements/data_presentation
+  inputs:
+    scope: delivery_proof
+  rationale: 'IC1: canonical assignment for scope `delivery_proof`.'
+  inverse:
+    op: SET_SOURCE_OF_TRUTH
+    target: <previous_owner>
+    inputs:
+      scope: delivery_proof
+- op: SET_SOURCE_OF_TRUTH
+  target: gtm/test_campaign
+  inputs:
+    scope: sequence_state
+  rationale: 'IC1: canonical assignment for scope `sequence_state`.'
+  inverse:
+    op: SET_SOURCE_OF_TRUTH
+    target: <previous_owner>
+    inputs:
+      scope: sequence_state
+- op: ARCHIVE_FOLDER
+  target: gtm/output
+  inputs:
+    retention_window: see_manifest
+  rationale: Moved to archive namespace per K-class policy.
+  inverse:
+    op: RESTORE_FOLDER
+    target: gtm/output
+- op: ARCHIVE_FOLDER
+  target: gtm/waterfall/output
+  inputs:
+    retention_window: see_manifest
+  rationale: Moved to archive namespace per K-class policy.
+  inverse:
+    op: RESTORE_FOLDER
+    target: gtm/waterfall/output
+- op: ARCHIVE_FOLDER
+  target: gtm/waterfall/phase_wu/data/cache
+  inputs:
+    retention_window: see_manifest
+  rationale: Moved to archive namespace per K-class policy.
+  inverse:
+    op: RESTORE_FOLDER
+    target: gtm/waterfall/phase_wu/data/cache
+- op: ARCHIVE_FOLDER
+  target: output
+  inputs:
+    retention_window: see_manifest
+  rationale: Moved to archive namespace per K-class policy.
+  inverse:
+    op: RESTORE_FOLDER
+    target: output
+- op: ARCHIVE_FOLDER
+  target: results
+  inputs:
+    retention_window: see_manifest
+  rationale: Moved to archive namespace per K-class policy.
+  inverse:
+    op: RESTORE_FOLDER
+    target: results
+- op: SCHEDULE_DESTRUCTION
+  target: <root>
+  inputs:
+    policy: sanitize
+    deadline_relative: +30d
+    approval_required: true
+  rationale: 'IC2: secret-at-rest must rotate or purge.'
+  inverse:
+    op: CANCEL_DESTRUCTION
+    target: <root>
+diagnostics:
+  solver_status: sat
+  objective_values:
+    folders_total: 110
+    manifests_required: 103
+    scheduled_destruction: 1
+    archived: 8
+    canonical_assignments: 2
+  primitive_count: 111
+  primitive_op_distribution:
+    UPDATE_MANIFEST: 103
+    SCHEDULE_DESTRUCTION: 1
+    ARCHIVE_FOLDER: 5
+    SET_SOURCE_OF_TRUTH: 2

@@ -1,0 +1,16 @@
+{
+  "wave": 3,
+  "launched_at": "2026-05-21T07:57:04.198493+00:00",
+  "threads": {
+    "RQ7-deletion-irreversibility": {
+      "run_id": "trun_da4211ace2c14632bc08fe5d25458dbe",
+      "status": "completed",
+      "finished_at": "2026-05-21T08:15:43.103656+00:00"
+    },
+    "RQ8-smt-mapping-and-primitives": {
+      "run_id": "trun_da4211ace2c14632a9526b843ccf230a",
+      "status": "completed",
+      "finished_at": "2026-05-21T08:19:44.879928+00:00"
+    }
+  }
+}

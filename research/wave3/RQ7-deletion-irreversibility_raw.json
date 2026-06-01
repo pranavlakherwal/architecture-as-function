@@ -1,0 +1,818 @@
+{
+  "output": {
+    "basis": [
+      {
+        "field": "answer",
+        "reasoning": "",
+        "citations": [
+          {
+            "url": "https://restic.readthedocs.io/en/latest/060_forget.html",
+            "excerpts": [
+              "Removing backup snapshots All backup space is finite, so restic allows removing old snapshots. This can be done either manually (by specifying a snapshot ID to remove) or by using a policy that describes which snapshots to forget. For all remove operations, two commands need to be called in sequence: forget to remove snapshots, and prune to remove the remaining data that was referenced only by"
+            ],
+            "title": "Removing backup snapshots \u2014 restic 0.18.1-dev documentation"
+          },
+          {
+            "url": "https://www.amazon.com/s3/features/object-lock",
+            "excerpts": [
+              "Nov 23, 2022 \u2014 S3 Object Lock provides two ways to manage object retention: retention periods and legal holds. With S3 Object Lock enabled on a bucket, an object version can"
+            ],
+            "title": "Amazon S3 Object Lock"
+          },
+          {
+            "url": "http://cdw.com/content/cdw/en/brand/object-first.html",
+            "excerpts": [
+              "Ransomware-proof and immutable out-of-the-box, Ootbi by Object First delivers secure, simple and powerful backup storage for Veeam customers."
+            ],
+            "title": "Object First | Backup Storage Solutions"
+          },
+          {
+            "url": "https://www.sentinelone.com/cybersecurity-101/cybersecurity/immutable-backups/",
+            "excerpts": [
+              "In each case, immutable backups would have provided a recovery path independent of ransom negotiations. The technical mechanism is straightforward: WORM technology allows data to be written to storage media a single time and prevents that data from being erased or modified until a predetermined retention period expires."
+            ],
+            "title": "What Are Immutable Backups? Autonomous Ransomware Protection"
+          },
+          {
+            "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock.html",
+            "excerpts": [
+              "When an object is locked in compliance mode, its retention mode can't be changed, and its retention period can't be shortened. Compliance mode helps ensure that an object version can't be overwritten or deleted for the duration of the retention period."
+            ],
+            "title": "Locking objects with Object Lock - Amazon Simple Storage Service"
+          },
+          {
+            "url": "http://clickhouse.com/docs/guides/developer/ttl",
+            "excerpts": [
+              "This can be implemented by adding a GROUP BY clause to your TTL expression, along with some columns in your table to store the aggregated results. Suppose in"
+            ],
+            "title": "Manage data with TTL (Time-to-live) | ClickHouse Docs"
+          },
+          {
+            "url": "http://docs.kurrent.io/server/v26.0/features/streams",
+            "excerpts": [
+              "When you delete a stream, KurrentDB offers two options: soft delete or hard delete. ... Tombstone events are appended with the event type $streamDeleted"
+            ],
+            "title": "Event streams - Kurrent Docs"
+          },
+          {
+            "url": "https://docs.confluent.io/kafka/design/log_compaction.html",
+            "excerpts": [
+              "Describes how log compaction works for Apache Kafka, and how to configure it at a high level."
+            ],
+            "title": "Kafka Log Compaction | Confluent Documentation"
+          },
+          {
+            "url": "https://letsbuildsolutions.com/blog/system-design/designing-a-soft-delete-and-data-lifecycle-system/",
+            "excerpts": [
+              "This article walks through every layer of a production soft-delete system, from the tombstone schema through the hard-delete scheduler to the GDPR conflict resolution."
+            ],
+            "title": "Designing a Soft-Delete and Data Lifecycle System: Tombstones ..."
+          },
+          {
+            "url": "https://github.com/giteshsarvaiya/crdt-foundation-implementation/blob/main/(2)%202p-set/README.md",
+            "excerpts": [
+              "Solution: There is no clean solution within the CRDT model. To garbage-collect a tombstone, you need to know every replica has received it \u2014 which requires coordination (a protocol called \"stable causal garbage collection\")."
+            ],
+            "title": "crdt-foundation-implementation/ (2) 2p-set/README.md ... - GitHub"
+          },
+          {
+            "url": "http://edpb.europa.eu/system/files/2025-01/edpb_guidelines_202501_pseudonymisation_en.pdf",
+            "excerpts": [
+              "Finally, the contribution of pseudonymisation to data protection by design and default, and the assurance of a level of security appropriate to risk may make other measures redundant \u2013 even though pseudonymisation alone will normally not be a sufficient measure for either."
+            ],
+            "title": "Adopted on 16 January 2025 Guidelines - edpb.europa.eu"
+          },
+          {
+            "url": "http://nortonrosefulbright.com/de-de/wissen/publications/ad5f304c/schrems-ii-landmark-ruling-a-detailed-analysis",
+            "excerpts": [
+              "... the landmark case Data Protection Commissioner v Facebook Ireland Ltd, Maximilian Schrems and intervening parties, Case C-311/18 (known as the Schrems II case)."
+            ],
+            "title": "Schrems II landmark ruling: A detailed analysis"
+          },
+          {
+            "url": "https://www.edpb.europa.eu/our-work-tools/our-documents/publication-type/guidelines_en",
+            "excerpts": [],
+            "title": "Guidelines | European Data Protection Board"
+          },
+          {
+            "url": "https://www.aigovhub.io/guides/gdpr-eu-us-data-transfers-post-schrems-ii-guide-2026",
+            "excerpts": [
+              "This guide provides a practical framework for businesses to navigate GDPR-compliant EU-US data transfers following the Schrems II ruling. Learn how to conduct Transfer Impact Assessments, implement supplementary measures, and leverage compliance tools to mitigate risks in 2026 and beyond."
+            ],
+            "title": "GDPR EU-US Data Transfers: Schrems II Compliance Guide 2026 ..."
+          },
+          {
+            "url": "http://garanteprivacy.it/i-miei-diritti/diritti/oblio",
+            "excerpts": [
+              "Il cosiddetto diritto \" all ' oblio \" si configura come un diritto alla cancellazione dei propri dati personali in forma rafforzata. Si prevede, infatti, l'obbligo"
+            ],
+            "title": "Diritto all'oblio"
+          },
+          {
+            "url": "https://committee.iso.org/sites/tc46sc11/home/projects/published/disposition.html",
+            "excerpts": [
+              "The Technical Specification includes detailed guidelines on retention periods, disposition processes and authorities, and destruction requirements. This fills a gap, as no previous SC11 publication offered practical guidance on the disposition of records."
+            ],
+            "title": "Disposition - committee.iso.org"
+          },
+          {
+            "url": "http://marquette.edu/mupd/documents/records_maintenance_and_release.pdf",
+            "excerpts": [
+              "Managing the records management system for the Department, including the retention, archiving, release and destruction of department public records."
+            ],
+            "title": "Records Maintenance and Release"
+          },
+          {
+            "url": "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/501502p.pdf",
+            "excerpts": [
+              "Records, regardless of media or security classification, will be created, maintained and used, disposed, and preserved to document the transaction of business and mission in wartime and peacetime."
+            ],
+            "title": "DoDI 5015.02, February 24, 2015, Incorporating Change 1 on ..."
+          },
+          {
+            "url": "http://avta.com/downloads/meetings/bod/2024/03262024-agenda.pdf",
+            "excerpts": [
+              "CC 3 DESTRUCTION OF AVTA RECORDS - PAULINA HURLEY\nCC 3 DESTRUCTION OF AVTA RECORDS \u2013 PAULINA HURLEY. Recommendation: In accordance with AVTA's Record Retention Policy, authorize the."
+            ],
+            "title": "[PDF] Regular Meeting of the Board of Directors Tuesday, March 26, 2024 ..."
+          },
+          {
+            "url": "https://csrc.nist.gov/pubs/sp/800/88/r2/final",
+            "excerpts": [
+              "Media sanitization refers to a process that renders access to target data on the media infeasible for a given level of effort. This guide will assist organizations and system owners in setting up a media sanitization program with proper and applicable techniques and controls for sanitization and disposal based on the sensitivity of their information."
+            ],
+            "title": "SP 800-88 Rev. 2, Guidelines for Media Sanitization | CSRC"
+          },
+          {
+            "url": "http://probackup.io/blog/gdpr-and-backups-how-to-handle-deletion-requests",
+            "excerpts": [
+              "When you receive a valid deletion request, you should delete the data from your live systems immediately. For backup data, document the earliest point at which the backup containing that data will expire or be overwritten, and communicate this to the data subject."
+            ],
+            "title": "GDPR and Backups: How to Handle Deletion Requests in 2026"
+          },
+          {
+            "url": "https://www.onenoughtone.com/learn/crdts/5",
+            "excerpts": [
+              "By the end of this page, you will understand tombstone accumulation and garbage collection, metadata overhead, semantic limitations, operational challenges, and practical mitigation strategies."
+            ],
+            "title": "CRDTs (Conflict-free Replicated Data Types) - Page 5 of 5"
+          },
+          {
+            "url": "http://github.com/orda-io",
+            "excerpts": [
+              "Orda-js: A typescript/javascript library for orda project. CRDT-based data synchronization supporting document database."
+            ],
+            "title": "Orda"
+          },
+          {
+            "url": "https://slack.com/trust/compliance/gdpr",
+            "excerpts": [
+              "On this page, we explain how we help our customers comply with the GDPR. The GDPR\u2019s updated requirements are significant and our global team has adapted Slack\u2019s product offerings, operations and contractual commitments to help our customer comply with the regulation."
+            ],
+            "title": "Slack's GDPR Commitment | Legal"
+          },
+          {
+            "url": "https://docs.github.com/en/code-security/concepts/secret-security/secret-leakage-risks",
+            "excerpts": [
+              "Secret sprawl occurs when credentials proliferate across repositories, teams, and systems without centralized management or visibility. This makes it difficult to track which secrets exist, where they're used, and whether they've been exposed."
+            ],
+            "title": "Secret leakage risks - GitHub Docs"
+          },
+          {
+            "url": "https://www.oag.ca.gov/privacy/ccpa",
+            "excerpts": [
+              "Right to delete: You can request that businesses delete personal information they collected from you and tell their service providers to do the same, subject to certain exceptions (such as if the business is legally required to keep the information)."
+            ],
+            "title": "California Consumer Privacy Act (CCPA) | State of California ..."
+          },
+          {
+            "url": "https://www.pcicompliance.com/pci-data-retention/",
+            "excerpts": [
+              "Learn how to comply with PCI DSS by maintaining secure cardholder data retention policies and minimize risk with data minimization techniques."
+            ],
+            "title": "Optimize PCI Data Retention for Cardholder Security"
+          },
+          {
+            "url": "https://www.hhs.gov/hipaa/for-professionals/faq/disposal-of-protected-health-information/index.html",
+            "excerpts": [
+              "How should home health workers or other workforce members of a covered entity dispose of protected health information that they use off of the covered entity\u2019s premises?"
+            ],
+            "title": "Disposal of Protected Health Information - HHS.gov"
+          },
+          {
+            "url": "http://privacyworld.blog/2021/03/consumers-right-to-delete-under-us-state-privacy-laws",
+            "excerpts": [
+              "The CCPA and CPRA require businesses to confirm receipt of a deletion request within 10 business days"
+            ],
+            "title": "Consumers' \"Right to Delete\" under US State Privacy Laws"
+          },
+          {
+            "url": "http://docs.evervault.com/compliance/pci-compliance",
+            "excerpts": [
+              "PCI Compliance\nHow Evervault helps reduce PCI DSS scope and cost while enabling secure collection and use of cardholder da\nHow Evervault helps reduce PCI DSS scope and cost while enabling secure collection and use of cardholder data."
+            ],
+            "title": "Evervault PCI Compliance Documentation"
+          },
+          {
+            "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng/",
+            "excerpts": [
+              "This regulation outlines the General Data Protection Regulation (GDPR) in the European Union, providing guidelines for personal data protection and privacy."
+            ],
+            "title": "Regulation - 2016/679 - EN - gdpr - EUR-Lex"
+          },
+          {
+            "url": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/data-sharing/anonymisation/",
+            "excerpts": [
+              "Due to the Data (Use and Access) Act coming into law on 19 June 2025, this guidance is under review and may be subject to change. The Plans for new and updated guidance page will tell you about which guidance will be updated and when this will happen. Why have you produced this guidance? What is this guidance about? Who is this guidance for?"
+            ],
+            "title": "Anonymisation | ICO"
+          },
+          {
+            "url": "http://gdpr.eu/right-to-be-forgotten",
+            "excerpts": [
+              "Also known as the right to erasure, the GDPR gives individuals the right to ask organizations to delete their personal data."
+            ],
+            "title": "Everything you need to know about the \"Right to be forgotten\""
+          },
+          {
+            "url": "https://www.edpb.europa.eu/our-work-tools/our-documents/recommendations/recommendations-012020-measures-supplement-transfer_en",
+            "excerpts": [
+              "See the First version of this publication drafted before public consultation."
+            ],
+            "title": "Recommendations 01/2020 on measures that supplement ... - Europa"
+          },
+          {
+            "url": "https://gdpr-info.eu/art-17-gdpr/",
+            "excerpts": [
+              "The data subject shall have the right to obtain from the controller the erasure of personal data concerning him or her without undue delay and the controller shall have the obligation to erase personal data without undue delay where one of the following grounds applies:"
+            ],
+            "title": "Art. 17 GDPR Right to erasure (\u2018right to be forgotten\u2019)"
+          },
+          {
+            "url": "https://california.public.law/codes/civil_code_section_1798.105",
+            "excerpts": [
+              "A business that collects personal information about consumers shall disclose, pursuant to Section 1798.130, the consumer\u2019s rights to request the deletion of the consumer\u2019s personal information."
+            ],
+            "title": "California Civil Code section 1798.105 (2025)"
+          },
+          {
+            "url": "http://calmatters.digitaldemocracy.org/hearings/278917",
+            "excerpts": [
+              "Apr 6, 2026 \u2014 When California enacted the CCPA, our state set the standard for privacy. The right to delete was one of its core pillars, the idea that Californians could"
+            ],
+            "title": "Senate Standing Committee on Privacy, Digital Technologies ..."
+          },
+          {
+            "url": "http://cppa.ca.gov/announcements/2025/20250909.html",
+            "excerpts": [
+              "Sep 9, 2025 \u2014 ... protect Californians' privacy,\" said Tom Kemp, the CPPA's Executive Director.\nSep 9, 2025 \u2014 ... Tom Kemp, the CPPA's Executive Director. Websites can track and amass personal information and behavioral data like pages visited, time spent on pages\nSep 9, 2025 \u2014 ... protect Californians' privacy,\" said Tom Kemp, the CPPA's Executive Director."
+            ],
+            "title": "http://cppa.ca.gov/announcements/2025/20250909.html"
+          },
+          {
+            "url": "https://cppa.ca.gov/announcements/2025/20251113.html",
+            "excerpts": [
+              "The new regulations, which take effect January 1, 2026, describe how Californians can submit a delete request through CalPrivacy\u2019s new Delete Request and Opt-out Platform (DROP) and how data brokers must retrieve and process these requests."
+            ],
+            "title": "California Approves Delete Act Regulations - cppa.ca.gov"
+          },
+          {
+            "url": "http://trust.versapay.com/",
+            "excerpts": [
+              "PCI DSS Attestations of Compliance \u00b7 Cash Application 2026 PCI DSS AoC-SP v4_0_1.pdf \u00b7 Versapay Payment Technology Solutions, Inc, 2026 PCI DSS AoC-SP v4_0_1.pdf."
+            ],
+            "title": "Versapay: Trust Center"
+          },
+          {
+            "url": "https://www.ecfr.gov/current/title-17/chapter-II/part-210/subject-group-ECFR2f5dcb24c1c571e/section-210.2-06",
+            "excerpts": [
+              "(1) Are created, sent or received in connection with the audit or review, and (2) Contain conclusions, opinions, analyses, or financial data related to the audit or review."
+            ],
+            "title": "17 CFR 210.2-06 -- Retention of audit and review records."
+          },
+          {
+            "url": "https://www.pcisecuritystandards.org/document_library/",
+            "excerpts": [
+              "The Document Library includes a framework of specifications, tools, measurements and support resources to help organizations ensure the safe handling of cardholder information at every step."
+            ],
+            "title": "PCI Security Standards Council \u2013 Protect Payment Data with ..."
+          },
+          {
+            "url": "http://hhs.texas.gov/regulations/legal-information/hipaa-privacy-laws",
+            "excerpts": [
+              "The HIPAA privacy rule establishes national standards protecting medical records and other personal health information."
+            ],
+            "title": "HIPAA and Privacy Laws | Texas Health and Human Services"
+          },
+          {
+            "url": "http://help.fiery.com/Security/en-us/45266125_Fiery_Security_WhitePaper_FS700_en-us.pdf",
+            "excerpts": [
+              "FIPS 140-2\nISO/IEC 27001 (FS700 Pro only)\nNIST 800-88. Guidelines for Media Sanitization (FS700 Pro only)"
+            ],
+            "title": "Security White Paper"
+          },
+          {
+            "url": "https://www.iso.org/standard/62542.html",
+            "excerpts": [
+              "ISO 15489-1:2016 applies to the creation, capture and management of records regardless of structure or form, in all types of business and technological environments, over time."
+            ],
+            "title": "ISO 15489-1:2016 - Information and documentation \u2014 Records ..."
+          },
+          {
+            "url": "http://noord-holland.nl/bestanden/pdf/Brochure_Eisen_Digitaal_Depot.pdf",
+            "excerpts": [
+              "De NEN-ISO 15489 is bedoeld voor het informatiemanagement en de NEN-ISO 27001 voor de beveiligingsaspecten daarvan."
+            ],
+            "title": "[PDF] ED3 Eisen Duurzaam Digitaal Depot - Provincie Noord-Holland"
+          },
+          {
+            "url": "http://www.oais.info/",
+            "excerpts": [
+              "The Reference Model for an Open Archival Information System (OAIS) (version 3), also known as ISO 14721:2025 is a fundamental standard in digital preservation."
+            ],
+            "title": "Home | OAIS Reference Model (ISO 14721)"
+          },
+          {
+            "url": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/individual-rights/right-to-erasure/",
+            "excerpts": [],
+            "title": "Page not found | ICO"
+          },
+          {
+            "url": "http://princegeorgescountymd.gov/departments-offices/police/bureaus-police-stations/bureau-administration/records-management-division",
+            "excerpts": [
+              "The Records Management Division receives, stores, releases, and disposes departmental records in accordance with the records retention schedule."
+            ],
+            "title": "Records Management Division"
+          },
+          {
+            "url": "https://interoperable-europe.ec.europa.eu/sites/default/files/inline-files/OS15(1).pdf",
+            "excerpts": [
+              "ID OS15 Initiative MoReq2010 Short description The MoReq2 specification is intended for users and suppliers of electronic rec. rds management systems and services, and educators. Its main intended usages are to serve as a basis for invitations to tender (also known as requests for proposal) and as a framework to guide devel."
+            ],
+            "title": "MoReq2010, Modular Requirements for Records Systems - Joinup"
+          },
+          {
+            "url": "http://douglascountyga.gov/440/Records-Management",
+            "excerpts": [
+              "Resources. View the Records Destruction Authorization and Certificate Form (DOC). View the State's Record Retention Schedule for Courts (PDF)."
+            ],
+            "title": "Records Management | Douglas County, GA"
+          },
+          {
+            "url": "http://sec.gov/rules-regulations/2003/01/retention-records-relevant-audits-reviews",
+            "excerpts": [
+              "Retention of Records Relevant to Audits and Reviews - SEC.gov\nThe required retention of audit and review records should discourage the destruction, and assist in the availability, of records that may be relevant to"
+            ],
+            "title": "Retention of Records Relevant to Audits and Reviews - SEC.gov"
+          },
+          {
+            "url": "https://pathlock.com/learn/sox-data-retention-requirements/",
+            "excerpts": [
+              "This guide will break down SOX data retention requirements, helping you implement policies safeguarding your organization\u2019s financial integrity and legal standing."
+            ],
+            "title": "SOX Compliance Data Retention Requirements - pathlock.com"
+          },
+          {
+            "url": "https://www.sec.gov/files/rules/final/33-8180.htm",
+            "excerpts": [
+              "To coordinate with forthcoming auditing standards concerning the retention of audit documentation, the rule requires that these records be retained for seven years after the auditor concludes the audit or review of the financial statements, rather than the proposed period of five years from the end of the fiscal period in which an audit or"
+            ],
+            "title": "Final Rule: Retention of Records Relevant to Audits and Reviews"
+          },
+          {
+            "url": "http://learn.microsoft.com/en-us/compliance/regulatory/offering-sec-docs",
+            "excerpts": [
+              "Jun 6, 2025 \u00b7 This alternative uses modern cloud service features such as retention, versioning, and robust audit log data to help reconstruct particular versions of records."
+            ],
+            "title": "Securities and Exchange Commission (SEC) Rule 17a-4, SEC Rule ..."
+          },
+          {
+            "url": "http://northwoodtech.edu/about/safety-and-security/consumer-disclosures",
+            "excerpts": [
+              "Privacy of Student Education Records Policy (Administrative Policy J-113) \u00b7 Records, Retention and Destruction Policy \u00b7 Red Flag Rule \u2013 Student Identity Theft"
+            ],
+            "title": "Consumer Disclosures"
+          },
+          {
+            "url": "https://datadestruction.com/pci-dss-financial-institutions-secure-data-destruction-requirements-in-2025/",
+            "excerpts": [
+              "For financial institutions, the most critical requirements for secure data destruction include: 3.2.1: Limit data retention to legal/business needs. Implement automated deletion and quarterly verification to ensure no unnecessary cardholder data (CHD) or sensitive authentication data (SAD) is stored."
+            ],
+            "title": "PCI DSS Data Destruction For Banks: 2025 Secure Disposal Guide"
+          },
+          {
+            "url": "http://middlebury.edu/sites/default/files/2025-01/PCI-DSS-v4_0_1.pdf?fv=AKHVQBp6",
+            "excerpts": [
+              "Jun 1, 2024 \u2014 This document, the Payment Card Industry Data Security Standard Requirements and Testing Procedures , consists of the 12 PCI DSS principal"
+            ],
+            "title": "PCI-DSS-v4_0_1.pdf"
+          },
+          {
+            "url": "http://riskcognizance.com/framework/pci-dss-v4.0",
+            "excerpts": [
+              "Provide guidance to customer users when passwords are the only authentication factor for accessing cardholder data. Requirements for Passwords/Passphrases"
+            ],
+            "title": "PCI DSS v4.0 | Risk Cognizance GRC"
+          },
+          {
+            "url": "https://pcidssguide.com/what-are-the-pci-dss-data-retention-and-disposal-requirements/",
+            "excerpts": [
+              "Requirement 3.1 of the Payment Card Industry Data Security Standard (DSS) requires organizations to retain and follow data retention and disposal procedures. The purpose of the data storage and destruction procedure is to ensure that records no longer needed are deleted promptly and adequately."
+            ],
+            "title": "What are the PCI DSS Data Retention and Disposal Requirements?"
+          },
+          {
+            "url": "http://pcisecuritystandards.org/about_us/press_releases/securing-the-future-of-payments-pci-ssc-publishes-pci-data-security-standard-v4-0",
+            "excerpts": [
+              ". PCI DSS v4.0 replaces version 3.2.1 to address emerging threats and technologies and enable innovative methods to combat new threats.\n. The updated standard and Summary of Changes document are available now on the [PCI SSC website\nOnce assessors have completed training in PCI DSS v4.0, organizations may assess to either PCI DSS v4.0 or PCI DSS v3.2.1.\nTo provide organizations time to understand the changes in version 4.0 and implement any updates needed, the current version of PCI DSS, v3.2.1, will remain active for two years until it is retired on 31 March 2024."
+            ],
+            "title": "Securing the Future of Payments: PCI SSC Publishes PCI Data Security Standard v4.0 - PCI Security Standards Council"
+          },
+          {
+            "url": "https://www.loc.gov/standards/premis/",
+            "excerpts": [
+              "The PREMIS Data Dictionary for Preservation Metadata is the international standard for metadata to support the preservation of digital objects and ensure their long-term usability."
+            ],
+            "title": "PREMIS: Preservation Metadata Maintenance Activity (Library ..."
+          },
+          {
+            "url": "http://ibacz.eu/wp-content/uploads/2019/10/produktovy%CC%81-list_iba-eng_eda-1.pdf",
+            "excerpts": [
+              "The system is based on the OAIS reference model and implements functions defined in accordance with EU Directive No. 910/2014"
+            ],
+            "title": "The Electronic Digital Archive"
+          },
+          {
+            "url": "http://loc.gov/standards/premis/premis-mets.html",
+            "excerpts": [
+              "Information about the use of preservation metadata as defined by PREMIS in the administrative metadata section of METS documents."
+            ],
+            "title": "Using PREMIS with METS"
+          },
+          {
+            "url": "https://www.loc.gov/standards/premis/v3/",
+            "excerpts": [
+              "The PREMIS Data Dictionary and its supporting documentation is a comprehensive, practical resource for implementing preservation metadata in digital archiving systems. The Data Dictionary is built on a data model that defines four entities: Objects, Events, Rights, and Agents."
+            ],
+            "title": "PREMIS Data Dictionary for Preservation Metadata, Version 3.0"
+          },
+          {
+            "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r2.pdf",
+            "excerpts": [],
+            "title": "Fetched web page"
+          },
+          {
+            "url": "https://clickhouse.com/docs/observability/managing-data",
+            "excerpts": [
+              "Implementing TTL in ClickHouse allows for automatic expiration and deletion of older data, ensuring that the storage is optimally used and performance is maintained without manual intervention."
+            ],
+            "title": "Managing data - ClickHouse Docs"
+          },
+          {
+            "url": "http://mendral.com/privacy",
+            "excerpts": [
+              "Customer Logs storage (ClickHouse Cloud)\nWe store Customer Logs in **ClickHouse Cloud** for **up to 3 months** , then delete or de-identify them in accordance with our retention practices described b"
+            ],
+            "title": "Privacy Policy | Mendral"
+          },
+          {
+            "url": "http://docs.confluent.io/kafka/design/log_compaction.html",
+            "excerpts": [
+              "Log compaction is a mechanism to provide finer-grained per-record retention instead of coarser-grained time-based retention."
+            ],
+            "title": "Kafka Log Compaction"
+          },
+          {
+            "url": "https://oneuptime.com/blog/post/2026-01-21-clickhouse-retention-policies/view",
+            "excerpts": [
+              "A comprehensive guide to setting up automatic data retention policies in ClickHouse using TTL expressions and partition management for efficient data lifecycle management."
+            ],
+            "title": "How to Set Up Automatic Data Retention Policies in ClickHouse"
+          },
+          {
+            "url": "https://www.ninjaone.com/blog/how-to-test-backups-and-prove-restores/",
+            "excerpts": [
+              "Learn how MSPs can test backup and restore processes, automate recovery validation, and track results to improve reliability and client confidence."
+            ],
+            "title": "How to Test Backups and Prove Restores - NinjaOne"
+          },
+          {
+            "url": "http://msp360.com/backup/windows-server-backup-software",
+            "excerpts": [
+              "MSP360 offers two key features for validating backups: Restore Verification, which tests recoverability, and Consistency Check, which confirms that all backed-\u00a0..."
+            ],
+            "title": "Windows Server Backup Software - MSP360"
+          },
+          {
+            "url": "http://gdpr-text.com/read/article-17",
+            "excerpts": [
+              "1. The data subject shall have the right to obtain from the controller the erasure of personal data concerning him or her without undue delay."
+            ],
+            "title": "Article 17 \ud83d\udcd6 GDPR. Right to erasure ('right to be forgotten')"
+          },
+          {
+            "url": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/individual-rights/individual-rights/right-to-erasure/?id=15",
+            "excerpts": [
+              "Do we have to erase personal data from backup systems? If a valid erasure request is received and no exemption applies then you will have to take steps to ensure erasure from backup systems as well as live systems."
+            ],
+            "title": "Right to erasure | ICO"
+          },
+          {
+            "url": "http://4tempus.com/",
+            "excerpts": [
+              "IT Asset Disposition (ITAD) is the process of securely disposing of outdated or unwanted IT assets. Our services ensure that data is wiped clean and devices are recycled responsibly.\nSecure data destruction processes (R2v3, ISO 9001, ISO 14001)."
+            ],
+            "title": "Tempus | Secure IT Asset Disposition & Electronics Recycling"
+          },
+          {
+            "url": "http://azion.com/en/documentation/architectures/compliance/governance-risk-compliance",
+            "excerpts": [
+              "Compliant infrastructure: Azion's platform is fully compliant with PCI DSS v4.0.1 Level 1 Service Provider and SOC 2 Type II, providing customers with a secure,"
+            ],
+            "title": "Strengthen Governance, Risk, and Compliance in Your ..."
+          },
+          {
+            "url": "http://nuvancehealth.org/sites/default/files/PDF%20Files/Compliance%20Pages/Policies%20and%20Procedures/Compliance%20Policies/Document%20Retention%20and%20Destruction%20Policy%20and%20Procedure.pdf",
+            "excerpts": [
+              "This Document Retention and Destruction Policy (the \"Policy\") establishes consistent and comprehensive guidelines for Document/record creation, retention, security, disposal and archiving for Nuvance Health"
+            ],
+            "title": "Document Retention and Destruction Policy and Procedure"
+          },
+          {
+            "url": "https://arxiv.org/abs/2012.07805",
+            "excerpts": [
+              "It has become common to publish large (billion parameter) language models that have been trained on private datasets. This paper demonstrates that in such settings, an adversary can perform a training data extraction attack to recover individual training examples by querying the language model."
+            ],
+            "title": "Extracting Training Data from Large Language Models"
+          },
+          {
+            "url": "https://slack.com/trust/privacy/privacy-faq",
+            "excerpts": [
+              "On the free version of Slack, you\u2019ll have the option to choose whether messages and files are deleted after 90 days, or whether messages and files (including edits) are kept for a year."
+            ],
+            "title": "Privacy FAQs | Legal | Slack"
+          },
+          {
+            "url": "https://docs.github.com/en/code-security/concepts/secret-security/about-secret-scanning",
+            "excerpts": [
+              "Secret scanning scans your entire Git history on all branches of your repository for hardcoded credentials, including API keys, passwords, tokens, and other known secret types."
+            ],
+            "title": "About secret scanning - GitHub Docs"
+          },
+          {
+            "url": "http://slack.com/trust/compliance",
+            "excerpts": [
+              "We've organized our compliance resources so you can demonstrate Slack's ability to meet your organization's requirements."
+            ],
+            "title": "Resources for compliance | Slack"
+          },
+          {
+            "url": "http://docs.gitguardian.com/platform/gitguardian-suite/api",
+            "excerpts": [
+              "Programmatically manage their GitGuardian workspace and handle their incidents lifecycle; Scan additional data sources for hardcoded secrets"
+            ],
+            "title": "API | GitGuardian documentation"
+          },
+          {
+            "url": "https://clickhouse.com/docs/guides/developer/ttl",
+            "excerpts": [],
+            "title": "Overview of TTL\u200b"
+          },
+          {
+            "url": "https://www.postgresql.org/docs/current/routine-vacuuming.html",
+            "excerpts": [],
+            "title": "PostgreSQL: Documentation: 18: 24.1.\u00a0Routine Vacuuming"
+          },
+          {
+            "url": "https://docs.kurrent.io/server/v26.0/features/streams",
+            "excerpts": [],
+            "title": "Event streams | Kurrent Docs"
+          },
+          {
+            "url": "https://github.com/ChinmayLokare/crdt-distributed-systems-project",
+            "excerpts": [
+              "This project implements a prototype of a stability-aware metadata compaction mechanism for Conflict-Free Replicated Data Types (CRDTs). The goal is to address the problem of unbounded metadata growth in distributed collaborative systems."
+            ],
+            "title": "GitHub - ChinmayLokare/crdt-distributed-systems-project"
+          },
+          {
+            "url": "https://github.com/Jovancoding/Network-AI/discussions/44",
+            "excerpts": [
+              "Tombstone Deletes delete () records a deleted: true tombstone so deletions propagate correctly through merge () and sync () to all nodes."
+            ],
+            "title": "v3.7.0 \u2014 Phase 5 Part 4: CRDT Vector-Clock ... - GitHub"
+          },
+          {
+            "url": "http://db.cs.berkeley.edu/cs286/papers/crdt-tr2011.pdf",
+            "excerpts": [
+              "We call these types Convergent or Commutative Replicated Data Types (CRDTs). This paper formalises asynchronous object replication, either state based or op-eration based, and provides a sufficient condition appropriate for each case."
+            ],
+            "title": "A comprehensive study of Convergent and Commutative ..."
+          },
+          {
+            "url": "http://github.com/Supersynergy/synapse",
+            "excerpts": [
+              "Single-file Rust agent memory format \u2014 BM25 + vector + temporal KG + CRDT + Ed25519-signed distribution"
+            ],
+            "title": "Supersynergy/synapse: One file. Your AI's entire memory. ..."
+          },
+          {
+            "url": "https://www.linkedin.com/pulse/soft-delete-hard-tombstones-akash-gautam-mb1ic",
+            "excerpts": [
+              "What \u201cDelete\u201d Really Means in Modern Systems Most developers think deletion is simple. You either: Remove the row (hard delete), or Mark it deleted (soft delete)."
+            ],
+            "title": "Soft Delete, Hard Delete, and Tombstones: - LinkedIn"
+          },
+          {
+            "url": "https://www.c-sharpcorner.com/article/efficient-soft-delete-models-without-query-degradation-in-sql-server-a-practic/",
+            "excerpts": [
+              "Optimize SQL Server soft-delete models for high-volume OLTP systems. Learn strategies to avoid query degradation using filtered indexes, views, and archiving for peak performance."
+            ],
+            "title": "Efficient Soft-Delete Models Without Query Degradation in SQL ..."
+          },
+          {
+            "url": "http://cloud.google.com/storage",
+            "excerpts": [
+              "Cloud Storage | Google Cloud\nObject Versioning. Continue to store old copies of objects when they are deleted or overwritten. Soft delete. Soft delete offers improved protection"
+            ],
+            "title": "Cloud Storage | Google Cloud"
+          },
+          {
+            "url": "http://pve.proxmox.com/pve-docs/chapter-vzdump.html",
+            "excerpts": [
+              "Proxmox VE backups are always full backups - containing the VM/CT\nconfiguration and all data. Backups can be started via the GUI or via\nthe vzdump command-line tool.\nProxmox VE backups are always full backups - containing the VM/CT configuration and all data. Backups can be started via the GUI or via the vzdump command-line\nRefer to the storage documentation on how to add a storage. It can either be a Proxmox Backup Server storage, where backups are stored as de-duplicated\nUse snapshot mode (no downtime) and non-default dump directory. # vzdump 777 --dumpdir /mnt/backup --mode snapshot. Backup more than one guest (selectively)."
+            ],
+            "title": "Backup and Restore"
+          },
+          {
+            "url": "https://www.amazon.com/AmazonS3/latest/userguide/object-lock.html",
+            "excerpts": [
+              "S3 Object Lock can help prevent Amazon S3 objects from being deleted or overwritten for a fixed amount of time or indefinitely. Object Lock uses a"
+            ],
+            "title": "Locking objects with Object Lock - Amazon Simple Storage Service"
+          },
+          {
+            "url": "https://docs.oracle.com/cd/E19253-01/819-5461/gbcya/index.html",
+            "excerpts": [
+              "Holding a snapshot prevents it from being destroyed. In addition, this feature allows a snapshot with clones to be deleted pending the removal of the last clone by using the zfs destroy-d command. Each snapshot has an associated user-reference count, which is initialized to zero."
+            ],
+            "title": "Creating and Destroying ZFS Snapshots - Oracle"
+          },
+          {
+            "url": "https://docs.oracle.com/en/operating-systems/oracle-linux/9/btrfs/btrfs-DeletingSnapshotsoftherootFileSystem.html",
+            "excerpts": [
+              "To delete a snapshot, do the following: Mount the top level of the file system. Use the btrfs subvolume delete command to delete the snapshot. The list of subvolumes relative to the root file system now doesn't include snapshots/root-snapshot1."
+            ],
+            "title": "Deleting Snapshots of the root File System - docs.oracle.com"
+          },
+          {
+            "url": "http://help.msp360.com/cloudberry-backup/backup/about-backups/object-lock/feature-types",
+            "excerpts": [
+              "Object Lock feature is supported for the following storage providers: Amazon S3 \u00b7 Wasabi \u00b7 Backblaze B2; Microsoft Azure; Google Cloud; IDribe\nThis chapter describes support for the Object Lock feature in Backup Agent. Use the Object Lock feature with extreme caution. Once backup data\nUse the Object Lock feature with extreme caution. Once backup data becomes immutable in Compliance mode, it cannot be deleted from storage until"
+            ],
+            "title": "MSP360 Object Lock Feature Types"
+          },
+          {
+            "url": "https://docs.aws.amazon.com/amazonglacier/latest/dev/vault-lock.html",
+            "excerpts": [],
+            "title": "Amazon Glacier Vault Lock"
+          },
+          {
+            "url": "https://cloud.google.com/storage/docs/soft-delete",
+            "excerpts": [],
+            "title": "Soft delete \u00a0|\u00a0 Cloud Storage \u00a0|\u00a0 Google Cloud Documentation"
+          },
+          {
+            "url": "https://www.loc.gov/standards/premis/v3/preservation-events.pdf",
+            "excerpts": [
+              "A review of the controlled vocabulary for preservation events has been undertaken, with requests for new events and suggestions for edits and changes to existing events."
+            ],
+            "title": "Preservation Events Controlled Vocabulary - Library of Congress"
+          },
+          {
+            "url": "https://wiki.lib.sun.ac.za/images/c/c5/Premis-3-0-datadictionary-only.pdf",
+            "excerpts": [
+              "The PREMIS Data Dictionary includes semantic units for Objects, Events, Agents, and Rights. The template for each entry includes a place for notes about how to create or use the semantic unit."
+            ],
+            "title": "Data Dictionary Only: PREMIS Data Dictionary for Preservation ..."
+          },
+          {
+            "url": "https://www.hathitrust.org/documents/hathitrust-premis-recommendations.pdf",
+            "excerpts": [
+              "Event ID must be unique for the object e001.1 (Unique id within repository is doi for the volume plus event id. Event could be at object level or file level)."
+            ],
+            "title": "PREMIS RECOMMENDATIONS - HathiTrust"
+          },
+          {
+            "url": "http://cidoc.ics.forth.gr/docs/guidelines/guidedis.htm",
+            "excerpts": [
+              "Dates of both deaccession and disposal are required to ensure that the object was formally deaccessioned and also to show that disposal actually took place. This information is not repeated in a record as an object is only deaccessioned and disposed of once."
+            ],
+            "title": "CIDOC Guidelines: Deaccession and Disposal Information Group"
+          },
+          {
+            "url": "https://premis-event-service.readthedocs.io/en/latest/configuration.html",
+            "excerpts": [
+              "The Premis Event Service will work without fully fleshed out controlled vocabularies, and the authors have worked to give examples with reasonable values which can be added to or modified to meet local needs."
+            ],
+            "title": "Configuration \u2014 PREMIS Event Service 1.0 documentation"
+          },
+          {
+            "url": "http://openrouter.ai/docs/guides/features/input-output-logging",
+            "excerpts": [
+              ": Prompt and response data is stored in an isolated Google Cloud Storage project with separate access controls. All data is encrypted at rest using Google Cloud's [default encryption](h\nInpu\nAccount owners can request deletion of their stored data at any time by contacting [support@openrouter.a\nPrompt and response data is stored in an isolated Google Cloud Storage project with separate access controls. All data is encrypted at rest using Google Cloud's [default encryption](\nRetention**: Data is retained for a minimum of 3 months, and may be retained beyond 3 months at OpenRouter's discretion unless you request deletio\ntention**: Data is retained for a minimum of 3 months, and may be retained beyond 3 months at OpenRouter's discretion unless you request deletion."
+            ],
+            "title": "Input & Output Logging"
+          },
+          {
+            "url": "https://www.middlebury.edu/sites/default/files/2025-01/PCI-DSS-v4_0_1.pdf?fv=AKHVQBp6",
+            "excerpts": [
+              "1 Introduction and PCI Data Security Standard Overview The Payment Card Industry Data Security Standard (PCI DSS) was developed to encourage and enhance payment account data security and facilitate the broad adoption of consistent data security measures globally. PCI DSS provides a baseline of technical and operational requirements designed to protect account data. While specifically designed"
+            ],
+            "title": "Payment Card Industry Data Security Standard - Middlebury"
+          },
+          {
+            "url": "http://marketplace.oracle.com/media/86486017/other/Partner_Validation_Report_Aurus_STSGen2.pdf",
+            "excerpts": [
+              "The AurusPay\u2122 platform is PCI-DSS v4.0.1, P2PE v3.1,. PCI PIN v3.1, PCI SLC v1.1, PCI CPoC v1.1 and HSM Level-3 FIPS140-2"
+            ],
+            "title": "Partner Validation Report"
+          },
+          {
+            "url": "https://www.myctrl.tools/frameworks/pci-dss-v4/3-2-1",
+            "excerpts": [
+              "A process for verifying, at least once every three months, that stored account data exceeding the defined retention period has been securely deleted or rendered unrecoverable."
+            ],
+            "title": "3.2.1\u2014Account data storage is kept to a minimum through ..."
+          },
+          {
+            "url": "https://www.pcisecuritystandards.org/standards/pci-dss/",
+            "excerpts": [
+              "PCI DSS provides a baseline of technical and operational requirements designed to protect payment account data. Read more about the Standard and its supporting documentation in the PCI SSC Document Library."
+            ],
+            "title": "PCI Security Standards Council \u2013 Protect Payment Data with ..."
+          },
+          {
+            "url": "https://www.iso.org/standard/87471.html",
+            "excerpts": [
+              "The reference model addresses a full range of archival information preservation functions including ingest, archival storage, data management, access, and dissemination."
+            ],
+            "title": "ISO 14721:2025 - Space Data System Practices \u2014 Reference ..."
+          },
+          {
+            "url": "http://archives.nysed.gov/sites/archives/files/lgs-1-2022.pdf",
+            "excerpts": [
+              "The current local government retention and disposition schedule, LGS-1, allows destruction of recordings of meetings subject to the Open"
+            ],
+            "title": "[PDF] lgs-1-2022.pdf - New York State Archives |"
+          },
+          {
+            "url": "https://moreq.info/files/MoReq2010%20-%20Executive%20Summary%20EN.pdf",
+            "excerpts": [
+              "Ensuring that each record has a disposal schedule\u2013 that describes how long it is to be retained and whether at the end of its retention period it should be destroyed or transferred out of the records system;"
+            ],
+            "title": "MoReq2010 - Executive Summary ENGLISH"
+          },
+          {
+            "url": "http://sfu.ca/archives/records-management/directory-of-university-records/RRSDA.html",
+            "excerpts": [
+              "Records Retention Schedules and Disposal Authorities (RRSDAs) regulate the retention periods of various series of records"
+            ],
+            "title": "RRSDAs - Archives and Records Management"
+          },
+          {
+            "url": "https://public.ccsds.org/Pubs/650x0m2.pdf",
+            "excerpts": [],
+            "title": "Fetched web page"
+          }
+        ],
+        "confidence": ""
+      }
+    ],
+    "content": "# Category-Aware Deletion Makes A* Integrity Safer\n\n## Executive Summary\n\n- **Reject Universal Reversibility**: GDPR Article 17 requires erasure when personal data is no longer necessary, consent is withdrawn, data is unlawfully processed, or erasure is legally required, while Article 17(3) preserves exceptions for legal obligations, public-interest archiving, research, statistics, and legal claims GDPR, EUR-Lex [31] -> A* should not require every deletion to be reversible.\n- **Use A Declared Lifecycle State**: Records standards converge on declared retention and disposition: DoD 5015.02 requires records to be created, maintained, used, disposed, and preserved under records schedules DoD 5015.02 [18], and MoReq2010 requires each record to have a disposal schedule that says how long it is retained and whether it is destroyed or transferred MoReq2010 Executive Summary [112] -> Make retention class and destruction policy first-class hard constraints.\n- **Certificate Beats Archive For Some Data**: NIST SP 800-88 Rev. 2 defines **Clear**, **Purge**, and **Destroy**, and includes verification and a Certificate of Sanitization model NIST SP 800-88 Rev. 2 [20] -> For secrets, expired consent, payment account data, and media leaving control, A* should emit a destruction certificate rather than a recoverable archive.\n- **Payment Data Must Shrink Over Time**: PCI DSS v4.0.1 Requirement 3.2.1 requires account data storage to be kept to a minimum, retention time limited to legal/regulatory/business need, secure deletion or rendering unrecoverable when no longer needed, and verification at least once every **three months** PCI DSS v4.0.1 [106] -> Payment artifacts should default to minimization, tokenization, and scheduled irreversible deletion.\n- **Financial Records Are The Counterexample**: SEC Rule 17 CFR 210.2-06 requires audit and review records to be retained for **seven years** after the audit or review concludes 17 CFR 210.2-06 [41]; the SEC final rule says this retention discourages destruction of relevant records SEC Final Rule 33-8180 [54] -> Audit and financial evidence should default to WORM archive until retention and legal holds expire.\n- **Soft Delete Is A Temporary State, Not A Policy**: KurrentDB/EventStore supports soft delete and hard delete, with hard delete implemented by appending a tombstone event Kurrent Event Streams [85]; Google Cloud Storage soft delete defaults to **seven days** and then permanent deletion follows Google Cloud Soft Delete [99] -> A* should treat soft delete as scheduled-for-destruction, not final erasure.\n- **Tombstones Preserve Convergence But Create Residue**: Kafka uses tombstone records with null payloads for compacted-topic deletes and removes them after `delete.retention.ms` Kafka Log Compaction [8]; CRDT designs use tombstones to prevent deleted elements from reappearing, but they create metadata overhead CRDT Study [88] -> A* should require tombstone garbage collection windows and lag-aware consumers.\n- **Always-Reversible Archives Expand Breach Surface**: GitHub documents that secret scanning scans the entire Git history of all branches for hardcoded credentials GitHub Secret Scanning [80], and Carlini et al. show that training examples can be extracted from large language models Extracting Training Data From Large Language Models [78] -> Secrets, PII-heavy prompts, and training corpora need purge or irreversible de-identification, not indefinite recovery.\n- **Recommended Constraint**: Adopt option (d) with option (b) as the transition rule: every artifact must declare a retention class and destruction policy, and every destructive operation must produce either a recoverable archive or a verifiable destruction certificate consistent with artifact category -> This is precise enough for Z3 and avoids both illegal archives and unaudited deletion.\n\n## Decision: Destruction Is Sometimes The Integrity-Preserving Choice\n\nThe defensible policy is: **reversibility is the default for artifacts whose integrity value is evidentiary, operational, or historical; irreversible deletion is mandatory or preferred for artifacts whose continued recoverability creates legal, security, or privacy risk after the retention basis expires**. That means the original constraint, \"no destructive operation can be performed without a recoverable archive,\" is too strong and sometimes wrong.\n\nThe better constraint is lifecycle-based. A valid A* architecture must declare, for every artifact, a retention class, destruction policy, retention trigger, and proof obligation. Destruction is not an integrity failure when it is authorized, scheduled, policy-consistent, and evidenced.\n\n**Case study: GDPR erasure versus SOX retention.** A SaaS account-deletion request and an audit workpaper deletion request look similar at the UI layer, but they should compile to opposite architectural outcomes. GDPR Article 17 says erasure is required in several cases, including when data is no longer necessary or consent is withdrawn, subject to exceptions GDPR, EUR-Lex [31]. By contrast, 17 CFR 210.2-06 requires audit and review records to be retained for seven years 17 CFR 210.2-06 [41]. A universal archive rule would violate the first case; a universal hard-delete rule would violate the second.\n\nThe integrity principle is therefore not \"always recover.\" It is **\"never mutate lifecycle state without a declared lawful retention/destruction policy and evidence of the outcome.\"**\n\n## Legal And Standards Survey: Where Destruction Is Required Or Preferred\n\n| Regime or standard | What it says about archive versus destruction | A* design implication |\n| --- | --- | --- |\n| GDPR Article 17 and Article 5 | Article 17 creates a right to erasure; Article 5(1)(e) requires storage limitation; Article 17(3) preserves exceptions for legal obligation, public interest, research/statistics, and legal claims GDPR, EUR-Lex [31] | PII cannot default to indefinite reversible archive. It needs a legal basis, retention deadline, and erasure workflow. |\n| GDPR anonymization and pseudonymization | Recital 26 excludes truly anonymous information from data-protection principles, but pseudonymized data remains personal data if re-identification is possible GDPR, EUR-Lex [31]; ICO treats anonymisation as outside personal-data scope only when individuals are not identifiable ICO Anonymisation [32] | A* may preserve aggregates if anonymization is irreversible; pseudonymization is a safeguard, not deletion. |\n| Schrems II and EDPB supplementary measures | Schrems II is a transfer-risk doctrine, not an erasure rule. EDPB Recommendations 01/2020 require exporters to assess third-country law and adopt supplementary measures such as encryption or pseudonymization where needed EDPB Recommendations 01/2020 [34] | Reversible archives in third countries must be treated as live regulated personal data unless anonymized or otherwise protected. |\n| CCPA/CPRA | California consumers can request deletion of personal information collected from them; businesses must direct service providers to delete, subject to exceptions such as transactions, security, legal obligations, and legal claims California AG CCPA [26], Cal. Civ. Code 1798.105 [36] | Consumer data needs request verification, exception handling, downstream deletion propagation, and suppression records. |\n| HIPAA | HHS says covered entities must use reasonable safeguards when disposing of PHI and disposal methods should make PHI unreadable or indecipherable, while HIPAA does not mandate one disposal method HHS PHI Disposal FAQ [28] | PHI artifacts need secure disposal and documented safeguards; medical-record retention windows often come from state or sector rules, not a universal HIPAA archive rule. |\n| PCI DSS v3.2.1 and v4.x | PCI DSS v4.0.1 Requirement 3.2.1 requires account data storage minimization, retention limits, secure deletion or rendering unrecoverable when no longer needed, and verification at least once every three months PCI DSS v4.0.1 [106] | Cardholder data should be tokenized, minimized, and purged on a schedule. Sensitive authentication data should not be archived after authorization. |\n| SOX and SEC audit retention | 17 CFR 210.2-06 requires audit and review records to be retained for seven years; the SEC final rule frames retention as a way to discourage destruction and preserve relevant audit evidence 17 CFR 210.2-06 [41], SEC Final Rule 33-8180 [54] | Financial/audit evidence should default to WORM or immutable archive until retention and holds expire. |\n| ISO 15489 and ISO disposition guidance | ISO 15489-1 covers creation, capture, and management of records over time ISO 15489-1:2016 [45]. ISO/TS 7538:2024 addresses retention periods, disposition processes and authorities, and destruction requirements ISO Disposition [16] | Records need authorized disposition, not ad hoc delete. |\n| DoD 5015.02 | DoD records must be managed in all media, and DoD records programs include creation, maintenance, use, disposal, and preservation DoD 5015.02 [18] | A* should distinguish records from non-record convenience copies and require schedule-driven disposition. |\n| MoReq2010 | MoReq2010 requires each record to have a disposal schedule that states retention duration and whether the record is destroyed or transferred; it also supports disposal holds and residual records MoReq2010 Executive Summary [112] | Deletion can be legitimate if a residual proof record remains. |\n| OAIS / ISO 14721 | OAIS defines an archive responsible for preserving information for a Designated Community and requires documented policies; the public CCSDS model warns against ad hoc deletion and permits deletion only under an approved strategy OAIS Reference Model [114] | Preservation systems can dispose of information, but only through approved strategy and preservation metadata. |\n| PREMIS | PREMIS preservation-event vocabulary includes appraisal, deaccession, deletion, redaction, and other preservation events PREMIS Events Vocabulary [100] | A* should log deletion as a preservation event, not as silent absence. |\n| NIST SP 800-88 Rev. 2 | NIST defines Clear, Purge, and Destroy, with verification and certificate-of-sanitization guidance NIST SP 800-88 Rev. 2 [20] | Destructive operations need method selection and proof, especially for media leaving control. |\n\nThe legal pattern is consistent: **archival is required for evidence, rights, continuity, and regulated records; destruction is required or preferred when data has no continuing legal basis, creates special security risk, or exceeds minimization rules**.\n\n**Case study: PCI account data.** A payment system that archives full PANs, CVVs, and authorization traces to preserve reversibility is backwards. PCI DSS pushes the architecture toward less data, shorter retention, and recurring verification that excess account data is securely deleted or unrecoverable PCI DSS v4.0.1 [106]. The integrity-preserving design is tokenization plus signed disposal logs, not full recovery.\n\n## Engineering Patterns: What Reversibility Each Pattern Preserves\n\n| Pattern | Reversibility preserved | Costs imposed | Prevents | Does not prevent | Key citations |\n| --- | --- | --- | --- | --- | --- |\n| Soft delete flag | Application-level undo while the row remains present but hidden | c_storage increases; c_modify increases because every query needs filters; c_derive risk if deleted rows leak into analytics | Accidental user deletion | Legal erasure failure if data remains recoverable; query bugs | Kurrent Event Streams [85], Google Cloud Soft Delete [99] |\n| Hard delete | No object-level recovery unless backups or replicas retain it | c_modify for cascades and referential cleanup; lower c_storage over time | Residual live-data exposure | Backup residue; audit loss if done before retention | Kurrent Event Streams [85] |\n| Tombstones | Delete intent remains observable until compaction or GC | c_storage for markers; c_modify for compaction; c_derive if consumers replay tombstones | Resurrection in distributed systems; state reconstruction errors | Tombstone bloat; lagging consumers missing deletes after retention | Kafka Log Compaction [8], CRDT Study [88] |\n| CRDT tombstone garbage collection | Convergence is preserved until all replicas have observed delete | c_storage and metadata overhead until causal stability; c_modify for GC coordination | Reappearance of removed elements in eventually consistent replicas | Unsafe GC if replicas are offline; unbounded metadata if GC absent | CRDT Study [88] |\n| Kafka log compaction | Latest value per key and recent uncompacted head remain recoverable | c_modify from background cleaning; c_storage lower than full log; c_derive from replay | Unbounded update history; inability to rebuild latest state | Historical audit loss; tombstone expiry before lagging consumers read it | Kafka Log Compaction [8] |\n| ClickHouse TTL | Data can be moved, rolled up, or deleted by time policy | c_storage decreases; c_money decreases via cold tiers; c_modify from merges; c_derive if rollups replace raw rows | Runaway observability/analytics storage | Immediate erasure guarantee, because deletion occurs during merges | ClickHouse TTL [83] |\n| PostgreSQL VACUUM | MVCC preserves old row versions temporarily for transactions; VACUUM later reclaims dead tuples | c_modify from vacuum work; c_storage if dead tuples accumulate | Table bloat and transaction ID wraparound | Legal erasure by itself; backup residue | PostgreSQL Routine Vacuuming [84] |\n| Event sourcing with snapshot-then-discard | Current state remains recoverable from snapshot; old event history may be discarded by retention policy | c_storage lower than full event log; c_derive lower for restore; c_modify for snapshot/version logic | Infinite replay cost; old-event privacy exposure | Full forensic replay after discard; legal audit if event log was required evidence | Kurrent Event Streams [85], Kafka Log Compaction [8] |\n| Restic forget and prune | `forget` removes snapshot metadata; data remains until `prune`; `--dry-run` previews removal | c_modify from repository scan/repack; c_storage decreases after prune; c_money decreases with reclaimed storage | Backup sprawl; accidental policy application via dry run | Recovery after prune; stale restore testing | Restic Forget [1] |\n| ZFS and Btrfs snapshots | Point-in-time filesystem state; ZFS holds can prevent snapshot destruction | c_storage grows as changed blocks are retained; c_modify for snapshot/hold management | Accidental rollback need; ransomware or operator error | Secret/PII residue; deletion blocked by dependent clones or active root snapshot | Oracle ZFS Snapshots [95], Oracle Btrfs Snapshot Deletion [96] |\n| S3 Object Lock and Glacier Vault Lock | WORM archive prevents deletion or overwrite for a fixed period or legal hold | c_storage and c_money persist until lock expires; c_modify intentionally constrained | Ransomware, insider deletion, evidence tampering | Privacy erasure during lock unless exception applies; wrong retention cannot be shortened in compliance mode | S3 Object Lock [5], Glacier Vault Lock [98] |\n\n**Case study: Kafka compacted topics.** Kafka compaction preserves the latest value for each key and uses null-payload tombstones to express deletion Kafka Log Compaction [8]. This is an excellent architecture for restoring current state, but it is not a full historical archive and not a guaranteed privacy erasure mechanism until compaction and tombstone retention complete.\n\n**Case study: Restic backups.** Restic deliberately separates `forget` from `prune`: the first removes snapshot references, the second reclaims unreferenced data Restic Forget [1]. That distinction maps directly into A*: a destructive operation may first enter scheduled-for-destruction, then destroyed only after the proof step finishes.\n\n## Failure Modes Of Always-Reversible Archival\n\n| Failure mode | Security, cost, or legal argument | Evidence | A* implication |\n| --- | --- | --- | --- |\n| Tombstone bloat | Cost and correctness | Kafka tombstones persist until `delete.retention.ms`; CRDT tombstones preserve delete knowledge but add metadata Kafka Log Compaction [8], CRDT Study [88] | Require tombstone retention windows, lag bounds, and GC proof. |\n| Backup residue after erasure | Legal | GDPR erasure and storage limitation conflict with indefinite recoverable backup copies GDPR, EUR-Lex [31]; ICO right-to-erasure guidance treats backup deletion as an operational obligation, not an excuse to keep using erased data ICO Right to Erasure [48] | Backups may be time-limited and quarantined; restores must reapply delete journals. |\n| Cold-storage cost explosion | Cost | ClickHouse TTL exists to move, roll up, or delete older data for storage efficiency ClickHouse TTL [83]; restic states backup space is finite and supports retention policies Restic Forget [1] | Treat c_storage and c_money as soft objectives, but not a license to delete regulated evidence early. |\n| False recoverability | Security and operations | NIST requires verification and certificate evidence for sanitization outcomes NIST SP 800-88 Rev. 2 [20]; restic requires prune mechanics to actually remove unreferenced data Restic Forget [1] | \"Archived\" must mean tested, indexed, decryptable, and restorable within an RTO, not merely stored. |\n| Secret leakage through history | Security | GitHub secret scanning scans entire Git history on all branches for hardcoded credentials GitHub Secret Scanning [80] | Secrets should be rotated and purged; source history should not be treated as harmless archive. |\n| Message-retention surprise | Legal and privacy | Slack says free workspaces can choose deletion after **90 days** or keeping messages and files, including edits, for a year Slack Privacy FAQ [79] | Collaboration archives need explicit retention settings and operator-visible consequences. |\n| Training-data memorization | Security and privacy | Carlini et al. demonstrate extraction attacks that recover individual training examples from large language models Extracting Training Data From Large Language Models [78] | Research memory and model training corpora need deletion, de-identification, or exclusion paths, not only archival. |\n\nThe security argument is about attack surface: if credentials, PII, or training examples remain recoverable, compromise of the archive becomes compromise of the data. The cost argument is about storage, compaction, replay, and operational complexity. The legal argument is about purpose limitation, storage limitation, retention schedules, erasure rights, and litigation holds.\n\n**Case study: LLM training data.** The Carlini paper shows that model behavior can reveal memorized training examples Extracting Training Data From Large Language Models [78]. For A*, this means deleting a raw dataset after training is not enough if the trained artifact itself can reproduce sensitive examples; the destruction policy must cover derived artifacts such as embeddings, checkpoints, caches, and fine-tuned weights.\n\n## Artifact Typology: Default Policy By Data Class\n\n| Artifact category | Default reversibility policy | A* integrity constraint to emit | K classes where it dominates |\n| --- | --- | --- | --- |\n| Secrets, credentials, keys, tokens | Must be irreversible after rotation or exposure; preserve only salted hash/fingerprint and rotation evidence | `requires(policy in {hard, sanitize})`, `forbid(recoverable_plaintext_archive)`, `requires(destruction_certificate or rotation_certificate)` | product-saas, outbound-pipeline, intel-pipeline, audit-pipeline |\n| PII, PHI, payment account data, consent-bound identifiers | Parameterized by jurisdiction, consent, purpose, and legal hold; irreversible when erasure is valid and no exception applies | `requires(legal_basis)`, `requires(retention_until)`, `if erasure_valid then hard_or_anonymize_plus_certificate`, `pseudonymized != anonymized` | product-saas, product-marketing, outbound-pipeline, research-memory, intel-pipeline |\n| Raw event, behavioral, telemetry, and observability logs | Reversible only for short operational window; then roll up, anonymize, or delete | `soft_delete_allowed_until(window_end)`, `requires(ttl or compaction)`, `requires(delete_journal_for_restore)` | product-saas, product-marketing, content-pipeline, intel-pipeline |\n| Derived artifacts, caches, embeddings, features, indexes, model checkpoints | Usually irreversible or recomputable; archive only if needed for reproducibility or audit | `if derivation_contains_sensitive_source then inherits_source_retention`, `if recomputable then prefer_destroy`, `if audit_model then archive_manifest` | research-memory, content-pipeline, product-marketing, intel-pipeline |\n| Source code, build artifacts, configs, design docs | Must be reversible for integrity and rollback, except embedded secrets must be purged/rotated | `archive_signed_version`, `scan_for_secret_residue`, `separate_secret_material_from_repo_history` | product-saas, content-pipeline, research-memory |\n| User-generated content, messages, uploads, collaboration artifacts | Parameterized by user deletion rights, workspace retention settings, contractual retention, and legal hold | `requires(owner_policy and jurisdiction)`, `if deletion_request_valid then remove_live_and_schedule_backup_expiry`, `hold_overrides_delete_until_release` | content-pipeline, product-saas, outbound-pipeline, research-memory |\n| Audit, financial, legal, and provenance records | Must be reversible and tamper-evident until retention window and holds expire; destroy only after authorized disposition | `requires(WORM or immutable_archive)`, `forbid_destroy_before(retention_until or hold_release)`, `destroy_requires_residual_record` | audit-pipeline, product-saas, outbound-pipeline, intel-pipeline |\n\nThe typology makes reversibility a property of the artifact, not an operation-wide moral rule. A* should emit different constraints for a leaked API key, a SOX audit workpaper, a Kafka tombstone, and a ClickHouse behavioral log shard.\n\n## Revised Integrity Constraint #2: Recommended Wording\n\n| Option | Verdict | Reason |\n| --- | --- | --- |\n| (a) All destructive operations must be reversible | Reject | Violates GDPR/CCPA erasure, PCI minimization, secret handling, and NIST sanitization use cases. |\n| (b) Every destructive operation must produce either a recoverable archive or a verifiable destruction certificate | Keep as transition invariant | Good operation-level rule, but insufficient unless artifact categories decide which outcome is legal. |\n| (c) Reversibility default; secret/PII/expired consent require irreversible deletion with certificate | Keep as category rule | Correct direction, but too narrow because audit records, payment data, research data, and legal holds also need explicit handling. |\n| (d) Every artifact has declared retention class and destruction policy consistent with category | Recommend | Best matches records standards, preservation metadata, engineering lifecycle states, and Z3 compilation. |\n\n**Recommended statement of integrity constraint #2:**\n\n> **A* Integrity Constraint #2 - Declared Retention And Verifiable Disposition:** An architecture is valid only if every artifact has a declared retention class `{active, archived, scheduled_for_destruction, destroyed}` and a declared destruction policy `{none, soft, hard, sanitize}` consistent with its artifact category, legal basis, retention schedule, and K class. Every destructive transition must produce either (1) a recoverable, integrity-checked archive when retention requires reversibility, or (2) a verifiable destruction certificate/residual record when retention requires irreversible deletion. Soft deletion is never a terminal state; it must resolve to archive or verified destruction by a declared deadline.\n\nThis statement absorbs option (b) as the operation-level proof rule and option (c) as a category-specific specialization. It rejects option (a) because the literature shows that irreversible deletion is sometimes the correct integrity-preserving outcome.\n\n## Default Archival Policy For The Seven K Classes\n\nThese windows are recommended A* defaults, not legal advice. They should be overridden by jurisdiction, contract, legal hold, regulator, customer policy, and sector rule.\n\n| K class | Must be irreversibly destroyed | Must be archived | Typical default windows | Storage tier |\n| --- | --- | --- | --- | --- |\n| outbound-pipeline | Expired contact PII, unsubscribed targeting attributes beyond suppression minimum, credentials, old campaign payload caches | Consent receipts, suppression records, delivery proofs, template versions | Raw events **30-90 days**; consent/suppression **3-7 years** where needed for proof | Hot for active sends; warm for suppression; cold/WORM for consent evidence |\n| content-pipeline | Prompt logs with PII after review window, temporary renders, caches, embedded secrets | Published assets, rights metadata, approvals, source versions | Temp artifacts **7-30 days**; published record lifecycle of content; rights records **contract term plus dispute window** | Hot for active production; warm/cold for source archives; WORM if regulated publication |\n| product-marketing | Raw behavioral events after aggregation, expired leads, third-party enrichment without basis | Consent records, campaign attribution rollups, experiment decisions | Raw events **30-180 days**; aggregate analytics **13-25 months**; consent evidence **3-7 years** | Hot for current experiments; warm analytics; cold for proof records |\n| product-saas | Deleted-account PII after grace/backup expiry, secrets, payment account data beyond PCI need, raw debug logs | Account ledgers, invoices, audit trails, security events, versioned configs | Account deletion grace **7-30 days**; backups **30-90 days**; financial records often **7 years** if SOX-like; security logs **1 year or policy-based** | Hot app DB; warm logs; cold backups; WORM for audit/financial evidence |\n| research-memory | Raw PII datasets without consent, sensitive prompts, unapproved scraped corpora, derived embeddings that retain sensitive source | Dataset cards, consent/provenance records, reproducibility manifests, approved de-identified corpora | Raw sensitive data **project window plus 30-90 days**; manifests **3-7 years**; approved corpora per IRB/contract/license | Hot research workspace; warm feature store; cold manifest archive; restricted WORM for regulated studies |\n| audit-pipeline | Convenience copies after authoritative archive exists and retention expires | Audit logs, financial workpapers, access logs, chain-of-custody records, destruction certificates | Audit/review records **7 years** under SEC rule when applicable; destruction only after hold release | WORM/immutable hot or warm for current audit; cold/glacier WORM for long retention |\n| intel-pipeline | Live credentials, malware staging copies outside quarantine, raw scraped PII without basis, obsolete high-risk indicators with no retention need | Source provenance, analytic reports, chain of custody, sanitized indicators | Raw collection **30-180 days**; reports/provenance **1-7 years** depending mission; secrets immediate rotation and purge | Hot secure enclave; warm graph store; cold/WORM for chain-of-custody; quarantine for malware |\n\n**Case study: audit-pipeline versus product-marketing.** In audit-pipeline, WORM storage is the right default because tamper resistance is the value. In product-marketing, indefinite WORM archives of behavioral events can be the wrong default because storage limitation, consent revocation, and breach surface dominate. The same `delete()` verb must compile to different architecture depending on K.\n\n## Z3 Constraint Sketch For A*\n\nA* should model destruction primarily as a **declarative retention schedule attached to each artifact**, with a **side-effect predicate on every mutation operation**. A pure operation-level hard constraint is too late: by the time deletion occurs, the architecture may already have replicated data into backups, indexes, embeddings, logs, or WORM stores that cannot satisfy erasure.\n\n```python\n# Sorts\nArtifact, Operation, Time = DeclareSorts('Artifact Operation Time')\nCategory = EnumSort('Category', [\n  'secret', 'pii', 'phi', 'payment', 'raw_event', 'derived',\n  'source_doc', 'ugc', 'audit_record'\n])\nRetentionClass = EnumSort('RetentionClass', [\n  'active', 'archived', 'scheduled_for_destruction', 'destroyed'\n])\nDestructionPolicy = EnumSort('DestructionPolicy', [\n  'none', 'soft', 'hard', 'sanitize'\n])\nStorageTier = EnumSort('StorageTier', ['hot', 'warm', 'cold', 'glacier', 'worm'])\nKClass = EnumSort('KClass', [\n  'outbound_pipeline', 'content_pipeline', 'product_marketing',\n  'product_saas', 'research_memory', 'audit_pipeline', 'intel_pipeline'\n])\n\ncat = Function('cat', Artifact, Category)\nkclass = Function('kclass', Artifact, KClass)\nretention_class = Function('retention_class', Artifact, RetentionClass)\npolicy = Function('policy', Artifact, DestructionPolicy)\nretention_until = Function('retention_until', Artifact, Time)\nlegal_hold = Function('legal_hold', Artifact, BoolSort())\nerasure_valid = Function('erasure_valid', Artifact, BoolSort())\nanonymized = Function('anonymized', Artifact, BoolSort())\npseudonymized = Function('pseudonymized', Artifact, BoolSort())\narchive_exists = Function('archive_exists', Artifact, BoolSort())\narchive_recoverable = Function('archive_recoverable', Artifact, BoolSort())\ndestruction_cert = Function('destruction_cert', Artifact, BoolSort())\nresidual_record = Function('residual_record', Artifact, BoolSort())\ncontains_plaintext_secret = Function('contains_plaintext_secret', Artifact, BoolSort())\ndestructive = Function('destructive', Operation, BoolSort())\ntarget = Function('target', Operation, Artifact)\nproduces_archive = Function('produces_archive', Operation, BoolSort())\nproduces_cert = Function('produces_cert', Operation, BoolSort())\nrestore_reapplies_deletes = Function('restore_reapplies_deletes', Artifact, BoolSort())\n\n# 1. Every artifact has declared lifecycle and policy.\nForAll([a], And(retention_class(a) != None, policy(a) != None, cat(a) != None, kclass(a) != None))\n\n# 2. A destructive operation must prove either recoverability or verified destruction.\nForAll([op], Implies(destructive(op),\n  Or(\n    And(produces_archive(op), archive_exists(target(op)), archive_recoverable(target(op))),\n    And(produces_cert(op), destruction_cert(target(op)), residual_record(target(op)))\n  )\n))\n\n# 3. Secrets cannot have recoverable plaintext archives.\nForAll([a], Implies(cat(a) == secret,\n  And(policy(a) == sanitize,\n      Not(contains_plaintext_secret(a)),\n      destruction_cert(a))))\n\n# 4. Valid erasure requests require hard delete, sanitization, or irreversible anonymization.\nForAll([a], Implies(erasure_valid(a),\n  And(Not(legal_hold(a)),\n      Or(policy(a) == hard, policy(a) == sanitize, anonymized(a)),\n      destruction_cert(a))))\n\n# 5. Pseudonymization is not anonymization.\nForAll([a], Implies(pseudonymized(a), Not(anonymized(a))))\n\n# 6. Audit records cannot be destroyed before retention expiry or hold release.\nForAll([a], Implies(Or(cat(a) == audit_record, legal_hold(a)),\n  And(retention_class(a) != destroyed,\n      archive_exists(a), archive_recoverable(a))))\n\n# 7. Soft delete must resolve by a deadline.\nForAll([a], Implies(policy(a) == soft,\n  retention_class(a) == scheduled_for_destruction))\n\n# 8. Restores must not resurrect erased data.\nForAll([a], Implies(erasure_valid(a), restore_reapplies_deletes(a)))\n```\n\nSoft objectives should optimize, after hard constraints are satisfied:\n\n```python\nminimize(c_storage + c_money + c_modify + c_derive)\nminimize(privacy_risk + secret_residue + unbounded_tombstones)\nmaximize(recoverability_score for archive_required artifacts)\nmaximize(auditability_score for destroyed artifacts)\n```\n\nThis encoding treats legal retention, erasure, holds, and sanitization as hard constraints. It treats storage and operational cost as soft objectives. It treats c_reverse residual as a diagnostic: irreversible deletion is not automatically bad, but unexplained or category-inconsistent irreversibility is invalid.\n\n## Operator Experience: Explain Every Irreversibility Choice\n\nIf A* emits an architecture where some artifacts cannot be recovered, the operator needs a short, auditable explanation. NIST provides the model: sanitization should have method, verification, and certificate evidence NIST SP 800-88 Rev. 2 [20]. MoReq2010 provides the records-management model: destruction can leave a residual record proving correct disposal MoReq2010 Executive Summary [112]. PREMIS provides the preservation model: deletion, deaccession, redaction, and appraisal are lifecycle events PREMIS Events Vocabulary [100].\n\nA* should emit this minimal explanation bundle for every irreversible choice:\n\n| Field | Required content |\n| --- | --- |\n| Artifact identity | Artifact ID, category, K class, owner, system of record, derived copies known. |\n| Policy basis | Legal basis, retention schedule, consent state, contract, regulatory rule, or security trigger. |\n| Lifecycle transition | Previous state, new state, destruction policy, deadline, and whether soft delete is temporary. |\n| Exception check | Legal hold, audit hold, transaction need, public-interest archive, research/statistical exception. |\n| Mechanism | Hard delete, cryptographic erase, NIST Clear/Purge/Destroy, anonymization, redaction, TTL, compaction, prune. |\n| Evidence | Archive pointer and restore test if reversible; destruction certificate, residual record, hashes, actor, timestamp, verifier if irreversible. |\n| Backup and replica handling | Whether backups are purged, expired, quarantined, or protected by delete journal on restore. |\n| Consequence notice | Plain-language warning: \"After this deadline, A* cannot recover this artifact; only residual proof remains.\" |\n| Human approval | Approver, policy version, ticket/request ID, and appeal/escalation route for high-risk destruction. |\n\nThe key UX rule is that the operator should never see irreversibility as an unexplained optimization. It should appear as a traceable policy decision: \"This artifact is a rotated credential; reversible archive is forbidden; NIST purge plus rotation evidence is required.\" Or: \"This artifact is a SOX audit record; irreversible deletion is forbidden until seven-year retention and legal holds expire.\"\n\n## Synthesis\n\nThe major tension is not archive versus delete. It is **recoverability versus exposure**. Audit records, financial workpapers, source releases, and provenance logs derive integrity from tamper-resistant recovery. Secrets, expired-consent PII, raw behavioral exhaust, and payment account data often derive integrity from the opposite property: proof that the recoverable copy is gone.\n\nAcross the standards, three mechanisms recur. First, records-management systems require declared schedules and authorized disposition, as shown by ISO disposition guidance, DoD 5015.02, and MoReq2010 ISO Disposition [16], DoD 5015.02 [18], MoReq2010 Executive Summary [112]. Second, privacy and payment regimes require minimization, erasure, or secure deletion once purpose expires, as shown by GDPR, CCPA, HIPAA disposal guidance, and PCI DSS GDPR, EUR-Lex [31], California AG CCPA [26], HHS PHI Disposal FAQ [28], PCI DSS v4.0.1 [106]. Third, engineering systems implement deletion as staged state transitions: tombstone, compact, TTL merge, vacuum, forget, prune, lock, and destroy Kafka Log Compaction [8], ClickHouse TTL [83], PostgreSQL Routine Vacuuming [84], Restic Forget [1].\n\nThe non-obvious divergence is that WORM storage and right-to-erasure are both integrity tools, but for different artifact categories. S3 Object Lock and Glacier Vault Lock protect integrity by preventing deletion S3 Object Lock [5], Glacier Vault Lock [98]. NIST sanitization protects integrity by making recovery infeasible and proving it NIST SP 800-88 Rev. 2 [20]. A* must be able to emit both outcomes without treating one as a violation.\n\nThe final policy is therefore: **make reversibility category-dependent, make lifecycle declaration mandatory, make proof mandatory, and make soft delete temporary.** This preserves the useful spirit of the original hard constraint, which was to prevent silent destructive loss, while removing the false assumption that every integrity-preserving architecture must be able to recover everything forever.\n\n## References\n\n1. *Removing backup snapshots \u2014 restic 0.18.1-dev documentation*. https://restic.readthedocs.io/en/latest/060_forget.html\n2. *Amazon S3 Object Lock*. https://www.amazon.com/s3/features/object-lock\n3. *Object First | Backup Storage Solutions*. http://cdw.com/content/cdw/en/brand/object-first.html\n4. *What Are Immutable Backups? Autonomous Ransomware Protection*. https://www.sentinelone.com/cybersecurity-101/cybersecurity/immutable-backups/\n5. *Locking objects with Object Lock - Amazon Simple Storage Service*. https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock.html\n6. *Manage data with TTL (Time-to-live) | ClickHouse Docs*. http://clickhouse.com/docs/guides/developer/ttl\n7. *Event streams - Kurrent Docs*. http://docs.kurrent.io/server/v26.0/features/streams\n8. *Kafka Log Compaction | Confluent Documentation*. https://docs.confluent.io/kafka/design/log_compaction.html\n9. *Designing a Soft-Delete and Data Lifecycle System: Tombstones ...*. https://letsbuildsolutions.com/blog/system-design/designing-a-soft-delete-and-data-lifecycle-system/\n10. *crdt-foundation-implementation/ (2) 2p-set/README.md ... - GitHub*. https://github.com/giteshsarvaiya/crdt-foundation-implementation/blob/main/(2)%202p-set/README.md\n11. *Adopted on 16 January 2025 Guidelines - edpb.europa.eu*. http://edpb.europa.eu/system/files/2025-01/edpb_guidelines_202501_pseudonymisation_en.pdf\n12. *Schrems II landmark ruling: A detailed analysis*. http://nortonrosefulbright.com/de-de/wissen/publications/ad5f304c/schrems-ii-landmark-ruling-a-detailed-analysis\n13. *Guidelines | European Data Protection Board*. https://www.edpb.europa.eu/our-work-tools/our-documents/publication-type/guidelines_en\n14. *GDPR EU-US Data Transfers: Schrems II Compliance Guide 2026 ...*. https://www.aigovhub.io/guides/gdpr-eu-us-data-transfers-post-schrems-ii-guide-2026\n15. *Diritto all'oblio*. http://garanteprivacy.it/i-miei-diritti/diritti/oblio\n16. *Disposition - committee.iso.org*. https://committee.iso.org/sites/tc46sc11/home/projects/published/disposition.html\n17. *Records Maintenance and Release*. http://marquette.edu/mupd/documents/records_maintenance_and_release.pdf\n18. *DoDI 5015.02, February 24, 2015, Incorporating Change 1 on ...*. https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/501502p.pdf\n19. [[PDF] Regular Meeting of the Board of Directors Tuesday, March 26, 2024 ...](http://avta.com/downloads/meetings/bod/2024/03262024-agenda.pdf)\n20. *SP 800-88 Rev. 2, Guidelines for Media Sanitization | CSRC*. https://csrc.nist.gov/pubs/sp/800/88/r2/final\n21. *GDPR and Backups: How to Handle Deletion Requests in 2026*. http://probackup.io/blog/gdpr-and-backups-how-to-handle-deletion-requests\n22. *CRDTs (Conflict-free Replicated Data Types) - Page 5 of 5*. https://www.onenoughtone.com/learn/crdts/5\n23. *Orda*. http://github.com/orda-io\n24. *Slack's GDPR Commitment | Legal*. https://slack.com/trust/compliance/gdpr\n25. *Secret leakage risks - GitHub Docs*. https://docs.github.com/en/code-security/concepts/secret-security/secret-leakage-risks\n26. *California Consumer Privacy Act (CCPA) | State of California ...*. https://www.oag.ca.gov/privacy/ccpa\n27. *Optimize PCI Data Retention for Cardholder Security*. https://www.pcicompliance.com/pci-data-retention/\n28. *Disposal of Protected Health Information - HHS.gov*. https://www.hhs.gov/hipaa/for-professionals/faq/disposal-of-protected-health-information/index.html\n29. *Consumers' \"Right to Delete\" under US State Privacy Laws*. http://privacyworld.blog/2021/03/consumers-right-to-delete-under-us-state-privacy-laws\n30. *Evervault PCI Compliance Documentation*. http://docs.evervault.com/compliance/pci-compliance\n31. *Regulation - 2016/679 - EN - gdpr - EUR-Lex*. https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng/\n32. *Anonymisation | ICO*. https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/data-sharing/anonymisation/\n33. *Everything you need to know about the \"Right to be forgotten\"*. http://gdpr.eu/right-to-be-forgotten\n34. *Recommendations 01/2020 on measures that supplement ... - Europa*. https://www.edpb.europa.eu/our-work-tools/our-documents/recommendations/recommendations-012020-measures-supplement-transfer_en\n35. *Art. 17 GDPR Right to erasure (\u2018right to be forgotten\u2019)*. https://gdpr-info.eu/art-17-gdpr/\n36. *California Civil Code section 1798.105 (2025)*. https://california.public.law/codes/civil_code_section_1798.105\n37. *Senate Standing Committee on Privacy, Digital Technologies ...*. http://calmatters.digitaldemocracy.org/hearings/278917\n38. *http://cppa.ca.gov/announcements/2025/20250909.html*. http://cppa.ca.gov/announcements/2025/20250909.html\n39. *California Approves Delete Act Regulations - cppa.ca.gov*. https://cppa.ca.gov/announcements/2025/20251113.html\n40. *Versapay: Trust Center*. http://trust.versapay.com/\n41. *17 CFR 210.2-06 -- Retention of audit and review records.*. https://www.ecfr.gov/current/title-17/chapter-II/part-210/subject-group-ECFR2f5dcb24c1c571e/section-210.2-06\n42. *PCI Security Standards Council \u2013 Protect Payment Data with ...*. https://www.pcisecuritystandards.org/document_library/\n43. *HIPAA and Privacy Laws | Texas Health and Human Services*. http://hhs.texas.gov/regulations/legal-information/hipaa-privacy-laws\n44. *Security White Paper*. http://help.fiery.com/Security/en-us/45266125_Fiery_Security_WhitePaper_FS700_en-us.pdf\n45. *ISO 15489-1:2016 - Information and documentation \u2014 Records ...*. https://www.iso.org/standard/62542.html\n46. [[PDF] ED3 Eisen Duurzaam Digitaal Depot - Provincie Noord-Holland](http://noord-holland.nl/bestanden/pdf/Brochure_Eisen_Digitaal_Depot.pdf)\n47. *Home | OAIS Reference Model (ISO 14721)*. http://www.oais.info/\n48. *Page not found | ICO*. https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/individual-rights/right-to-erasure/\n49. *Records Management Division*. http://princegeorgescountymd.gov/departments-offices/police/bureaus-police-stations/bureau-administration/records-management-division\n50. *MoReq2010, Modular Requirements for Records Systems - Joinup*. https://interoperable-europe.ec.europa.eu/sites/default/files/inline-files/OS15(1).pdf\n51. *Records Management | Douglas County, GA*. http://douglascountyga.gov/440/Records-Management\n52. *Retention of Records Relevant to Audits and Reviews - SEC.gov*. http://sec.gov/rules-regulations/2003/01/retention-records-relevant-audits-reviews\n53. *SOX Compliance Data Retention Requirements - pathlock.com*. https://pathlock.com/learn/sox-data-retention-requirements/\n54. *Final Rule: Retention of Records Relevant to Audits and Reviews*. https://www.sec.gov/files/rules/final/33-8180.htm\n55. *Securities and Exchange Commission (SEC) Rule 17a-4, SEC Rule ...*. http://learn.microsoft.com/en-us/compliance/regulatory/offering-sec-docs\n56. *Consumer Disclosures*. http://northwoodtech.edu/about/safety-and-security/consumer-disclosures\n57. *PCI DSS Data Destruction For Banks: 2025 Secure Disposal Guide*. https://datadestruction.com/pci-dss-financial-institutions-secure-data-destruction-requirements-in-2025/\n58. *PCI-DSS-v4_0_1.pdf*. http://middlebury.edu/sites/default/files/2025-01/PCI-DSS-v4_0_1.pdf?fv=AKHVQBp6\n59. *PCI DSS v4.0 | Risk Cognizance GRC*. http://riskcognizance.com/framework/pci-dss-v4.0\n60. *What are the PCI DSS Data Retention and Disposal Requirements?*. https://pcidssguide.com/what-are-the-pci-dss-data-retention-and-disposal-requirements/\n61. *Securing the Future of Payments: PCI SSC Publishes PCI Data Security Standard v4.0 - PCI Security Standards Council*. http://pcisecuritystandards.org/about_us/press_releases/securing-the-future-of-payments-pci-ssc-publishes-pci-data-security-standard-v4-0\n62. *PREMIS: Preservation Metadata Maintenance Activity (Library ...*. https://www.loc.gov/standards/premis/\n63. *The Electronic Digital Archive*. http://ibacz.eu/wp-content/uploads/2019/10/produktovy%CC%81-list_iba-eng_eda-1.pdf\n64. *Using PREMIS with METS*. http://loc.gov/standards/premis/premis-mets.html\n65. *PREMIS Data Dictionary for Preservation Metadata, Version 3.0*. https://www.loc.gov/standards/premis/v3/\n66. *Fetched web page*. https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r2.pdf\n67. *Managing data - ClickHouse Docs*. https://clickhouse.com/docs/observability/managing-data\n68. *Privacy Policy | Mendral*. http://mendral.com/privacy\n69. *Kafka Log Compaction*. http://docs.confluent.io/kafka/design/log_compaction.html\n70. *How to Set Up Automatic Data Retention Policies in ClickHouse*. https://oneuptime.com/blog/post/2026-01-21-clickhouse-retention-policies/view\n71. *How to Test Backups and Prove Restores - NinjaOne*. https://www.ninjaone.com/blog/how-to-test-backups-and-prove-restores/\n72. *Windows Server Backup Software - MSP360*. http://msp360.com/backup/windows-server-backup-software\n73. *Article 17 \ud83d\udcd6 GDPR. Right to erasure ('right to be forgotten')*. http://gdpr-text.com/read/article-17\n74. *Right to erasure | ICO*. https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/individual-rights/individual-rights/right-to-erasure/?id=15\n75. *Tempus | Secure IT Asset Disposition & Electronics Recycling*. http://4tempus.com/\n76. *Strengthen Governance, Risk, and Compliance in Your ...*. http://azion.com/en/documentation/architectures/compliance/governance-risk-compliance\n77. *Document Retention and Destruction Policy and Procedure*. http://nuvancehealth.org/sites/default/files/PDF%20Files/Compliance%20Pages/Policies%20and%20Procedures/Compliance%20Policies/Document%20Retention%20and%20Destruction%20Policy%20and%20Procedure.pdf\n78. *Extracting Training Data from Large Language Models*. https://arxiv.org/abs/2012.07805\n79. *Privacy FAQs | Legal | Slack*. https://slack.com/trust/privacy/privacy-faq\n80. *About secret scanning - GitHub Docs*. https://docs.github.com/en/code-security/concepts/secret-security/about-secret-scanning\n81. *Resources for compliance | Slack*. http://slack.com/trust/compliance\n82. *API | GitGuardian documentation*. http://docs.gitguardian.com/platform/gitguardian-suite/api\n83. *Overview of TTL\u200b*. https://clickhouse.com/docs/guides/developer/ttl\n84. *PostgreSQL: Documentation: 18: 24.1.\u00a0Routine Vacuuming*. https://www.postgresql.org/docs/current/routine-vacuuming.html\n85. *Event streams | Kurrent Docs*. https://docs.kurrent.io/server/v26.0/features/streams\n86. *GitHub - ChinmayLokare/crdt-distributed-systems-project*. https://github.com/ChinmayLokare/crdt-distributed-systems-project\n87. *v3.7.0 \u2014 Phase 5 Part 4: CRDT Vector-Clock ... - GitHub*. https://github.com/Jovancoding/Network-AI/discussions/44\n88. *A comprehensive study of Convergent and Commutative ...*. http://db.cs.berkeley.edu/cs286/papers/crdt-tr2011.pdf\n89. *Supersynergy/synapse: One file. Your AI's entire memory. ...*. http://github.com/Supersynergy/synapse\n90. *Soft Delete, Hard Delete, and Tombstones: - LinkedIn*. https://www.linkedin.com/pulse/soft-delete-hard-tombstones-akash-gautam-mb1ic\n91. *Efficient Soft-Delete Models Without Query Degradation in SQL ...*. https://www.c-sharpcorner.com/article/efficient-soft-delete-models-without-query-degradation-in-sql-server-a-practic/\n92. *Cloud Storage | Google Cloud*. http://cloud.google.com/storage\n93. *Backup and Restore*. http://pve.proxmox.com/pve-docs/chapter-vzdump.html\n94. *Locking objects with Object Lock - Amazon Simple Storage Service*. https://www.amazon.com/AmazonS3/latest/userguide/object-lock.html\n95. *Creating and Destroying ZFS Snapshots - Oracle*. https://docs.oracle.com/cd/E19253-01/819-5461/gbcya/index.html\n96. *Deleting Snapshots of the root File System - docs.oracle.com*. https://docs.oracle.com/en/operating-systems/oracle-linux/9/btrfs/btrfs-DeletingSnapshotsoftherootFileSystem.html\n97. *MSP360 Object Lock Feature Types*. http://help.msp360.com/cloudberry-backup/backup/about-backups/object-lock/feature-types\n98. *Amazon Glacier Vault Lock*. https://docs.aws.amazon.com/amazonglacier/latest/dev/vault-lock.html\n99. *Soft delete \u00a0|\u00a0 Cloud Storage \u00a0|\u00a0 Google Cloud Documentation*. https://cloud.google.com/storage/docs/soft-delete\n100. *Preservation Events Controlled Vocabulary - Library of Congress*. https://www.loc.gov/standards/premis/v3/preservation-events.pdf\n101. *Data Dictionary Only: PREMIS Data Dictionary for Preservation ...*. https://wiki.lib.sun.ac.za/images/c/c5/Premis-3-0-datadictionary-only.pdf\n102. *PREMIS RECOMMENDATIONS - HathiTrust*. https://www.hathitrust.org/documents/hathitrust-premis-recommendations.pdf\n103. *CIDOC Guidelines: Deaccession and Disposal Information Group*. http://cidoc.ics.forth.gr/docs/guidelines/guidedis.htm\n104. *Configuration \u2014 PREMIS Event Service 1.0 documentation*. https://premis-event-service.readthedocs.io/en/latest/configuration.html\n105. *Input & Output Logging*. http://openrouter.ai/docs/guides/features/input-output-logging\n106. *Payment Card Industry Data Security Standard - Middlebury*. https://www.middlebury.edu/sites/default/files/2025-01/PCI-DSS-v4_0_1.pdf?fv=AKHVQBp6\n107. *Partner Validation Report*. http://marketplace.oracle.com/media/86486017/other/Partner_Validation_Report_Aurus_STSGen2.pdf\n108. *3.2.1\u2014Account data storage is kept to a minimum through ...*. https://www.myctrl.tools/frameworks/pci-dss-v4/3-2-1\n109. *PCI Security Standards Council \u2013 Protect Payment Data with ...*. https://www.pcisecuritystandards.org/standards/pci-dss/\n110. *ISO 14721:2025 - Space Data System Practices \u2014 Reference ...*. https://www.iso.org/standard/87471.html\n111. [[PDF] lgs-1-2022.pdf - New York State Archives |](http://archives.nysed.gov/sites/archives/files/lgs-1-2022.pdf)\n112. *MoReq2010 - Executive Summary ENGLISH*. https://moreq.info/files/MoReq2010%20-%20Executive%20Summary%20EN.pdf\n113. *RRSDAs - Archives and Records Management*. http://sfu.ca/archives/records-management/directory-of-university-records/RRSDA.html\n114. *Fetched web page*. https://public.ccsds.org/Pubs/650x0m2.pdf\n",
+    "type": "text",
+    "beta_fields": null
+  },
+  "run": {
+    "created_at": "2026-05-21T07:57:04.524228Z",
+    "is_active": false,
+    "modified_at": "2026-05-21T08:14:53.562264Z",
+    "processor": "ultra2x",
+    "run_id": "trun_da4211ace2c14632bc08fe5d25458dbe",
+    "status": "completed",
+    "error": null,
+    "metadata": {
+      "protocol": "A_STAR",
+      "thread_id": "RQ7-deletion-irreversibility"
+    },
+    "task_group_id": null,
+    "warnings": [
+      {
+        "message": "enable_events unset for ultra2x. Setting to true by default. Consider setting to false explicitly if you do not want to track events for streaming.",
+        "type": "warning",
+        "detail": null
+      }
+    ],
+    "interaction_id": "trun_da4211ace2c14632bc08fe5d25458dbe"
+  }
+}

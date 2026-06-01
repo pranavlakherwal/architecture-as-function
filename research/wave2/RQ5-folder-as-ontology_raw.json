@@ -1,0 +1,907 @@
+{
+  "output": {
+    "basis": [
+      {
+        "field": "answer",
+        "reasoning": "",
+        "citations": [
+          {
+            "url": "https://diataxis.fr/",
+            "excerpts": [
+              "Di\u00e1taxis is a way of thinking about and doing documentation. It prescribes approaches to content, architecture and form that emerge from a systematic approach to understanding the needs of documentation users. Di\u00e1taxis identifies four distinct needs, and four corresponding forms of documentation - tutorials, how-to guides, technical reference and explanation. It places them in a systematic"
+            ],
+            "title": "diataxis.fr - Di\u00e1taxis"
+          },
+          {
+            "url": "http://artisantalent.com/job-descriptions/information-architect-job-description",
+            "excerpts": [
+              "An Information Architect's job is to help discover and articulate the \"why\" of a project.\nDetermining hierarchies of information and content flow\ndeveloping IA documentation (site maps, navigation models, content models)."
+            ],
+            "title": "Information Architect Job Description | UX Staffing Agency"
+          },
+          {
+            "url": "http://docs.coginiti.co/intro",
+            "excerpts": [
+              "Welcome to the Coginiti documentation! This documentation is organized using the Di\u00e1taxis framework to help you find exactly what you need, when you need it."
+            ],
+            "title": "Welcome to Coginiti Documentation | Coginiti Documentation"
+          },
+          {
+            "url": "https://www.oreilly.com/library/view/information-architecture-for/0596000359/ch09s02.html",
+            "excerpts": [
+              "At its simplest, a controlled vocabulary is a list of equivalent terms in the form of a synonym ring, or a list of preferred terms in the form of an authority file. Define hierarchical relationships between terms (e.g., broader, narrower) and you\u2019ve got a classification scheme."
+            ],
+            "title": "Controlled Vocabularies - Information Architecture for the ..."
+          },
+          {
+            "url": "https://arxiv.org/pdf/2603.16021",
+            "excerpts": [
+              "This paper describes Interpretable Context Methodology (ICM), a method for orchestrating AI agent workflows using folder structure, markdown files, and local scripts."
+            ],
+            "title": "Interpretable Context Methodology: Folder Structure as ..."
+          },
+          {
+            "url": "https://iskoproceedings.org/",
+            "excerpts": [
+              "An official publication series that presents the peer-reviewed proceedings of the biennial international conferences organized by the International Society for Knowledge Organization (ISKO). The series showcases original contributions in the field of knowledge organization, reflecting ongoing theoretical, methodological, and applied research."
+            ],
+            "title": "Advances in Knowledge Organization"
+          },
+          {
+            "url": "https://www.researchgate.net/publication/28807454_Folksonomies_UnControlled_Vocabulary",
+            "excerpts": [
+              "The purpose of this study is to provide an overview of the folksonomy tagging phenomenon (also called social tagging and social bookmarking) and explore some of the reasons why we need"
+            ],
+            "title": "(PDF) Folksonomies: (Un)Controlled Vocabulary? - ResearchGate"
+          },
+          {
+            "url": "http://en.wikipedia.org/wiki/International_Society_for_Knowledge_Organization",
+            "excerpts": [
+              "ISKO is a professional association for scholars of knowledge organization, knowledge structures, classification studies, and information organization and"
+            ],
+            "title": "International Society for Knowledge Organization"
+          },
+          {
+            "url": "https://www.nature.com/articles/s41598-025-24276-1",
+            "excerpts": [
+              "This paper presents a novel approach to knowledge organization and information retrieval in digital libraries through an adaptive semantic retrieval framework that integrates graph"
+            ],
+            "title": "An adaptive semantic retrieval framework for digital ... - Nature"
+          },
+          {
+            "url": "https://www.isko.org/",
+            "excerpts": [
+              "This is the official website for ISKO \u2013 the premier international scholarly society devoted to the theory and practice of knowledge organization, bringing together professionals from different disciplines such as information science, philosophy, linguistics, and computer science, as well as special domains such as health informatics."
+            ],
+            "title": "ISKO: International Society for Knowledge Organization"
+          },
+          {
+            "url": "https://www.semanticscholar.org/paper/Folder-vs-.-Tag-Preference-in-Personal-Information-Bergman/06299855330e614ed965730da9d78b5ff495d810",
+            "excerpts": [
+              "Users' preference for folders vs. tags was studied in two working environments where both options were available and users are familiar with the use of both, showing a strong preference for files over tags for both storage and retrieval."
+            ],
+            "title": "Folder vs . Tag Preference in Personal Information Management"
+          },
+          {
+            "url": "https://www.tandfonline.com/doi/pdf/10.1080/07370024.2025.2482191",
+            "excerpts": [
+              "The article first deconstructs the concept of personal information management and then reviews successful commercial products. These analyses are used to identify future research directions for PIM systems research."
+            ],
+            "title": "The future of personal information management in the age of ..."
+          },
+          {
+            "url": "http://sasse.de/impressum",
+            "excerpts": [
+              "Dr. Sasse AG\nImpressum - Dr. Sasse Gruppe"
+            ],
+            "title": "Fetched web page"
+          },
+          {
+            "url": "https://scholar.google.com/",
+            "excerpts": [
+              "Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+            ],
+            "title": "Google Scholar"
+          },
+          {
+            "url": "https://www.nature.com/articles/srep14719",
+            "excerpts": [
+              "Here we explore the neurocognitive basis of navigation and search in personal information management, hypothesizing that people prefer virtual folder navigation because of its"
+            ],
+            "title": "Navigating through digital folders uses the same brain ..."
+          },
+          {
+            "url": "http://seminar.udcc.org/2017",
+            "excerpts": [
+              "The International UDC Seminar 2017 \"Faceted Classification Today: Theory, Technology and End Users\" took place in London on 14-15 September 2017 at Wellcome\u00a0..."
+            ],
+            "title": "UDC Seminar 2017"
+          },
+          {
+            "url": "https://www.sciencedirect.com/science/article/pii/S0306457312001203",
+            "excerpts": [
+              "The article presents the principles, reception and criticism of facet analysis (FA). Epistemologically FA lacks an empirical and pragmatic basis. FA provides a speculative ordering of knowledge. FA is based on the problematic assumption that relations between concepts are a priori. 1. Introduction."
+            ],
+            "title": "Facet analysis: The logical approach to knowledge ..."
+          },
+          {
+            "url": "https://grokipedia.com/page/Colon_classification",
+            "excerpts": [
+              "Colon Classification (CC) is a pioneering faceted library classification system developed by the Indian mathematician and librarian Shiyali Ramamrita Ranganathan, first published in 1933 by the Madras Library Association."
+            ],
+            "title": "Colon classification \u2014 Grokipedia"
+          },
+          {
+            "url": "https://www.lisedunetwork.com/understanding-faceted-classification-in-library-and-information-science/",
+            "excerpts": [
+              "While systems like Colon Classification demonstrate the theoretical strength of faceted classification, they are often perceived as complex and difficult to understand, both for library staff and users."
+            ],
+            "title": "Understanding Faceted Classification in Library and ..."
+          },
+          {
+            "url": "http://wikicfp.com/cfp/program?id=534",
+            "excerpts": [
+              "The eight International Conference on Conceptions of Library and Information Science takes place in Copenhagen at the Royal School of Library and Information"
+            ],
+            "title": "CoLIS: Conceptions of Library and Information Sciences"
+          },
+          {
+            "url": "https://schema.org/",
+            "excerpts": [
+              "Schema.org is a set of extensible schemas that enables webmasters to embed structured data on their web pages for use by search engines and other applications."
+            ],
+            "title": "Schema.org - Schema.org"
+          },
+          {
+            "url": "http://swagger.io/specification",
+            "excerpts": [
+              "This document serves as the schema for the OpenAPI Specification format; a non-authoritative JSON Schema based on this document is also provided on spec."
+            ],
+            "title": "OpenAPI Specification - Version 3.1.0 - Swagger"
+          },
+          {
+            "url": "http://arraycorp.com/vertical-industry-ontologies",
+            "excerpts": [
+              "Vertical / Industry Ontologies are the semantic layer that allow the Powered by Array System to understand what \"good\" actually means."
+            ],
+            "title": "Software That Understands the Work, Not Just the Worker"
+          },
+          {
+            "url": "https://arxiv.org/html/2605.14312v1",
+            "excerpts": [
+              "Rather than attributing these failures to model limitations alone, we conducted an ecosystem-scale empirical assessment of the underlying OpenAPI documentation. We developed Hermes, a multi-agent LLM-based system that detects documentation and REST-related smells at the endpoint level and generates explainable diagnostic reports."
+            ],
+            "title": "Making OpenAPI Documentation Agent-Ready: Detecting ..."
+          },
+          {
+            "url": "https://arxiv.org/html/2507.10644",
+            "excerpts": [
+              "The central idea of the Semantic Web was to make web data machine-readable and machine-understandable, to create a \u201cweb of data\u201d that computers could process directly or indirectly."
+            ],
+            "title": "From Semantic Web and MAS to Agentic AI: - arXiv.org"
+          },
+          {
+            "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/asi.22906",
+            "excerpts": [
+              "Results of both studies show a strong preference for folders over tags for both storage and retrieval. In the minority of cases where tags were used for storage, participants typically used a single tag per information item."
+            ],
+            "title": "Folder versus tag preference in personal information management"
+          },
+          {
+            "url": "https://onlinelibrary.wiley.com/doi/10.1002/asi.22906",
+            "excerpts": [
+              "Results of both studies show a strong preference for folders over tags for both storage and retrieval. In the minority of cases where tags were used for storage, participants typically used a single tag per information item."
+            ],
+            "title": "Folder versus tag preference in personal information management"
+          },
+          {
+            "url": "http://answers.laserfiche.com/questions/233614/New-AI-Enhancements-Available-in-Cloud-January-2026December-2025",
+            "excerpts": [
+              "Now, you can use AI to automatically apply informational and security tags to documents, expanding AI-powered classification capabilities in"
+            ],
+            "title": "New AI Enhancements Available in Cloud: January 2026 ..."
+          },
+          {
+            "url": "https://is.biu.ac.il/files/is/Folders%20vs%20Tags%20-%20Preprint%20version.pdf",
+            "excerpts": [
+              "We conducted two studies, the Gmail study, to test email management preferences, and the Window 7 study to test preferences regarding file management. In both studies, we exposed our participants to folders and tags."
+            ],
+            "title": "Folder vs. Tag Preference in Personal Information - BIU"
+          },
+          {
+            "url": "http://linkedin.com/in/michelle-whittaker-mccracken-cpc-sphr-565125",
+            "excerpts": [
+              "Practice Leader (mwhittaker@wgsearch.com, 734/475-9300) \u00b7 Whittaker Group Healthcare Recruiting & Executive Search"
+            ],
+            "title": "Michelle Whittaker-McCracken, CPC, SPHR"
+          },
+          {
+            "url": "https://www.researchgate.net/publication/221518713_Am_I_wasting_my_time_organizing_email",
+            "excerpts": [
+              "To compare these different refinding strategies, we instrumented a modern email client that supports search, folders, tagging and threading."
+            ],
+            "title": "(PDF) Am I wasting my time organizing email? - ResearchGate"
+          },
+          {
+            "url": "http://whittakergroup.org/contact",
+            "excerpts": [
+              "b McCracken |** Vice President | Send An Email\nchelle Whittaker-McCracken |** Founder & Managing Partner | Send An Email\nmail:** mwhittaker@wgsearch.co"
+            ],
+            "title": "Contact - The Whittaker Group LLC."
+          },
+          {
+            "url": "https://dl.acm.org/doi/abs/10.1145/1978942.1979457",
+            "excerpts": [
+              "We all spend time every day looking for information in our email, yet we know little about this refinding process. Some users expend considerable preparatory effort creating complex folder structures to promote effective refinding."
+            ],
+            "title": "Am I wasting my time organizing email? | Proceedings of the ..."
+          },
+          {
+            "url": "http://linkedin.com/pub/dir/Michele/Whittaker/us-0-United-States",
+            "excerpts": [
+              "Healthcare Recruiting & Executive Search Expert mwhittaker@wgsearch.com, 734/475-9300. Ann Arbor, MI. Whittaker Group Healthcare Recruiting & Executive Search"
+            ],
+            "title": "90+ \"Michele Whittaker\" profiles - LinkedIn"
+          },
+          {
+            "url": "https://mitpress.mit.edu/9780262035170/the-science-of-managing-our-digital-stuff/",
+            "excerpts": [
+              "In this book, personal information management (PIM) experts Ofer Bergman and Steve Whittaker explain why we organize our personal digital data the way we do and how the design of new PIM systems can help us manage our collections more efficiently."
+            ],
+            "title": "The Science of Managing Our Digital Stuff - MIT Press"
+          },
+          {
+            "url": "https://academic.oup.com/mit-press-scholarship-online/book/22884",
+            "excerpts": [
+              "In this book, personal information management (PIM) experts Ofer Bergman and Steve Whittaker explain why we organize our personal digital data the way we do and how better design can help us manage our collections more efficiently."
+            ],
+            "title": "The Science of Managing Our Digital Stuff | MIT Press ..."
+          },
+          {
+            "url": "https://books.google.com/books/about/The_Science_of_Managing_Our_Digital_Stuf.html?id=us2MEAAAQBAJ",
+            "excerpts": [
+              "In this book, personal information management (PIM) experts Ofer Bergman and Steve Whittaker explain why we organize our personal digital data the way we do and how the design of new"
+            ],
+            "title": "The Science of Managing Our Digital Stuff - Ofer Bergman ..."
+          },
+          {
+            "url": "https://books.google.com/books/about/The_Science_of_Managing_Our_Digital_Stuf.html?id=Ds1uDQAAQBAJ",
+            "excerpts": [
+              "In this book, personal information management (PIM) experts Ofer Bergman and Steve Whittaker explain why we organize our personal digital data the way we do and how the design of new PIM"
+            ],
+            "title": "The Science of Managing Our Digital Stuff - Ofer Bergman ..."
+          },
+          {
+            "url": "https://cris.biu.ac.il/en/publications/the-science-of-our-digital-stuff/",
+            "excerpts": [
+              "In this book, personal information management (PIM) experts Ofer Bergman and Steve Whittaker explain why we organize our personal digital data the way we do and how the design of new PIM systems can help us manage our collections more efficiently."
+            ],
+            "title": "The science of managing our digital stuff - Bar-Ilan University"
+          },
+          {
+            "url": "http://members.agcky.org/directory/Details/commonwealth-roofing-corp-2254100",
+            "excerpts": [
+              "Contacts \u00b7 Michael Sasse"
+            ],
+            "title": "Commonwealth Roofing Corp."
+          },
+          {
+            "url": "http://datanyze.com/companies/commonwealth-roofing/28429465",
+            "excerpts": [
+              "CEO\nMichael Sasse. CEO.\nMichael Sasse. Executive"
+            ],
+            "title": "Commonwealth Roofing Company Profile"
+          },
+          {
+            "url": "http://www.cs.ucl.ac.uk/fileadmin/sec/publications/Boardman_Spence_Sasse_Too_Many_Hierarchies_HCI2003.pdf",
+            "excerpts": [
+              "We present results from a study in which we investigated how users manage three collections of personal information: documents, email and web bookmarks. These findings have motivated the design of a software prototype that allows users to mirror folder structures between various PIM tools."
+            ],
+            "title": "Too Many Hierarchies?"
+          },
+          {
+            "url": "https://dl.acm.org/doi/abs/10.1145/985692.985766?download=true",
+            "excerpts": [
+              "PDF/eReader Contents CHI '04: Proceedings of the SIGCHI Conference on Human Factors in Computing Systems \"Stuff goes into the computer and doesn't come out\": a cross-tool study of personal information management Pages 583 - 590 Next Abstract References Information & Contributors Bibliometrics & Citations Reading Options References Tables Media"
+            ],
+            "title": "\"Stuff goes into the computer and doesn't come out ..."
+          },
+          {
+            "url": "http://zoominfo.com/pic/commonwealth-roofing-corp/28429465",
+            "excerpts": [
+              "Who is the CEO of Commonwealth Roofing? Commonwealth Roofing's CEO is Michael Sasse"
+            ],
+            "title": "Commonwealth Roofing: Employee Directory | ZoomInfo.com"
+          },
+          {
+            "url": "https://guides.lib.virginia.edu/RDM/file-management",
+            "excerpts": [
+              "Below is a diagram of an example directory structure. Again, there is no right answer, and you may choose to organize your project folders differently (for instance, you might keep code and results together, or you may choose to keep documentation specific to each experiment or sub-study)."
+            ],
+            "title": "LibGuides: Research Data Management : Managing Files"
+          },
+          {
+            "url": "https://www.ideals.illinois.edu/items/26602",
+            "excerpts": [
+              "This multiple-case study investigated the participants\u2019 information organization and retrieval behavior in their computer folders at four stages: keeping and discarding, organizing, re-organizing, and re-accessing."
+            ],
+            "title": "Personal information organization and re-access in computer ..."
+          },
+          {
+            "url": "https://orchid00.github.io/ReproducibleResearchThings/03-folderstructure/index.html",
+            "excerpts": [
+              "To develop a logical structure for your team, you need to consider the following points: Name folders appropriately and in a meaningful manner. Don\u2019t use staff names and consider using the type of work. Backup \u2013 ensure folders and files are backed up and retrievable in the event of a disaster."
+            ],
+            "title": "Folder structure \u2013 Reproducible Research Things - GitHub Pages"
+          },
+          {
+            "url": "https://core.ac.uk/download/pdf/4834287.pdf",
+            "excerpts": [
+              "explore what people need from folders and the affordances and limitations of folders in the different stages of organization and retrieval, and furthermore provide implications for system design. Improved understanding on personal information organization and retrieval on computers"
+            ],
+            "title": "PERSONAL INFORMATION ORGANIZATION AND RE-ACCESS IN ... - CORE"
+          },
+          {
+            "url": "https://libraryguides.unh.edu/datamanagement/organize",
+            "excerpts": [
+              "Avoid saving all your research files in a single folder, which can lead to confusion. Instead, create a hierarchy of folders and subfolders to organize your files."
+            ],
+            "title": "Organizing Data Files - Data Management Toolkit @ UNH ..."
+          },
+          {
+            "url": "https://www.semanticscholar.org/paper/Understanding-and-Improving-Personal-File-Retrieval-Fitchett/29c35b674cbf8924650b7951584dbc322a20f44b",
+            "excerpts": [
+              "To address this, this thesis describes a longitudinal field study that logs participants\u2019 file retrieval behaviour across a range of methods, using a specially developed logging tool called FileMonitor."
+            ],
+            "title": "Understanding and Improving Personal File Retrieval"
+          },
+          {
+            "url": "https://ui.adsabs.harvard.edu/abs/2015NatSR...514719B/abstract",
+            "excerpts": [
+              "Using fMRI we provide an explanation for this phenomenon by demonstrating that folder navigation results in activation of the posterior limbic (including the retrosplenial cortex) and parahippocampal regions similar to that previously observed during real-world navigation in both animals and humans."
+            ],
+            "title": "Navigating through digital folders uses the same brain ..."
+          },
+          {
+            "url": "https://ir.canterbury.ac.nz/items/ba7b1b0d-97fa-4f70-a021-1238688d4ee2/full",
+            "excerpts": [
+              "This thesis examines two broad goals in file retrieval: understanding current file retrieval behaviour, and improving file retrieval by designing improved user interfaces."
+            ],
+            "title": "Understanding and Improving Personal File Retrieval"
+          },
+          {
+            "url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/asi.21415",
+            "excerpts": [
+              "The aims of our research were therefore to study users' folder structure, personal file navigation, and the relations between them. We asked 296 participants to retrieve 1,131 of their active files and analyzed each of the 5,035 navigation steps in these retrievals."
+            ],
+            "title": "The effect of folder structure on personal file navigation"
+          },
+          {
+            "url": "https://dl.acm.org/doi/epdf/10.1145/1124772.1124813",
+            "excerpts": [
+              "The project fragmentation problem in personal information management occurs when someone who is working on a single project stores and retrieves information items relating to that project from separate format-related collections (documents, emails and favorite Web sites)."
+            ],
+            "title": "The Project Fragmentation Problem in Personal Information ..."
+          },
+          {
+            "url": "https://www.sciencedirect.com/book/edited-volume/9780123708663/keeping-found-things-found",
+            "excerpts": [
+              "Keeping Found Things Found: The Study and Practice of Personal Information Management is the first comprehensive book on new 'favorite child' of R&D at Microsoft and elsewhere, personal information management (PIM). It provides a comprehensive overview of PIM as both a study and a practice of the activities people do, and need to be doing, so that information can work for them in their daily"
+            ],
+            "title": "Keeping Found Things Found - ScienceDirect"
+          },
+          {
+            "url": "https://www.researchgate.net/publication/220167363_Finders_keepers_The_present_and_future_perfect_in_support_of_personal_information_management",
+            "excerpts": [
+              "Decisions concerning whether and how to keep this information are an essential part of personal information management. Bad decisions either way can be costly. Information not kept or not"
+            ],
+            "title": "Finders, keepers? The present and future perfect in support ..."
+          },
+          {
+            "url": "https://vtechworks.lib.vt.edu/items/5578fdef-a1ca-4b37-8785-148edd462ab6",
+            "excerpts": [
+              "Intentional IF (IIF) refers to the fragmentation in PIM that occurs when a person fragments his or her own personal data purposefully. Although research into the problem of IF has been growing quickly in the past decade, IIF has not been investigated in the literature."
+            ],
+            "title": "Intentional Information Fragmentation in Email Management"
+          },
+          {
+            "url": "https://books.google.com/books/about/Keeping_Found_Things_Found.html?id=27UoYdWnitUC",
+            "excerpts": [
+              "William Jones is a research associate professor at the University of Washington, Seattle, where he manages the Keeping Found Things Found project. Dr. Jones contributed chapters on personal information management (PIM) to the Annual Review of Information Science and Technology, the Handbook of Applied Cognition, and the Encyclopedia of Library and Information Science. He has presented numerous"
+            ],
+            "title": "Keeping Found Things Found: The Study and Practice of ..."
+          },
+          {
+            "url": "http://search.sunbiz.org/Inquiry/CorporationSearch/SearchResults?Detail=FL.DOS.Corporations.Shared.Contracts.FilingRecord&InquiryDirectionType=PreviousRecord&InquiryType=EntityName&ListNameOrder=SKYDIVESPACECENTER P960000953930&SearchNameOrder=SKYDIVESPACECOAST P010000159200&SearchTerm=Skydive Mia, Inc.",
+            "excerpts": [
+              "SKYDIVE SPACE CENTER, INC. Filing Information. Document Number P96000095393 ... Officer/Director Detail Name & Address Title PD NARDI, GREG. 476 NORTH"
+            ],
+            "title": "Detail by Entity Name - Sunbiz.org - Division of Corporations"
+          },
+          {
+            "url": "https://www.ibiblio.org/msmckoy/spring2006/articles/fileOrganizationFromTheDesktop.pdf",
+            "excerpts": [
+              "Barreau (1995) reported that users in her study preferred browsing lists of files rather than trying to remember exact file names. They did not use text searching techniques or used them very infrequently."
+            ],
+            "title": "Finding and Reminding: File Organization from the Desktop"
+          },
+          {
+            "url": "http://northamptonma.gov/Directory/Home/SingleStaff?EID=49",
+            "excerpts": [
+              "Charlene Nardi Finance Director\nStaff Directory \u00b7 View Full Website \u00b7 Sign In. Charlene Nardi. Charlene Nardi Finance Director. (413) 587-1255 \u00b7 cnardi@northamptonma.gov.\nCharlene Nardi Finance Director. (413) 587-1255 \u00b7 cnardi@northamptonma.gov.\nCharlene Nardi Finance Director\nStaff Directory \u00b7 View Full Website \u00b7 Sign In. Charlene Nardi. Charlene Nardi Finance Director. (413) 587-1255 \u00b7 cnardi@northamptonma.gov.\nCharlene Nardi Finance Director\nStaff Directory \u00b7 View Full Website \u00b7 Sign In. Charlene Nardi. Charlene Nardi Finance Director. (413) 587-1255 \u00b7 cnardi@northamptonma.gov.\nCharlene Nardi Finance Director\nStaff Directory \u00b7 View Full Website \u00b7 Sign In. Charlene Nardi. Charlene Nardi Finance Director. (413) 587-1255 \u00b7 cnardi@northamptonma.gov.\nCharlene Nardi Finance Director. (413) 587-1255 \u00b7 cnardi@northamptonma.gov."
+            ],
+            "title": "http://northamptonma.gov/Directory/Home/SingleStaff?EID=49"
+          },
+          {
+            "url": "https://ia801504.us.archive.org/26/items/perm1_20220428_0403/Finding.pdf",
+            "excerpts": [
+              "Nardi, Anderson andErickson (1995) suggest that trigger to remind himto take some action. reluctance o use the Find command may be attributed to th difficulty in remembering thename of the desired file, much as Three Information Types: Ephemeral, Working, Archived Barreau (1995) reported inthe mixed study."
+            ],
+            "title": "Finding and Reminding"
+          },
+          {
+            "url": "https://dl.acm.org/doi/10.1145/221296.221307",
+            "excerpts": [
+              "This paper summarizes and synthesizes two independent studies of the ways users organize and find files on their computers. The first study (Barreau 1995) investigated information organization practices among users of DOS, Windows and OS/2."
+            ],
+            "title": "Finding and reminding: file organization from the desktop ..."
+          },
+          {
+            "url": "https://karl-voit.at/tagstore/en/papers.shtml",
+            "excerpts": [
+              "A summary of this report with additional statistical analysis is part of this PhD thesis: \"TagTrees: Improving Personal Information Management using Associative Navigation\" (Karl Voit, to appear in 2012-11)."
+            ],
+            "title": "TagTrees: Improving Personal Information Management Using ..."
+          },
+          {
+            "url": "https://karl-voit.at/tagstore/downloads/Voit2012a.pdf",
+            "excerpts": [
+              "The capabilities of folders varied greatly. Some studies used an interface showing the contents of each folder, but without allowing a browsing/navigation process at all. Other systems did not provide for subfolders, thus neglecting the essential aspect of hierarchy."
+            ],
+            "title": "Tagging Might Not Be Slower Than Filing in Folders - Karl Voit"
+          },
+          {
+            "url": "http://linkedin.com/company/property-image",
+            "excerpts": [
+              "Click here to view Michael Voit's profile. Michael Voit. President/CEO, Property Image, LLC\nMichael Voit. President/CEO, Property Image, LLC"
+            ],
+            "title": "Property Image | LinkedIn"
+          },
+          {
+            "url": "https://windowsforum.com/threads/tag-and-find-files-fast-metadata-tags-in-file-explorer.387048/",
+            "excerpts": [
+              "Metadata tags in File Explorer help you categorize files with meaningful keywords (like \u201cproject A,\u201d \u201cinvoice,\u201d or \u201cphotos-2024\u201d) and then search for them instantly."
+            ],
+            "title": "Tag and Find Files Fast: Metadata Tags in File Explorer"
+          },
+          {
+            "url": "https://repository.tugraz.at/publications/5pwdt-sn341",
+            "excerpts": [
+              "Details Name:Voit, Karl Title:TagTrees, :, improving personal information management using associative navigation Resource Type:Dissertation Published:2012 Language:eng"
+            ],
+            "title": "TagTrees : improving personal information management using ..."
+          },
+          {
+            "url": "https://dl.acm.org/doi/10.5555/2521372",
+            "excerpts": [
+              "The current hierarchical folder system has long been found limited causing various difficulties in organizing and re-finding information on personal computers. Many alternative prototypes have been proposed to replace the current folder system."
+            ],
+            "title": "Personal information organization and re-access in computer ..."
+          },
+          {
+            "url": "https://www.microsoft.com/en-us/microsoft-365/business-insights-ideas/resources/11-ideas-for-how-to-organize-digital-files",
+            "excerpts": [
+              "Good news: you can save time and learn how to organize digital folders and files with a few best practices. The key is to decide on a system, communicate it clearly to everyone in your organization, and be consistent. Here\u2019s your guide to organizing files."
+            ],
+            "title": "11 ideas for how to organize digital files - microsoft.com"
+          },
+          {
+            "url": "http://doccenter.cityofevanston.org/WebLink",
+            "excerpts": [
+              "City of Evanston Document Center. Please Note: Contracts are being reorganized. Some folders may be empty or incomplete."
+            ],
+            "title": "Welcome to Laserfiche WebLink"
+          },
+          {
+            "url": "https://www.sciencedirect.com/science/article/pii/S0306457309000739",
+            "excerpts": [
+              "The fundamental idea in faceted search is to solicit and capture keywords supplied by a user from which to prune out branches of the hierarchy irrelevant to the user\u2019s information need."
+            ],
+            "title": "Supporting multiple paths to objects in information ..."
+          },
+          {
+            "url": "http://fact-finder.com/blog/faceted-search",
+            "excerpts": [
+              "Discover best practices for eCommerce faceted search and navigation, along with UX tips, design strategies and common pitfalls to avoid."
+            ],
+            "title": "Faceted search: 9 best practices to improve UX and ..."
+          },
+          {
+            "url": "https://flamenco.berkeley.edu/",
+            "excerpts": [
+              "The interface uses hierarchical faceted metadata in a manner that allows users to both refine and expand the current query, while maintaining a consistent representation of the collection's structure."
+            ],
+            "title": "Flamenco Home"
+          },
+          {
+            "url": "https://bailando.berkeley.edu/papers/chi02_short_paper.pdf",
+            "excerpts": [
+              "Thus this work suggests that hyperlinked, faceted, dynamically-generated metadata can be used as a viable alternative to key-word based queries for web site search."
+            ],
+            "title": "Hierarchical Faceted Metadata in Site Search Interfaces"
+          },
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5392185/",
+            "excerpts": [
+              "We propose category theory as a theoretical foundation for faceted browsing and demonstrate how the interactive process can be mathematically abstracted."
+            ],
+            "title": "Modeling Reusable and Interoperable Faceted Browsing Systems ..."
+          },
+          {
+            "url": "http://chandan.design/ux-methods/controlled-vocabulary",
+            "excerpts": [
+              "Controlled Vocabularies allow for the creation of a thesaurus for tagging and metadata"
+            ],
+            "title": "Controlled Vocabulary | Practical UX Method"
+          },
+          {
+            "url": "https://pureportal.strath.ac.uk/en/publications/collaborative-tagging-as-a-knowledge-organisation-and-resource-di",
+            "excerpts": [
+              "A definition of controlled vocabularies is proposed and used to assess the efficacy of collaborative tagging. An exposition of the collaborative tagging model is provided and a review of the major contributions to the tagging literature is presented."
+            ],
+            "title": "Collaborative tagging as a knowledge organisation and ..."
+          },
+          {
+            "url": "https://journals.sagepub.com/doi/10.1177/0165551506062337",
+            "excerpts": [
+              "Recently, collaborative tagging has grown in popularity on the web, on sites that allow users to tag bookmarks, photographs and other content. In this paper we analyze the structure of collaborative tagging systems as well as their dynamic aspects."
+            ],
+            "title": "Usage patterns of collaborative tagging systems - Scott A ..."
+          },
+          {
+            "url": "http://arxiv.org/pdf/cs/0508082",
+            "excerpts": [
+              "In this paper we analyze the structure of collaborative tagging systems as well as their dynamical aspects. Specifically, we discovered regularities in user"
+            ],
+            "title": "http://arxiv.org/pdf/cs/0508082"
+          },
+          {
+            "url": "http://en.wikipedia.org/wiki/OWL-S",
+            "excerpts": [
+              "OWL-S is an ontology, within the OWL-based framework of the Semantic Web, for describing Semantic Web Services."
+            ],
+            "title": "OWL-S - Wikipedia"
+          },
+          {
+            "url": "http://2025.emnlp.org/program/main_papers",
+            "excerpts": [
+              "OG-RAG: Ontology-grounded retrieval-augmented generation for large language models. Kartik Sharma, Peeyush Kumar, Yunqing Li"
+            ],
+            "title": "Accepted Main Conference Papers - EMNLP 2025"
+          },
+          {
+            "url": "http://aclanthology.org/2025.emnlp-main.1674.pdf",
+            "excerpts": [
+              "OG-RAG constructs a hypergraph representation of do- main documents, where each hyperedge encap- sulates clusters of factual knowledge grounded."
+            ],
+            "title": "OG-RAG: Ontology-grounded retrieval-augmented ..."
+          },
+          {
+            "url": "https://arxiv.org/html/2511.05991v1",
+            "excerpts": [
+              "Retrieval-Augmented Generation (RAG) systems combine Large Language Models (LLMs) with external knowledge, and their performance depends heavily on how that knowledge is represented. This study investigates how different Knowledge Graph (KG) construction strategies influence RAG performance."
+            ],
+            "title": "Ontology Learning and Knowledge Graph Construction: A ..."
+          },
+          {
+            "url": "http://reports.adviserinfo.sec.gov/reports/ADV/152622/PDF/152622.pdf",
+            "excerpts": [
+              "**Regulatory Assets Under Management**\n**Yes No**\nF. (1) Do you provide continuous and regular supervisory or management services to securities portfolios?\n(2) If yes, what is the amount of your regulatory assets under management and total number of accounts?\nU.S. Dollar Amount\nTotal Number of Accounts\nDiscretionary:\n(a)\n$ 8,425,771,219\n(d)\n8,689\nNon-Discretionary:\n(b)\n$ 3,197,054\n(e)\n1\nTotal:\n(c)\n$ 8,428,968,273\n(f)\n8,690\n3/31/2026 4:04:02 PM\nA. EMPIRICAL WEALTH MANAGEMENT. List on Section 1.B. of Schedule D any additional names under which you conduct your advisory business.\nDiscretionary:\n(a)\n$ 8,425,771,219\nNon-Discretionary:\n(b)\n$ 3,197,054\nTotal:\n(c)\n$ 8,428,968,273\nAnnual Amendment - All Sections\nDate: MM/DD/YYYY\n03/31/2026\nEnd of year refers to the date used to calculate your regulatory assets under management for purposes of your _annual updating amendment\nRev. 10/2021\nSignature:\nJUSTIN BULLER\nA. EMPIRICAL WEALTH MANAGEMENT. List on Section 1.B. of Schedule D any additional names under which you conduct your advisory business.\nDiscretionary:\n(a)\n$ 8,425,771,219\nNon-Discretionary:\n(b)\n$ 3,197,054\nTotal:\n(c)\n$ 8,428,968,273"
+            ],
+            "title": "Fetched web page"
+          },
+          {
+            "url": "https://datamanagement.hms.harvard.edu/plan-design/directory-structure",
+            "excerpts": [
+              "Researchers are advised to structure their folders (whether paper or electronic in form) to correspond to how the records were generated and to complement proposed or existing workflows."
+            ],
+            "title": "Directory Structure | Data Management"
+          },
+          {
+            "url": "https://fucinaweb.com/materiale/iaftwww/ch09.pdf",
+            "excerpts": [
+              "At its simplest, a controlled vocabulary is a list of equivalent terms in the form of a synonym ring, or a list of pre-ferred terms in the form of an authority file. Define hierarchical relationships between terms (e.g., broader, narrower) and you\u2019ve got a classification scheme."
+            ],
+            "title": "Information Architecture - Fucinaweb"
+          },
+          {
+            "url": "https://www.isko.org/cyclo/colon_classification",
+            "excerpts": [
+              "In his spirited quest for discovering a natural order of facets, Ranganathan proposed the idea of an \"absolute syntax of facets\", by which he meant a sequence in which component facets of a subject \"arrange themselves in the minds of the majority of persons\" (Ranganathan 1987, 579-582)."
+            ],
+            "title": "Colon Classification (IEKO) - International Society for ..."
+          },
+          {
+            "url": "http://docs.divio.com/documentation-system",
+            "excerpts": [
+              "Find the software documentation system for Divio. Includes comprehensive tutorials, how-to guides, technical reference and explanation. Learn more here."
+            ],
+            "title": "About | Divio Documentation"
+          },
+          {
+            "url": "https://link.springer.com/book/10.1007/978-3-031-02262-3",
+            "excerpts": [
+              "Indeed, faceted search has become increasingly prevalent in online information access systems, particularly for e-commerce and site search. In this lecture, we explore the history, theory, and practice of faceted search."
+            ],
+            "title": "Faceted Search | Springer Nature Link"
+          },
+          {
+            "url": "https://www.isko.org/cyclo/facet_analysis",
+            "excerpts": [
+              "The main weaknesses are (1) its lack of empirical basis and (2) its speculative ordering of knowledge without basis in the development or influence of theories and socio-historical studies."
+            ],
+            "title": "Facet analysis (IEKO) - International Society for Knowledge ..."
+          },
+          {
+            "url": "https://www.tandfonline.com/doi/full/10.1080/01639374.2023.2222120",
+            "excerpts": [
+              "This article provides a holistic overview of challenges for optimally implementing facets in library catalogs. This supports a systematic approach to refining and enhancing the capacity of faceted search to improve searching and exploring bibliographic metadata."
+            ],
+            "title": "Musings on Faceted Search, Metadata, and Library Discovery ..."
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Faceted_classification",
+            "excerpts": [
+              "A faceted classification is a classification scheme used in organizing knowledge into a systematic order. A faceted classification uses semantic categories, either general or subject-specific, that are combined to create the full classification entry."
+            ],
+            "title": "Faceted classification - Wikipedia"
+          },
+          {
+            "url": "https://ieeexplore.ieee.org/document/9297275",
+            "excerpts": [
+              "In this article, we present a faceted search with new strategies that reward users with multiple dimensions or filters to scan. This is to allow users to identify the categories that they want and access the required data quicker, but they also contribute to the overall data fee."
+            ],
+            "title": "Review of Techniques in Faceted Search Applications"
+          },
+          {
+            "url": "https://flamenco.berkeley.edu/papers/faceted-workshop06.pdf",
+            "excerpts": [
+              "FACET HIERARCHY NAVIGATION. 4. LAYOUT OF LABELS WITHIN FACETS. 5. FACET EXPOSURE. 6. GRAPHIC DESIGN. 8. BREADCRUMB DESIGN. 9. REFERENCES. 7. INCORPORATING KEYWORD SEARCH."
+            ],
+            "title": "Design Recommendations for Hierarchical Faceted Search Interfaces"
+          },
+          {
+            "url": "http://help.bibliocommons.com/hc/en-us/articles/31765683992084-Searching-for-Titles",
+            "excerpts": [
+              "The easiest way to search the library catalog is to type one or more words in the search box at the top of the page, and then click the Search button."
+            ],
+            "title": "Searching for Titles"
+          },
+          {
+            "url": "https://dl.acm.org/doi/10.1145/567498.567525",
+            "excerpts": [
+              "Abstract Designing a search system and interface may best be served (and executed) by scrutinizing usability studies."
+            ],
+            "title": "Finding the flow in web site search | Communications of the ACM"
+          },
+          {
+            "url": "http://docs.gossinteractive.com/article/11060/Search-Facets",
+            "excerpts": [
+              "Sep 17, 2024 \u2014 The media type facet filters search results to just that media type, for example , selecting a PDF facet would only display PDFs. The template\nThe CUSTOMSOLRQUERY facet type provides a free-text area that allows you to enter a SOLR query in the same format as you would from the SOLR admin console."
+            ],
+            "title": "Search Facets - The Digital Platform Documentation Site"
+          },
+          {
+            "url": "http://www3.cs.stonybrook.edu/~pfodor/courses/CSE595/L05_Web_Ontology_Language_OWL2.pdf",
+            "excerpts": [
+              "It is used in the language specification document, in the definitions of the semantics of OWL2 ontologies, the mappings from and into RDF syntaxes, and the different profiles of OWL2."
+            ],
+            "title": "Web Ontology Language: OWL2 - Stony Brook University"
+          },
+          {
+            "url": "https://www.semanticscholar.org/paper/Making-OpenAPI-Documentation-Agent-Ready%3A-Detecting-Lima-Pinheiro/22c160e2eea5ffeb13677d6007b4b2e630a045dc",
+            "excerpts": [
+              "Rather than attributing these failures to model limitations alone, we conducted an ecosystem-scale empirical assessment of the underlying OpenAPI documentation. We developed Hermes, a multi-agent LLM-based system that detects documentation and REST-related smells at the endpoint level and generates explainable diagnostic reports."
+            ],
+            "title": "Making OpenAPI Documentation Agent-Ready: Detecting ..."
+          },
+          {
+            "url": "http://schema.org/",
+            "excerpts": [
+              "Schema.org is a set of extensible schemas that enables webmasters to embed structured data on their web pages for use by search engines and other applications."
+            ],
+            "title": "Schema.org - Schema.org"
+          },
+          {
+            "url": "https://www.w3.org/OWL/",
+            "excerpts": [
+              "The W3C Web Ontology Language (OWL) is a Semantic Web language designed to represent rich and complex knowledge about things, groups of things, and relations between things."
+            ],
+            "title": "OWL - Semantic Web Standards"
+          },
+          {
+            "url": "http://yuyue.github.io/res/paper/Why%20API%20Doc-SCIS%202019.pdf",
+            "excerpts": [
+              "I (statistics found by searching for API and Android in StackOver ow). The lack of important information in API docu-mentation makes developers pend large amounts of time searching for information and seeking help. During this time, developers obtain large amounts of uncon rmed information, which can a ect"
+            ],
+            "title": "Why API Documentation is Insu cient for Developers: an ..."
+          },
+          {
+            "url": "http://diataxis.fr/",
+            "excerpts": [
+              "Di\u00e1taxis has allowed us to build a high-quality set of internal documentation that our users love, and our contributors love adding to. \u2014Greg Frileux, Vonage"
+            ],
+            "title": "Di\u00e1taxis"
+          },
+          {
+            "url": "http://dararosenfelddesign.com/",
+            "excerpts": [
+              ". As principal of her eponymous firm,\nDara Rosenfeld is recognized for bringing connoisseurship and refined style to distinctive interiors. As principal of her eponymous firm, Rosenfeld has designed residences ranging from an historic San Francisco Victorian to a modern Hawaii vacation retreat.\ninfo@dararosenfelddesign.com\n334 East Bay Street #165\nCharleston, SC 29401\nDara Rosenfeld Design provides comprehensive interior design and interior architecture services. Principal Dara Rosenfeld, in collaboration with the client, establishes an elegant style and vision for each home. Rosenfeld oversees the direction and project management of every residence, from initial programming through impeccable implementation."
+            ],
+            "title": "Dara Rosenfeld Design: Home"
+          },
+          {
+            "url": "http://nngroup.com/articles/tree-testing",
+            "excerpts": [
+              "This article discusses tree testing, a research method used to assess the findability of resources after you have created your proposed navigation hierarchy."
+            ],
+            "title": "Tree Testing: Fast, Iterative Evaluation of Menu Labels and ..."
+          },
+          {
+            "url": "https://informationarchitectureauthority.com/ia-frameworks-and-models",
+            "excerpts": [
+              "The scope of established frameworks extends from macro-level structural models (site-wide hierarchies, faceted classification) to micro-level component models (metadata schemas, controlled vocabulary structures)."
+            ],
+            "title": "Established Frameworks and Models in Information Architecture"
+          },
+          {
+            "url": "https://idratherbewriting.com/blog/what-is-diataxis-documentation-framework",
+            "excerpts": [
+              "The Di\u00e1taxis approach to documentation organizes technical documentation into four types \u2014 tutorials, how-tos, reference, and explanation. In this post, I compare Di\u00e1taxis to DITA, Information Mapping, and the Good Docs Project, explaining similarities and differences."
+            ],
+            "title": "What is Di\u00e1taxis and should you be using it with your ..."
+          },
+          {
+            "url": "http://linkedin.com/pub/dir/Nirmal/Ranganathan",
+            "excerpts": [
+              "Nirmal Kumar Ranganathan. Senior Quality Assurance Manager at McDermott International Inc."
+            ],
+            "title": "9 \"Nirmal Ranganathan\" profiles"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Five_laws_of_library_science",
+            "excerpts": [
+              "Five laws of library science ... The five laws of library science is a theory that S. R. Ranganathan proposed in 1931, detailing the principles of operating a library system."
+            ],
+            "title": "Five laws of library science - Wikipedia"
+          },
+          {
+            "url": "https://www.lisedunetwork.com/five-laws-of-library-science/",
+            "excerpts": [
+              "The historical context behind the Five Laws of Library Science is deeply rooted in the early 20th century, when libraries were undergoing significant transformations due to technological advancements, changing societal needs, and evolving approaches to information management. S. R. Ranganathan, an Indian librarian and mathematician, formulated thes"
+            ],
+            "title": "Five Laws of Library Science by Ranganathan"
+          },
+          {
+            "url": "https://www.researchgate.net/publication/321985821_Colon_Classification_CC",
+            "excerpts": [
+              "Abstract: Shiyali Ramamrita Ranganathan (1892-1972) has been called the father of the Indian library movement. He developed the revolutionary Colon Classification (CC) from 1924 to 1928, which was"
+            ],
+            "title": "(PDF) Colon Classification (CC) - ResearchGate"
+          },
+          {
+            "url": "https://www.w3.org/RDF/",
+            "excerpts": [],
+            "title": "RDF - Semantic Web Standards"
+          },
+          {
+            "url": "https://spec.openapis.org/oas/latest.html",
+            "excerpts": [],
+            "title": "OpenAPI Specification v3.2.0"
+          },
+          {
+            "url": "https://json-schema.org/overview/what-is-jsonschema",
+            "excerpts": [],
+            "title": "JSON Schema - What is JSON Schema?"
+          },
+          {
+            "url": "https://github.com/novoid/tagstore",
+            "excerpts": [
+              "Karl Voit took the experience with this project and developed workflows and a series of open source tools for Personal Information Management for managing local files via tags."
+            ],
+            "title": "GitHub - novoid/tagstore: a research software; a fun way of ..."
+          },
+          {
+            "url": "https://www.karl-voit.at/tagstore/downloads/Voit2012b.pdf",
+            "excerpts": [
+              "This dissertation gives an overview of research related to Personal Infor-mation Management (pim). After discussing some important challenges, a new method for managing local files is described: TagTrees. Navigational structures for re-finding are automatically generated in the file system after he user has assigned tags to items (files or"
+            ],
+            "title": "TagTrees: Improving Personal Information Management Using ..."
+          },
+          {
+            "url": "https://karl-voit.at/2020/01/25/avoid-complex-folder-hierarchies/",
+            "excerpts": [
+              "By using TagTree navigation in your file browser, you can then quickly navigate through thousands of books using your tags and limit your \"skimming folder\" (where you end up locating the item of question) by using two or three tag folders."
+            ],
+            "title": "Don't Do Complex Folder Hierarchies - They Don't Work and ..."
+          },
+          {
+            "url": "https://arxiv.org/pdf/2512.23907",
+            "excerpts": [
+              "Our study reveals that deletion is consistently under-adopted compared to other tactics such as Filing, Coverage, Ontology, and Timeliness. Moreover, the empirical data indicate that deletion is actually detrimental to retrieval success and satisfaction."
+            ],
+            "title": "Deletion Considered Harmful - arXiv.org"
+          },
+          {
+            "url": "https://positiveresults.com/blog/technology/cleaning-up-orphaned-files-and-folders/",
+            "excerpts": [
+              "Cleaning Up Orphaned Files and Folders in Document Collaboration Systems Document collaboration systems like Box, Dropbox, Google Drive, and Microsoft OneDrive have become essential tools for modern businesses."
+            ],
+            "title": "Cleaning Up Orphaned Files and Folders in Document ..."
+          },
+          {
+            "url": "https://systemsize.com/folder-comparison/mastering-directory-folder-structures-best-practices-explained/",
+            "excerpts": [
+              "Learn how to organize directories and folders efficiently with best practices that boost productivity, compliance, and scalability."
+            ],
+            "title": "Mastering Directory & Folder Structures: Best Practices ..."
+          },
+          {
+            "url": "https://github.com/balapriyac/data-science-tutorials/blob/main/useful-python-scripts-file-tasks/stale_folder_purger.py",
+            "excerpts": [
+              "Directories where every file is older than a configurable threshold Presents a detailed report grouped by category before any deletion occurs. Supports dry-run mode, a protected paths list, and bottom-up traversal so nested empty folders are caught correctly."
+            ],
+            "title": "data-science-tutorials/useful-python-scripts-file-tasks/stale ..."
+          },
+          {
+            "url": "https://www.linkedin.com/pulse/orphanfiles-may-what-you-think-jeff-hamm-cwsge",
+            "excerpts": [
+              "What Are \u201cOrphan Files,\u201d Really? In NTFS, every file has a parent folder reference stored in its MFT record."
+            ],
+            "title": "$OrphanFiles May Not Be What You Think - LinkedIn"
+          },
+          {
+            "url": "http://roanokecountyva.gov/84/Communications-Department",
+            "excerpts": [
+              "1. Communications Office\n  **Physical Address**\n  5204 Bernard Drive\n  Fourth Floor\n  Roanoke , VA 24018\n  Phone: 540-772-2010\n  Fax: 540-561-2854\n2. Amy Whittaker\n  Communications Director\n  Email\n  Phone: 540-772-2010\n3. Gray Craig\n  Web Communications Manager\n  Email\n  Phone: 540-777-8579\nAmy Whittaker. Communications Director. Email. Phone: 540-772-2010. Gray Craig. Public Information Manager. Email. Phone: 540-777-8579. Em Poertner. Social\nContact Us \u00b7 Communications Department. Physical Address 5204 Bernard Drive Fourth Floor Roanoke, VA 24018. Phone: 540-772-2010. Fax: 540-561-2854 \u00b7 Amy Whittaker."
+            ],
+            "title": "Communications Department"
+          },
+          {
+            "url": "https://link.springer.com/content/pdf/10.1007/s00779-020-01412-4.pdf",
+            "excerpts": [
+              "Again as predicted, participants experiencing negative moods created significantly more folders containing fewer files, and there was a trending effect of negative mood on folder depth."
+            ],
+            "title": "Mood and personal information management: how we feel ..."
+          }
+        ],
+        "confidence": ""
+      }
+    ],
+    "content": "# Weaken Folder Ontology Into Layered Scope Governance\n\n## Executive Summary\n\n- **Verdict**: The literature supports folders as meaningful navigation and context structures, but not the literal claim that every folder is an ontology in the formal RDF/OWL sense -> restructure the thesis as a layered scheme: scoped folders plus facets, tags, graphs, search, and machine-readable manifests where needed W3C OWL [102], W3C RDF [113].\n- **Human Folder Advantage**: PIM studies repeatedly find that people prefer location-based folder navigation; Bergman et al. report strong folder preference over tags, with folders used for roughly **90%** of files and tags for roughly **1%** in the studied file environment -> keep hierarchy as the primary human navigation layer, but do not make it the only semantic layer Folder versus tag preference in personal information management [26].\n- **Search Counterexample**: In email, Whittaker et al. instrumented **345** users and more than **85,000** refinding actions and found that complex folder preparation did not improve retrieval success relative to opportunistic methods such as search and threading -> avoid mandatory deep folder ontologies for high-volume, stream-like corpora Am I wasting my time organizing email? [33].\n- **Facet Superiority In Multi-Dimensional Collections**: The Flamenco/UC Berkeley work evaluated faceted metadata on collections up to **40,000** images with **9** facets and found users understood and preferred dynamically organized faceted metadata, with final ratings at least about **6/7** for ease and usefulness -> use facets when items legitimately belong to multiple simultaneous dimensions Hierarchical Faceted Metadata in Site Search Interfaces [75].\n- **Tags Are Not Enough, But Hybrids Matter**: Bergman et al. show weak tag adoption in ordinary PIM, while Voit et al. found tag-based refinding reduced interaction cost from **19.0** clicks to **13.9** clicks and **78%** of participants preferred Tagstore in one experiment -> reject pure tag-as-primary for most teams, but adopt controlled tags for cross-cutting retrieval Tagging Might Not Be Slower Than Filing in Folders [65].\n- **Agent-Heavy Systems Need Explicit Semantics**: Schema.org reports structured data use across more than **45M** domains and more than **450B** marked-up objects, while a May **2026** OpenAPI-agent case study found **2,450** documentation and REST smells across **16** production APIs and **600** endpoints; original documentation failed **70%** of planning tasks, while enriched documentation achieved **90%** planning success -> for T_agent_internal high, scope declarations should be machine-readable and CI-validated Schema.org [21], Making OpenAPI Documentation Agent-Ready [24].\n- **No Universal Decay Rate**: The PIM literature reviewed documents failure mechanisms such as fragmentation, out-of-sight files, misfiling, excessive depth, stale branches, and cross-tool inconsistency, but it does not establish a general decay constant like \"X% of folders decay per year\" -> measure local decay with repository audits rather than quoting a universal rate Too Many Hierarchies? [42], Personal information organization and re-access in computer folders [46].\n- **Best Formulation**: Replace the thesis with: \"Every stable folder used as a navigation, ownership, or lifecycle boundary must declare and enforce scope; the repository ontology is layered across folders, facets, tags, links, schemas, and indexes\" -> this preserves the useful discipline without overstating the empirical case.\n\n## Bottom-Line Verdict: Restructure, Do Not Keep Literal Ontology Language\n\nThe strong version, \"every folder is a small ontology with declared scope,\" should be weakened and restructured. The evidence supports three weaker claims: folders help humans refind information through location, recognition, and contextual memory; hierarchy can encode a meaningful semantic relation when the folder has a stable decision rule; and explicit scope declarations are likely to reduce ambiguity for both humans and agents. The evidence does not support the universal claim that every folder already is, or must be treated as, an ontology.\n\nThe reason is conceptual and empirical. In formal knowledge-organization and Semantic Web usage, an ontology represents classes, relations, constraints, and sometimes inferable knowledge. OWL is described by W3C as a language for representing \"rich and complex knowledge about things, groups of things, and relations between things,\" enabling programs to exploit expressed knowledge, verify consistency, and make implicit knowledge explicit W3C OWL [102]. A filesystem folder normally supplies one explicit structural relation: containment. Its actual semantic relation might be topic, owner, lifecycle stage, audience, task, release, source system, or simply convenience. Without a README, manifest, schema, naming convention, or validator, the semantics are often tacit.\n\nThe empirical literature therefore supports this refined claim: every stable folder should declare its scope when the folder is used as a semantic boundary. It does not support the stronger claim that folder hierarchy is a sufficient substitute for facets, tags, graph relations, or search. In fact, the best evidence points toward a multi-layered organization system.\n\n**Decision insight:** Keep the discipline of declared folder scope, but retire the phrase \"every folder is a small ontology\" as the governing thesis. Use it only as a metaphor in training materials, not as the normative claim.\n\n## What The Evidence Can And Cannot Prove\n\n| Evidence family | What it supports | What it does not support | Decision implication |\n|---|---|---|---|\n| PIM and CHI/CSCW folder studies | Humans often prefer browsing, location, and folder navigation for personal refinding Finding and Reminding [60], Navigating through digital folders uses the same brain structures as real world navigation [15] | That every folder has a precise ontology, or that deep hierarchy always improves findability | Use hierarchy for primary navigation where users know the domain and refind known items |\n| Email refinding studies | Search, threading, and opportunistic access can outperform elaborate folder filing in email Am I wasting my time organizing email? [33] | That folders are obsolete everywhere | Avoid mandatory folder ontologies in high-volume streams and message archives |\n| Faceted classification and IA | Multiple independent dimensions improve exploration in public, multi-dimensional collections Hierarchical Faceted Metadata in Site Search Interfaces [75], Information Architecture for the World Wide Web, ch. 9 [87] | That facets eliminate the need for local containment, lifecycle ownership, or repository structure | Use facets for audience, status, product, geography, version, compliance, and other cross-cutting concerns |\n| Tagging and folksonomy | Tags can support associative retrieval, but uncontrolled tags create synonym, ambiguity, and vocabulary drift problems Usage Patterns of Collaborative Tagging Systems [80], Tagging Might Not Be Slower Than Filing in Folders [65] | That tags alone reliably replace folders for ordinary PIM | Use controlled tags as a secondary layer, not as the only organization primitive unless the team accepts vocabulary governance |\n| Graphs and ontologies | RDF/OWL and knowledge graphs represent relations that folder trees cannot express W3C RDF [113], W3C OWL [102] | That every project needs OWL-level formalization | Use graphs when relation density, reasoning, provenance, dependencies, or agent planning matter |\n| Documentation frameworks | Diataxis supports organizing documentation around user needs: tutorials, how-to guides, reference, and explanation Diataxis [1] | That Diataxis empirically proves folder ontology | Use Diataxis as a documentation scope model, not as proof of filesystem ontology |\n\nThe central pattern is that each scheme wins under different cognitive and operational conditions. The folder tree is valuable, but it is not a universal ontology.\n\n## Scheme-By-Scheme Survey: Findability, Maintenance, Dominance, Failure\n\n| Scheme | Empirical evidence on user findability | Evidence on long-term maintenance | Where it dominates | Where it loses |\n|---|---|---|---|---|\n| Hierarchy / tree / folders | Barreau and Nardi observed **22** users across two studies and found that users relied on browsing and location more than text search for file refinding Finding and Reminding [60]. Benn et al. used fMRI with **17** participants and found digital folder navigation activates brain structures associated with real-world navigation Navigating through digital folders uses the same brain structures as real world navigation [15]. Bergman et al. found strong folder preference over tags Folder versus tag preference in personal information management [26]. | Boardman, Spence, and Sasse show that users maintain separate hierarchies across documents, email, and bookmarks, creating fragmentation Too Many Hierarchies? [42]. Folder re-access studies report limits of hierarchical folders and persistent re-finding difficulty Personal information organization and re-access in computer folders [46]. | Stable projects, known-item retrieval, ownership boundaries, lifecycle boundaries, code repositories, documentation sections, local context. | Multi-dimensional classification, highly relational domains, email, chat, logs, artifacts that belong naturally in many places. |\n| Faceted classification | English et al. studied hierarchical faceted metadata with collections up to **40,000** architecture images, **9** facets, and **12** participants; users understood and preferred dynamically organized faceted metadata, with final ratings around **6/7** for ease and usefulness Hierarchical Faceted Metadata in Site Search Interfaces [75]. Rosenfeld and Morville describe facets as shifting the question from \"Where do I put this?\" to \"How can I describe this?\" Information Architecture for the World Wide Web, ch. 9 [87]. | Facets require controlled vocabularies, metadata quality, and governance. Rosenfeld and Morville treat controlled vocabularies as the glue connecting organization, labeling, navigation, and search systems Information Architecture for the World Wide Web, ch. 9 [87]. ISKO's facet-analysis entry cautions that facet analysis has been criticized for lacking empirical and pragmatic basis in some formulations Facet analysis [91]. | E-commerce, library discovery, design systems, documentation by audience/task/product/version, large public collections, analytics portals. | Small local workspaces where users need one obvious place to put or find a thing; systems without metadata discipline. |\n| Tags / folksonomy | Golder and Huberman analyze collaborative tagging as an emergent classification system and show that tag use can stabilize socially over time Usage Patterns of Collaborative Tagging Systems [80]. Voit et al. found tagging was not necessarily slower than filing; in one task it reduced refinding clicks from **19.0** to **13.9** Tagging Might Not Be Slower Than Filing in Folders [65]. | Tags require vocabulary control. Without it, synonymy, homonymy, granularity variation, spelling variation, and personal idioms reduce maintenance quality Usage Patterns of Collaborative Tagging Systems [80]. Voit's TagTrees work uses generated navigational structures and restrictions to make tags usable in local file systems TagTrees [117]. | Cross-cutting concerns, lightweight associative retrieval, personal knowledge bases, status labels, topics that cut across folders. | High-compliance repositories, teams with no tag governance, artifacts needing one canonical owner/lifecycle path. |\n| Graph / ontology | RDF represents data as directed labeled graphs for data interchange and merging across schemas W3C RDF [113]. OWL supports explicit classes, relations, consistency checking, and inference W3C OWL [102]. A 2025 ontology/KG RAG preprint reports **90%** accuracy for graph/ontology approaches with chunks versus **60%** for a vector baseline on **20** domain questions, but this is early and narrow evidence Ontology Learning and Knowledge Graph Construction [84]. | Graphs need schema governance, relationship typing, identifiers, tooling, and migration practices. The maintenance burden shifts from folder placement to model curation. | Dependency networks, provenance, APIs, regulated data, enterprise knowledge graphs, agent planning, relation-heavy code and docs. | Simple repositories, small teams, low relation density, teams without graph tooling or schema ownership. |\n| Flat plus search | Whittaker et al. show that in email, preparatory folder filing can be inefficient; search and threading can support effective refinding without complex folder structures Am I wasting my time organizing email? [33]. | Maintenance burden is low because users file less, but long-term quality depends on naming, content text, indexing, deduplication, retention, and search quality. | Email, chat, logs, temporary corpora, high-volume append-only archives, full-text-rich artifacts. | Ambiguous artifact names, weak metadata, regulated retention, agent workflows requiring explicit constraints, tasks requiring browsing or lifecycle governance. |\n\n**Decision insight:** The best-supported design is not hierarchy-only. It is hierarchy for primary navigation and accountability, facets/tags for cross-cutting classification, graph relations for dependencies and reasoning, and search for high-volume retrieval.\n\n## Case Study 1: Folders Work Because Humans Remember Places\n\nBarreau and Nardi's classic desktop study synthesized two empirical studies of **22** users across Macintosh, DOS, Windows, and OS/2 settings. Users generally preferred browsing visible locations and file lists over text search, and they used files and desktop locations not only for storage but also for reminding themselves what needed attention Finding and Reminding [60]. This is the strongest human-centered evidence for keeping folders as first-class structures.\n\nBenn et al. add a cognitive mechanism. Their fMRI study with **17** participants found that navigating digital folders activated posterior limbic and parahippocampal regions associated with real-world navigation, while search engaged more language/executive resources Navigating through digital folders uses the same brain structures as real world navigation [15]. That does not prove a folder is an ontology, but it does show that folder paths can become embodied, spatial retrieval cues.\n\nBergman et al. provide the strongest direct folder-vs-tag PIM evidence. Their study of environments where users had both folders and tags found a strong preference for folders for both storage and retrieval; extracted figures from the source showed folders used for roughly **90%** of files and tags for roughly **1%** Folder versus tag preference in personal information management [26]. The implication is that, for human-heavy teams and known-item refinding, hierarchy is not merely cosmetic. It is part of the user's memory system.\n\nBut these studies still support a weaker conclusion than \"folder equals ontology.\" They show that folders are useful location and context cues. They do not show that the parent-child relation has one stable semantic meaning, or that every folder has declared classes, constraints, and relations.\n\n**Decision insight:** Treat folders as scoped cognitive landmarks. Require scope declarations for stable folders, but do not infer formal ontology from containment alone.\n\n## Case Study 2: Email Shows When Folder Ontology Fails\n\nWhittaker et al.'s CHI 2011 study is the most important counterexample to a universal folder thesis. The researchers instrumented a modern email client and analyzed behavior from **345** long-term users and more than **85,000** refinding actions Am I wasting my time organizing email? [33]. They specifically studied users who invested preparatory effort in folder organization.\n\nThe finding cuts against the strong folder claim: complex folder structures did not reliably improve retrieval success, and opportunistic methods such as search and threading often supported more effective refinding. In this domain, information is stream-like, duplicated across conversations, and rich in searchable text. The cost of maintaining a strict folder ontology can exceed its retrieval benefit.\n\nThe mechanism is important. Email messages often have many plausible categories: sender, project, task, time, urgency, thread, attachment, customer, or status. A single folder path forces one placement decision at save time, while later retrieval may use a different cue. This is exactly the condition under which facets, tags, search, or conversation graphs dominate.\n\n**Decision insight:** Do not impose folder-as-ontology on stream corpora such as email, chat, ticket comments, logs, or notification archives. Use search, threading, retention rules, and lightweight tags instead.\n\n## Case Study 3: Facets Beat Trees When Items Need Multiple Paths\n\nRanganathan's Colon Classification, first published in **1933**, is the classic knowledge-organization argument against a single enumerated hierarchy. ISKO's entry explains that Colon Classification uses analytico-synthetic classification and the PMEST facets: Personality, Matter, Energy, Space, and Time Colon Classification [88]. Ranganathan's Five Laws, including the principle commonly summarized as \"save the time of the reader,\" provide a normative service orientation for organization, but they are not direct empirical proof that folder trees are sufficient.\n\nRosenfeld and Morville make the same point for web information architecture. Their controlled-vocabulary chapter defines hierarchical relations, associative relations, synonym rings, thesauri, taxonomies, and facets as different tools in the IA system. They report a Bellcore study in which synonym rings increased recall from **20%** to **80%**, but with possible precision trade-offs Information Architecture for the World Wide Web, ch. 9 [87]. Their framing is especially relevant: faceted classification changes the question from \"Where do I put this?\" to \"How can I describe this?\"\n\nThe Flamenco/UC Berkeley work gives empirical support. English, Hearst, Sinha, Swearingen, and Yee evaluated hierarchical faceted metadata in site search. In an architecture slide collection of more than **40,000** images, using **9** facets and roughly **10** metadata items per slide, **12** participants gave the refined interface high ratings, with ease and usefulness at least about **6/7** Hierarchical Faceted Metadata in Site Search Interfaces [75]. Hearst's later design recommendations emphasize facet hierarchy navigation, label layout, facet exposure, breadcrumbs, and keyword search as design elements Design Recommendations for Hierarchical Faceted Search Interfaces [95].\n\n**Decision insight:** If an artifact naturally belongs to multiple dimensions, the primary ontology should not be a folder tree. Use folders for custody and locality, and facets for classification.\n\n## Case Study 4: Tags Are Weak Alone, Strong As Controlled Cross-Cuts\n\nThe evidence on tags is mixed. Bergman et al. found that ordinary PIM users strongly preferred folders over tags when both were available Folder versus tag preference in personal information management [26]. Golder and Huberman's collaborative tagging work shows why: tags can form useful emergent structures, but they also introduce synonymy, ambiguity, spelling variation, and level-of-specificity problems Usage Patterns of Collaborative Tagging Systems [80].\n\nVoit's TagTrees work is the strongest counterweight. In \"Tagging Might Not Be Slower Than Filing in Folders,\" Voit, Andrews, and Slany used a repeated-measures design with **18** participants and **30** items. Across all participants, folder filing was faster than tagging, but tagging reduced refinding interaction cost from **19.0** clicks to **13.9** clicks, and **78%** of participants preferred the Tagstore system Tagging Might Not Be Slower Than Filing in Folders [65]. Voit's dissertation expanded this into TagTrees, a hybrid approach that generates navigational folder-like structures from assigned tags, with a second formal experiment involving **27** participants and **60** files with a two-week gap between filing and refinding TagTrees [117].\n\nThe lesson is not \"tags replace folders.\" It is that tags can generate alternate navigation paths when governed and tool-supported. That directly contradicts the strong sub-thesis implication that tags or facets are not sufficient substitutes in all cases. They are insufficient as unmanaged folksonomy, but powerful as controlled secondary layers.\n\n**Decision insight:** Use controlled tags for cross-cutting concerns and generated views. Do not make free tags the only source of truth unless the repository has tag governance, disambiguation, and cleanup protocols.\n\n## Case Study 5: Agents Need Schemas More Than They Need Folders\n\nThe agent-team angle strengthens the case for explicit semantics, but not necessarily for folder-first ontology. RDF is a W3C model for data interchange that represents data as directed labeled graphs and supports merging across schemas W3C RDF [113]. OWL builds on Semantic Web foundations to represent complex knowledge, relations, and consistency constraints W3C OWL [102]. Schema.org provides shared structured-data vocabularies used by search engines and applications; the site reports more than **45M** domains and more than **450B** marked-up objects Schema.org [21].\n\nAPI and schema standards point in the same direction. JSON Schema is a declarative language for describing and validating JSON data JSON Schema [115]. OpenAPI provides a machine-readable description format for HTTP APIs, allowing humans and computers to discover and understand service capabilities without source-code access or extra documentation OpenAPI Specification [114]. These standards are closer to formal scope contracts than ordinary folder names are.\n\nThe emerging agent evidence is directly relevant but should be treated cautiously because some sources are recent preprints. A May **2026** OpenAPI-agent case study evaluated **16** production APIs and **600** endpoints, found **2,450** documentation and REST smells, and reported that agents using original documentation failed **70%** of planning tasks while enriched documentation produced **90%** planning success Making OpenAPI Documentation Agent-Ready [24]. A 2025 ontology/KG RAG preprint reported **90%** accuracy for graph/ontology retrieval with chunks versus **60%** for vector RAG on **20** domain questions Ontology Learning and Knowledge Graph Construction [84]. These are not broad settled laws, but they support the mechanism: agents benefit from explicit, machine-readable constraints because they cannot rely on tacit team context.\n\n**Decision insight:** For T_agent_internal high, the right primitive is not just \"folder.\" It is a folder plus manifest plus schema plus graph links plus validation. Agents need explicit declarations, not merely human-readable placement.\n\n## What Fails As Folder Hierarchies Age\n\nThe literature supports failure modes more strongly than it supports a precise decay rate. I did not find an established, generalizable rate such as \"folder hierarchies decay by X% per year.\" The studies are heterogeneous: they involve personal files, email, bookmarks, lab tasks, desktop observations, and prototypes. They document mechanisms and interventions, not a universal decay constant.\n\n| Aging failure mode | What the literature shows | Decay rate status | Intervention |\n|---|---|---|---|\n| Dead branches and stale folders | Folder trees can preserve old project structures after work has moved on; users then stop browsing those branches. PIM studies describe re-access difficulty and the limits of hierarchical folders Personal information organization and re-access in computer folders [46]. | No universal rate found. | Report folders with no recent writes, no reads, no owner, or no valid README. Archive rather than delete by default. |\n| Orphan files | Files lose their retrieval context when placed outside the intended structure or when a project spans tools. Boardman et al. describe project fragmentation across documents, email, and bookmarks Too Many Hierarchies? [42]. | No universal rate found. | Require owner, project, lifecycle, and source metadata for stable artifacts. Generate orphan reports. |\n| Mis-categorization | Single-location placement fails when an item has multiple plausible meanings. Rosenfeld and Morville's IA treatment of facets directly addresses this problem Information Architecture for the World Wide Web, ch. 9 [87]. | No universal rate found. | Use facets/tags for cross-cutting dimensions. Allow aliases or graph links rather than duplicate files. |\n| Scope creep inside folders | A folder starts with a coherent rule, then accumulates exceptions. This is implied by PIM findings on filing difficulty and reorganization Finding and Reminding [60]. | No universal rate found. | Require a folder manifest with in-scope, out-of-scope, allowed artifact types, and examples. Review exceptions. |\n| Excessive depth or breadth | Folder navigation depends on remembering paths and recognizing locations; structure affects navigation performance The effect of folder structure on personal file navigation [53]. | No universal rate found. | Keep folder depth and fan-out within locally tested limits. Use tree testing for IA. |\n| Out-of-sight, out-of-mind | Barreau and Nardi show files and locations serve reminding functions; hidden files are easier to forget Finding and Reminding [60]. | No universal rate found. | Use dashboards, recent/stale views, task lists, and generated indexes. |\n| Cleanup overcorrection | Recent PIM work on deletion suggests deletion may be under-adopted but can also harm retrieval success and satisfaction in some conditions Deletion Considered Harmful [119]. | Emerging evidence, not settled. | Prefer quarantine, retention classes, and reversible archival to aggressive deletion. |\n\n**Decision insight:** Do not claim a decay rate unless your own repository measures one. Add local metrics: no-scope folder ratio, orphan file ratio, stale branch ratio, cross-scope violation rate, duplicate artifact count, invalid tag count, and manifest coverage.\n\n## Agent-Team Angle: How T_agent_internal Changes The Recommendation\n\nFor human-heavy systems, implicit semantics can work for a while. People use memory, team norms, conversation, and visual location to infer why a file is in a folder. That is why PIM studies find strong navigation preference and why folder trees remain useful Navigating through digital folders uses the same brain structures as real world navigation [15], Folder versus tag preference in personal information management [26].\n\nFor agent-heavy systems, tacit semantics are a liability. Agents need explicit affordances: what this folder contains, what it excludes, what schemas artifacts must satisfy, what relations point outward, what lifecycle rules apply, and what tools can operate safely. The W3C RDF/OWL stack, Schema.org, JSON Schema, and OpenAPI all encode this principle in different domains: machine consumers need stable identifiers, structured attributes, validatable shapes, and typed relations W3C RDF [113], W3C OWL [102], Schema.org [21], JSON Schema [115], OpenAPI Specification [114].\n\n| T condition | Folder-as-ontology fit | Better primitive | Required governance |\n|---|---|---|---|\n| T_human_internal high, T_agent_internal low | Good as a metaphor if folder names and READMEs are clear | Folder tree plus README | Naming conventions, owner, examples, tree testing |\n| T_human_internal high, T_agent_internal high | Incomplete | Folder tree plus machine-readable manifest | JSON/YAML manifest, JSON Schema validation, generated index, CI checks |\n| T_agent_internal high, cross-folder reasoning high | Weak | Graph or ontology overlay | RDF/OWL or typed graph, stable IDs, relation vocabulary, reasoner or graph queries |\n| T_external_users high | Weak alone | IA system: hierarchy plus facets plus search | Controlled vocabulary, faceted metadata, search analytics, tree tests |\n| T_distributed_team high | Risky if implicit | Scoped folders plus governance | Code owners, review workflows, manifest coverage, exception register |\n\n**Decision insight:** The higher T_agent_internal is, the more the system should shift from \"folder semantics are understood\" to \"folder semantics are declared, machine-readable, and enforceable.\"\n\n## Conditions By Project Class K And Team Vector T\n\nBecause the prompt does not define K formally, I use K here as the project knowledge-organization class: the dominant structure of the work and its artifacts. T is the team vector, especially human-heavy versus agent-heavy operation.\n\n| Project class K | Typical artifacts | Best primary primitive | Why | Folder-as-ontology verdict |\n|---|---|---|---|---|\n| K1 - Modular build or codebase | Source files, tests, docs, configs | Scoped folders | Locality, build boundaries, ownership, imports, and lifecycle often align | Strong fit if each stable directory has README/manifest and CI rules |\n| K2 - Documentation site | Tutorials, how-to guides, reference, explanations | Diataxis-like hierarchy plus facets | Diataxis organizes docs around user needs and forms Diataxis [1] | Good as primary navigation, but facets for product, version, audience, and task |\n| K3 - Research/data project | Raw data, derived data, notebooks, protocols, outputs | Scoped folders plus metadata manifests | Lifecycle and provenance matter; artifacts need validation | Good if manifests declare provenance, schema, owner, and retention |\n| K4 - Multi-audience content library | Articles, assets, media, components | Faceted classification | Items belong to multiple dimensions at once | Folder-only loses; facets dominate |\n| K5 - High-volume communication stream | Email, chat, logs, tickets | Flat plus search, thread graph, retention rules | Preparatory filing is often costly; search and threading work well | Folder ontology usually loses |\n| K6 - Dependency or provenance network | APIs, services, entities, data lineage, knowledge base | Typed graph or ontology | Relations matter more than containment | Folder tree is only a storage layer; graph dominates |\n| K7 - Personal or small-team knowledge base | Notes, references, snippets | Hybrid folders plus controlled tags | Users benefit from location and associative retrieval | Folder plus tags dominates; pure ontology likely overkill |\n| K8 - Agent-operated repository | Tools, schemas, prompts, APIs, generated artifacts | Machine-readable manifests plus schemas and graph links | Agents require explicit constraints for planning and safe action | Folder-as-ontology must become folder-as-contract |\n\n**Decision insight:** Folder-as-ontology is the right primitive only when the dominant relation is containment, ownership, lifecycle, or local module scope. It loses when the dominant relation is multi-membership, sequence/threading, dependency, provenance, or inference.\n\n## Recommended Refined Formulation\n\nUse option (c), with option (b) embedded as an enforcement rule.\n\n> **Refined Sub-thesis 2:** A repository should expose a layered, enforceable knowledge-organization scheme. Each stable folder that functions as a navigation, ownership, lifecycle, or execution boundary must declare its scope, allowed artifacts, exclusions, owner, and maintenance rules. The folder tree is the primary locality and human-navigation layer, not the whole ontology. Cross-cutting meanings must be represented as controlled facets or tags; relation-dense meanings must be represented as typed links, schemas, or graphs. For agent-heavy systems, scope declarations must be machine-readable and validated.\n\nThis formulation preserves the empirical strengths of folders while removing the unsupported universal claim. It also aligns with Diataxis for documentation, IA/faceted classification for multi-dimensional collections, and Semantic Web/API schema practice for machine-readable systems Diataxis [1], Information Architecture for the World Wide Web, ch. 9 [87], W3C OWL [102], OpenAPI Specification [114].\n\n### Minimum Enforcement Protocol\n\nFor every stable semantic folder, require a README or manifest with these fields:\n\n| Field | Purpose | Human-heavy version | Agent-heavy version |\n|---|---|---|---|\n| Scope | States what belongs here | README paragraph | `scope` field in YAML/JSON |\n| Out of scope | Prevents scope creep | Examples and anti-examples | `exclusions` array |\n| Allowed artifact types | Prevents mixed containers | List in README | JSON Schema enum or file-pattern rule |\n| Owner | Assigns maintenance accountability | Team or person | CODEOWNERS plus manifest owner |\n| Lifecycle | Distinguishes draft, active, deprecated, archive | Status table | Controlled lifecycle vocabulary |\n| Required metadata | Supports refinding and validation | Checklist | JSON Schema or OpenAPI component schema |\n| Relations | Captures cross-folder meaning | Links section | RDF/JSON-LD/typed graph edge list |\n| Review cadence | Prevents silent decay | Date in README | CI stale-check rule |\n\nCI or repository automation should then check: manifest exists, required fields are present, files match allowed patterns, links resolve, owners are valid, stale folders are reported, generated indexes are current, tags come from controlled vocabularies, and exceptions are explicitly registered.\n\n**Decision insight:** The intervention is not \"make every folder an ontology.\" The intervention is \"make every stable folder a scoped, testable contract, and model non-containment semantics in the right layer.\"\n\n## Synthesis: The Folder Is A Contract, Not The Ontology\n\nThe literature creates a clear tension. PIM research says humans like folders, remember locations, and often reject tags as primary organization. Email research says folder preparation can waste effort. IA and faceted-classification research says single hierarchies fail when users need multiple paths. Semantic Web and API-schema research says agents need explicit machine-readable semantics, but those semantics are richer than folder containment.\n\nThese findings are not contradictory once each scheme is assigned to the right job. Hierarchy handles locality, ownership, lifecycle, and known-item navigation. Facets handle multi-dimensional description. Tags handle lightweight associative cross-cuts. Graphs handle typed relationships, provenance, dependency, and inference. Search handles high-volume text and streams. Formal schemas and ontologies handle agent-safe interpretation.\n\nThe strong A* sub-thesis overclaims by collapsing all of those layers into the folder tree. A better thesis treats folders as scoped contracts in a larger knowledge-organization stack. In a human-heavy codebase, a README-declared folder may be enough. In an agent-heavy repository, the same folder needs a manifest, JSON Schema, typed relations, generated indexes, and validation. In a public documentation system, the folder tree should be supplemented by Diataxis structure, facets, and search analytics. In a graph-like domain, the folder path should not pretend to be the ontology.\n\n**Final recommendation:** restructure the claim. Do not say \"every folder is a small ontology\" as an empirical assertion. Say: \"Every stable folder is a scoped semantic boundary that must declare and enforce its contract; the repository ontology is layered across folders, facets, tags, graphs, schemas, and search.\"\n\n## References\n\n1. *diataxis.fr - Di\u00e1taxis*. https://diataxis.fr/\n2. *Information Architect Job Description | UX Staffing Agency*. http://artisantalent.com/job-descriptions/information-architect-job-description\n3. *Welcome to Coginiti Documentation | Coginiti Documentation*. http://docs.coginiti.co/intro\n4. *Controlled Vocabularies - Information Architecture for the ...*. https://www.oreilly.com/library/view/information-architecture-for/0596000359/ch09s02.html\n5. *Interpretable Context Methodology: Folder Structure as ...*. https://arxiv.org/pdf/2603.16021\n6. *Advances in Knowledge Organization*. https://iskoproceedings.org/\n7. *(PDF) Folksonomies: (Un)Controlled Vocabulary? - ResearchGate*. https://www.researchgate.net/publication/28807454_Folksonomies_UnControlled_Vocabulary\n8. *International Society for Knowledge Organization*. http://en.wikipedia.org/wiki/International_Society_for_Knowledge_Organization\n9. *An adaptive semantic retrieval framework for digital ... - Nature*. https://www.nature.com/articles/s41598-025-24276-1\n10. *ISKO: International Society for Knowledge Organization*. https://www.isko.org/\n11. *Folder vs . Tag Preference in Personal Information Management*. https://www.semanticscholar.org/paper/Folder-vs-.-Tag-Preference-in-Personal-Information-Bergman/06299855330e614ed965730da9d78b5ff495d810\n12. *The future of personal information management in the age of ...*. https://www.tandfonline.com/doi/pdf/10.1080/07370024.2025.2482191\n13. *Fetched web page*. http://sasse.de/impressum\n14. *Google Scholar*. https://scholar.google.com/\n15. *Navigating through digital folders uses the same brain ...*. https://www.nature.com/articles/srep14719\n16. *UDC Seminar 2017*. http://seminar.udcc.org/2017\n17. *Facet analysis: The logical approach to knowledge ...*. https://www.sciencedirect.com/science/article/pii/S0306457312001203\n18. *Colon classification \u2014 Grokipedia*. https://grokipedia.com/page/Colon_classification\n19. *Understanding Faceted Classification in Library and ...*. https://www.lisedunetwork.com/understanding-faceted-classification-in-library-and-information-science/\n20. *CoLIS: Conceptions of Library and Information Sciences*. http://wikicfp.com/cfp/program?id=534\n21. *Schema.org - Schema.org*. https://schema.org/\n22. *OpenAPI Specification - Version 3.1.0 - Swagger*. http://swagger.io/specification\n23. *Software That Understands the Work, Not Just the Worker*. http://arraycorp.com/vertical-industry-ontologies\n24. *Making OpenAPI Documentation Agent-Ready: Detecting ...*. https://arxiv.org/html/2605.14312v1\n25. *From Semantic Web and MAS to Agentic AI: - arXiv.org*. https://arxiv.org/html/2507.10644\n26. *Folder versus tag preference in personal information management*. https://onlinelibrary.wiley.com/doi/full/10.1002/asi.22906\n27. *Folder versus tag preference in personal information management*. https://onlinelibrary.wiley.com/doi/10.1002/asi.22906\n28. *New AI Enhancements Available in Cloud: January 2026 ...*. http://answers.laserfiche.com/questions/233614/New-AI-Enhancements-Available-in-Cloud-January-2026December-2025\n29. *Folder vs. Tag Preference in Personal Information - BIU*. https://is.biu.ac.il/files/is/Folders%20vs%20Tags%20-%20Preprint%20version.pdf\n30. *Michelle Whittaker-McCracken, CPC, SPHR*. http://linkedin.com/in/michelle-whittaker-mccracken-cpc-sphr-565125\n31. *(PDF) Am I wasting my time organizing email? - ResearchGate*. https://www.researchgate.net/publication/221518713_Am_I_wasting_my_time_organizing_email\n32. *Contact - The Whittaker Group LLC.*. http://whittakergroup.org/contact\n33. *Am I wasting my time organizing email? | Proceedings of the ...*. https://dl.acm.org/doi/abs/10.1145/1978942.1979457\n34. *90+ \"Michele Whittaker\" profiles - LinkedIn*. http://linkedin.com/pub/dir/Michele/Whittaker/us-0-United-States\n35. *The Science of Managing Our Digital Stuff - MIT Press*. https://mitpress.mit.edu/9780262035170/the-science-of-managing-our-digital-stuff/\n36. *The Science of Managing Our Digital Stuff | MIT Press ...*. https://academic.oup.com/mit-press-scholarship-online/book/22884\n37. *The Science of Managing Our Digital Stuff - Ofer Bergman ...*. https://books.google.com/books/about/The_Science_of_Managing_Our_Digital_Stuf.html?id=us2MEAAAQBAJ\n38. *The Science of Managing Our Digital Stuff - Ofer Bergman ...*. https://books.google.com/books/about/The_Science_of_Managing_Our_Digital_Stuf.html?id=Ds1uDQAAQBAJ\n39. *The science of managing our digital stuff - Bar-Ilan University*. https://cris.biu.ac.il/en/publications/the-science-of-our-digital-stuff/\n40. *Commonwealth Roofing Corp.*. http://members.agcky.org/directory/Details/commonwealth-roofing-corp-2254100\n41. *Commonwealth Roofing Company Profile*. http://datanyze.com/companies/commonwealth-roofing/28429465\n42. *Too Many Hierarchies?*. http://www.cs.ucl.ac.uk/fileadmin/sec/publications/Boardman_Spence_Sasse_Too_Many_Hierarchies_HCI2003.pdf\n43. *\"Stuff goes into the computer and doesn't come out ...*. https://dl.acm.org/doi/abs/10.1145/985692.985766?download=true\n44. *Commonwealth Roofing: Employee Directory | ZoomInfo.com*. http://zoominfo.com/pic/commonwealth-roofing-corp/28429465\n45. *LibGuides: Research Data Management : Managing Files*. https://guides.lib.virginia.edu/RDM/file-management\n46. *Personal information organization and re-access in computer ...*. https://www.ideals.illinois.edu/items/26602\n47. *Folder structure \u2013 Reproducible Research Things - GitHub Pages*. https://orchid00.github.io/ReproducibleResearchThings/03-folderstructure/index.html\n48. *PERSONAL INFORMATION ORGANIZATION AND RE-ACCESS IN ... - CORE*. https://core.ac.uk/download/pdf/4834287.pdf\n49. *Organizing Data Files - Data Management Toolkit @ UNH ...*. https://libraryguides.unh.edu/datamanagement/organize\n50. *Understanding and Improving Personal File Retrieval*. https://www.semanticscholar.org/paper/Understanding-and-Improving-Personal-File-Retrieval-Fitchett/29c35b674cbf8924650b7951584dbc322a20f44b\n51. *Navigating through digital folders uses the same brain ...*. https://ui.adsabs.harvard.edu/abs/2015NatSR...514719B/abstract\n52. *Understanding and Improving Personal File Retrieval*. https://ir.canterbury.ac.nz/items/ba7b1b0d-97fa-4f70-a021-1238688d4ee2/full\n53. *The effect of folder structure on personal file navigation*. https://onlinelibrary.wiley.com/doi/abs/10.1002/asi.21415\n54. *The Project Fragmentation Problem in Personal Information ...*. https://dl.acm.org/doi/epdf/10.1145/1124772.1124813\n55. *Keeping Found Things Found - ScienceDirect*. https://www.sciencedirect.com/book/edited-volume/9780123708663/keeping-found-things-found\n56. *Finders, keepers? The present and future perfect in support ...*. https://www.researchgate.net/publication/220167363_Finders_keepers_The_present_and_future_perfect_in_support_of_personal_information_management\n57. *Intentional Information Fragmentation in Email Management*. https://vtechworks.lib.vt.edu/items/5578fdef-a1ca-4b37-8785-148edd462ab6\n58. *Keeping Found Things Found: The Study and Practice of ...*. https://books.google.com/books/about/Keeping_Found_Things_Found.html?id=27UoYdWnitUC\n59. [Detail by Entity Name - Sunbiz.org - Division of Corporations](http://search.sunbiz.org/Inquiry/CorporationSearch/SearchResults?Detail=FL.DOS.Corporations.Shared.Contracts.FilingRecord&InquiryDirectionType=PreviousRecord&InquiryType=EntityName&ListNameOrder=SKYDIVESPACECENTER P960000953930&SearchNameOrder=SKYDIVESPACECOAST P010000159200&SearchTerm=Skydive Mia, Inc.)\n60. *Finding and Reminding: File Organization from the Desktop*. https://www.ibiblio.org/msmckoy/spring2006/articles/fileOrganizationFromTheDesktop.pdf\n61. *http://northamptonma.gov/Directory/Home/SingleStaff?EID=49*. http://northamptonma.gov/Directory/Home/SingleStaff?EID=49\n62. *Finding and Reminding*. https://ia801504.us.archive.org/26/items/perm1_20220428_0403/Finding.pdf\n63. *Finding and reminding: file organization from the desktop ...*. https://dl.acm.org/doi/10.1145/221296.221307\n64. *TagTrees: Improving Personal Information Management Using ...*. https://karl-voit.at/tagstore/en/papers.shtml\n65. *Tagging Might Not Be Slower Than Filing in Folders - Karl Voit*. https://karl-voit.at/tagstore/downloads/Voit2012a.pdf\n66. *Property Image | LinkedIn*. http://linkedin.com/company/property-image\n67. *Tag and Find Files Fast: Metadata Tags in File Explorer*. https://windowsforum.com/threads/tag-and-find-files-fast-metadata-tags-in-file-explorer.387048/\n68. *TagTrees : improving personal information management using ...*. https://repository.tugraz.at/publications/5pwdt-sn341\n69. *Personal information organization and re-access in computer ...*. https://dl.acm.org/doi/10.5555/2521372\n70. *11 ideas for how to organize digital files - microsoft.com*. https://www.microsoft.com/en-us/microsoft-365/business-insights-ideas/resources/11-ideas-for-how-to-organize-digital-files\n71. *Welcome to Laserfiche WebLink*. http://doccenter.cityofevanston.org/WebLink\n72. *Supporting multiple paths to objects in information ...*. https://www.sciencedirect.com/science/article/pii/S0306457309000739\n73. *Faceted search: 9 best practices to improve UX and ...*. http://fact-finder.com/blog/faceted-search\n74. *Flamenco Home*. https://flamenco.berkeley.edu/\n75. *Hierarchical Faceted Metadata in Site Search Interfaces*. https://bailando.berkeley.edu/papers/chi02_short_paper.pdf\n76. *Modeling Reusable and Interoperable Faceted Browsing Systems ...*. https://pmc.ncbi.nlm.nih.gov/articles/PMC5392185/\n77. *Controlled Vocabulary | Practical UX Method*. http://chandan.design/ux-methods/controlled-vocabulary\n78. *Collaborative tagging as a knowledge organisation and ...*. https://pureportal.strath.ac.uk/en/publications/collaborative-tagging-as-a-knowledge-organisation-and-resource-di\n79. *Usage patterns of collaborative tagging systems - Scott A ...*. https://journals.sagepub.com/doi/10.1177/0165551506062337\n80. *http://arxiv.org/pdf/cs/0508082*. http://arxiv.org/pdf/cs/0508082\n81. *OWL-S - Wikipedia*. http://en.wikipedia.org/wiki/OWL-S\n82. *Accepted Main Conference Papers - EMNLP 2025*. http://2025.emnlp.org/program/main_papers\n83. *OG-RAG: Ontology-grounded retrieval-augmented ...*. http://aclanthology.org/2025.emnlp-main.1674.pdf\n84. *Ontology Learning and Knowledge Graph Construction: A ...*. https://arxiv.org/html/2511.05991v1\n85. *Fetched web page*. http://reports.adviserinfo.sec.gov/reports/ADV/152622/PDF/152622.pdf\n86. *Directory Structure | Data Management*. https://datamanagement.hms.harvard.edu/plan-design/directory-structure\n87. *Information Architecture - Fucinaweb*. https://fucinaweb.com/materiale/iaftwww/ch09.pdf\n88. *Colon Classification (IEKO) - International Society for ...*. https://www.isko.org/cyclo/colon_classification\n89. *About | Divio Documentation*. http://docs.divio.com/documentation-system\n90. *Faceted Search | Springer Nature Link*. https://link.springer.com/book/10.1007/978-3-031-02262-3\n91. *Facet analysis (IEKO) - International Society for Knowledge ...*. https://www.isko.org/cyclo/facet_analysis\n92. *Musings on Faceted Search, Metadata, and Library Discovery ...*. https://www.tandfonline.com/doi/full/10.1080/01639374.2023.2222120\n93. *Faceted classification - Wikipedia*. https://en.wikipedia.org/wiki/Faceted_classification\n94. *Review of Techniques in Faceted Search Applications*. https://ieeexplore.ieee.org/document/9297275\n95. *Design Recommendations for Hierarchical Faceted Search Interfaces*. https://flamenco.berkeley.edu/papers/faceted-workshop06.pdf\n96. *Searching for Titles*. http://help.bibliocommons.com/hc/en-us/articles/31765683992084-Searching-for-Titles\n97. *Finding the flow in web site search | Communications of the ACM*. https://dl.acm.org/doi/10.1145/567498.567525\n98. *Search Facets - The Digital Platform Documentation Site*. http://docs.gossinteractive.com/article/11060/Search-Facets\n99. *Web Ontology Language: OWL2 - Stony Brook University*. http://www3.cs.stonybrook.edu/~pfodor/courses/CSE595/L05_Web_Ontology_Language_OWL2.pdf\n100. *Making OpenAPI Documentation Agent-Ready: Detecting ...*. https://www.semanticscholar.org/paper/Making-OpenAPI-Documentation-Agent-Ready%3A-Detecting-Lima-Pinheiro/22c160e2eea5ffeb13677d6007b4b2e630a045dc\n101. *Schema.org - Schema.org*. http://schema.org/\n102. *OWL - Semantic Web Standards*. https://www.w3.org/OWL/\n103. *Why API Documentation is Insu cient for Developers: an ...*. http://yuyue.github.io/res/paper/Why%20API%20Doc-SCIS%202019.pdf\n104. *Di\u00e1taxis*. http://diataxis.fr/\n105. *Dara Rosenfeld Design: Home*. http://dararosenfelddesign.com/\n106. *Tree Testing: Fast, Iterative Evaluation of Menu Labels and ...*. http://nngroup.com/articles/tree-testing\n107. *Established Frameworks and Models in Information Architecture*. https://informationarchitectureauthority.com/ia-frameworks-and-models\n108. *What is Di\u00e1taxis and should you be using it with your ...*. https://idratherbewriting.com/blog/what-is-diataxis-documentation-framework\n109. *9 \"Nirmal Ranganathan\" profiles*. http://linkedin.com/pub/dir/Nirmal/Ranganathan\n110. *Five laws of library science - Wikipedia*. https://en.wikipedia.org/wiki/Five_laws_of_library_science\n111. *Five Laws of Library Science by Ranganathan*. https://www.lisedunetwork.com/five-laws-of-library-science/\n112. *(PDF) Colon Classification (CC) - ResearchGate*. https://www.researchgate.net/publication/321985821_Colon_Classification_CC\n113. *RDF - Semantic Web Standards*. https://www.w3.org/RDF/\n114. *OpenAPI Specification v3.2.0*. https://spec.openapis.org/oas/latest.html\n115. *JSON Schema - What is JSON Schema?*. https://json-schema.org/overview/what-is-jsonschema\n116. *GitHub - novoid/tagstore: a research software; a fun way of ...*. https://github.com/novoid/tagstore\n117. *TagTrees: Improving Personal Information Management Using ...*. https://www.karl-voit.at/tagstore/downloads/Voit2012b.pdf\n118. *Don't Do Complex Folder Hierarchies - They Don't Work and ...*. https://karl-voit.at/2020/01/25/avoid-complex-folder-hierarchies/\n119. *Deletion Considered Harmful - arXiv.org*. https://arxiv.org/pdf/2512.23907\n120. *Cleaning Up Orphaned Files and Folders in Document ...*. https://positiveresults.com/blog/technology/cleaning-up-orphaned-files-and-folders/\n121. *Mastering Directory & Folder Structures: Best Practices ...*. https://systemsize.com/folder-comparison/mastering-directory-folder-structures-best-practices-explained/\n122. *data-science-tutorials/useful-python-scripts-file-tasks/stale ...*. https://github.com/balapriyac/data-science-tutorials/blob/main/useful-python-scripts-file-tasks/stale_folder_purger.py\n123. *$OrphanFiles May Not Be What You Think - LinkedIn*. https://www.linkedin.com/pulse/orphanfiles-may-what-you-think-jeff-hamm-cwsge\n124. *Communications Department*. http://roanokecountyva.gov/84/Communications-Department\n125. *Mood and personal information management: how we feel ...*. https://link.springer.com/content/pdf/10.1007/s00779-020-01412-4.pdf\n",
+    "type": "text",
+    "beta_fields": null
+  },
+  "run": {
+    "created_at": "2026-05-21T06:18:35.268372Z",
+    "is_active": false,
+    "modified_at": "2026-05-21T06:40:51.407080Z",
+    "processor": "ultra2x",
+    "run_id": "trun_da4211ace2c146329d2f69432c48e30e",
+    "status": "completed",
+    "error": null,
+    "metadata": {
+      "protocol": "A_STAR",
+      "thread_id": "RQ5-folder-as-ontology"
+    },
+    "task_group_id": null,
+    "warnings": [
+      {
+        "message": "enable_events unset for ultra2x. Setting to true by default. Consider setting to false explicitly if you do not want to track events for streaming.",
+        "type": "warning",
+        "detail": null
+      }
+    ],
+    "interaction_id": "trun_da4211ace2c146329d2f69432c48e30e"
+  }
+}

@@ -1,0 +1,746 @@
+{
+  "output": {
+    "basis": [
+      {
+        "field": "answer",
+        "reasoning": "",
+        "citations": [
+          {
+            "url": "https://www.crunchbase.com/organization/dx",
+            "excerpts": [
+              "DX is a developer intelligence platform that measures developer productivity. It provides data and insights to help organizations accelerate velocity and"
+            ],
+            "title": "DX - Crunchbase Company Profile & Funding"
+          },
+          {
+            "url": "https://space-framework.com/",
+            "excerpts": [
+              "Learn about the SPACE framework for measuring developer productivity. Understand the five dimensions: Satisfaction, Performance, Activity, Communication, and Efficiency."
+            ],
+            "title": "The SPACE Framework: A Complete Guide to Developer Productivity"
+          },
+          {
+            "url": "https://github.com/atlassian",
+            "excerpts": [
+              "The Forge Skills Plugin bundles several Forge-focused skills plus MCP-backed tooling so your agent can scaffold apps, review them before deploy, debug production issues, and stay current on Forge APIs and the Atlassian Design System."
+            ],
+            "title": "Atlassian - GitHub"
+          },
+          {
+            "url": "http://github.com/digitalonboarding",
+            "excerpts": [
+              "Digital Onboarding has 7 repositories available. Follow their code on GitHub."
+            ],
+            "title": "Digital Onboarding"
+          },
+          {
+            "url": "http://coursehero.com/file/252817886/The-SPACE-of-Developer-Productivitydocx",
+            "excerpts": [
+              "This framework, called SPACE, captures the most important dimensions of developer productivity"
+            ],
+            "title": "The SPACE of Developer Productivity.docx"
+          },
+          {
+            "url": "http://flagsmith.com/compare/launchdarkly-vs-split",
+            "excerpts": [
+              "LaunchDarkly is a cloud-based feature flag management software focused on enterprise teams."
+            ],
+            "title": "LaunchDarkly vs Split"
+          },
+          {
+            "url": "https://docs.statsig.com/guides/migrate-from-launchdarkly",
+            "excerpts": [
+              "Migrating from LaunchDarkly to Statsig is a strategic move. It can lead to efficient feature flag management and a stronger experimentation culture. By following this guide, you\u2019ll be well equipped to make the transition with confidence. We will cover the following topics in this guide:"
+            ],
+            "title": "LaunchDarkly Migration Guide - Statsig Documentation"
+          },
+          {
+            "url": "https://git-scm.com/book/en/v2/Git-Basics-Undoing-Things",
+            "excerpts": [
+              "Here, we\u2019ll review a few basic tools for undoing changes that you\u2019ve made. Be careful, because you can\u2019t always undo some of these undos. This is one of the few areas in Git where you may lose some work if you do it wrong."
+            ],
+            "title": "Git - Undoing Things"
+          },
+          {
+            "url": "http://thoughtworks.com/en-br/radar/techniques/dora-metrics",
+            "excerpts": [
+              "The metrics defined by the DORA research program have been widely adopted and have proven to be strong leading indicators of how a delivery organization is performing. These include change lead time, deployment frequency, mean time to restore (MTTR), change failure rate and a newer fifth metric, rework rate."
+            ],
+            "title": "DORA metrics | Technology Radar | Thoughtworks Brazil"
+          },
+          {
+            "url": "http://launchdarkly.com/",
+            "excerpts": [
+              "LaunchDarkly helps teams safely manage code and AI agents in production with feature flags, progressive delivery, automated rollback, and runtime control."
+            ],
+            "title": "LaunchDarkly: Runtime Control for AI-Era Software | Feature ..."
+          },
+          {
+            "url": "http://designsystems.com/christopher-alexander-the-father-of-pattern-language",
+            "excerpts": [
+              "Christopher Alexander's A Pattern Language proposes starting with fundamental building blocks that are then adapted to form something new."
+            ],
+            "title": "Christopher Alexander: The father of pattern language"
+          },
+          {
+            "url": "https://ia601508.us.archive.org/33/items/AlexanderChristopherNotesOnTheSynthesisOfForm/Alexander_Christopher_Notes_on_the_Synthesis_of_Form.pdf",
+            "excerpts": [
+              "These diagrams, which, in my more recent work, I. have been calling patterns, are the key to the process of creating form. In this book I pre sented the diagrams as the end results of a long process; I put the accent on the process, and gave the diagrams themselves only a few pages of discussion."
+            ],
+            "title": "Notes on the Synthesis of Form - ia601508.us.archive.org"
+          },
+          {
+            "url": "https://www.cambridge.org/core/journals/design-science/article/assessment-of-the-creative-potential-of-design-problems-via-novelty-and-usefulness/ECBD7B65EA50FEBB0831C6D4A20AC585",
+            "excerpts": [
+              "Statistical analyses confirmed the correlation of both novelty and usefulness with creative potential, supporting findings in the literature. To demonstrate the methods, detailed case studies have been presented, illustrating the application of the methods."
+            ],
+            "title": "Assessment of the creative potential of design problems via ..."
+          },
+          {
+            "url": "http://sei.cmu.edu/library/atam-method-for-architecture-evaluation",
+            "excerpts": [
+              "In this report, we will discuss some of the technical and organizational foundations for performing architectural analysis, and will present the Architecture Tradeoff Analysis Method (ATAM) a technique for analyzing software architectures that we have developed and refined in practice over the past three years."
+            ],
+            "title": "ATAM: Method for Architecture Evaluation - SEI Digital Library"
+          },
+          {
+            "url": "https://www.hup.harvard.edu/books/9780674627512",
+            "excerpts": [
+              "This book, opening with these words, presents an entirely new theory of the process of design. In the first part of the book, Christopher Alexander discusses the process by which a form is adapted to the context of human needs and demands that has called it into being."
+            ],
+            "title": "Notes on the Synthesis of Form \u2014 Harvard University Press"
+          },
+          {
+            "url": "https://www.sciencedirect.com/science/article/pii/S0003687020301903",
+            "excerpts": [
+              "As predicted by Woods' theory, this case shows that sharing adaptive capacity allows graceful extensibility that is particularly useful when a system is challenged by frequent but unpredictably severe events."
+            ],
+            "title": "Building and revising adaptive capacity sharing for technical ..."
+          },
+          {
+            "url": "http://dynatrace.com/customers/hmcts",
+            "excerpts": [
+              "70% reduction in MTTR with AI root-cause analysis"
+            ],
+            "title": "HMCTS customer story"
+          },
+          {
+            "url": "https://sre.google/workbook/error-budget-policy/",
+            "excerpts": [
+              "This section is boilerplate, intended to give a succinct overview of error budgets to those unfamiliar with them. Error budgets are the tool SRE uses to balance service reliability with the pace of innovation."
+            ],
+            "title": "Google SRE - Error Budget Policy for Service Reliability"
+          },
+          {
+            "url": "https://www.erikhollnagel.com/onewebmedia/Blurp.pdf",
+            "excerpts": [
+              "This book introduces a comprehensive approach for the management of Safety-II, called the Resilience Assessment Grid (RAG). It explains the principles of the RAG and how it can be used to develop the resilience potentials."
+            ],
+            "title": "Safety-II in Practice: Developing the Resilience Potentials"
+          },
+          {
+            "url": "https://www.researchgate.net/publication/327427067_The_Theory_of_Graceful_Extensibility_Basic_rules_that_govern_adaptive_systems",
+            "excerpts": [
+              "The paper introduces the theory of graceful extensibility which expresses fundamental characteristics of the adaptive universe that constrain the search for sustained adaptability."
+            ],
+            "title": "(PDF) The Theory of Graceful Extensibility: Basic rules that ..."
+          },
+          {
+            "url": "https://erikhollnagel.com/ideas/resilience%20assessment%20grid.html",
+            "excerpts": [
+              "The RAG uses four sets of questions to determine how well a system performs on each of the four basic potentials. Each question is answered using a Likert-type scale, and taken together the answers provide a profile of the system's potentials for resilient performance."
+            ],
+            "title": "Resilience Assessment Grid - erikhollnagel.com"
+          },
+          {
+            "url": "http://cloudsoft.io/blog/site-reliability-engineering-sre-glossary",
+            "excerpts": [
+              "SLO \u00b7 SLI \u00b7 Mean Time to Detect (MTTD) \u00b7 Mean Time to Recover (MTTR)\nToil \u00b7 Auto-remediation \u00b7 SLO \u00b7 SLI \u00b7 Mean Time to Detect (MTTD) \u00b7 Mean Time to Recover (MTTR) \u00b7 Incident response automation (IRA)"
+            ],
+            "title": "Must-Know Site Reliability Engineering (SRE) Terminology"
+          },
+          {
+            "url": "https://arxiv.org/pdf/1702.05843",
+            "excerpts": [
+              "At the heart of Chaos Engineering is the premise that engineers should view a collection of services running in production as a single system , and that we can better understand the behavior of this system by injecting real world inputs (e.g., transient network failures, surges in incoming requests, malformed data inputs) and observing what"
+            ],
+            "title": "Chaos Engineering - arXiv.org"
+          },
+          {
+            "url": "http://ott.techstrong.tv/spotlight-interviews/videos/continuous-verification-casey-rosenthal-verica",
+            "excerpts": [
+              "Verica uses a chaos engineering approach to simulate adverse conditions, allowing DISH to proactively identify and fix software issues before customers"
+            ],
+            "title": "Continuous Verification - Casey Rosenthal, Verica"
+          },
+          {
+            "url": "https://docs.statsig.com/feature-flags/overview",
+            "excerpts": [
+              "Feature Gates, commonly known as feature flags, allow you to toggle the behavior of your product in real time without deploying new code."
+            ],
+            "title": "Feature Flags - Statsig Documentation"
+          },
+          {
+            "url": "http://growthbook.io/insights/launchdarkly-feature-flagging-platform-explained",
+            "excerpts": [
+              "The Guarded Releases capability, which reached general availability at Galaxy 2025, adds automated rollback to this picture \u2014 meaning teams"
+            ],
+            "title": "LaunchDarkly: Feature Flagging Platform Explained"
+          },
+          {
+            "url": "https://launchdarkly.com/docs/api/feature-flags",
+            "excerpts": [
+              "The feature flags API allows you to list, create, and modify feature flags and their targeting. For example, you can control percentage rollouts, target specific contexts, or even toggle off a feature flag programmatically."
+            ],
+            "title": "Feature Flags | LaunchDarkly | Documentation"
+          },
+          {
+            "url": "http://ensolvers.com/post/cloud-devops-what-the-numbers-cant-hide",
+            "excerpts": [
+              "DORA metrics, including deployment frequency, lead time for changes, change failure rate, and time to recovery, are widely used to evaluate DevOps performance.\nDefining key performance indicators at both the technical and business levels is essential to guide the transformation."
+            ],
+            "title": "Cloud DevOps: What the Numbers Can't Hide"
+          },
+          {
+            "url": "https://link.springer.com/book/10.1007/978-1-4471-7541-4",
+            "excerpts": [
+              "This book is an edited collection of key lectures and foundational publications by Professor Nigel Cross on creative design thinking. This is an expanded and updated new edition of the previous version, with three additional chapters."
+            ],
+            "title": "Designerly Ways of Knowing and Thinking | Springer Nature Link"
+          },
+          {
+            "url": "http://scribd.com/document/596357149/SEI-ATAM-Example",
+            "excerpts": [
+              "The ATAM relies on the principle that an architecture is suitable (or not suitable) only in the context of specific quality attributes that it must impart to the system."
+            ],
+            "title": "SEI ATAM Example | PDF | Software Architecture | Scenario ..."
+          },
+          {
+            "url": "https://dm.iisc.ac.in/cpdm/ideaslab/publications/UID_45.pdf",
+            "excerpts": [
+              "This research proposes a new method for assessing the creativity of products as a function of their novelty and usefulness. We develop individual methods for assessing novelty and usefulness of products, and then combine these into a method for assessing creativity of products."
+            ],
+            "title": "Assessing design creativity"
+          },
+          {
+            "url": "https://oro.open.ac.uk/104099/",
+            "excerpts": [
+              "This book is an edited collection of key lectures and foundational publications by Professor Nigel Cross on creative design thinking. This is an expanded and updated new edition of the previous version, with three additional chapters."
+            ],
+            "title": "Designerly Ways of Knowing and Thinking"
+          },
+          {
+            "url": "https://queue.acm.org/detail.cfm?id=3454124",
+            "excerpts": [
+              "The article demonstrates how this framework can be used to understand productivity in practice and why using it will help teams better understand developer productivity, create better measures to inform their work and teams, and may positively impact engineering outcomes and developer well-being."
+            ],
+            "title": "The SPACE of Developer Productivity - ACM Queue"
+          },
+          {
+            "url": "https://www.atlas-bench.com/blog/onboarding-developers-faster-the-atlassian-based-blueprint",
+            "excerpts": [
+              "Whether you are building your first onboarding blueprint or refining a mature process, we can help you reach faster time to first contribution while strengthening developer experience."
+            ],
+            "title": "Onboarding Developers Faster The Atlassian Based Blueprint"
+          },
+          {
+            "url": "http://remotive.com/remote/jobs/software-development/technical-lead-developer-experience-4511213",
+            "excerpts": [
+              "* Agentic-First Engineering Standards: Own and evolve the organisation's agentic AI working practices across R&D.\n* Developer Productivity and Flow: Champion developer productivity by identifying and addressing pain points in the development lifecycle.\n* Technical Standards & Documentation: Define and uphold developer experience standards, promote clear documentation.\nWe are looking for an experienced and proactive Technical Lead - Developer Experience to join our DevEx team and help us drive our new AI-first engineering shift by taking ownership of the internal developer journey, tooling, and documentation to ensure maximum engineering productivity and satisfaction.\n[Hiring] Technical Lead - Developer Experience @Arbor Education\nWe are looking for an experienced and proactive Technical Lead - Developer Experience to join our DevEx team and help us drive our new AI-first engineering\nore Responsibilities\n\n* Developer Tooling Architecture & Agentic AI Integration: Define and guide the architecture of internal developer tools and services, specifically assessing, integrating, and maintaining AI-powered tools (e.g., agents, agentic environments, coding assistants, diagnostic tools)."
+            ],
+            "title": "[Hiring] Technical Lead - Developer Experience @Arbor Education"
+          },
+          {
+            "url": "https://queue.acm.org/detail.cfm?id=3595878",
+            "excerpts": [
+              "Taken together, the three dimensions of DevEx\u2014feedback loops, cognitive load, and flow state\u2014provide a practical framework for understanding developer experience, while the accompanying measurement approaches systematically guide improvement."
+            ],
+            "title": "DevEx: What Actually Drives Productivity - ACM Queue"
+          },
+          {
+            "url": "https://www.microsoft.com/en-us/research/publication/the-space-of-developer-productivity-theres-more-to-it-than-you-think/",
+            "excerpts": [
+              "The SPACE framework captures different dimensions of productivity, and here we demonstrate how this framework can be used to understand productivity in practice and why using it will help teams better understand developer productivity and create better measures to inform their work and teams."
+            ],
+            "title": "The SPACE of Developer Productivity: There's more to it than ..."
+          },
+          {
+            "url": "https://dora.dev/research",
+            "excerpts": [
+              "DORA | Research - Dora.dev\nDORA is a long running research program that seeks to understand the capabilities that drive software delivery and operations performance."
+            ],
+            "title": "DORA | Research - Dora.dev"
+          },
+          {
+            "url": "https://dora.dev/",
+            "excerpts": [
+              "Dora.dev\nDORA is a long running research program that seeks to understand the capabilities that drive software delivery and operations performance. AI \u00b7 Research \u00b7 Capabilities \u00b7 Guides"
+            ],
+            "title": "Dora.dev"
+          },
+          {
+            "url": "https://devlake.apache.org/docs/Metrics/FailedDeploymentRecoveryTime/",
+            "excerpts": [
+              "This metric is crucial in evaluating the resilience and efficiency of a team's deployment process. A shorter recovery time indicates a team's ability to swiftly detect issues, troubleshoot them, and restore the system to a functional state, minimizing downtime and impact on end-users."
+            ],
+            "title": "DORA - Failed Deployment Recovery Time | Apache DevLake ..."
+          },
+          {
+            "url": "https://cloud.google.com/blog/products/devops-sre/using-the-four-keys-to-measure-your-devops-performance",
+            "excerpts": [
+              "Time to Restore Service \u2014How long it takes an organization to recover from a failure in production. At a high level, Deployment Frequency and Lead Time for Changes measure velocity, while"
+            ],
+            "title": "Use Four Keys metrics like change failure rate to measure ..."
+          },
+          {
+            "url": "https://docs.github.com/en/get-started/onboarding",
+            "excerpts": [
+              "Get started, troubleshoot, and make the most of GitHub. Documentation for new users, developers, administrators, and all of GitHub's products."
+            ],
+            "title": "Onboarding - GitHub Docs"
+          },
+          {
+            "url": "https://dl.acm.org/doi/10.1145/3715767",
+            "excerpts": [
+              "Our study has the potential to revolutionize the current newcomer-expert mentorship and provides valuable insights for researchers and tool designers aiming to develop and enhance AI mentor systems."
+            ],
+            "title": "Revolutionizing Newcomers\u2019 Onboarding Process in OSS ..."
+          },
+          {
+            "url": "http://psycnet.apa.org/record/2017-10515-001",
+            "excerpts": [
+              "Using a time-lagged, 4-phase data collection of a sample of new software engineers in India and their managers, we were able to test our hypothesized model as well as rule out alternative explanations via multilevel structural equation modeling."
+            ],
+            "title": "Newcomer adjustment: Examining the role of managers ..."
+          },
+          {
+            "url": "http://businessmodelcanvastemplate.com/products/swimm-business-model-canvas",
+            "excerpts": [
+              "Enhances Code Understanding\nImproves Developer Onboarding and Knowledge Sharing\nIntegrates Seamlessly into Developer Workflows\nKeeps Documentation Up-to-Date Automatically\nSwimm streamlines developer onboarding, enabling faster understanding of codebases and efficient knowledge exchange. This accelerates new team members'"
+            ],
+            "title": "Swimm: Business Model Canvas \u2013 businessmodelcanvastemplate ..."
+          },
+          {
+            "url": "http://docs.statsig.com/api-reference/feature-gates/check-feature-gates",
+            "excerpts": [
+              "Check Feature Gate(s) - Statsig Documentation\nEvaluates one or more feature gates for a user and returns pass/fail results. Automatically logs exposure events for analytics."
+            ],
+            "title": "Check Feature Gate(s) - Statsig Documentation"
+          },
+          {
+            "url": "https://launchdarkly.com/blog/how-to-instantly-roll-back-buggy-features-with-launchdarkly-kill-switch/",
+            "excerpts": [
+              "Learn how to use LaunchDarkly's kill switch feature flags in a client-side JavaScript application to roll back buggy features instantly. Together, we'll walk through enhancing a fan page for DJ Toggle by adding new styles and features, all controlled by a feature flag."
+            ],
+            "title": "How to instantly roll back buggy features with LaunchDarkly\u2019s ..."
+          },
+          {
+            "url": "https://launchdarkly.com/docs/home/releases/guarded-rollouts",
+            "excerpts": [
+              "A new flag or AgentControl config variation must be evaluated by a minimum number of contexts during each step of a guarded rollout. If this requirement is not met, LaunchDarkly automatically rolls back the change."
+            ],
+            "title": "Guarded rollouts | LaunchDarkly | Documentation"
+          },
+          {
+            "url": "http://learn.microsoft.com/en-us/sql/t-sql/language-elements/rollback-transaction-transact-sql?view=sql-server-ver17",
+            "excerpts": [
+              "Dec 17, 2025 \u2014 This statement rolls back an explicit or implicit transaction to the beginning of the transaction, or to a savepoint inside the transaction.\nOLLBACK TRANSACTION` without a _savepoint_name_ or _transaction_name_ rolls back to the beginning of the transaction.\nROLLBACK { TRAN | TRANSACTION }\n    [ transaction_name | @tran_name_variable\n    | savepoint_name | @savepoint_variable ]\n[ ; ]\nThis statement rolls back an explicit or implicit transaction to the beginning of the transaction, or to a savepoint inside the transaction. You use `ROLLBACK TRANSACTION` to erase all data modifications made from the start of the transaction or from a savepoint. `ROLLBACK TRANSACTION` also frees the resources held by the transaction.\n`ROLLBACK TRANSACTION savepoint_name` doesn't decrement `@@TRANCOUNT` ."
+            ],
+            "title": "ROLLBACK TRANSACTION (Transact-SQL) - SQL Server"
+          },
+          {
+            "url": "http://postgresql.org/docs/current/sql-rollback.html",
+            "excerpts": [
+              "# ROLLBACK\n## Description\n`ROLLBACK` rolls back the current transaction and causes all the updates made by the transaction to be discarded.\n## Parameters\n`WORK`\n`TRANSACTION` #\nOptional key words. They have no effect. `AND CHAIN` #\nIf `AND CHAIN` is specified, a new (not aborted) transaction is immediately started with the same transaction characteristics (see SET TRANSACTION ) as the just finished one. Otherwise, no new transaction is started.\nFeb 26, 2026 \u2014 ROLLBACK rolls back the current transaction and causes all the updates made by the transaction to be discarded."
+            ],
+            "title": "Documentation: 18: ROLLBACK"
+          },
+          {
+            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/cncpt/transactions.html",
+            "excerpts": [
+              "Oracle Database supports statement-level atomicity, which means that a SQL statement is an atomic unit of work and either completely succeeds or completely fails."
+            ],
+            "title": "Transactions - Oracle Help Center"
+          },
+          {
+            "url": "https://dev.to/kfir-g/understanding-atomicity-in-postgresql-a-deep-dive-into-the-a-in-acid-209a",
+            "excerpts": [
+              "PostgreSQL provides strong atomicity guarantees, but they\u2019re only effective when transactions are used intentionally and correctly. Multi-statement operations should always be wrapped in an explicit transaction, and developers must anticipate rollback paths as part of the application\u2019s normal flow."
+            ],
+            "title": "Understanding Atomicity in PostgreSQL: A Deep Dive into the ..."
+          },
+          {
+            "url": "http://github.com/ben-thul",
+            "excerpts": [
+              "Technical documentation for Microsoft SQL Server, tools such as SQL Server Management Studio (SSMS) , SQL Server Data Tools (SSDT) etc. PowerShell"
+            ],
+            "title": "ben-thul"
+          },
+          {
+            "url": "https://www.adaptivecapacitylabs.com/HowComplexSystemsFail.pdf",
+            "excerpts": [
+              "Complex systems are heavily and successfully defended against failure. The high consequences of failure lead over time to the construction of multiple layers of defense against failure."
+            ],
+            "title": "How Complex Systems Fail - adaptivecapacitylabs.com"
+          },
+          {
+            "url": "https://securityandtechnology.org/wp-content/uploads/2020/07/operatingatthesharp-2.pdf",
+            "excerpts": [
+              "This chapter examines issues surrounding human performance at the sharp end, including those described as errors and those considered expert. Most people use the term human error to delineate one category of potential causes for unsatisfactory activities or outcomes."
+            ],
+            "title": "Operating at the Sharp End: The Complexity of Human Error"
+          },
+          {
+            "url": "https://www.sciencedirect.com/science/article/pii/S0951832015000848",
+            "excerpts": [
+              "For science and engineering purposes, one needs to be explicit about which of the four senses of resilience is meant when studying or modeling adaptive capacities (or to expand on the four anchor concepts as new results emerge)."
+            ],
+            "title": "Four concepts for resilience and the implications for the ..."
+          },
+          {
+            "url": "https://psychsafety.com/psychological-safety-78-dr-richard-cook/",
+            "excerpts": [
+              "In 2004 Richard became engaged in another new development \u2014 the rise of Resilience Engineering as an alternative approach to safety & complexity that emphasised the adaptive power of people."
+            ],
+            "title": "Dr Richard Cook: How Complex Systems Fail - Psych Safety"
+          },
+          {
+            "url": "https://www.researchgate.net/profile/Richard-Cook-8/publication/332248963_Operating_at_the_Sharp_End_The_Complexity_of_Human_Error/links/5ca94418299bf118c4b8b217/Operating-at-the-Sharp-End-The-Complexity-of-Human-Error.pdf",
+            "excerpts": [
+              "This chapter examines issues surrounding human performance at the sharp end, including those described as errors and those considered expert."
+            ],
+            "title": "Operating at the Sharp End: The Complexity of Human Error"
+          },
+          {
+            "url": "http://kgt.bme.hu/files/BMEGT30M400/Taleb_Antifragile__2012.pdf",
+            "excerpts": [
+              "[PDF] Antifragile: Things That Gain from Disorder\nTaleb, Nassim. Antifragile : things that gain from disorder / Nassim Nicholas Taleb. p. cm. Includes bibliographical references and index. ISBN 978-1-4000"
+            ],
+            "title": "[PDF] Antifragile: Things That Gain from Disorder"
+          },
+          {
+            "url": "https://www.supersummary.com/antifragile/summary/",
+            "excerpts": [
+              "Taleb\u2019s central idea is that some systems, objects, and organizations benefit from shocks and volatility. He asserts that antifragility, so conceived, is different from concepts like resilience, which it resembles."
+            ],
+            "title": "Antifragile Summary and Study Guide | SuperSummary"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Antifragile_(book)",
+            "excerpts": [
+              "The titular concept of antifragility uses examples from science and mathematics to argue that some systems are strengthened by encounters with disorder, and to link sensitivity to disorder to nonlinear responses and optionality."
+            ],
+            "title": "Antifragile (book) - Wikipedia"
+          },
+          {
+            "url": "http://books.google.com/books/about/Antifragile.html?id=rkOUnAEACAAJ",
+            "excerpts": [
+              "\"The acclaimed author of the influential bestseller The Black Swan, Nicholas Nassim Taleb takes a next big step with a deceptively simple concept: the \"antifragile.\""
+            ],
+            "title": "Antifragile: Things that Gain from Disorder - Google Books"
+          },
+          {
+            "url": "http://cpor.org/af/Taleb_Antifragile.pdf",
+            "excerpts": [
+              "Yet, in spite of the ubiquity of the phenomenon, there is no word for the exact opposite of fragile. Let us call it antifragile. Antifragility is beyond resilience or robustness. The resilient resists shocks and stays the same; the antifragile gets better."
+            ],
+            "title": "Antifragile: Things That Gain from Disorder - CPOR"
+          },
+          {
+            "url": "https://principlesofchaos.org/",
+            "excerpts": [],
+            "title": "PRINCIPLES OF CHAOS ENGINEERING - Principles of chaos engineering"
+          },
+          {
+            "url": "https://sre.google/sre-book/service-level-objectives/",
+            "excerpts": [],
+            "title": "Google SRE - Defining slo: service level objective meaning"
+          },
+          {
+            "url": "https://www.oreilly.com/library/view/software-architecture-in/9780136885979/",
+            "excerpts": [
+              "Updated with eleven new chapters, Software Architecture in Practice, Fourth Edition, thoroughly explains what software architecture is, why it's important, and how to design, instantiate, analyze, evolve, and manage it in disciplined and effective ways."
+            ],
+            "title": "Software Architecture in Practice, 4th Edition [Book]"
+          },
+          {
+            "url": "https://quality.arc42.org/articles/sei-quality-model",
+            "excerpts": [
+              "Len Bass, Paul Clements and Rick Kazman from the Software Engineering Institute (SEI) have authored the \u201cSoftware Architecture in Practice\u201d book, which saw its fourth edition in 2022."
+            ],
+            "title": "SEI Quality Model"
+          },
+          {
+            "url": "http://researchgate.net/publication/2814191_ATAM_Method_for_Architecture_Evaluation",
+            "excerpts": [
+              "The ideas an d findi ngs in thi s report should not be cons trued as an o fficial DoD pos ition. It is pu blish ed in the interest of scientific and techn ical information exchan ge."
+            ],
+            "title": "(PDF) ATAM: Method for Architecture Evaluation - ResearchGate"
+          },
+          {
+            "url": "http://johnsonfavaro.com/people",
+            "excerpts": [
+              "Steve Johnson and Jim Favaro founded the architecture practice Johnson Favaro in 1988"
+            ],
+            "title": "People \u2014 Johnson Favaro"
+          },
+          {
+            "url": "http://maarifculture.com/antifragile-things-that-gain-from-disorder-nassim-nicholas-taleb/dp/9780141038223",
+            "excerpts": [
+              "Antifragile - Things that Gain from Disorder - Broch\u00e9\nAntifragile - Things that Gain from Disorder - Broch\u00e9. de : Nassim Nicholas Taleb. Traducteur(s) : Note moyenne : (0 avis). Donner un avis."
+            ],
+            "title": "Antifragile - Things that Gain from Disorder - Broch\u00e9"
+          },
+          {
+            "url": "https://psycnet.apa.org/getdoi.cfm?doi=10.1037/t66149-000",
+            "excerpts": [
+              "The Creative Product Semantic Scale (CPSS; Besemer & O'Quin, 1986) is based on the Creative Product Analysis Matrix (CPAM; Besemer & Treffinger, 1981), which is a three-dimensional model for judging product creativity."
+            ],
+            "title": "Creative Product Semantic Scale - APA PsycNet"
+          },
+          {
+            "url": "https://www.sciencedirect.com/science/article/pii/S0142694X11000111",
+            "excerpts": [
+              "We develop individual methods for assessing novelty and usefulness of products, and then combine these into a method for assessing creativity of products."
+            ],
+            "title": "Assessing design creativity - ScienceDirect"
+          },
+          {
+            "url": "https://www.cambridge.org/core/journals/design-science/article/uses-of-the-novelty-metrics-proposed-by-shah-et-al-what-emerges-from-the-literature/28EAA999E457B6A56C3B36AFC181890E",
+            "excerpts": [
+              "Several concepts and types of procedures for assessing novelty and related concepts exist in the literature. Among them, the two approaches originally proposed by Shah and colleagues are often considered by scholars."
+            ],
+            "title": "Uses of the novelty metrics proposed by Shah et al.: what ..."
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/A_Pattern_Language",
+            "excerpts": [
+              "Grouping these patterns, the authors say, they form a kind of language, each pattern forming a word or thought of a true language rather than a prescriptive way to design or solve a problem."
+            ],
+            "title": "A Pattern Language - Wikipedia"
+          },
+          {
+            "url": "https://archive.org/details/timelesswayofbui0000alex_u9i8",
+            "excerpts": [
+              "Christopher Alexander presents it in a new theory of architecture, building, and planning which has at its core that age-old process by which the people of a society have always pulled the order of their world from their own being."
+            ],
+            "title": "The timeless way of building : Alexander, Christopher, 1936 ..."
+          },
+          {
+            "url": "https://www.scribd.com/document/187788385/Notes-on-the-Synthesis-of-Form",
+            "excerpts": [
+              "Download as PDF, TXT or read online on Scribd."
+            ],
+            "title": "Notes On The Synthesis of Form | PDF | Logic | Teaching ..."
+          },
+          {
+            "url": "https://www.sei.cmu.edu/library/atam-method-for-architecture-evaluation/",
+            "excerpts": [],
+            "title": "ATAM: Method for Architecture Evaluation | CMU Software Engineering Institute"
+          },
+          {
+            "url": "https://archive.org/details/designerlywaysof0000cros",
+            "excerpts": [
+              "\"Designerly Ways of Knowing\" is a revised and edited collection of key lectures and publications by Professor Nigel Cross on the nature of design activity and expertise, and the evidence for design cognition as a particular and essential aspect of human intelligence."
+            ],
+            "title": "Designerly ways of knowing : Cross, Nigel, 1942- : Free ..."
+          },
+          {
+            "url": "https://www.bloomsbury.com/uk/design-thinking-9781350305069/",
+            "excerpts": [
+              "This second edition of Design Thinking: Understanding How Designers Think and Work offers an overview from one of design's most experienced and influential scholars. Nigel Cross goes to the heart of what it means to think and work as a designer."
+            ],
+            "title": "Design Thinking: Understanding How Designers Think and Work ..."
+          },
+          {
+            "url": "https://link.springer.com/content/pdf/10.1007/978-1-4471-7541-4.pdf",
+            "excerpts": [
+              "design activity and designer behaviour. From a review of these studies, I summarise design ability as comprising abilities of resolving ill-defined problems, adopting solution-focussed cognitive strategies, employing abductive or appositional thinki."
+            ],
+            "title": "Designerly Ways of Knowing and Thinking - Springer"
+          },
+          {
+            "url": "https://www.amazon.com/Design-Thinking-Understanding-Designers-Think/dp/1847886361",
+            "excerpts": [
+              "The book offers new insights and understanding of design thinking, based on evidence from observation and investigation of design practice. Author Nigel Cross, considered one of design's most influential thinkers, goes to the heart of what it means to think and work as a designer."
+            ],
+            "title": "Design Thinking: Understanding How Designers Think and Work"
+          },
+          {
+            "url": "http://apps.dtic.mil/sti/tr/pdf/AD1087054.pdf",
+            "excerpts": [
+              "...\n\nStep 9: Present Results\nRecapitulate all the steps of the ATAM and present the ATAM outputs, including\n\u2022 architectural approaches\n\u2022 utility tree\n\u2022 scenarios\n\u2022 risks and non-risks\n\u2022 sensitivity points and tradeoffs\n\u2022 risk themes\nA utility tree is a top-down vehicle for characterizing and prioritizing the \"driving\" attribute-specific requirements. The driving quality attributes are the high-level nodes (typically performance, modifiability, security, and availability). Scenarios are the leaves of the utility tree.\nIdentify, prioritize, and refine the most important quality attribute goals by building a utility tree. A utility tree is a top-down vehicle for characterizing and prioritizing the \"driving\" attribute-specific requirements."
+            ],
+            "title": "Architecture Tradeoff Analysis Method\u00ae - ATAM\u00ae - DTIC"
+          },
+          {
+            "url": "http://sei.cmu.edu/documents/6202/Cybersecurity-Maturity-Model-Certification-CMMC_oeH9RY6.pdf",
+            "excerpts": [
+              "The SEI helped to establish its structure based on proven cybersecurity practices, developed the certification and assessment standards, and created training"
+            ],
+            "title": "[PDF] Cybersecurity Maturity Model Certification (CMMC)"
+          },
+          {
+            "url": "https://www.researchgate.net/publication/221473740_The_Architecture_Tradeoff_Analysis_Method",
+            "excerpts": [
+              "This paper presents the Architecture Tradeoff Analysis Method (ATAM), a structured technique for understanding the tradeoffs inherent in the architectures of software-intensive systems."
+            ],
+            "title": "(PDF) The Architecture Tradeoff Analysis Method. - ResearchGate"
+          },
+          {
+            "url": "http://byteiota.com/developer-tool-sprawl-14-tool-chaos-costs-40-productivity",
+            "excerpts": [
+              "Developer Tool Sprawl: 14-Tool Chaos Costs 40% Productivity."
+            ],
+            "title": "Developer Tool Sprawl: 14-Tool Chaos Costs 40% ..."
+          },
+          {
+            "url": "https://www.devpath.com/blog/google-developer-productivity",
+            "excerpts": [
+              "According to Google's Engineering Productivity Research Team, developer productivity can't be reduced to a single number. The team takes a holistic view of productivity, incorporating product-focused outcomes as well as facets of the developer experience."
+            ],
+            "title": "How Google onboarding improved developer productivity"
+          },
+          {
+            "url": "https://www.sciencedirect.com/science/article/pii/S0950584924001733",
+            "excerpts": [
+              "In our review, we focused on papers that propose software solutions \u2014 such as tools, applications, or platforms \u2014 designed to facilitate the onboarding of newcomers to software projects."
+            ],
+            "title": "Software solutions for newcomers\u2019 onboarding in software ..."
+          },
+          {
+            "url": "https://document360.com/blog/developer-onboarding-best-practices/",
+            "excerpts": [
+              "For new developers, joining a new team and environment is often more challenging than learning the technology itself. Understanding how work flows through the team, how decisions are made, and how people collaborate day to day is essential for effective onboarding."
+            ],
+            "title": "Developer Onboarding Best Practices | Practical Guide"
+          },
+          {
+            "url": "http://swimm.io/learn",
+            "excerpts": [
+              "Walk through code with your team and build dynamic tutorials to onboard, document and share your knowledge on any repository."
+            ],
+            "title": "Learning Center - Swimm"
+          },
+          {
+            "url": "https://www.onboard-developer.com/",
+            "excerpts": [
+              "Transform developer onboarding with AI-powered codebase analysis. Get new engineers productive in hours with structured learning paths, automated first tasks, role-based training, and real-time progress tracking. Perfect for engineering teams building modern software."
+            ],
+            "title": "OnBoardAI \u2014 AI-Powered Developer Onboarding Software"
+          },
+          {
+            "url": "https://www.atlassian.com/developer-experience",
+            "excerpts": [
+              "This article explains why developer experience is important and how an improved developer experience leads to better outcomes for developers and organizations. It also provides recommendations for meaningful change on your team."
+            ],
+            "title": "What is developer experience? | Atlassian"
+          },
+          {
+            "url": "https://github.blog/news-insights/research/survey-reveals-ais-impact-on-the-developer-experience/",
+            "excerpts": [
+              "We surveyed 500 U.S.-based developers at companies with 1,000-plus employees about how managers should consider developer productivity, collaboration, and AI coding tools."
+            ],
+            "title": "Survey reveals AI\u2019s impact on the developer experience"
+          },
+          {
+            "url": "http://atlassian.com/blog/announcements/optic-acquisition",
+            "excerpts": [
+              "Adding Optic to Compass will accelerate our ability to empower engineering teams and improve productivity by helping developers to find the documentation they need and ship faster.\nApr 29, 2024 \u2014 Atlassian has acquired Optic, an API documentation and management tool that makes it easy for developers to publish accurate API docs.\nOptic created industry leading open source tools for working with OpenAPI, helping many enterprises to start working API-first.\nOptic will be integrated into Compass, Atlassian's [developer experience platform"
+            ],
+            "title": "Welcoming Optic, an API documentation and management tool, to Atlassian - Inside Atlassian"
+          },
+          {
+            "url": "https://www.microsoft.com/en-us/research/group/developer-experience-lab/",
+            "excerpts": [
+              "Investigate ways to measure and improve developer productivity so we can help developers do their work better, faster, smarter, and more securely. This includes investigations of low-code, no-code, and work at the intersection of code and ML and AI."
+            ],
+            "title": "Developer Experience Lab - Microsoft Research"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2505.04277",
+            "excerpts": [
+              "Onboarding newcomers is vital for the sustainability of open-source software (OSS) projects. To lower barriers and increase engagement, OSS projects have dedicated experts who provide guidance for newcomers."
+            ],
+            "title": "Revolutionizing Newcomers\u2019 Onboarding Process in OSS ..."
+          },
+          {
+            "url": "https://arxiv.org/pdf/2103.05055",
+            "excerpts": [
+              "How do tasks influence a new developer\u2019s onboarding experience in software development teams? We answer this research question with an exploratory case study, which allows us to examine tasks and onboarding without any existing theory."
+            ],
+            "title": "A Case Study of Onboarding in Software Teams: Tasks and ..."
+          },
+          {
+            "url": "http://catharsisinsight.com/",
+            "excerpts": [
+              "Empirical science that fights for software teams.\nI design and empirically test real change strategies embedded directly into developers' working days\nWith Catharsis, I help engineering organizations protect and measure what matters most about their people while everything changes around them.\nin partnership with working technical teams."
+            ],
+            "title": "Catharsis Consulting \u2014 Cat Hicks, PhD"
+          },
+          {
+            "url": "http://move-dx.com/",
+            "excerpts": [
+              "Designed by leading researchers,\nDeveloper intelligence for the AI era\nhelps organizations measure developer productivity, accelerate velocity with data,"
+            ],
+            "title": "DX: Developer Intelligence Platform"
+          },
+          {
+            "url": "https://research.google/pubs/what-improves-developer-productivity-at-google-code-quality/",
+            "excerpts": [
+              "But the research literature either focuses on what correlates with developer productivity in realistic settings or focuses on what causes developer productivity in highly constrained settings. In this paper, we bridge the gap by studying software developers at Google through two analyses."
+            ],
+            "title": "What Improves Developer Productivity at Google? Code Quality."
+          },
+          {
+            "url": "http://linkedin.com/in/joseph-atkins-turkish-47559275",
+            "excerpts": [
+              "On Brex's Data Platform team, I worked to improve ETL and documentation tooling, and also took it upon myself to improve developer experience wherever I could."
+            ],
+            "title": "Joseph Atkins-Turkish - Founding Software Engineer at ..."
+          },
+          {
+            "url": "https://research.google/people/cierajaspan/",
+            "excerpts": [
+              "In this paper, we report a large-scale study of 1200+ projects written in C++ and Java from Google LLC."
+            ],
+            "title": "Ciera Jaspan - Google Research"
+          },
+          {
+            "url": "http://getoptimal.ai/old-home",
+            "excerpts": [
+              "Agentic Code Review & Developer Productivity Platform\nAgents that review code & track productivity, all in one place. Spot blockers early and surfaces insights to help your team move 30% faster."
+            ],
+            "title": "Agentic Code Review & Developer Productivity Platform"
+          }
+        ],
+        "confidence": ""
+      }
+    ],
+    "content": "# Cost Vector Decisions For Resilient Creative Architectures\n\n## Executive Summary\n\n- **Resilience Is A Scenario Envelope**: Hollnagel's Resilience Assessment Grid evaluates **4 potentials** - respond, monitor, learn, and anticipate - while Google SRE operationalizes reliability through SLIs, SLOs, and error budgets Resilience Assessment Grid [21], Google SRE: Service Level Objectives [65], Google SRE: Error Budget Policy [18] -> do not add generic `c_resilience`; model resilience as scenario-indexed hard constraints plus a small number of risk functionals.\n- **Blast Radius Is The Missing Resilience Scalar**: Chaos engineering defines resilience work as experiments against measurable steady state behavior and recommends minimizing blast radius Principles of Chaos Engineering [64], Chaos Engineering [23] -> if current axes cannot capture failure containment, add optional `c_blast = E[impact | single failure event]`, not a broad resilience axis.\n- **Resilience Should Bound `c_drift`, `c_loss`, And `c_reverse`**: Woods' graceful extensibility work treats brittleness as collapse when adaptive capacity saturates, and Taleb distinguishes the resilient system that stays the same from the antifragile system that benefits from shocks The Theory of Graceful Extensibility [20], Antifragile [59] -> encode resilience as bounds on drift, loss, recovery, and blast-radius scenarios, with intent-level risk posture in `I`.\n- **Creativity Is Intent Plus Output Quality**: Design creativity research commonly measures creativity through **novelty plus usefulness**, while Alexander defines design quality as fitness between form and context Assessing Design Creativity [31], Assessment of Creative Potential via Novelty and Usefulness [13], Notes on the Synthesis of Form [12] -> place creativity in `I` as a novelty/search appetite and score generated architectures with `q_creativity`, not as a cost in `C`.\n- **Onboarding Is A Split Variable**: SPACE measures productivity across **5 dimensions** - satisfaction, performance, activity, communication and collaboration, and efficiency and flow - and DevEx identifies **3 dimensions** - feedback loops, cognitive load, and flow state The SPACE of Developer Productivity [33], DevEx: What Actually Drives Productivity [36] -> remove observed `c_onboard_total` from intrinsic `C`; retain only an architecture-intrinsic learnability residual, and move team/tooling capacity to `T`.\n- **Reverse Cost Is Also Split**: DORA-style failed-deployment recovery time measures a team's ability to detect, troubleshoot, and restore service, while Git, database transactions, Statsig, and LaunchDarkly show undo cost is strongly shaped by tooling DORA Failed Deployment Recovery Time [40], Git: Undoing Things [8], PostgreSQL ROLLBACK, Statsig Feature Flags [25], LaunchDarkly [10] -> split `c_reverse` into architecture irreversibility and `T_reverse_capability`; do not keep total rollback time as a pure architecture axis.\n- **Dimensionality Should Fall From 9 To 7**: If `c_onboard_total` and `c_reverse_total` are moved out of `C`, core `C` falls from **9 axes to 7 axes**; because both removed axes are composites of existing architecture costs plus team/tooling variables, effective rank likely drops from **4-5 to 3-4** -> adopt a smaller intrinsic `C` and a richer `T`, while keeping scenario diagnostics for resilience and reversibility.\n\n## Decision Register: Four Placement Calls\n\n| Construct | Literature Signal | Recommended Placement | Why This Is Defensible |\n|---|---|---|---|\n| Resilience | Hollnagel uses a **4-potential** profile; SRE uses SLOs, SLIs, error budgets; chaos engineering uses steady-state experiments and blast-radius control | Something else: a scenario-indexed constraint and risk envelope; optional `c_blast` | Resilience is not one monotonic cost. It is adaptive behavior under disturbances, so it belongs in constraints over scenarios and in `I` as risk posture |\n| Creativity | Design research measures novelty plus usefulness; Alexander measures fit between form and context; ATAM evaluates quality-attribute scenarios and tradeoffs | Intent parameter plus output-side quality score | Creativity is a goal for generation and a property of the generated architecture, not a cost to minimize |\n| `c_onboard` | SPACE and DevEx show productivity/onboarding are multidimensional and tool/team/process dependent; Google research points to code quality as an intrinsic contributor | Split, but remove observed onboarding time from core `C` | Total onboarding time is confounded. Keep architecture learnability as a residual or submetric; put onboarding capability in `T` |\n| `c_reverse` | DORA recovery metrics, Git undo, database rollback, and feature flags show rollback depends on release/tooling capabilities; architecture still matters for state, coupling, and side effects | Split, but remove observed rollback time from core `C` | Total undo time is a team/tooling outcome. Keep architecture irreversibility as a scenario risk; put rollback capability in `T` |\n\nThe common pattern is that `C` should measure architecture-intrinsic burdens, while `I` specifies goals and `T` specifies the team's ability to realize or mitigate those burdens. The mistake to avoid is putting downstream operational outcomes directly into `C` when they are produced by architecture, tooling, team skill, and process jointly.\n\n## Part A1: Resilience Belongs In A Scenario Risk Envelope\n\nHollnagel's Safety-II and resilience engineering view resilience as the ability to sustain required operations under expected and unexpected conditions by adjusting functioning before, during, or after events. His Resilience Assessment Grid does not reduce resilience to one scalar. It evaluates **4 basic potentials**: the ability to respond, monitor, learn, and anticipate, using question sets and Likert-style ratings to form a resilience profile Resilience Assessment Grid [21]. That matters for `A*(I, L, K, T)` because a profile is closer to a constraint system than to a single additive cost.\n\nWoods and Cook push the same conclusion from a complex-systems direction. Cook's \"How Complex Systems Fail\" argues that complex systems are defended by layers, contain latent failures, and depend on practitioner adaptation at the sharp end How Complex Systems Fail [54]. Woods' graceful extensibility work defines resilience in terms of adaptive capacity at the boundary of the system's modeled operating envelope. Brittleness appears when adaptive capacity saturates and the system collapses rather than extending gracefully The Theory of Graceful Extensibility [20]. This is a nonlinear boundary property, not a linear marginal cost.\n\nTaleb's antifragility gives an important caution: robustness, resilience, and antifragility are not interchangeable. Taleb distinguishes systems that are fragile under volatility, systems that are robust or resilient and stay the same, and systems that are antifragile and benefit from volatility Antifragile [59]. If `I` says \"resilient,\" `A*` must know whether the user means shock absorption, rebound, graceful extensibility, or antifragile learning. That is an intent-level posture, not just a cost weight.\n\nThe SRE and chaos engineering literatures show how to operationalize this in software. Google SRE defines an SLI as a quantitative service-level measure, an SLO as a target value or range for that measure, and an error budget as the tolerable unreliability left by the SLO Google SRE: Service Level Objectives [65], Google SRE: Error Budget Policy [18]. Chaos engineering defines the discipline as experimenting on a system to build confidence that it withstands turbulent production conditions; experiments start from measurable steady-state behavior and should minimize blast radius Principles of Chaos Engineering [64], Chaos Engineering [23].\n\n**Recommendation for resilience:** do not create a generic `c_resilience` axis. Represent resilience as:\n\n```text\nI_resilience = {\n  posture: robust | rebound | graceful_extensibility | antifragile,\n  SLOs and error budgets,\n  scenario suite S_R,\n  risk appetite alpha,\n  required recovery and containment bounds\n}\n\nR(A, T, s) = {\n  c_loss(A, s) <= lambda_s,\n  c_drift(A, s) <= delta_s,\n  c_reverse_arch(A, s) <= rho_s,\n  MTTR(A, T, s) <= tau_s,\n  c_blast(A, s) <= beta_s\n}\n```\n\nUse hard constraints when the user specifies unacceptable outcomes, such as \"no more than X data loss\" or \"restore within Y minutes.\" Use weighted objectives only for tradeable goals. Add optional `c_blast` when failure containment is not already represented by `c_loss`, `c_drift`, and `c_reverse_arch`.\n\n### Should Resilience Map To Bounds Or To `c_blast`?\n\nThe answer is both, with different status.\n\n| Resilience Concern | Best Mathematical Form | Reason |\n|---|---|---|\n| Data loss under failure | Bound on `c_loss` | SRE and DORA-style recovery metrics treat restoration and loss as operational outcomes to keep within targets |\n| Semantic or model drift after disturbance | Bound on `c_drift` | Resilience includes preserving required operations under perturbation, so unacceptable drift should be constrained |\n| Ability to undo architectural harm | Bound on architecture-intrinsic `c_reverse_arch` | Recovery is part architecture and part team/tooling; constrain the intrinsic part and condition on `T` for total recovery |\n| Failure containment | Optional `c_blast` | Chaos engineering explicitly emphasizes blast-radius minimization; a single failure's scope may vary independently of data loss or rollback speed |\n| Adaptive capacity | Scenario suite plus slack variables | Hollnagel and Woods treat resilience as profile and capacity, not as a simple cost |\n\nSo `c_blast` is justified only when a single failure event's expected impact is a separable architectural property. Examples include tenant isolation, cell-based architecture, circuit breakers, bulkheads, and bounded queues. If a monolith and a cell-based architecture have the same expected data loss and rollback time but one affects **100 percent** of tenants while the other affects **1 cell**, `c_blast` captures a real architectural difference.\n\n## Part A2: Creativity Is Intent Plus Output Quality\n\nCreativity is different from resilience because it is primarily about generation and evaluation, not survival under disturbance. Nigel Cross's design research treats design thinking as a distinct way of knowing in which designers frame problems and solutions together rather than merely solve a fixed problem Designerly Ways of Knowing and Thinking [80], Design Thinking [79]. That maps directly to `A*`: the generator needs a parameter telling it how much to explore, reframe, and recombine, not a cost axis to minimize.\n\nAlexander gives the architecture-specific quality test. In *Notes on the Synthesis of Form*, he says every design problem begins with an effort to achieve fitness between the form and its context; the form is the solution and the context defines the problem Notes on the Synthesis of Form [12]. His pattern-language work then treats patterns as reusable design relationships that can be combined and adapted to solve recurring problems Christopher Alexander: The Father of Pattern Language [11]. The implication is that creative architecture is not random novelty. It is novel fit.\n\nEmpirical design-creativity research makes this measurable. Shah, Smith, and Vargas-Hernandez propose assessing design creativity as a function of novelty and usefulness Assessing Design Creativity [31]. A later design-science paper similarly frames creative potential through novelty and usefulness and reports statistical support for both dimensions Assessment of Creative Potential via Novelty and Usefulness [13]. The Creative Product Semantic Scale tradition also treats creative products as assessable across multiple dimensions, not as mere originality Creative Product Semantic Scale [71].\n\nSoftware architecture quality literature adds a guardrail. The Architecture Tradeoff Analysis Method, associated with Bass, Clements, Kazman, Klein, and SEI, evaluates architecture against quality-attribute scenarios, utility trees, risks, non-risks, sensitivity points, and tradeoffs ATAM: Method for Architecture Evaluation [14], Architecture Tradeoff Analysis Method - ATAM [82]. That means a creative architecture is not good merely because it is unusual; it must still satisfy performance, modifiability, security, availability, and other quality scenarios.\n\n**Recommendation for creativity:** place creativity primarily in `I`, and evaluate it on the output.\n\n```text\nI_creativity = {\n  novelty_target: low | medium | high | percentile target,\n  exploration_budget,\n  allowed_pattern_distance_from_K,\n  analogy_domains,\n  must_satisfy_quality_scenarios,\n  unacceptable novelty risks\n}\n\nq_creativity(A | I, K) =\n  w_n * novelty(A, K)\n  + w_u * usefulness(A, I)\n  + w_v * stakeholder_value(A, I)\n  + w_f * fit(A, context)\n  - w_r * quality_scenario_violations(A)\n```\n\nDo not add `c_creativity` to `C`. A cost vector conventionally contains burdens to minimize. Creativity is either a desired output quality or an exploration policy. If creativity creates downstream costs, those costs should appear through existing axes, such as higher cognitive burden, higher drift risk, weaker reversibility, or lower fit to quality scenarios.\n\n## Part B1: `c_onboard` Should Be Split, Then Removed As A Total Cost Axis\n\nThe strongest evidence against treating observed onboarding time as an intrinsic architecture axis is the developer productivity literature. The SPACE framework explicitly warns against one-dimensional productivity measurement. It defines productivity across **5 dimensions**: satisfaction and well-being, performance, activity, communication and collaboration, and efficiency and flow The SPACE of Developer Productivity [33], Microsoft Research: The SPACE of Developer Productivity [37]. Onboarding cuts across all five: a new engineer needs usable tools, social access, feedback, review loops, and confidence, not just a clean architecture.\n\nThe DevEx framework is even more direct. It identifies **3 dimensions** that drive developer productivity: feedback loops, cognitive load, and flow state DevEx: What Actually Drives Productivity [36]. Architecture affects cognitive load, but tooling and process affect all three. Slow builds, missing docs, unclear ownership, unavailable mentors, and long review cycles can make a good architecture hard to onboard into. Conversely, excellent code search, generated local environments, walkthroughs, and mentoring can make a complex architecture navigable.\n\nGoogle's FSE 2022 paper on developer productivity at Google focuses on code quality as a driver of productivity, which supports keeping an architecture-intrinsic component What Improves Developer Productivity at Google? Code Quality [99]. But onboarding studies show why the total metric is still confounded. A case study of onboarding in software teams asks how tasks influence a new developer's onboarding experience, indicating that assigned work and team strategy shape ramp-up A Case Study of Onboarding in Software Teams [96]. A 2025 systematic literature review focuses on software solutions, tools, applications, and platforms designed to facilitate newcomer onboarding, which is direct evidence that onboarding is tool-mediated Software Solutions for Newcomers' Onboarding in Software Projects [87]. Atlassian's DevEx material similarly frames developer experience as the interaction between developers and the tools, processes, and environments they use Atlassian: What Is Developer Experience [91].\n\n**Call on `c_onboard`: choose (c), split.** Do not keep observed `c_onboard_total` as a core axis in `C`. Instead:\n\n```text\nc_onboard_total(repo, team, tooling) =\n  c_learn_arch(A) + T_onboard_friction(T) + person_fit + task_selection + noise\n```\n\n- Keep `c_learn_arch(A)` only if you need an architecture-intrinsic learnability or cognitive-load residual.\n- Prefer folding `c_learn_arch` into an existing intrinsic maintainability, complexity, or comprehensibility axis rather than preserving `c_onboard` as a separate axis.\n- Move `T_onboard_friction` into `T`, with fields for documentation quality, environment setup automation, code search, build/test latency, mentoring capacity, review latency, ownership clarity, and prior skill distribution.\n\nThis is compatible with Wave 1's SPACE-based recommendation. SPACE does not prove architecture is irrelevant; it proves the observed onboarding outcome is a multi-factor productivity variable. Therefore, total onboarding time belongs in `T` or in evaluation data conditioned on `T`, not in architecture-intrinsic `C`.\n\n## Part B2: `c_reverse` Should Be Split Into Architecture Irreversibility And Tooling Capability\n\nRollback and undo are also composite variables. DORA-style failed-deployment recovery time is explicitly a delivery and operations metric: shorter recovery time indicates a team's ability to detect issues, troubleshoot them, and restore the system while minimizing downtime DORA Failed Deployment Recovery Time [40]. That is not pure architecture. It includes monitoring, alerting, deployment automation, runbooks, team skill, and release policy. DORA itself describes its research program as studying capabilities that drive software delivery and operations performance DORA Research [38].\n\nVersion control and databases show the tooling side. Git's official \"Undoing Things\" chapter warns that undo operations are not always reversible and that users may lose work if they do them wrong Git: Undoing Things [8]. PostgreSQL defines `ROLLBACK` as discarding all updates made by the current transaction PostgreSQL ROLLBACK, while SQL Server's `ROLLBACK TRANSACTION` can roll back to the beginning of a transaction or to a savepoint SQL Server ROLLBACK TRANSACTION. These capabilities are powerful, but they depend on whether the change is inside a transaction, whether irreversible side effects occurred, and whether the architecture isolates state.\n\nFeature flags show the release-platform side. Statsig states that feature flags let teams toggle product behavior in real time without deploying new code Statsig Feature Flags [25]. LaunchDarkly describes feature flags, progressive delivery, automated rollback, and runtime control LaunchDarkly [10], and its kill-switch material explicitly frames flags as a way to roll back buggy features quickly LaunchDarkly Kill Switch [47]. These are not architecture-intrinsic properties alone; they are team and platform capabilities.\n\nArchitecture still matters. A stateless UI feature behind a flag can often be reversed by toggling the flag. A schema migration that destroys data, emits external side effects, changes public API contracts, or tightly couples services may be difficult or impossible to reverse even with excellent tooling. That is the intrinsic component.\n\n**Call on `c_reverse`: choose (c), split.** Remove observed `c_reverse_total` from core `C`, but keep architecture-intrinsic reversibility in the resilience scenario model.\n\n```text\nc_reverse_total(change, A, T) =\n  c_irreversibility_arch(change, A)\n  + T_reverse_friction(T)\n  + incident_detection_time\n  + operator_execution_time\n  + noise\n```\n\nUse `c_irreversibility_arch` as a scenario-level diagnostic or constraint, not necessarily a standalone axis. It should capture state coupling, destructive migrations, external side effects, backward-compatibility breaks, dependency propagation, and blast radius. Put `T_reverse_friction` in `T`, with fields for CI/CD maturity, version-control practice, feature-flag coverage, database rollback and migration tooling, backup/restore capability, observability, runbooks, and SRE/on-call maturity.\n\n## Measurement Controls If `c_onboard` Or `c_reverse` Remain In `C`\n\nIf you decide to keep either construct in `C`, the measurement protocol must isolate the architecture-intrinsic residual from team and tooling confounders. Otherwise, `C` will learn that one architecture is better simply because one team had better docs, faster CI, or stronger mentors.\n\n| Construct | Confounder | Control Protocol | Metric To Record |\n|---|---|---|---|\n| `c_onboard` | Newcomer prior skill | Match participants by experience, language familiarity, and domain familiarity | Background-adjusted time to first correct task |\n| `c_onboard` | Documentation and mentoring | Freeze docs, standardize mentor access, or measure docs and mentoring as `T` covariates | Time to environment setup, time to first merged PR, help requests |\n| `c_onboard` | Tooling latency | Use the same IDE, code search, local setup, build, and test environment across repos | Build/test wait time, setup failures, feedback-loop latency |\n| `c_onboard` | Task selection | Use equivalent onboarding tasks with predefined acceptance tests | Completion time, defect rate, review iterations |\n| `c_onboard` | Team process | Hold review policy, branch policy, and communication channels constant | Review latency, number of blocked intervals |\n| `c_reverse` | CI/CD maturity | Run rollback tests under the same deployment pipeline or model pipeline quality in `T` | Time to rollback command, pipeline failure rate |\n| `c_reverse` | Feature-flag coverage | Either disable flags for intrinsic measurement or include flag coverage in `T` | Percent of change surface behind reversible flags |\n| `c_reverse` | Database tooling | Standardize migration tools, backups, and transaction policy | Data-loss risk, restore time, migration reversibility |\n| `c_reverse` | Observability and detection | Separate detection time from execution time | MTTD, MTTR, failed-deployment recovery time |\n| `c_reverse` | Operator expertise | Use scripted runbooks and matched operators | Human execution time, rollback error count |\n\nThe best statistical approach is a mixed-effects or hierarchical model: architecture/repo as one effect, team/tooling as another, and task/person as controls. For stronger causal evidence, use a difference-in-differences design around an architecture refactor while holding the team and tooling stable. For synthetic benchmarking, run the same tasks on multiple repos under a containerized, standardized toolchain.\n\n## Revised `C`, `I`, `K`, And `T` Schema\n\nThe revised schema should separate intrinsic architecture costs, intent-level goals, knowledge taxonomy, and team/tooling capabilities.\n\n```text\nA*(I, L, K, T) -> candidate architecture A plus diagnostics D\n```\n\n### Core Cost Vector\n\nLet the old vector be:\n\n```text\nC_old = (c_1, c_2, c_3, c_4, c_5, c_6, c_7, c_onboard_total, c_reverse_total)\n```\n\nThe revised core vector is:\n\n```text\nC_core = (c_1, c_2, c_3, c_4, c_5, c_6, c_7)\n```\n\nwhere the retained `c_i` are the architecture-intrinsic axes already present in your framework, including at least the known intrinsic axes such as `c_drift` and `c_loss` if those are in the existing taxonomy. Do not include observed onboarding time or observed rollback time as core axes.\n\nOptional diagnostics sit outside the core vector:\n\n```text\nD_resilience = {\n  c_blast(A, s),\n  c_loss(A, s),\n  c_drift(A, s),\n  c_irreversibility_arch(A, s),\n  MTTR(A, T, s),\n  error_budget_burn(A, T, s)\n}\n\nD_creativity = {\n  novelty(A, K),\n  usefulness(A, I),\n  stakeholder_value(A, I),\n  fit(A, context),\n  quality_scenario_pass_rate(A)\n}\n```\n\nIf the domain is safety-critical, multi-tenant, regulated, or high-scale, promote `c_blast` into the optimized vector as an optional eighth axis:\n\n```text\nC_resilience_critical = C_core + (c_blast)\n```\n\nDo this only when blast radius has independent variance from `c_loss`, `c_drift`, and reversibility.\n\n### Intent `I`\n\n`I` should now include explicit goal-shaping parameters:\n\n```text\nI = {\n  product_goals,\n  business_goals,\n  quality_attribute_priorities,\n  I_resilience,\n  I_creativity,\n  unacceptable_constraints,\n  scenario_suite\n}\n```\n\n`I_resilience` specifies the desired posture: robust, rebound-oriented, graceful-extensible, or antifragile. It also specifies SLOs, error budgets, recovery bounds, blast-radius bounds, and failure scenarios. `I_creativity` specifies novelty target, exploration budget, analogy domains, pattern-distance allowance from `K`, and required quality-attribute scenarios.\n\n### Knowledge Taxonomy `K`\n\n`K` should distinguish architecture knowledge from evaluation knowledge:\n\n```text\nK = {\n  architecture_patterns,\n  anti_patterns,\n  quality_attribute_tactics,\n  ATAM_scenario_templates,\n  failure_modes,\n  rollback_patterns,\n  migration_patterns,\n  design_exemplar_corpus,\n  novelty_baseline_corpus\n}\n```\n\nThis lets `A*` ask whether a generated architecture is novel relative to known patterns, useful relative to the user intent, and safe relative to known failure modes.\n\n### Team And Tooling `T`\n\n`T` should become richer because it now absorbs observed onboarding and rollback capabilities:\n\n```text\nT = {\n  T_onboard: {\n    documentation_quality,\n    docs_freshness,\n    setup_automation,\n    code_search_quality,\n    build_test_latency,\n    mentor_capacity,\n    review_latency,\n    ownership_clarity,\n    prior_skill_distribution\n  },\n\n  T_reverse: {\n    version_control_practice,\n    CI_CD_maturity,\n    feature_flag_coverage,\n    database_transaction_and_migration_tooling,\n    backup_restore_capability,\n    observability,\n    runbook_quality,\n    incident_response_maturity,\n    SRE_maturity\n  },\n\n  T_devex: {\n    SPACE_dimensions,\n    feedback_loop_latency,\n    cognitive_load_sources,\n    flow_interruptions,\n    communication_and_collaboration_practices\n  }\n}\n```\n\nThis schema lets `A*` condition recommendations on reality. A team with weak rollback tooling should receive architectures that minimize irreversible changes and require smaller blast radius. A team with mature flags, migrations, and observability can safely consider architectures that rely on progressive delivery and fast rollback.\n\n## Dimensionality And Effective Rank Projection\n\nIf `c_onboard_total` and `c_reverse_total` move out of `C`, the nominal dimension drops from **9 to 7**. That part is straightforward.\n\nThe effective-rank prediction is also directionally sound. Effective rank depends on how much independent variance each axis contributes. The evidence suggests `c_onboard_total` and `c_reverse_total` are not independent architecture dimensions. `c_onboard_total` loads on architecture/code quality, cognitive load, feedback loops, documentation, mentoring, and setup tooling DevEx: What Actually Drives Productivity [36], What Improves Developer Productivity at Google? Code Quality [99]. `c_reverse_total` loads on architecture irreversibility, data-loss risk, blast radius, observability, CI/CD, feature flags, database tooling, and incident response DORA Failed Deployment Recovery Time [40], Statsig Feature Flags [25], PostgreSQL ROLLBACK.\n\nSo a measured 9-axis cost matrix likely contains collinearity: onboarding overlaps with complexity, maintainability, drift, build/test feedback, and team process; reverse overlaps with loss, blast radius, coupling, statefulness, and deployment tooling. Removing the two observed total axes should reduce noise and lower empirical rank from about **4-5 to 3-4**, provided the remaining seven axes are truly architecture-intrinsic. If you add optional `c_blast`, rank may rise only if blast radius varies independently of loss and recovery time.\n\nThe K taxonomy should change accordingly. Do not create a separate K class for \"onboarding cost\" or \"reverse cost\" as if they were primitive architecture properties. Instead, add K classes for learnability patterns, rollback patterns, migration patterns, failure-domain patterns, and DevEx/SRE capability mappings. These feed scenario evaluation and `T`, rather than inflating `C`.\n\n## Synthesis\n\n| Dimension | Resilience | Creativity | `c_onboard` | `c_reverse` |\n|---|---|---|---|---|\n| Primary mechanism | Adapt under disturbance | Generate novel fit | Learn a codebase and workflow | Undo or contain change harm |\n| Best home | Scenario constraints plus optional `c_blast`; posture in `I` | `I_creativity` plus output score `q_creativity` | Split: intrinsic learnability residual plus `T_onboard` | Split: intrinsic irreversibility plus `T_reverse` |\n| Main evidence base | Hollnagel, Woods/Cook, SRE, chaos engineering, Taleb | Cross, Alexander, novelty/usefulness research, ATAM | SPACE, DevEx, Google code-quality research, onboarding studies | DORA recovery, Git undo, DB rollback, feature flags |\n| Time horizon | Runtime and incident horizon | Design search and selection horizon | First days to months of contributor ramp-up | Deployment, migration, and incident horizon |\n| Risk if modeled as simple cost | Hides nonlinear boundary failure and blast radius | Penalizes desired novelty and collapses exploration | Confounds architecture with docs, mentors, tools, and team process | Confounds architecture with CI/CD, flags, observability, and DB tooling |\n| Recommended action | Add resilience envelope `R(A,T,s)` and optional `c_blast` | Add `I_creativity` and `q_creativity` | Remove total axis from `C`; enrich `T` | Remove total axis from `C`; enrich `T` |\n\nThe non-obvious tension is that resilience and creativity both matter, but they enter the econometric framing in opposite ways. Resilience is mostly a constraint on unacceptable downside under stress. Creativity is mostly an exploration and selection parameter that increases the chance of discovering high-fit architectures. Treating both as ordinary costs would erase this distinction.\n\nThe second tension is that `c_onboard` and `c_reverse` feel architecture-related because architecture clearly affects them. But the literature shows that the observed quantities are capability-mediated outcomes. A well-structured repo with bad docs and slow builds can onboard poorly; a risky migration with excellent feature flags may be operationally reversible until it touches irreversible data. Therefore, the cleanest model is not \"architecture versus tooling.\" It is a split model: architecture-intrinsic burden in `C` or diagnostics, capability in `T`, and scenario outcomes computed from both.\n\nThe final design rule is: keep `C` small, intrinsic, and orthogonal; put goals in `I`; put team/tooling capability in `T`; put resilience and creativity in scenario diagnostics and output-quality functions. That gives `A*` better causal semantics and better empirical measurability.\n\n## Final Recommendations\n\n1. **Resilience:** do not add `c_resilience`. Add `I_resilience`, a resilience scenario suite, hard bounds over `c_drift`, `c_loss`, `c_irreversibility_arch`, MTTR, and error-budget burn, plus optional `c_blast` when failure containment is separable.\n2. **Creativity:** do not add `c_creativity`. Add `I_creativity` to parameterize search and add `q_creativity(A | I, K)` to score output novelty, usefulness, value, fit, and ATAM-style quality-scenario satisfaction.\n3. **`c_onboard`:** choose split. Remove `c_onboard_total` from core `C`; retain only architecture learnability as a residual or fold it into an existing intrinsic complexity/maintainability axis; move onboarding capability to `T_onboard`.\n4. **`c_reverse`:** choose split. Remove `c_reverse_total` from core `C`; retain architecture irreversibility as a scenario diagnostic or constraint; move rollback capability to `T_reverse`.\n5. **Dimensionality:** adopt `C_core` with **7 intrinsic axes** after removing the two total outcome axes. Expect effective rank to drop from **4-5 to 3-4** unless optional `c_blast` has strong independent variance.\n\n## References\n\n1. *DX - Crunchbase Company Profile & Funding*. https://www.crunchbase.com/organization/dx\n2. *The SPACE Framework: A Complete Guide to Developer Productivity*. https://space-framework.com/\n3. *Atlassian - GitHub*. https://github.com/atlassian\n4. *Digital Onboarding*. http://github.com/digitalonboarding\n5. *The SPACE of Developer Productivity.docx*. http://coursehero.com/file/252817886/The-SPACE-of-Developer-Productivitydocx\n6. *LaunchDarkly vs Split*. http://flagsmith.com/compare/launchdarkly-vs-split\n7. *LaunchDarkly Migration Guide - Statsig Documentation*. https://docs.statsig.com/guides/migrate-from-launchdarkly\n8. *Git - Undoing Things*. https://git-scm.com/book/en/v2/Git-Basics-Undoing-Things\n9. *DORA metrics | Technology Radar | Thoughtworks Brazil*. http://thoughtworks.com/en-br/radar/techniques/dora-metrics\n10. *LaunchDarkly: Runtime Control for AI-Era Software | Feature ...*. http://launchdarkly.com/\n11. *Christopher Alexander: The father of pattern language*. http://designsystems.com/christopher-alexander-the-father-of-pattern-language\n12. *Notes on the Synthesis of Form - ia601508.us.archive.org*. https://ia601508.us.archive.org/33/items/AlexanderChristopherNotesOnTheSynthesisOfForm/Alexander_Christopher_Notes_on_the_Synthesis_of_Form.pdf\n13. *Assessment of the creative potential of design problems via ...*. https://www.cambridge.org/core/journals/design-science/article/assessment-of-the-creative-potential-of-design-problems-via-novelty-and-usefulness/ECBD7B65EA50FEBB0831C6D4A20AC585\n14. *ATAM: Method for Architecture Evaluation - SEI Digital Library*. http://sei.cmu.edu/library/atam-method-for-architecture-evaluation\n15. *Notes on the Synthesis of Form \u2014 Harvard University Press*. https://www.hup.harvard.edu/books/9780674627512\n16. *Building and revising adaptive capacity sharing for technical ...*. https://www.sciencedirect.com/science/article/pii/S0003687020301903\n17. *HMCTS customer story*. http://dynatrace.com/customers/hmcts\n18. *Google SRE - Error Budget Policy for Service Reliability*. https://sre.google/workbook/error-budget-policy/\n19. *Safety-II in Practice: Developing the Resilience Potentials*. https://www.erikhollnagel.com/onewebmedia/Blurp.pdf\n20. *(PDF) The Theory of Graceful Extensibility: Basic rules that ...*. https://www.researchgate.net/publication/327427067_The_Theory_of_Graceful_Extensibility_Basic_rules_that_govern_adaptive_systems\n21. *Resilience Assessment Grid - erikhollnagel.com*. https://erikhollnagel.com/ideas/resilience%20assessment%20grid.html\n22. *Must-Know Site Reliability Engineering (SRE) Terminology*. http://cloudsoft.io/blog/site-reliability-engineering-sre-glossary\n23. *Chaos Engineering - arXiv.org*. https://arxiv.org/pdf/1702.05843\n24. *Continuous Verification - Casey Rosenthal, Verica*. http://ott.techstrong.tv/spotlight-interviews/videos/continuous-verification-casey-rosenthal-verica\n25. *Feature Flags - Statsig Documentation*. https://docs.statsig.com/feature-flags/overview\n26. *LaunchDarkly: Feature Flagging Platform Explained*. http://growthbook.io/insights/launchdarkly-feature-flagging-platform-explained\n27. *Feature Flags | LaunchDarkly | Documentation*. https://launchdarkly.com/docs/api/feature-flags\n28. *Cloud DevOps: What the Numbers Can't Hide*. http://ensolvers.com/post/cloud-devops-what-the-numbers-cant-hide\n29. *Designerly Ways of Knowing and Thinking | Springer Nature Link*. https://link.springer.com/book/10.1007/978-1-4471-7541-4\n30. *SEI ATAM Example | PDF | Software Architecture | Scenario ...*. http://scribd.com/document/596357149/SEI-ATAM-Example\n31. *Assessing design creativity*. https://dm.iisc.ac.in/cpdm/ideaslab/publications/UID_45.pdf\n32. *Designerly Ways of Knowing and Thinking*. https://oro.open.ac.uk/104099/\n33. *The SPACE of Developer Productivity - ACM Queue*. https://queue.acm.org/detail.cfm?id=3454124\n34. *Onboarding Developers Faster The Atlassian Based Blueprint*. https://www.atlas-bench.com/blog/onboarding-developers-faster-the-atlassian-based-blueprint\n35. [[Hiring] Technical Lead - Developer Experience @Arbor Education](http://remotive.com/remote/jobs/software-development/technical-lead-developer-experience-4511213)\n36. *DevEx: What Actually Drives Productivity - ACM Queue*. https://queue.acm.org/detail.cfm?id=3595878\n37. *The SPACE of Developer Productivity: There's more to it than ...*. https://www.microsoft.com/en-us/research/publication/the-space-of-developer-productivity-theres-more-to-it-than-you-think/\n38. *DORA | Research - Dora.dev*. https://dora.dev/research\n39. *Dora.dev*. https://dora.dev/\n40. *DORA - Failed Deployment Recovery Time | Apache DevLake ...*. https://devlake.apache.org/docs/Metrics/FailedDeploymentRecoveryTime/\n41. *Use Four Keys metrics like change failure rate to measure ...*. https://cloud.google.com/blog/products/devops-sre/using-the-four-keys-to-measure-your-devops-performance\n42. *Onboarding - GitHub Docs*. https://docs.github.com/en/get-started/onboarding\n43. *Revolutionizing Newcomers\u2019 Onboarding Process in OSS ...*. https://dl.acm.org/doi/10.1145/3715767\n44. *Newcomer adjustment: Examining the role of managers ...*. http://psycnet.apa.org/record/2017-10515-001\n45. *Swimm: Business Model Canvas \u2013 businessmodelcanvastemplate ...*. http://businessmodelcanvastemplate.com/products/swimm-business-model-canvas\n46. *Check Feature Gate(s) - Statsig Documentation*. http://docs.statsig.com/api-reference/feature-gates/check-feature-gates\n47. *How to instantly roll back buggy features with LaunchDarkly\u2019s ...*. https://launchdarkly.com/blog/how-to-instantly-roll-back-buggy-features-with-launchdarkly-kill-switch/\n48. *Guarded rollouts | LaunchDarkly | Documentation*. https://launchdarkly.com/docs/home/releases/guarded-rollouts\n49. *ROLLBACK TRANSACTION (Transact-SQL) - SQL Server*. http://learn.microsoft.com/en-us/sql/t-sql/language-elements/rollback-transaction-transact-sql?view=sql-server-ver17\n50. *Documentation: 18: ROLLBACK*. http://postgresql.org/docs/current/sql-rollback.html\n51. *Transactions - Oracle Help Center*. https://docs.oracle.com/en/database/oracle/oracle-database/19/cncpt/transactions.html\n52. *Understanding Atomicity in PostgreSQL: A Deep Dive into the ...*. https://dev.to/kfir-g/understanding-atomicity-in-postgresql-a-deep-dive-into-the-a-in-acid-209a\n53. *ben-thul*. http://github.com/ben-thul\n54. *How Complex Systems Fail - adaptivecapacitylabs.com*. https://www.adaptivecapacitylabs.com/HowComplexSystemsFail.pdf\n55. *Operating at the Sharp End: The Complexity of Human Error*. https://securityandtechnology.org/wp-content/uploads/2020/07/operatingatthesharp-2.pdf\n56. *Four concepts for resilience and the implications for the ...*. https://www.sciencedirect.com/science/article/pii/S0951832015000848\n57. *Dr Richard Cook: How Complex Systems Fail - Psych Safety*. https://psychsafety.com/psychological-safety-78-dr-richard-cook/\n58. *Operating at the Sharp End: The Complexity of Human Error*. https://www.researchgate.net/profile/Richard-Cook-8/publication/332248963_Operating_at_the_Sharp_End_The_Complexity_of_Human_Error/links/5ca94418299bf118c4b8b217/Operating-at-the-Sharp-End-The-Complexity-of-Human-Error.pdf\n59. [[PDF] Antifragile: Things That Gain from Disorder](http://kgt.bme.hu/files/BMEGT30M400/Taleb_Antifragile__2012.pdf)\n60. *Antifragile Summary and Study Guide | SuperSummary*. https://www.supersummary.com/antifragile/summary/\n61. *Antifragile (book) - Wikipedia*. https://en.wikipedia.org/wiki/Antifragile_(book)\n62. *Antifragile: Things that Gain from Disorder - Google Books*. http://books.google.com/books/about/Antifragile.html?id=rkOUnAEACAAJ\n63. *Antifragile: Things That Gain from Disorder - CPOR*. http://cpor.org/af/Taleb_Antifragile.pdf\n64. *PRINCIPLES OF CHAOS ENGINEERING - Principles of chaos engineering*. https://principlesofchaos.org/\n65. *Google SRE - Defining slo: service level objective meaning*. https://sre.google/sre-book/service-level-objectives/\n66. [Software Architecture in Practice, 4th Edition [Book]](https://www.oreilly.com/library/view/software-architecture-in/9780136885979/)\n67. *SEI Quality Model*. https://quality.arc42.org/articles/sei-quality-model\n68. *(PDF) ATAM: Method for Architecture Evaluation - ResearchGate*. http://researchgate.net/publication/2814191_ATAM_Method_for_Architecture_Evaluation\n69. *People \u2014 Johnson Favaro*. http://johnsonfavaro.com/people\n70. *Antifragile - Things that Gain from Disorder - Broch\u00e9*. http://maarifculture.com/antifragile-things-that-gain-from-disorder-nassim-nicholas-taleb/dp/9780141038223\n71. *Creative Product Semantic Scale - APA PsycNet*. https://psycnet.apa.org/getdoi.cfm?doi=10.1037/t66149-000\n72. *Assessing design creativity - ScienceDirect*. https://www.sciencedirect.com/science/article/pii/S0142694X11000111\n73. *Uses of the novelty metrics proposed by Shah et al.: what ...*. https://www.cambridge.org/core/journals/design-science/article/uses-of-the-novelty-metrics-proposed-by-shah-et-al-what-emerges-from-the-literature/28EAA999E457B6A56C3B36AFC181890E\n74. *A Pattern Language - Wikipedia*. https://en.wikipedia.org/wiki/A_Pattern_Language\n75. *The timeless way of building : Alexander, Christopher, 1936 ...*. https://archive.org/details/timelesswayofbui0000alex_u9i8\n76. *Notes On The Synthesis of Form | PDF | Logic | Teaching ...*. https://www.scribd.com/document/187788385/Notes-on-the-Synthesis-of-Form\n77. *ATAM: Method for Architecture Evaluation | CMU Software Engineering Institute*. https://www.sei.cmu.edu/library/atam-method-for-architecture-evaluation/\n78. *Designerly ways of knowing : Cross, Nigel, 1942- : Free ...*. https://archive.org/details/designerlywaysof0000cros\n79. *Design Thinking: Understanding How Designers Think and Work ...*. https://www.bloomsbury.com/uk/design-thinking-9781350305069/\n80. *Designerly Ways of Knowing and Thinking - Springer*. https://link.springer.com/content/pdf/10.1007/978-1-4471-7541-4.pdf\n81. *Design Thinking: Understanding How Designers Think and Work*. https://www.amazon.com/Design-Thinking-Understanding-Designers-Think/dp/1847886361\n82. *Architecture Tradeoff Analysis Method\u00ae - ATAM\u00ae - DTIC*. http://apps.dtic.mil/sti/tr/pdf/AD1087054.pdf\n83. [[PDF] Cybersecurity Maturity Model Certification (CMMC)](http://sei.cmu.edu/documents/6202/Cybersecurity-Maturity-Model-Certification-CMMC_oeH9RY6.pdf)\n84. *(PDF) The Architecture Tradeoff Analysis Method. - ResearchGate*. https://www.researchgate.net/publication/221473740_The_Architecture_Tradeoff_Analysis_Method\n85. *Developer Tool Sprawl: 14-Tool Chaos Costs 40% ...*. http://byteiota.com/developer-tool-sprawl-14-tool-chaos-costs-40-productivity\n86. *How Google onboarding improved developer productivity*. https://www.devpath.com/blog/google-developer-productivity\n87. *Software solutions for newcomers\u2019 onboarding in software ...*. https://www.sciencedirect.com/science/article/pii/S0950584924001733\n88. *Developer Onboarding Best Practices | Practical Guide*. https://document360.com/blog/developer-onboarding-best-practices/\n89. *Learning Center - Swimm*. http://swimm.io/learn\n90. *OnBoardAI \u2014 AI-Powered Developer Onboarding Software*. https://www.onboard-developer.com/\n91. *What is developer experience? | Atlassian*. https://www.atlassian.com/developer-experience\n92. *Survey reveals AI\u2019s impact on the developer experience*. https://github.blog/news-insights/research/survey-reveals-ais-impact-on-the-developer-experience/\n93. *Welcoming Optic, an API documentation and management tool, to Atlassian - Inside Atlassian*. http://atlassian.com/blog/announcements/optic-acquisition\n94. *Developer Experience Lab - Microsoft Research*. https://www.microsoft.com/en-us/research/group/developer-experience-lab/\n95. *Revolutionizing Newcomers\u2019 Onboarding Process in OSS ...*. https://arxiv.org/pdf/2505.04277\n96. *A Case Study of Onboarding in Software Teams: Tasks and ...*. https://arxiv.org/pdf/2103.05055\n97. *Catharsis Consulting \u2014 Cat Hicks, PhD*. http://catharsisinsight.com/\n98. *DX: Developer Intelligence Platform*. http://move-dx.com/\n99. *What Improves Developer Productivity at Google? Code Quality.*. https://research.google/pubs/what-improves-developer-productivity-at-google-code-quality/\n100. *Joseph Atkins-Turkish - Founding Software Engineer at ...*. http://linkedin.com/in/joseph-atkins-turkish-47559275\n101. *Ciera Jaspan - Google Research*. https://research.google/people/cierajaspan/\n102. *Agentic Code Review & Developer Productivity Platform*. http://getoptimal.ai/old-home\n",
+    "type": "text",
+    "beta_fields": null
+  },
+  "run": {
+    "created_at": "2026-05-21T06:18:35.270650Z",
+    "is_active": false,
+    "modified_at": "2026-05-21T06:40:50.432447Z",
+    "processor": "ultra2x",
+    "run_id": "trun_da4211ace2c14632953576430b5dee85",
+    "status": "completed",
+    "error": null,
+    "metadata": {
+      "protocol": "A_STAR",
+      "thread_id": "RQ6-resilience-creativity-axes"
+    },
+    "task_group_id": null,
+    "warnings": [
+      {
+        "message": "enable_events unset for ultra2x. Setting to true by default. Consider setting to false explicitly if you do not want to track events for streaming.",
+        "type": "warning",
+        "detail": null
+      }
+    ],
+    "interaction_id": "trun_da4211ace2c14632953576430b5dee85"
+  }
+}
