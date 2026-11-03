@@ -7,6 +7,7 @@ Usage:
 
 Reads ./wave<N>_threads.json, writes outputs to ../research/wave<N>/<thread_id>/.
 """
+
 import argparse
 import json
 import os
@@ -120,7 +121,9 @@ def cmd_wait(wave: int):
         sys.exit(1)
     client = Parallel(api_key=os.environ["PARALLEL_API_KEY"])
     out_dir = PROJECT_ROOT / "research" / f"wave{wave}"
-    pending = [(tid, t["run_id"]) for tid, t in state["threads"].items() if t.get("run_id") and t.get("status") != "completed"]
+    pending = [
+        (tid, t["run_id"]) for tid, t in state["threads"].items() if t.get("run_id") and t.get("status") != "completed"
+    ]
     print(f"waiting on {len(pending)} threads", flush=True)
     with ThreadPoolExecutor(max_workers=max(1, len(pending))) as pool:
         futures = [pool.submit(wait_for_result, client, tid, rid, out_dir) for tid, rid in pending]

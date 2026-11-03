@@ -103,12 +103,12 @@ The seven v0 classes, mapped to the Neural ecosystem seeds:
 
 | K class | Hardest constraints | Top C axes | T composition | Seed |
 |---|---|---|---|---|
-| `outbound-pipeline` | fresh-leads-by-cutoff, deliverability-safe-send, idempotent sequence state | c_money > c_drift > c_modify | low T_human, high T_agent_internal/external | Buuuk |
+| `outbound-pipeline` | fresh-leads-by-cutoff, deliverability-safe-send, idempotent sequence state | c_money > c_drift > c_modify | low T_human, high T_agent_internal/external | AgencyA |
 | `content-pipeline` | source-provenance, audit-before-publish, publish-cutoff | c_derive > c_find > c_drift | med T_human, high T_agent_internal | LSD (primary) |
-| `product-marketing` | catalog-truth, spend-ROAS-guardrails, attribution-window | c_money > c_drift > c_modify | med T_human, high T_agent_internal/external | MAIKAI |
-| `product-saas` | RBAC-PII-isolation, schema-migration-safety, output-correctness | c_modify > c_loss > c_find | high T_human, med T_agent_* | TUHH (LSD secondary) |
+| `product-marketing` | catalog-truth, spend-ROAS-guardrails, attribution-window | c_money > c_drift > c_modify | med T_human, high T_agent_internal/external | BrandB |
+| `product-saas` | RBAC-PII-isolation, schema-migration-safety, output-correctness | c_modify > c_loss > c_find | high T_human, med T_agent_* | UniversityC (LSD secondary) |
 | `research-memory` | provenance + link-integrity, memory-isolation/consent, reversible/append-only updates | c_find > c_storage > c_derive | high T_human, high T_agent_internal | Personal Twin |
-| `audit-pipeline` | immutable-source-retention, append-only audit log, reviewer-signoff | c_loss > c_find > c_derive | high T_human, high T_agent_internal | SI Global Engine |
+| `audit-pipeline` | immutable-source-retention, append-only audit log, reviewer-signoff | c_loss > c_find > c_derive | high T_human, high T_agent_internal | DeskD Engine |
 | `intel-pipeline` | fresh-data-by-cutoff, source-timestamp-dedupe, distribution SLA | c_drift > c_find > c_derive | low/med T_human, high T_agent_internal/external | si-global-intel |
 
 **Hybrids** (e.g., LSD = 0.65 content-pipeline + 0.35 product-saas): decompose into bounded contexts first (DDD), **union** hard constraints (never average), then blend soft weights. Never blend away a hard constraint.
@@ -253,12 +253,12 @@ The v0 spec is frozen. The following gaps are explicitly deferred:
 **v0 (this document):**
 - Definition, schema, integrity constraints, K taxonomy, primitive operations all frozen.
 - Solver = Z3 Optimize hybrid COP.
-- Single test repo = Buuuk (outbound-pipeline).
+- Single test repo = AgencyA (outbound-pipeline).
 
 **v0.1 (next 4 weeks):**
 - Implement `H_K`, `W_K`, `T_K`, `F_K` as static dictionaries for the 7 K classes.
 - Build manifest schema + CI validator.
-- Z3 model for Buuuk transformation; emit YAML primitive plan.
+- Z3 model for AgencyA transformation; emit YAML primitive plan.
 - Passive `C_core` measurement instrument (7 axes from git/fs/CI).
 
 **v0.2 (8-12 weeks):**
@@ -297,4 +297,4 @@ See `BIBLIOGRAPHY.md` for full annotated citations organized by RQ. Key anchors:
 
 ---
 
-*A* v0 is the foundation, not the destination. Ship v0, instrument Buuuk, learn, ship v1.*
+*A* v0 is the foundation, not the destination. Ship v0, instrument AgencyA, learn, ship v1.*

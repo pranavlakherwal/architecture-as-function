@@ -28,6 +28,7 @@ yaml = pytest.importorskip("yaml")
 # Purpose inference
 # ---------------------------------------------------------------------------
 
+
 def test_purpose_python_with_tests(tmp_path: Path):
     (tmp_path / "core.py").write_text("x = 1")
     (tmp_path / "helpers.py").write_text("y = 2")
@@ -56,6 +57,7 @@ def test_purpose_empty_folder(tmp_path: Path):
 # ---------------------------------------------------------------------------
 # Ignore patterns
 # ---------------------------------------------------------------------------
+
 
 def test_ignore_patterns_skip_node_modules_and_git(tmp_path: Path):
     (tmp_path / ".git" / "objects").mkdir(parents=True)
@@ -89,6 +91,7 @@ def test_ignore_pattern_archive(tmp_path: Path):
 # ---------------------------------------------------------------------------
 # Parent inheritance
 # ---------------------------------------------------------------------------
+
 
 def test_parent_inheritance_of_k_class_and_owner(tmp_path: Path):
     # Parent manifest at root.
@@ -136,6 +139,7 @@ def test_no_parent_falls_back_to_unclassified(tmp_path: Path):
 # Schema conformance
 # ---------------------------------------------------------------------------
 
+
 def test_generated_stub_passes_a_star_schema(tmp_path: Path):
     """A generated stub must validate against the real MANIFEST_SCHEMA."""
     pytest.importorskip("jsonschema")
@@ -162,6 +166,7 @@ def test_generated_stub_passes_a_star_schema(tmp_path: Path):
 # ---------------------------------------------------------------------------
 # Dry-run vs apply
 # ---------------------------------------------------------------------------
+
 
 def test_dry_run_does_not_write(tmp_path: Path):
     (tmp_path / "src").mkdir()

@@ -15,7 +15,7 @@ Decides whether two-layer separation is the **default architecture** for K = out
 
 ## Sub-questions
 
-- Q12.1: Empirical: measure c_modify pre vs post on a real change (e.g., adding a new sender to round-robin) across Buuuk + neural-gtm.
+- Q12.1: Empirical: measure c_modify pre vs post on a real change (e.g., adding a new sender to round-robin) across AgencyA + neural-gtm.
 - Q12.2: Closed-form: is there a c_modify(N_layers) growth function?
 - Q12.3: When does the seam break? At what N tenants does Layer A's W converge vs diverge?
 

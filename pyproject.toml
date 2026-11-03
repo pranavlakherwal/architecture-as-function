@@ -1,0 +1,13 @@
+[project]
+name = "architecture-as-function"
+version = "0.2.1"
+description = "A*: architecture as a function. The specification, the reference implementation and the research notes."
+requires-python = ">=3.9"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "ruff>=0.5", "z3-solver>=4.12", "pyyaml>=6"]
+
+[tool.pytest.ini_options]
+pythonpath = ["impl"]
+testpaths = ["impl"]

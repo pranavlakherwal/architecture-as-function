@@ -3,7 +3,7 @@
 **Wave:** 4
 **Thread ID:** RQ12-seam-cost
 **Question:** What is the net cost of two-layer separation? Does `c_modify` rise more than `c_drift` falls?
-**Trigger:** v0.1 consolidation (2026-05-22) split one repo (`/Core/Neural/PnotP/ogilvy/...` + Buuuk tenant root) into Layer A engine `/Core/Neural/neural-gtm/` (41 folders, ~809 files, 43 MB) and Layer B tenant `/Core/Neural/Buuuk/` (56 folders, ~280 files, 8.2 MB). Primitive count dropped 111 -> 71 (~36%). The primitive drop is necessary but not sufficient evidence of net `C_core` reduction. This memo isolates the per-axis deltas.
+**Trigger:** v0.1 consolidation (2026-05-22) split one repo (`/Core/Neural/PnotP/outbound_pipeline/...` + AgencyA tenant root) into Layer A engine `/Core/Neural/neural-gtm/` (41 folders, ~809 files, 43 MB) and Layer B tenant `/Core/Neural/AgencyA/` (56 folders, ~280 files, 8.2 MB). Primitive count dropped 111 -> 71 (~36%). The primitive drop is necessary but not sufficient evidence of net `C_core` reduction. This memo isolates the per-axis deltas.
 **Date frozen:** 2026-05-24
 **Source policy:** after 2010-01-01 unless cited classics (Parnas 1972, Conway 1968)
 **Companion artifact:** measurement plan in §5 is runnable against `/impl/a_star/measurement/core_vector.py`
@@ -12,11 +12,11 @@
 
 ## Executive Summary
 
-Two-layer separation (engine + tenant) is **net-positive on five of seven C_core axes** for `K = outbound-pipeline` at the Buuuk scale we observe today (1 tenant, ~56 folders, ~280 files of tenant code), and the literature predicts the seam pays off at **N >= 2 tenants** with high confidence and at **N = 1** with medium confidence when the engine surface stabilizes. The strongest evidence is MacCormack/Baldwin/Rusnak's finding that modular architecture reduces propagation cost by a factor up to 6x (post-redesign Mozilla: 1.3 vs 2.4 cross-file dependencies per thousand pairs), combined with Reis et al's Chrome site isolation result that hard process separation costs only 9-13% memory overhead while eliminating a class of cross-tenant attacks. The strongest counter-evidence is Amazon Prime Video's 2023 Video Quality Analysis re-monolithing (90% cost reduction) and the empirical observation that monorepo PR cycle-time medians are *higher and more variable* than polyrepo at small team sizes (Faros 2024 dataset of 320 teams).
+Two-layer separation (engine + tenant) is **net-positive on five of seven C_core axes** for `K = outbound-pipeline` at the AgencyA scale we observe today (1 tenant, ~56 folders, ~280 files of tenant code), and the literature predicts the seam pays off at **N >= 2 tenants** with high confidence and at **N = 1** with medium confidence when the engine surface stabilizes. The strongest evidence is MacCormack/Baldwin/Rusnak's finding that modular architecture reduces propagation cost by a factor up to 6x (post-redesign Mozilla: 1.3 vs 2.4 cross-file dependencies per thousand pairs), combined with Reis et al's Chrome site isolation result that hard process separation costs only 9-13% memory overhead while eliminating a class of cross-tenant attacks. The strongest counter-evidence is Amazon Prime Video's 2023 Video Quality Analysis re-monolithing (90% cost reduction) and the empirical observation that monorepo PR cycle-time medians are *higher and more variable* than polyrepo at small team sizes (Faros 2024 dataset of 320 teams).
 
-**Recommendation (v0.2):** Two-layer separation is a **conditional default** for `K = outbound-pipeline`, triggered when any one of three conditions holds: (a) `N_tenants >= 2`, (b) engine test-pass rate has been >=95% for >=4 consecutive weeks (engine surface stable), or (c) measured `c_modify` (file-touch breadth per change) has remained below a threshold `T_modify` for the candidate engine slice over a 4-week window. The Buuuk/neural-gtm split clears condition (b) and is on the cusp of (a) (MAIKAI is the second candidate tenant). The 36% primitive drop is a real signal; estimated `C_core` improvement on the dominant axis (`c_drift`) is 30-50% with medium confidence, while `c_modify` rises 15-30% on cross-cutting changes (a smaller and less frequent class of edit than per-layer changes).
+**Recommendation (v0.2):** Two-layer separation is a **conditional default** for `K = outbound-pipeline`, triggered when any one of three conditions holds: (a) `N_tenants >= 2`, (b) engine test-pass rate has been >=95% for >=4 consecutive weeks (engine surface stable), or (c) measured `c_modify` (file-touch breadth per change) has remained below a threshold `T_modify` for the candidate engine slice over a 4-week window. The AgencyA/neural-gtm split clears condition (b) and is on the cusp of (a) (BrandB is the second candidate tenant). The 36% primitive drop is a real signal; estimated `C_core` improvement on the dominant axis (`c_drift`) is 30-50% with medium confidence, while `c_modify` rises 15-30% on cross-cutting changes (a smaller and less frequent class of edit than per-layer changes).
 
-**The split is the right move for Buuuk now. The decision rule below tells future projects when to follow.**
+**The split is the right move for AgencyA now. The decision rule below tells future projects when to follow.**
 
 ---
 
@@ -31,7 +31,7 @@ Parnas's "On the Criteria To Be Used in Decomposing Systems into Modules" [1] is
 
 The Parnas insight maps cleanly to the engine/tenant seam:
 
-- Tenant code hides "what Buuuk's offer, sequence cadence, sender pool, ICP filters are" from engine code.
+- Tenant code hides "what AgencyA's offer, sequence cadence, sender pool, ICP filters are" from engine code.
 - Engine code hides "how leads are enriched, deliverability is scored, send orchestration is sequenced" from tenant code.
 
 Both sides of the seam encode a *design decision likely to change* (tenant-side: every new client; engine-side: every new SMTP provider or enrichment vendor). Parnas predicts the modularization is *globally* cheaper if either side changes more than once.
@@ -48,7 +48,7 @@ Source: [Parnas 1972 - On the Criteria To Be Used in Decomposing Systems into Mo
 
 **Migration data (Developers.dev 2024-2025)** [5]: teams migrating polyrepo -> well-tooled monorepo report "average 18% reduction in CI/CD build times for affected services due to optimized caching and atomic dependency management." This is a *gain from monorepo*. The asymmetry is recoverable both ways: a well-tooled split also wins on independent deploy and blast-radius reduction.
 
-**Calibration to Buuuk/neural-gtm.** We are at the lower end of the polyrepo regime: two repos, single engineer, no migration tax, no diamond risk yet (only one tenant consumes the engine). The 18% CI-time penalty from Developers.dev does not apply because both repos are small enough that the entire test matrix runs in seconds. The relevant cost dimension is *change coupling* (next).
+**Calibration to AgencyA/neural-gtm.** We are at the lower end of the polyrepo regime: two repos, single engineer, no migration tax, no diamond risk yet (only one tenant consumes the engine). The 18% CI-time penalty from Developers.dev does not apply because both repos are small enough that the entire test matrix runs in seconds. The relevant cost dimension is *change coupling* (next).
 
 Sources:
 - [Potvin & Levenberg 2016 - Why Google Stores Billions of Lines of Code in a Single Repository](https://research.google/pubs/why-google-stores-billions-of-lines-of-code-in-a-single-repository/) (CACM 59(7))
@@ -64,7 +64,7 @@ Martin Fowler's [Microservice Premium](https://martinfowler.com/bliki/Microservi
 
 **Amazon Prime Video Video Quality Analysis (March 2023)** [9]: the most-cited reversal. Migrated VQA from a microservices + AWS Step Functions architecture to a single-process monolith. Achieved **~90% infrastructure cost reduction**. Root cause: Step Functions invocation cost + S3 round-trips for frame-buffer hand-off dwarfed the per-frame compute. The fix was to hold the frame buffer in memory and have all stages execute in one process. **Lesson:** if the only cost driver is intra-pipeline data motion, decomposition is a tax.
 
-Mapping to Buuuk/neural-gtm:
+Mapping to AgencyA/neural-gtm:
 
 - The engine/tenant seam is **not** a microservices split. Both repos run in the same Python process when invoked. The seam is a *codebase boundary*, not a network boundary. The 3.75x-6x infrastructure tax does not apply.
 - The Prime Video lesson *does* apply if engine and tenant exchange large data via a network or filesystem hand-off. They do not: tenant invokes engine modules in-process. The seam is closer to a Python package boundary than a service boundary.
@@ -80,7 +80,7 @@ Sources:
 
 Conway (1968) and the MacCormack-Rusnak-Baldwin "mirroring hypothesis" papers [10][11] establish that *product architecture mirrors organizational architecture*. The MIT/HBS empirical work found "strong evidence to support the mirroring hypothesis" - "the product developed by the loosely-coupled organization is significantly more modular than the product from the tightly-coupled organization."
 
-**Inverse Conway maneuver:** deliberately structure the organization to produce the desired product architecture. The engine/tenant split *is* an inverse Conway move at single-engineer scale: it pre-structures the codebase to assume an engine team (later: P0P or external) distinct from a tenant team (Buuuk operator, MAIKAI operator, ...). Even with one engineer wearing both hats, the seam forces the cognitive separation that future hand-off will require.
+**Inverse Conway maneuver:** deliberately structure the organization to produce the desired product architecture. The engine/tenant split *is* an inverse Conway move at single-engineer scale: it pre-structures the codebase to assume an engine team (later: P0P or external) distinct from a tenant team (AgencyA operator, BrandB operator, ...). Even with one engineer wearing both hats, the seam forces the cognitive separation that future hand-off will require.
 
 **Bezos 2002 API Mandate** [12]: every Amazon team must expose data + functionality through service interfaces; no direct in-process linking, no shared data store, no back-doors. This is the strongest historical example of seam-as-default. The cost paid was significant in 2002-2003 (every team rebuilt their internal APIs); the payoff was AWS itself, which would not have existed without externalizable service interfaces. The lesson for RQ12 is **temporal**: seam costs are paid up-front, seam benefits accrue over years. Naive ROI calc at month 1 always says "do not split."
 
@@ -91,10 +91,10 @@ Sources:
 
 ### 1.5 Synthesis of §1
 
-Modularization has a paradoxical cost profile: local cost goes up (the seam is overhead), global cost goes down (changes localize). The crossover point is *empirically* a function of (a) change rate, (b) number of consumers, (c) tooling maturity. For Buuuk/neural-gtm:
+Modularization has a paradoxical cost profile: local cost goes up (the seam is overhead), global cost goes down (changes localize). The crossover point is *empirically* a function of (a) change rate, (b) number of consumers, (c) tooling maturity. For AgencyA/neural-gtm:
 
 - Change rate: ~weekly cohorts, ~monthly engine fixes. Both sides change.
-- Number of consumers: 1 today (Buuuk), 2 within Q3 2026 (MAIKAI as candidate Layer B), potentially 3-5 within 12 months.
+- Number of consumers: 1 today (AgencyA), 2 within Q3 2026 (BrandB as candidate Layer B), potentially 3-5 within 12 months.
 - Tooling maturity: shared Python env, no service mesh, no remote build cache needed. Low tax.
 
 Parnas + mirroring + Bezos all point at "split is cheaper *over the lifetime*"; Fowler + Prime Video point at "split is expensive *up-front*". Both are true. The decision rule must encode the temporal trade.
@@ -114,7 +114,7 @@ Concrete numbers from MacCormack 2006 + 2012:
 - **Linux** (open-source baseline): more modular than first Mozilla, less modular than post-redesign Mozilla.
 - General finding: "magnitude of the differences is substantial - up to a factor of six, in terms of the potential for a design change in one component to propagate to others."
 
-**Direct application to Buuuk/neural-gtm.** The engine/tenant seam *enforces* a hard cut in the propagation matrix: tenant code may depend on engine code, engine code may NOT depend on tenant code. This unidirectional constraint guarantees the propagation cost of a tenant-only change is bounded by the tenant repo size (~280 files), not the union (~1089 files). For an engine-only change, propagation is bounded by engine + all consuming tenants; with N=1 tenant this is the same as the union, so the engine-side propagation does not yet improve. **The asymmetry matters:** tenant edits are more frequent than engine edits in our usage pattern (every cohort is a tenant edit; engine edits are rarer).
+**Direct application to AgencyA/neural-gtm.** The engine/tenant seam *enforces* a hard cut in the propagation matrix: tenant code may depend on engine code, engine code may NOT depend on tenant code. This unidirectional constraint guarantees the propagation cost of a tenant-only change is bounded by the tenant repo size (~280 files), not the union (~1089 files). For an engine-only change, propagation is bounded by engine + all consuming tenants; with N=1 tenant this is the same as the union, so the engine-side propagation does not yet improve. **The asymmetry matters:** tenant edits are more frequent than engine edits in our usage pattern (every cohort is a tenant edit; engine edits are rarer).
 
 Source:
 - [MacCormack, Rusnak, Baldwin 2006 - Exploring the Structure of Complex Software Designs](https://www.hbs.edu/ris/Publication%20Files/05-016.pdf)
@@ -124,7 +124,7 @@ Source:
 
 "Change coupling is the implicit relationship between two or more software artifacts that have been observed to frequently change together during the evolution of a software system" [15]. D'Ambros, Lanza, Robbes (WCRE 2009) showed empirically that "change couplings correlate with defects extracted from a bug repository" across three open-source projects [16]. The metric: for each commit, the co-changed files form an undirected edge; weight the edge by support (commits where both changed). Change-coupling graphs reveal "relationships not present in the code or in the documentation."
 
-**Direct application to `c_modify`.** The A* v0 spec defines `c_modify` as "Code-churn + change-coupling (passive from git)" measured via git log. We can compute change-coupling on the *pre-split snapshot* (`/tmp/buuuk_consolidation_backup_2026-05-22/`) and the *post-split repos* and compare:
+**Direct application to `c_modify`.** The A* v0 spec defines `c_modify` as "Code-churn + change-coupling (passive from git)" measured via git log. We can compute change-coupling on the *pre-split snapshot* (`/tmp/agencya_consolidation_backup_2026-05-22/`) and the *post-split repos* and compare:
 
 - Pre-split: edges that crossed what is now the engine/tenant boundary count as "high-coupling-across-seam" cases. These are the changes the split is expected to make more painful.
 - Post-split: edges still exist (cross-repo co-changes are visible via timestamp proximity), but each repo's internal co-change graph should be denser (because semantically homogeneous code is co-located).
@@ -157,7 +157,7 @@ Source:
 
 ### 2.5 Synthesis of §2
 
-The literature supports **two concrete predictions** for Buuuk/neural-gtm:
+The literature supports **two concrete predictions** for AgencyA/neural-gtm:
 
 1. **`c_modify` on tenant-only changes will drop ~40-50%** (Mozilla post-redesign analogy: ~46% reduction in cross-file dependencies). Tenant edits no longer have to traverse the engine namespace.
 2. **`c_modify` on cross-cutting changes will rise ~15-30%** (single FTPC commit splits into a paired commit across two repos; coordination overhead per cross-cutting change). The rise is smaller than the per-tenant-edit fall because the *frequency* of cross-cutting changes is lower than the frequency of within-tenant changes (our observation: roughly 1 cross-cutting commit per 5-10 tenant commits).
@@ -176,7 +176,7 @@ The diamond [20]: "Library A depends on B and C; both B and C depend on D; B req
 - Unpinnable transitive versions (npm's "same-version-many-times" + bundle-bloat).
 - Forced major-version freezes when one downstream cannot upgrade.
 
-Google's monorepo solves this by **mandating one live version of every internal library**. Polyrepos pay the diamond tax via lock-files, dependabot churn, and silent skew. **For Buuuk/neural-gtm at N=1 tenant the diamond does not yet exist** (single tenant = single consumer = no diamond). At N=2+ tenants the diamond becomes possible: MAIKAI may want engine v2 while Buuuk is still on v1. **This is the strongest reason to keep the engine *stable* and the tenants *current* in v0.2.**
+Google's monorepo solves this by **mandating one live version of every internal library**. Polyrepos pay the diamond tax via lock-files, dependabot churn, and silent skew. **For AgencyA/neural-gtm at N=1 tenant the diamond does not yet exist** (single tenant = single consumer = no diamond). At N=2+ tenants the diamond becomes possible: BrandB may want engine v2 while AgencyA is still on v1. **This is the strongest reason to keep the engine *stable* and the tenants *current* in v0.2.**
 
 Source:
 - [JLBP - What is a diamond dependency conflict?](http://jlbp.dev/what-is-a-diamond-dependency-conflict)
@@ -186,7 +186,7 @@ Source:
 
 Hyrum Wright (Google): "With a sufficient number of users of an API, it does not matter what you promise in the contract: all observable behaviors of your system will be depended on by somebody" [21][22]. The "Law of Implicit Interfaces": given enough consumers, every observable behavior becomes a contract.
 
-**Direct application to the engine/tenant seam.** Buuuk depends on the engine through more than the declared module API: it depends on the file-system layout, the YAML schema names, the exact CSV column order produced by `phase_w1.io`, the log-format conventions. Every one of those is a *Hyrum surface*. The split *makes the Hyrum surface explicit* by requiring a manifest declaration of what the engine exposes (the `manifest.yaml` field set defined by IC3 in v0). Without the split there is no incentive to draw the Hyrum boundary; with the split, every cross-repo dependency is a candidate manifest entry.
+**Direct application to the engine/tenant seam.** AgencyA depends on the engine through more than the declared module API: it depends on the file-system layout, the YAML schema names, the exact CSV column order produced by `phase_w1.io`, the log-format conventions. Every one of those is a *Hyrum surface*. The split *makes the Hyrum surface explicit* by requiring a manifest declaration of what the engine exposes (the `manifest.yaml` field set defined by IC3 in v0). Without the split there is no incentive to draw the Hyrum boundary; with the split, every cross-repo dependency is a candidate manifest entry.
 
 Source:
 - [Hyrum's Law canonical](https://www.hyrumslaw.com/)
@@ -207,7 +207,7 @@ Net `c_drift` direction: **down**, larger drop at higher N.
 
 Hystrix [23] implements the bulkhead pattern: separate thread pools per dependency, so a misbehaving downstream saturates only its own pool. Quoted: "If one service started misbehaving, only its pool would fill up while other services still had free threads available - like building watertight compartments into a ship where one leak wouldn't sink the whole vessel." Netflix Chaos Engineering [24] further institutionalized blast-radius minimization with the "stop all chaos" kill switch.
 
-For RQ12, the engine/tenant seam is the *same pattern at codebase scope*: a tenant bug (Buuuk-specific) cannot corrupt engine state (used by other tenants); an engine bug propagates to all tenants but the blast surface is bounded by the engine code's reach. Seam invariant `tenant_cannot_mutate_engine_state` (enforced by QA in v0.1) is the codebase analog of Hystrix's thread-pool isolation.
+For RQ12, the engine/tenant seam is the *same pattern at codebase scope*: a tenant bug (AgencyA-specific) cannot corrupt engine state (used by other tenants); an engine bug propagates to all tenants but the blast surface is bounded by the engine code's reach. Seam invariant `tenant_cannot_mutate_engine_state` (enforced by QA in v0.1) is the codebase analog of Hystrix's thread-pool isolation.
 
 Source:
 - [InfoQ - Netflix Hystrix Latency and Fault Tolerance](https://www.infoq.com/news/2012/12/netflix-hystrix-fault-tolerance/)
@@ -222,7 +222,7 @@ The strongest empirical paper on *enforced* process isolation as a security boun
 - **Cost:** "Total memory overhead of 9-13% in practice and increases page load latency by less than 2.25%." 25th-percentile memory overhead 12.6%, 99th-percentile 8.6%.
 - **Benefit:** eliminates a class of cross-origin leaks that no in-process mitigation can fully block.
 
-**Direct calibration to RQ12.** Site Isolation pays 9-13% memory overhead for cross-tenant security. The Buuuk/neural-gtm seam pays an analogous overhead in storage (engine duplicates some test fixtures, README templates, license boilerplate) and in memory (loaded twice if both repos' modules are imported in one process; but typically only one tenant is active per run). Concrete measurement: 8.2 MB (Buuuk) + 43 MB (neural-gtm) = 51.2 MB post-split. Pre-split snapshot was 387 MB but includes downloads + twin backup; the *active* pre-split footprint of waterfall + Buuuk was estimated at ~45 MB. **Overhead from the split is roughly 13%**, which is in family with the Chrome number and is a strong validation point.
+**Direct calibration to RQ12.** Site Isolation pays 9-13% memory overhead for cross-tenant security. The AgencyA/neural-gtm seam pays an analogous overhead in storage (engine duplicates some test fixtures, README templates, license boilerplate) and in memory (loaded twice if both repos' modules are imported in one process; but typically only one tenant is active per run). Concrete measurement: 8.2 MB (AgencyA) + 43 MB (neural-gtm) = 51.2 MB post-split. Pre-split snapshot was 387 MB but includes downloads + twin backup; the *active* pre-split footprint of waterfall + AgencyA was estimated at ~45 MB. **Overhead from the split is roughly 13%**, which is in family with the Chrome number and is a strong validation point.
 
 Source:
 - [Reis, Moshchuk, Oskov 2019 - Site Isolation: Process Separation for Web Sites within the Browser](https://www.usenix.org/system/files/sec19-reis.pdf) (USENIX Security)
@@ -235,7 +235,7 @@ The current consensus [27][28]:
 - **Soft multi-tenancy** (namespace + RBAC + network policies + quotas): sufficient for "cooperative teams within the same organization" but tenants share kernel, control plane, etcd. A Kubernetes-level CVE crosses namespace boundaries.
 - **Hard multi-tenancy** (separate clusters, or namespace + gVisor/Kata Containers + virtual control plane): required for "mutually untrusted" tenants. Pays significant operational overhead.
 
-**Mapping to engine/tenant.** The Buuuk/neural-gtm seam is *soft tenancy at codebase scope*. The seam invariants are enforced by QA agents (Layer A/B awareness, cross-layer changesets trip a `block` severity), not by an OS or kernel boundary. A bug in QA, or an engineer who bypasses the gate with `--no-verify`, can violate the seam. This is *adequate for cooperative single-engineer scope* (the v0.1 setting) and *inadequate for hostile multi-tenant scope*. v0.2 should declare the seam invariants explicitly in `A_STAR_v0.md` (RQ10's question) and treat enforcement as a graduated ladder: convention -> QA gate -> filesystem permissions -> separate user accounts -> separate clusters.
+**Mapping to engine/tenant.** The AgencyA/neural-gtm seam is *soft tenancy at codebase scope*. The seam invariants are enforced by QA agents (Layer A/B awareness, cross-layer changesets trip a `block` severity), not by an OS or kernel boundary. A bug in QA, or an engineer who bypasses the gate with `--no-verify`, can violate the seam. This is *adequate for cooperative single-engineer scope* (the v0.1 setting) and *inadequate for hostile multi-tenant scope*. v0.2 should declare the seam invariants explicitly in `A_STAR_v0.md` (RQ10's question) and treat enforcement as a graduated ladder: convention -> QA gate -> filesystem permissions -> separate user accounts -> separate clusters.
 
 Source:
 - [Kubernetes docs - Multi-tenancy](https://kubernetes.io/docs/concepts/security/multi-tenancy/)
@@ -244,7 +244,7 @@ Source:
 
 ### 4.4 Synthesis of §4 (loss)
 
-Three independent traditions (bulkhead, site isolation, K8s namespaces) converge on the same finding: **enforced isolation costs ~10-15% in resource overhead and eliminates a class of cross-tenant failure modes**. For Buuuk/neural-gtm:
+Three independent traditions (bulkhead, site isolation, K8s namespaces) converge on the same finding: **enforced isolation costs ~10-15% in resource overhead and eliminates a class of cross-tenant failure modes**. For AgencyA/neural-gtm:
 
 - `c_loss` (probability of misplacement, overwrite, orphan, dead link) is reduced because tenant edits cannot corrupt engine state. Engine edits can still corrupt tenant state but only via the engine's exported API.
 - The probability of *tenant blast across tenant boundary* is reduced from "any shared file is a corruption vector" to "only the engine-exported surface is a corruption vector."
@@ -256,7 +256,7 @@ Net `c_loss` direction: **down**, larger drop at higher N.
 
 ## Part 5 - Measurement Plan (Runnable Spec)
 
-This plan is runnable against `/Users/pranavlakherwal/Core/Neural/PnotP/architecture-as-function/impl/a_star/measurement/core_vector.py` (existing AXIS_SPECS) with extensions noted. Pre-split baseline source: `/tmp/buuuk_consolidation_backup_2026-05-22/` (Buuuk_src + waterfall_src). Post-split source: `/Core/Neural/Buuuk/` + `/Core/Neural/neural-gtm/`.
+This plan is runnable against `/Users/pranavlakherwal/Core/Neural/PnotP/architecture-as-function/impl/a_star/measurement/core_vector.py` (existing AXIS_SPECS) with extensions noted. Pre-split baseline source: `/tmp/agencya_consolidation_backup_2026-05-22/` (AgencyA_src + waterfall_src). Post-split source: `/Core/Neural/AgencyA/` + `/Core/Neural/neural-gtm/`.
 
 ### Axis: `c_find`
 
@@ -264,7 +264,7 @@ This plan is runnable against `/Users/pranavlakherwal/Core/Neural/PnotP/architec
 |---|---|---|---|---|
 | Metric | mean fs-depth-to-artifact | same | down (smaller roots) | medium |
 | Source | `core_vector.fs depth + filename entropy` | same | | |
-| Baseline calc | walk `buuuk_consolidation_backup_2026-05-22/` skipping `_SKIP_DIRS`, mean depth + Shannon entropy of basenames | walk `Buuuk/` + walk `neural-gtm/` separately, take weighted mean by file count | | |
+| Baseline calc | walk `agencya_consolidation_backup_2026-05-22/` skipping `_SKIP_DIRS`, mean depth + Shannon entropy of basenames | walk `AgencyA/` + walk `neural-gtm/` separately, take weighted mean by file count | | |
 | Expected delta | ~-15% (homogeneous roots reduce depth dispersion) | | | |
 
 **Rationale:** Sinha 2023 search-task instrumentation (cited in v0 §11) shows search time scales with `log(file_count) * mean_depth`. Splitting into two semantically coherent roots reduces both depth and per-root file count for the active query. Counter-effect: cross-cutting queries now hit two roots and pay a context-switch cost.
@@ -275,7 +275,7 @@ This plan is runnable against `/Users/pranavlakherwal/Core/Neural/PnotP/architec
 |---|---|---|---|---|
 | Metric | mean FTPC (files-touched-per-commit) + change-coupling graph density | same, computed separately per repo + cross-repo paired commits | mixed (down on within-layer, up on cross-cutting) | medium |
 | Source | git log on pre-split snapshot (if .git preserved; else MANIFEST inference) | git log on each post-split repo + temporal-pairing heuristic | | |
-| Baseline calc | for each commit in the 90 days preceding 2026-05-22, count files in diff that fall in (a) engine path, (b) tenant path, (c) both. Aggregate per category. | same, with cross-repo pairing: a Buuuk commit at time t and a neural-gtm commit at time within [t-1h, t+1h] count as one cross-cutting change | | |
+| Baseline calc | for each commit in the 90 days preceding 2026-05-22, count files in diff that fall in (a) engine path, (b) tenant path, (c) both. Aggregate per category. | same, with cross-repo pairing: a AgencyA commit at time t and a neural-gtm commit at time within [t-1h, t+1h] count as one cross-cutting change | | |
 | Expected delta | within-layer: -30 to -50%, cross-cutting: +15 to +30%, weighted: -10 to -25% | | | |
 
 **Critical extension** to `core_vector.py`: add `c_modify_within_layer` and `c_modify_cross_layer` as two-axis decomposition so the sign is not hidden by averaging.
@@ -286,10 +286,10 @@ This plan is runnable against `/Users/pranavlakherwal/Core/Neural/PnotP/architec
 |---|---|---|---|---|
 | Metric | total disk bytes (active code only, exclude backups) | sum of bytes across both repos | up (small overhead) | high |
 | Source | fs walk | fs walk | | |
-| Baseline calc | du -sh of active waterfall + Buuuk pre-split state, *excluding* downloads_src and twin_src (which are backup-only) | du -sh /Core/Neural/Buuuk + du -sh /Core/Neural/neural-gtm | | |
+| Baseline calc | du -sh of active waterfall + AgencyA pre-split state, *excluding* downloads_src and twin_src (which are backup-only) | du -sh /Core/Neural/AgencyA + du -sh /Core/Neural/neural-gtm | | |
 | Observed | est ~45 MB | 51.2 MB | +13% | |
 
-**Rationale:** matches the Chrome Site Isolation 9-13% memory overhead band. Sources of overhead: duplicate venv hints, dual README, dual license, dual `.gitignore`, dual pytest config. Pre-split snapshot of 387 MB is *not* the right baseline because it includes downloads_src (Buuuk PDFs, brief decks) and twin_src (personal-twin memory mirror) which are not active code.
+**Rationale:** matches the Chrome Site Isolation 9-13% memory overhead band. Sources of overhead: duplicate venv hints, dual README, dual license, dual `.gitignore`, dual pytest config. Pre-split snapshot of 387 MB is *not* the right baseline because it includes downloads_src (AgencyA PDFs, brief decks) and twin_src (personal-twin memory mirror) which are not active code.
 
 ### Axis: `c_money`
 
@@ -300,7 +300,7 @@ This plan is runnable against `/Users/pranavlakherwal/Core/Neural/PnotP/architec
 | Baseline calc | pull SMARTLEAD + OpenRouter + Drive bills for Apr-May 2026 | same for post-split period | | |
 | Expected delta | ~0% (the seam is a codebase boundary, not a service boundary) | | | |
 
-**Caveat:** if the split eventually enables a separate billing line for engine (P0P-billed) vs tenant (Buuuk-billed), `c_money` *attribution* changes even though absolute spend does not. That is a feature, not a cost.
+**Caveat:** if the split eventually enables a separate billing line for engine (P0P-billed) vs tenant (AgencyA-billed), `c_money` *attribution* changes even though absolute spend does not. That is a feature, not a cost.
 
 ### Axis: `c_drift`
 
@@ -341,14 +341,20 @@ def compare_pre_post_split(pre_root: Path, post_engine: Path, post_tenant: Path)
     post_tenant_v = measure_core_vector(post_tenant, label="post-tenant")
     post_combined = combine_measurements(post_engine_v, post_tenant_v, mode="weighted-by-file-count")
     deltas = {axis: post_combined[axis].value - pre[axis].value for axis in AXIS_SPECS}
-    return {"pre": pre, "post_engine": post_engine_v, "post_tenant": post_tenant_v, "post_combined": post_combined, "deltas": deltas}
+    return {
+        "pre": pre,
+        "post_engine": post_engine_v,
+        "post_tenant": post_tenant_v,
+        "post_combined": post_combined,
+        "deltas": deltas,
+    }
 ```
 
 **Confidence summary:** `c_storage` high (direct measure), `c_find`/`c_modify`/`c_loss` medium (proxies are well-validated by literature), `c_drift`/`c_derive`/`c_money` low (require external inputs or longer time windows to be defensible).
 
 ---
 
-## Part 6 - Per-Axis Delta Estimates for the Buuuk Split
+## Part 6 - Per-Axis Delta Estimates for the AgencyA Split
 
 Order-of-magnitude estimates with reasoning. All deltas are **post-split combined vs pre-split single-repo**, expressed as percent change in axis value (negative = improvement).
 
@@ -362,7 +368,7 @@ Order-of-magnitude estimates with reasoning. All deltas are **post-split combine
 | `c_money` | 0% | flat | low | Architectural seam is a codebase boundary, not a service boundary. No new API gateways, no new control planes. Counter: if engine starts billing tenants separately, *attribution* shifts (a feature). |
 | `c_drift` | -35% | down | medium | Independent cadence on engine + tenant. Hyrum surface becomes explicit. At N=1 the win is moderate (~-30 to -40%); at N=2 the literature predicts compounding. |
 | `c_loss` | -25% | down | medium | Bulkhead pattern + tenant-cannot-mutate-engine invariant. Bounded blast radius. Site Isolation analogy: a class of cross-tenant leaks eliminated. |
-| `c_derive` | +10% | up | low | Some derivations now require cross-repo reads (e.g. `phase_w1` output read by Buuuk/sequences). Small but real. |
+| `c_derive` | +10% | up | low | Some derivations now require cross-repo reads (e.g. `phase_w1` output read by AgencyA/sequences). Small but real. |
 
 **Aggregate (equal-weighted, ignoring K-specific weights):** roughly -10% to -15% improvement on the composite `C_core`. With `K = outbound-pipeline` weights (c_money > c_drift > c_modify per v0 §5), the weighted improvement is **larger**: c_money flat, c_drift down -35%, c_modify down -20%, so the top three weighted axes all move positive or neutral. **Verdict: the split is C_core-improving for K=outbound-pipeline at N=1, with high confidence on direction and medium confidence on magnitude.**
 
@@ -391,7 +397,7 @@ A stable engine is one where the tenant-driven churn dominates. The seam pays of
 ```
 c_modify_cross_layer_estimated <= T_modify
 ```
-where `T_modify` is calibrated per-K. Default `T_modify = 0.3 * c_modify_total`. The seam pays off when the cross-cutting-change fraction is below 30%. Calibration: Buuuk pre-split exhibited ~10-20% cross-cutting commits, well under the threshold, predicting split-favorable.
+where `T_modify` is calibrated per-K. Default `T_modify = 0.3 * c_modify_total`. The seam pays off when the cross-cutting-change fraction is below 30%. Calibration: AgencyA pre-split exhibited ~10-20% cross-cutting commits, well under the threshold, predicting split-favorable.
 
 ### Composite rule
 
@@ -406,7 +412,7 @@ S_min = 30 folders (below this, the overhead dominates regardless)
 - Single engineer + single tenant + engine_churn / total_churn > 0.5 (engine is still being invented; premature seam locks in a wrong abstraction).
 - Cross-cutting commit fraction > 50% (the split is fighting the natural change pattern; you have a "distributed monolith" risk).
 
-### Application to Buuuk/neural-gtm (current state)
+### Application to AgencyA/neural-gtm (current state)
 
 - R1: N_tenants = 1 today. Does not trigger.
 - R2: engine_test_pass_rate has been at 110/110 waterfall tests since 2026-05-22 (4 weeks). Engine churn estimated <25% of total. **Triggers.**
@@ -478,7 +484,7 @@ Combining the above with K=outbound-pipeline weights (c_money > c_drift > c_modi
 
 ### Engine bifurcation point (N_**)
 The engine bifurcates (splits into Layer A1, A2 ... serving distinct tenant clusters) when tenant constraint profiles diverge enough that the engine's `H_K` cannot satisfy both without contradiction. Empirically this happens when:
-- 2+ tenants want incompatible defaults (e.g. Buuuk wants cold-outbound semantics, MAIKAI wants paid-acquisition semantics; both call themselves outbound-pipeline but the K profile differs).
+- 2+ tenants want incompatible defaults (e.g. AgencyA wants cold-outbound semantics, BrandB wants paid-acquisition semantics; both call themselves outbound-pipeline but the K profile differs).
 - The engine's optional-feature surface grows to >40% of the engine code (most engine code now serves only a subset of tenants).
 
 **Estimated N_** approximately 5 for K=outbound-pipeline**, but with wide error bars. The right discipline is to delay bifurcation as long as possible by enforcing the engine's K-profile gates against every tenant.
@@ -514,12 +520,12 @@ engine.K != tenant.K AND no shared K-profile can satisfy both
 ```
 The engine no longer serves the tenant's K. Split the engine itself (bifurcation, see N_**) rather than collapse, but the original two-layer seam is the wrong cut.
 
-### Application to Buuuk/neural-gtm
+### Application to AgencyA/neural-gtm
 
 - I1: cross-cutting fraction observed <20%. Does not trigger.
 - I2: engine test pass rate 110/110 for 4 weeks. Does not trigger.
-- I3: N=1 today, but MAIKAI is a planned second tenant. Does not trigger.
-- I4: engine K and Buuuk K both = outbound-pipeline. Does not trigger.
+- I3: N=1 today, but BrandB is a planned second tenant. Does not trigger.
+- I4: engine K and AgencyA K both = outbound-pipeline. Does not trigger.
 
 **No inverse condition met. Keep the split.**
 
@@ -547,10 +553,10 @@ This makes the seam **a property of K, not a separate primitive of A***. (Which 
 ### Why this beats the alternatives
 
 - **"Always split"** (default-on without trigger): pays the seam tax on small projects (Spotify-scale tooling tax) and on K classes where decomposition does not pay off (product-saas with deep coupling, audit-pipeline with single-source auditability requirement).
-- **"Optimization only"** (default-off, split only on measured trigger): pays a refactoring tax every time. Empirical observation from v0.1: the Buuuk split took ~1 day of focused work. Done up front it is one-time; done after the project has grown it is multi-day. Default-on for the K classes where the literature predicts net-positive amortizes this cost.
-- **"Tenant-count-only"** (R1 only): correct at N>=2 but leaves the N=1 case underspecified. For K=outbound-pipeline at N=1, the engine-stability trigger R2 picks up the case Buuuk is in *now* (single tenant, engine stable, split justified).
+- **"Optimization only"** (default-off, split only on measured trigger): pays a refactoring tax every time. Empirical observation from v0.1: the AgencyA split took ~1 day of focused work. Done up front it is one-time; done after the project has grown it is multi-day. Default-on for the K classes where the literature predicts net-positive amortizes this cost.
+- **"Tenant-count-only"** (R1 only): correct at N>=2 but leaves the N=1 case underspecified. For K=outbound-pipeline at N=1, the engine-stability trigger R2 picks up the case AgencyA is in *now* (single tenant, engine stable, split justified).
 
-### Tying to observable Buuuk/neural-gtm numbers
+### Tying to observable AgencyA/neural-gtm numbers
 
 If the post-split measurements confirm:
 - `c_storage` delta in [+10%, +15%] (predicted: +13%, observed: +13%, ALREADY CONFIRMED)
@@ -564,10 +570,10 @@ then the v0.2 recommendation is validated.
 
 The recommendation is falsified if **any** of:
 
-1. Post-split `c_modify` weighted delta is positive (i.e., the split made changes *harder* on average). Would imply Buuuk's change pattern is overwhelmingly cross-cutting, contrary to v0.1 observation.
+1. Post-split `c_modify` weighted delta is positive (i.e., the split made changes *harder* on average). Would imply AgencyA's change pattern is overwhelmingly cross-cutting, contrary to v0.1 observation.
 2. Post-split `c_drift` delta is positive (i.e., the split *increased* drift, e.g. via engine/tenant version skew). Would imply our enforcement of seam invariants is too weak (no manifest version coupling).
 3. The engine bifurcates at N<=3 tenants (i.e., we hit N_** much sooner than predicted). Would imply K=outbound-pipeline is too broad a class and the actual tenant profiles are incompatible. RQ9's K-form question becomes urgent.
-4. Cross-tenant blast events occur despite the seam invariants (e.g., a Buuuk bug corrupts MAIKAI state). Would imply enforcement is too soft (convention/QA only); recommendation upgrades to fs-permission or process-level isolation.
+4. Cross-tenant blast events occur despite the seam invariants (e.g., a AgencyA bug corrupts BrandB state). Would imply enforcement is too soft (convention/QA only); recommendation upgrades to fs-permission or process-level isolation.
 5. `c_modify_cross_layer` observed > 50% for 8 weeks. Inverse rule I1 triggers; collapse recommendation overrides split.
 
 ---

@@ -1,10 +1,8 @@
 """C_core measurement smoke tests."""
 
-import subprocess
 from pathlib import Path
 
 import pytest
-
 from a_star.measurement import AXIS_SPECS, measure_repo
 from a_star.measurement.core_vector import (
     measure_c_derive,

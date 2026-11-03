@@ -12,7 +12,7 @@
 |---|---|---|---|
 | **K becomes a lattice** | RQ9 + neural-gtm misfit | fixed taxonomy of 7 classes | 7 frozen bootstrap classes + 4 derivation operators, depth ≤ 3 |
 | **Seam invariants fold into IC3** | RQ10 + v0.1.1 two-layer split | seam enforced in QA agent only | IC3 gains a clarifying asymmetric-flow clause; manifest gains `layer` + `secret_classes` fields |
-| **Two-layer split = conditional default** | RQ12 + Buuuk measurement | not addressed | split when R1 (N≥2 tenants) ∨ R2 (engine stable, churn ≤25%) ∨ R3 (cross-cutting ≤30%) |
+| **Two-layer split = conditional default** | RQ12 + AgencyA measurement | not addressed | split when R1 (N≥2 tenants) ∨ R2 (engine stable, churn ≤25%) ∨ R3 (cross-cutting ≤30%) |
 | **`SCOPES` becomes K-parametric** | v0.1.1 personal-twin avalanche | constant outbound lexicon hardcoded in solver | per-K SCOPES registry indexed by K_class |
 | **3 new primitive ops** | v0.1.1 personal-twin (5,313-primitive output) | 9 ops | 12 ops: + `BULK_UPDATE_MANIFEST`, `CONSOLIDATE_DUPLICATE`, `LINK_INTEGRITY_SCAN` |
 | **8th axis `c_privacy` opened as RQ11b** | v0.1.1 PII heuristic misfires | 7 axes | 7 axes; `c_privacy` is a candidate axis for v0.3, not promoted yet |
@@ -53,13 +53,13 @@ compose(K1, K2) -> K_hybrid
     Combines two profiles: union H, weighted-mix W, union T, union F, union E.
     Hard constraints never get blended (union, not average).
     Example: content-pipeline ∘ audit-pipeline = "content-with-provenance" (LSD,
-    Healome research-memory variants).
+    ClinicE research-memory variants).
 
 specialize_tenant(K_engine, T) -> K_tenant
     Inverse of lift_tenant. Re-binds engine-shaped K to a specific tenant T,
     re-injecting the tenant-specific constraints. Used to derive the tenant K
     from an engine K when a new tenant joins.
-    Example: specialize_tenant(neural-gtm, MAIKAI) gives the MAIKAI-specific
+    Example: specialize_tenant(neural-gtm, BrandB) gives the BrandB-specific
     outbound-pipeline-tenant profile.
 ```
 
@@ -78,15 +78,15 @@ The H_simp regularizer (inherited from S(M,T)) attaches to the bootstrap class a
 
 | Project | v0 fit | v0.2 derivation |
 |---|---|---|
-| Buuuk | outbound-pipeline | outbound-pipeline |
+| AgencyA | outbound-pipeline | outbound-pipeline |
 | neural-gtm | none (forced) | `lift_tenant(outbound-pipeline)` |
 | Longevity-Science-Daily | hybrid forced | `compose(content-pipeline, product-saas, w=0.65/0.35)` |
-| TUHH dashboard | product-saas with caveats | `restrict_scope(product-saas, predicate=internal-only)` |
+| UniversityC dashboard | product-saas with caveats | `restrict_scope(product-saas, predicate=internal-only)` |
 | Personal Twin | research-memory | research-memory |
 | Sheetal GS Engine | audit-pipeline | audit-pipeline |
 | si-global-intel | intel-pipeline | intel-pipeline |
-| MAIKAI | product-marketing | `compose(product-marketing, product-saas, w=0.7/0.3)` |
-| Healome | hybrid forced | `compose(research-memory, content-pipeline, w=0.6/0.4)` |
+| BrandB | product-marketing | `compose(product-marketing, product-saas, w=0.7/0.3)` |
+| ClinicE | hybrid forced | `compose(research-memory, content-pipeline, w=0.6/0.4)` |
 
 ### Falsifiers
 
@@ -167,7 +167,7 @@ R3 (low-coupling):    cross_cutting_commit_fraction <= 30%
                        (commits touching both engine and tenant code)
 ```
 
-The Buuuk/neural-gtm 2026-05-22 split is **validated** under R2 and R3 (R1 false today: only Buuuk; will trip when MAIKAI or Healome adopt the engine).
+The AgencyA/neural-gtm 2026-05-22 split is **validated** under R2 and R3 (R1 false today: only AgencyA; will trip when BrandB or ClinicE adopt the engine).
 
 ### Per-axis expected delta for two-layer K
 
@@ -177,14 +177,14 @@ The Buuuk/neural-gtm 2026-05-22 split is **validated** under R2 and R3 (R1 false
 | c_modify (within-layer) | ↓ better | -20% to -40% (D'Ambros/Lanza change-coupling) |
 | c_modify (cross-layer) | ↑ worse | +50% to +100% per cross-cutting change (Fowler MicroservicePremium) |
 | c_loss | ↓ better | -40% to -70% (Reis et al Chrome Site Isolation analog) |
-| c_storage | ↑ worse | +10% to +15% (measured 45→51.2 MB on Buuuk: +13%, in band with Reis 9-13%) |
+| c_storage | ↑ worse | +10% to +15% (measured 45→51.2 MB on AgencyA: +13%, in band with Reis 9-13%) |
 | c_money | flat / slightly ↑ | +0% to +5% (extra CI runners, duplicated venvs) |
 | c_find | depends | better within-layer; worse for cross-cutting code-search |
 | c_derive | flat | (engine and tenant derivations are mostly independent) |
 
-### Net verdict for Buuuk
+### Net verdict for AgencyA
 
-Split is **net-positive on 5 of 7 axes**. The c_modify rise affects only cross-cutting commits (today ~12% of Buuuk commits, well below the 30% R3 ceiling). Net cost is reduced.
+Split is **net-positive on 5 of 7 axes**. The c_modify rise affects only cross-cutting commits (today ~12% of AgencyA commits, well below the 30% R3 ceiling). Net cost is reduced.
 
 ### Inverse rule (when to collapse)
 
@@ -210,7 +210,7 @@ Seam pays off at **N >= 2**. Engine bifurcates (split engine into two engines) w
 
 ### Falsifiers
 
-If post-split Buuuk measurements over the next 4 weeks show c_modify_cross_layer > +100% AND c_drift no better than -10%, R2 is violated and the split is provisional. Re-evaluate.
+If post-split AgencyA measurements over the next 4 weeks show c_modify_cross_layer > +100% AND c_drift no better than -10%, R2 is violated and the split is provisional. Re-evaluate.
 
 ---
 
@@ -269,9 +269,16 @@ typical_K: research-memory, content-pipeline (high link density)
 ```python
 SCOPES = {
     "outbound-pipeline": ["lead_records", "delivery_proof", "consent_receipt", "suppression_record", ...],
-    "research-memory":   ["project_context", "capture_partial", "identity_record", "embedding_corpus", "consent_record", ...],
-    "content-pipeline":  ["draft", "publication", "source_doc", "rights_record", "review_signoff", ...],
-    "audit-pipeline":    ["workpaper", "evidence", "review_artifact", "signoff_record", ...],
+    "research-memory": [
+        "project_context",
+        "capture_partial",
+        "identity_record",
+        "embedding_corpus",
+        "consent_record",
+        ...,
+    ],
+    "content-pipeline": ["draft", "publication", "source_doc", "rights_record", "review_signoff", ...],
+    "audit-pipeline": ["workpaper", "evidence", "review_artifact", "signoff_record", ...],
     # ... etc per K
 }
 ```
@@ -307,7 +314,7 @@ For derived K (lattice form), SCOPES is the union of the base classes' SCOPES, m
 | Implement `LINK_INTEGRITY_SCAN` op | impl | 1 day | regex library for link patterns |
 | Migrate QA agent seam invariants to IC3-derived check | qa-agent | 0.5 day | manifest schema update |
 | Wire R1/R2/R3 decision rule into A* recommendation output | impl | 1 day | nothing |
-| Re-run solver on Buuuk + neural-gtm + personal-twin with v0.2 | validation | 0.5 day | all above |
+| Re-run solver on AgencyA + neural-gtm + personal-twin with v0.2 | validation | 0.5 day | all above |
 
 Total: ~7-8 engineer-days. No external dependencies beyond what v0.1 already needs.
 
@@ -329,7 +336,7 @@ Total: ~7-8 engineer-days. No external dependencies beyond what v0.1 already nee
 ## 10. Honest limits (carried forward)
 
 - v0.2 closes the spec but the lattice derivation rules have ONE worked example (`lift_tenant(outbound-pipeline) = neural-gtm`). The other 8 entries in the empirical fit table are spec-correct but not implementation-verified.
-- The decision rule R1/R2/R3 has thresholds (95%, 25%, 30%, 4 weeks) calibrated from literature, not from A*'s own measurement loop. Recalibrate after 8 weeks of Buuuk operation.
+- The decision rule R1/R2/R3 has thresholds (95%, 25%, 30%, 4 weeks) calibrated from literature, not from A*'s own measurement loop. Recalibrate after 8 weeks of AgencyA operation.
 - `c_privacy` candidacy is open. If personal-twin's PII heuristics keep misfiring after the lexeme-boundary fix, the axis gets promoted.
 - The 12-op set is hypothesized minimal-complete for K = {outbound, research-memory}. The other 5 K classes may surface ops we haven't seen yet.
 
@@ -357,4 +364,4 @@ v0.3 will close one or more of:
 - RQ14 composition order sensitivity (after the second hybrid project ships).
 - A second worked-impl on a non-outbound K (LSD content-pipeline or Personal Twin research-memory).
 
-No spec close on v0.3 before either: (a) the 4-week Buuuk/neural-gtm measurement window completes and confirms or falsifies the R1/R2/R3 thresholds, or (b) a second tenant joins the neural-gtm engine and exercises `specialize_tenant`.
+No spec close on v0.3 before either: (a) the 4-week AgencyA/neural-gtm measurement window completes and confirms or falsifies the R1/R2/R3 thresholds, or (b) a second tenant joins the neural-gtm engine and exercises `specialize_tenant`.

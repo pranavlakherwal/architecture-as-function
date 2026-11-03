@@ -1,7 +1,6 @@
 """Smoke tests for K-class profiles."""
 
 import pytest
-
 from a_star.profiles import (
     CORE_AXES,
     H_K,
@@ -41,12 +40,12 @@ def test_archival_policy_present():
 
 def test_seed_mapping():
     expected = {
-        "outbound-pipeline": "Buuuk",
+        "outbound-pipeline": "AgencyA",
         "content-pipeline": "LSD",
-        "product-marketing": "MAIKAI",
-        "product-saas": "TUHH",
+        "product-marketing": "BrandB",
+        "product-saas": "UniversityC",
         "research-memory": "Personal Twin",
-        "audit-pipeline": "SI Global Engine",
+        "audit-pipeline": "DeskD Engine",
         "intel-pipeline": "si-global-intel",
     }
     for k, seed in expected.items():

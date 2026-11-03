@@ -221,7 +221,7 @@ The decision-ready insight is that A* should be neither a pure scorer nor a pure
 
 ### Local adapters for the missing v0 names
 
-The prompt says A* has **7** `C_core` axes and **7** `K` classes, but it names only `c_modify`, `c_drift`, `K = routing`, and a Buuuk-class example. To keep the primitive table precise without inventing canonical names, this memo uses local adapters.
+The prompt says A* has **7** `C_core` axes and **7** `K` classes, but it names only `c_modify`, `c_drift`, `K = routing`, and a AgencyA-class example. To keep the primitive table precise without inventing canonical names, this memo uses local adapters.
 
 Local `C_core` reporting adapter:
 
@@ -318,11 +318,11 @@ Legend: `-` lowers cost, `+` raises cost, `0` is neutral, `+/-` is context-depen
 
 | Primitive | C7 effect `[find, modify, integrity, reverse, drift, storage, devex]` | Reversibility | Misuse can violate | Typical K use |
 |---|---|---|---|---|
-| `CREATE_FOLDER` | `[-, -, +/-, 0, +/-, +, +/-]` | Always reversible if empty; reversible with move/archive if non-empty. | IC3 if manifest is not updated; IC1 if folder implies false authority. | `K_onboard`, `K_devex`, `K_route`, Buuuk source/cache setup. |
+| `CREATE_FOLDER` | `[-, -, +/-, 0, +/-, +, +/-]` | Always reversible if empty; reversible with move/archive if non-empty. | IC3 if manifest is not updated; IC1 if folder implies false authority. | `K_onboard`, `K_devex`, `K_route`, AgencyA source/cache setup. |
 | `ARCHIVE_FOLDER` | `[+, -, -, -, -, +/-, -]` | Reversible if archive path and manifest are retained. | IC1 if active source is archived; IC2 if restore path is missing; IC3 if links break. | `K_reverse`, `K_human`, lifecycle closure. |
 | `MOVE_ARTIFACT` | `[-, +/-, +/-, 0, +/-, 0, +/-]` | Reversible if original path and reference diff are logged. | IC1 if authority changes accidentally; IC3 if references are stale. | `K_onboard`, `K_devex`, `K_agent_internal`. |
 | `DUPLICATE_TO_CACHE` | `[-, +, +/-, +/-, +, +, -]` | Reversible by deleting or archiving cache because source remains. | IC1 if cache is mistaken for source; IC3 if derivation is missing. | `K_agent_external`, `K_devex`, medallion-like derived layer. |
-| `SET_SOURCE_OF_TRUTH` | `[-, -, -, +/-, -, 0, +]` | Reversible if prior authority state and old source are retained. | IC1 directly; IC2 if prior source is destroyed; IC3 if manifest diverges. | `K_route`, `K_reverse`, Buuuk source promotion. |
+| `SET_SOURCE_OF_TRUTH` | `[-, -, -, +/-, -, 0, +]` | Reversible if prior authority state and old source are retained. | IC1 directly; IC2 if prior source is destroyed; IC3 if manifest diverges. | `K_route`, `K_reverse`, AgencyA source promotion. |
 | `UPDATE_MANIFEST` | `[-, -, -, -, -, +/-, +]` | Reversible if inverse patch or prior version is retained. | IC3 directly; IC1 if source metadata is wrong. | All K classes, especially `K_agent_internal` and `K_onboard`. |
 | `UPSERT_RELATION` | `[-, +/-, +/-, -, +/-, +, +/-]` | Reversible if old edge value is logged. | IC1 if relation asserts false authority; IC3 if graph becomes inconsistent. | Zettelkasten links, ontology relations, tags, facets, retrieval. |
 | `MIGRATE_PERSISTENCE` | `[-, +/-, +/-, +/-, +/-, +/-, +/-]` | Reversible if old backend or export snapshot is retained. | IC1 if authority moves silently; IC2 if rollback route is missing; IC3 if route manifest is wrong. | `K_route`, `K_agent_internal`, `K_agent_external`, scale transition. |
@@ -362,17 +362,17 @@ not just:
 A_target
 ```
 
-### Operator-facing YAML for a small Buuuk-class transformation
+### Operator-facing YAML for a small AgencyA-class transformation
 
 ```yaml
 a_star_output:
   spec_version: "a-star-v0"
-  run_id: "2026-05-21-buuuk-demo"
+  run_id: "2026-05-21-agencya-demo"
 
   input_fingerprint:
     I_hash: "sha256:..."
     L_hash: "sha256:..."
-    K: "buuuk"
+    K: "agencya"
     T_profile:
       T_human: "high"
       T_agent_internal: "medium"
@@ -396,7 +396,7 @@ a_star_output:
       - path: "knowledge/archive"
         purpose: "inactive or superseded material"
     source_of_truth:
-      scope: "buuuk/customer-onboarding"
+      scope: "agencya/customer-onboarding"
       artifact_id: "artifact.customer_onboarding_md"
       path: "knowledge/source/customer-onboarding.md"
     persistence_routes:
@@ -407,7 +407,7 @@ a_star_output:
       schema_version: "0.1"
 
   primitive_plan:
-    transaction_id: "txn-buuuk-001"
+    transaction_id: "txn-agencya-001"
     atomic_commit: true
     rollback_required: true
     operations:
@@ -448,7 +448,7 @@ a_star_output:
         depends_on: ["op3"]
         inputs:
           artifact_id: "artifact.customer_onboarding_md"
-          scope: "buuuk/customer-onboarding"
+          scope: "agencya/customer-onboarding"
           status: "registered"
           reason: "source note is canonical for this topic"
 
@@ -483,7 +483,7 @@ a_star_output:
               - "knowledge/source"
               - "knowledge/cache"
             register_source:
-              scope: "buuuk/customer-onboarding"
+              scope: "agencya/customer-onboarding"
               path: "knowledge/source/customer-onboarding.md"
             add_cache:
               path: "knowledge/cache/customer-onboarding.summary.md"
@@ -501,7 +501,7 @@ a_star_output:
   constraints_validated:
     IC1_canonicality:
       status: "pass"
-      evidence: "one source_of_truth registered for buuuk/customer-onboarding"
+      evidence: "one source_of_truth registered for agencya/customer-onboarding"
     IC2_reversibility:
       status: "pass"
       evidence: "all moves have inverse operations; cache is derived"
@@ -528,7 +528,7 @@ a_star_output:
     storage increase.
 ```
 
-The example uses a medallion-like source/cache distinction, but keeps persistence fixed. That makes it a Buuuk-class transformation rather than a full persistence migration.
+The example uses a medallion-like source/cache distinction, but keeps persistence fixed. That makes it a AgencyA-class transformation rather than a full persistence migration.
 
 ## Part C - Closing Gaps Before the v0 Synthesis Document
 

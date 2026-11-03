@@ -73,7 +73,7 @@ Define a universal mathematical framework for project architecture, call it A*, 
 4. **Functional Form Exploration**: Evaluating candidate mathematical structures for A*
 5. **Taxonomy Development**: Creating project class K categories with distinct cost profiles
 6. **Primitive Operation Definition**: Specifying atomic architecture operations (move/split/merge etc.)
-7. **Validation Protocol**: Test design for Buuuk project implementation
+7. **Validation Protocol**: Test design for AgencyA project implementation
 
 *Coverage*: Covers all required outputs including functional forms, taxonomy, primitives, cost correlations, and validation. Missing explicit S(M,T) integration but covered in functional form exploration.
 *Overlap check*: Minimal overlap between constraint implementation and primitive operations. Clear separation between parameterization and operationalization.
@@ -132,7 +132,7 @@ Define a universal mathematical framework for project architecture, call it A*, 
 |----------|--------|-----------|
 | P0 | Develop measurement proxies for each cost vector component | Without operational definitions, optimization is impossible |
 | P0 | Cluster existing projects to derive initial K taxonomy | Foundation for class-specific parameterization |
-| P1 | Implement integrity constraint validators for Buuuk | Early testing of core constraints |
+| P1 | Implement integrity constraint validators for AgencyA | Early testing of core constraints |
 | P1 | Analyze cost correlations using historical project data | Determine reducible dimensionality of C |
 
 ---

@@ -2,7 +2,7 @@
 
 Closed: Waves 1-3 (RQ1..RQ8). Synthesis at `/A_STAR_v0.md`.
 v0.1 reference impl: `/impl/a_star/` (40/40 tests).
-v0.1 consolidation: `/Core/Neural/neural-gtm/` (Layer A) + `/Core/Neural/Buuuk/` (Layer B). 111 → 71 primitives.
+v0.1 consolidation: `/Core/Neural/neural-gtm/` (Layer A) + `/Core/Neural/AgencyA/` (Layer B). 111 → 71 primitives.
 
 ## Open questions
 

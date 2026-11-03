@@ -60,12 +60,12 @@ REQUIRED OUTPUTS
   5. For each c_i: is it measurable as written, or does it need an operational proxy? Propose the proxy if needed.
   6. Explicit relationship to S(M,T) (the existing simplicity-times-fit measure for model selection in routing research): which parts of A* inherit, which diverge, where is A* a generalization vs a sibling construct?
   7. A list of open research questions that the deep-research pass must answer for A* to be computable.
-  8. Honest delineation of what cannot be answered without empirical data. Buuuk is the v0 testbed: a real, fragmented project that will be used to validate.
+  8. Honest delineation of what cannot be answered without empirical data. AgencyA is the v0 testbed: a real, fragmented project that will be used to validate.
 
 CONSTRAINTS ON THE FRAMEWORK
 
   - Do not reinvent where prior art suffices. Cite, integrate, or explicitly diverge from: Parnas 1972 (modular decomposition criteria), Brooks (essential vs accidental complexity), Christopher Alexander (Pattern Language, Timeless Way), Diataxis (Procida, documentation by user intent), Ranganathan (5 laws of library science, faceted classification), DDD bounded contexts (Evans, Vernon), Conway's Law, OAIS / PREMIS (archival reference models), Rosenfeld and Morville (information architecture), category theory in software design.
-  - Must be testable on a real fragmented project (Buuuk waterfall + Buuuk content + audits + Drive mirror) as the v0 validation.
+  - Must be testable on a real fragmented project (AgencyA waterfall + AgencyA content + audits + Drive mirror) as the v0 validation.
   - Must scale from solo to small team. Team size enters as a parameter, not an assumption.
   - The cost function C must be computable. Each c_i must have at least a candidate measurement procedure, even if approximate.
 

@@ -229,7 +229,7 @@ The question: does introducing a layer dimension `L_layer` (distinct from the li
 
 **Claim:** `L_layer` is absorbed by `K` as a per-layer K-profile, not as a new free variable in S(M, T, L).
 
-**Argument.** A layer label is a *partition of the architecture state* into engine-owned and tenant-owned regions. Within each region, the K-class applies: Layer A engine has its own `K_engine` (e.g., `engine-of-outbound-pipeline` under RQ9's lattice form, or `infrastructure-of-K` under the fixed-taxonomy form). Layer B tenant has its own `K_tenant` (e.g., `outbound-pipeline` for Buuuk). The routing decision (model selection) under `S(M, T)` is made *within a layer*; the model selected for a Layer A transition is constrained by `K_engine`, and the model selected for a Layer B transition is constrained by `K_tenant`.
+**Argument.** A layer label is a *partition of the architecture state* into engine-owned and tenant-owned regions. Within each region, the K-class applies: Layer A engine has its own `K_engine` (e.g., `engine-of-outbound-pipeline` under RQ9's lattice form, or `infrastructure-of-K` under the fixed-taxonomy form). Layer B tenant has its own `K_tenant` (e.g., `outbound-pipeline` for AgencyA). The routing decision (model selection) under `S(M, T)` is made *within a layer*; the model selected for a Layer A transition is constrained by `K_engine`, and the model selected for a Layer B transition is constrained by `K_tenant`.
 
 Therefore the routing function generalizes to:
 
@@ -304,7 +304,7 @@ The recommendation (placement c, IC3 clarification + 2 schema fields) is falsifi
 
 4. **The Z3 model needs to reason about layer.** If the solver needs to *optimize* over layer (e.g., decide whether a new folder is best placed as engine or tenant), then `layer` becomes a free variable in the COP, not just a declared label. This would push layer into the COP encoding and possibly require a primitive op `BIND_SEAM` after all. The current architecture (solver emits per-folder primitives; layer is declared per-folder) does not require this. Falsifier: a project where the optimal layer placement is non-obvious and must be solved.
 
-5. **A multi-tenant engine serves N tenants, and the lattice becomes a partial order rather than a total order.** Then `engine > tenant_buuuk` and `engine > tenant_maikai` are incomparable across tenants. The Biba/BLP reading still works (each pair is independently checked), but reasoning about cross-tenant flows requires additional structure. Likely fix: extend the lattice to `{engine, tenant_<id>...}` with explicit incomparability, not abandon (c).
+5. **A multi-tenant engine serves N tenants, and the lattice becomes a partial order rather than a total order.** Then `engine > tenant_agencya` and `engine > tenant_brandb` are incomparable across tenants. The Biba/BLP reading still works (each pair is independently checked), but reasoning about cross-tenant flows requires additional structure. Likely fix: extend the lattice to `{engine, tenant_<id>...}` with explicit incomparability, not abandon (c).
 
 6. **The literature converges on a new boundary-enforcement primitive (e.g., a typed-interface check that the solver must emit).** If, e.g., a future architecture-test framework standardizes a primitive emission for layer boundaries, A* may want to match. No current sign of this; ArchUnit, NDepend, Structurizr all run as validators.
 

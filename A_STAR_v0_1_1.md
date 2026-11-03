@@ -10,10 +10,10 @@
 ### Implementation
 1. **Stub-manifest generator** — `impl/tools/stub_manifest.py` + 10 unit tests.
 2. **K-inference classifier** — `impl/tools/k_inference.py` + 14 unit tests. Worked impl for RQ11.
-3. **Personal-twin worked application** — first non-Buuuk project run through the solver. Plan-only.
+3. **Personal-twin worked application** — first non-AgencyA project run through the solver. Plan-only.
 
 ### Validation results
-- **Buuuk:** 41 → 21 primitives after stub pass (-49%). UPDATE_MANIFEST: 37 → 17 (residual all inside `archive/`).
+- **AgencyA:** 41 → 21 primitives after stub pass (-49%). UPDATE_MANIFEST: 37 → 17 (residual all inside `archive/`).
 - **neural-gtm:** 30 → 1 primitive after stub pass (-97%). UPDATE_MANIFEST: 29 → 0.
 - **Combined Layer A + Layer B:** 71 → 22 primitives. Plus 49 stubs that satisfy IC3 mechanically and flag human review via `lifecycle_status: bootstrap` + owner sentinel.
 - **K-inference recall:** top-1 5/8 (0.625), top-3 6/8 (0.750) across 8 Neural projects. Misses are legitimately ambiguous (personal-twin lost research-memory vs intel-pipeline by 0.05 points, swamped by 13k HF leaderboard JSONs).
@@ -58,4 +58,4 @@
 - Wave 4 research outputs.
 - Any change to the v0 spec (`A_STAR_v0.md`).
 - Any mutation to personal-twin (plan-only as policy).
-- The 17 residual Buuuk UPDATE_MANIFEST primitives inside `archive/` — policy call (tool skips `archive/`, solver does not).
+- The 17 residual AgencyA UPDATE_MANIFEST primitives inside `archive/` — policy call (tool skips `archive/`, solver does not).

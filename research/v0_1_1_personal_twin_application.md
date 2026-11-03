@@ -28,7 +28,7 @@ The `.json` dominance comes almost entirely from `data/raw/open_llm_leaderboard/
 
 Top by cost-reduction signal:
 1. SCHEDULE_DESTRUCTION `<root>` (IC2 secret-at-rest, +30d sanitize, approval required)
-2. SCHEDULE_DESTRUCTION `memory/projects/trishaan-claude-code-mastery/si-global-intel` (same)
+2. SCHEDULE_DESTRUCTION `memory/projects/the_advisor-claude-code-mastery/si-global-intel` (same)
 3. SET_SOURCE_OF_TRUTH `data/raw/open_llm_leaderboard` for scope `lead_records` (**FALSE POSITIVE**: HF leaderboard ≠ leads)
 4. SET_SOURCE_OF_TRUTH `data/raw/open_llm_leaderboard/SentientAGI` for `delivery_proof` (**FALSE POSITIVE**)
 5-77. ARCHIVE_FOLDER on `data/qdrant/collections/build_improvements_auto_search` and 72 HF-leaderboard model dirs (clearly stale derived data, correct)
@@ -38,19 +38,19 @@ Top by cost-reduction signal:
 
 `would_write = 6,068`, `skipped = 45` (folders that already carry a manifest). Apply = false.
 
-For comparison: Buuuk plan = 111 primitives over 110 folders. Personal-twin is ~48× larger by folder count and ~48× larger by primitive count. Density (primitives/folder) is nearly identical (0.87 vs 1.01), which is itself a sign the solver isn't generating shape-aware recommendations, just per-folder UPDATE_MANIFEST stamps.
+For comparison: AgencyA plan = 111 primitives over 110 folders. Personal-twin is ~48× larger by folder count and ~48× larger by primitive count. Density (primitives/folder) is nearly identical (0.87 vs 1.01), which is itself a sign the solver isn't generating shape-aware recommendations, just per-folder UPDATE_MANIFEST stamps.
 
 ## 4. IC violations
 
 - **IC1 canonicality**: 2 SET_SOURCE_OF_TRUTH primitives, both wrong (matched on filename hints for `lead_records` / `delivery_proof` against a HuggingFace model dump). True IC1 work for personal-twin would be: duplicate context across `memory/projects/*` and `memory/contexts/`, duplicate identity files (`identity.json`, `people.json`, `patterns.json` exist both at root and inside projects). The solver did NOT detect this because IC1 scopes are still bootstrap-outbound-pipeline (`SCOPES` in `introspect.py` lines 76-90).
-- **IC2 retention**: 10 hits. Real positives include `memory/prospects` (PII), `<root>` (secret-at-rest from `.env`-style files), and `memory/projects/trishaan-claude-code-mastery/si-global-intel` (nested credential surface). False positives: HF `data/raw/open_llm_leaderboard/*` flagged as "contact" PII because of substring match on "Contact" in repo names.
+- **IC2 retention**: 10 hits. Real positives include `memory/prospects` (PII), `<root>` (secret-at-rest from `.env`-style files), and `memory/projects/the_advisor-claude-code-mastery/si-global-intel` (nested credential surface). False positives: HF `data/raw/open_llm_leaderboard/*` flagged as "contact" PII because of substring match on "Contact" in repo names.
 - **IC3 manifest**: 2,145 stable-boundary violations (folders ≥ `min_stable_files=3` with no manifest). This is the dominant signal and it's correct. Personal-twin has near-zero `.manifest.yaml` coverage.
 
-## 5. Buuuk vs personal-twin axis profile
+## 5. AgencyA vs personal-twin axis profile
 
 | K-class | primary | secondary | tertiary | binding |
 |---|---|---|---|---|
-| outbound-pipeline (Buuuk) | c_money (0.30) | c_drift (0.22) | c_modify (0.16) | c_money (sender reputation) |
+| outbound-pipeline (AgencyA) | c_money (0.30) | c_drift (0.22) | c_modify (0.16) | c_money (sender reputation) |
 | research-memory (PT) | c_find (0.30) | c_storage (0.22) | c_derive (0.16) | should be c_drift + c_loss |
 
 The W_K weights for research-memory are written as `c_find > c_storage > c_derive`, which assumes the binding constraint is retrieval quality and storage cost. On the real repo, `c_storage` IS dominant (6,119 folders, HF dumps), but the *real* failure mode visible in the plan is `c_drift` (provenance rot, dead links across moved folders, identity-file duplication). The current weighting under-counts that.

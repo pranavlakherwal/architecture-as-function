@@ -19,7 +19,7 @@ A\* v0 defines `K = (H_K, W_K, T_K, F_K, E_K)` where:
 - `F_K` = required manifest fields
 - `E_K` = excluded patterns (forbidden artifact types)
 
-K is the constraint **profile**. v0 fixes K to a closed taxonomy of seven named classes drawn from the live Neural portfolio at freeze date 2026-05-21. The trigger for RQ9: v0.1 consolidation (2026-05-22) split the Buuuk repo into Layer A engine `/Core/Neural/neural-gtm/` plus Layer B tenant `/Core/Neural/Buuuk/`. The engine is tenant-agnostic, ships pipelines rather than being one, has no leads, no SMTP, no end-users. It does not fit any of the seven v0 classes. Forcing K=outbound-pipeline (what we did during the consolidation solver run) is a category error: the H_K rider `suppression_list scope must have a canonical assignment` is vacuous against an engine that has no leads to suppress.
+K is the constraint **profile**. v0 fixes K to a closed taxonomy of seven named classes drawn from the live Neural portfolio at freeze date 2026-05-21. The trigger for RQ9: v0.1 consolidation (2026-05-22) split the AgencyA repo into Layer A engine `/Core/Neural/neural-gtm/` plus Layer B tenant `/Core/Neural/AgencyA/`. The engine is tenant-agnostic, ships pipelines rather than being one, has no leads, no SMTP, no end-users. It does not fit any of the seven v0 classes. Forcing K=outbound-pipeline (what we did during the consolidation solver run) is a category error: the H_K rider `suppression_list scope must have a canonical assignment` is vacuous against an engine that has no leads to suppress.
 
 Three candidate forms for K in v0.2:
 
@@ -242,10 +242,10 @@ Recall the seven v0 base classes (from `A_STAR_v0.md` §K):
 
 | id | example tenant |
 |---|---|
-| outbound-pipeline | Buuuk |
+| outbound-pipeline | AgencyA |
 | content-pipeline | LSD (primary) |
-| product-marketing | MAIKAI |
-| product-saas | TUHH |
+| product-marketing | BrandB |
+| product-saas | UniversityC |
 | research-memory | Personal Twin |
 | audit-pipeline | SI Engine |
 | intel-pipeline | si-global-intel |
@@ -308,7 +308,7 @@ E_out = E_in ∪ {patterns valid in K_in but invalid in the narrower scope}
 
 **Soundness condition.** `scope_pred` is decidable on artifacts; `H_out` is satisfiable (the narrower scope must be nonempty); resulting profile is a strict refinement (Liskov-style: every K_out instance is a valid K_in instance).
 
-**Worked example.** `restrict_scope(product-saas, scope_pred=single_tenant) = product-saas-single-tenant`. Used for TUHH (the dashboard has exactly one customer org). Adds `H_K_extra = no_multi_tenant_isolation_required` and lets the solver relax tenant-isolation-related soft objectives.
+**Worked example.** `restrict_scope(product-saas, scope_pred=single_tenant) = product-saas-single-tenant`. Used for UniversityC (the dashboard has exactly one customer org). Adds `H_K_extra = no_multi_tenant_isolation_required` and lets the solver relax tenant-isolation-related soft objectives.
 
 ### E.3 `compose(K_1, K_2) -> K_out`
 
@@ -366,7 +366,7 @@ E_out = E_engine
 
 **Soundness condition.** `specialize_tenant ∘ lift_tenant = id` up to renaming of tenant_id. This is the LSP-style behavioral round-trip: lifting then specializing recovers the original tenant profile.
 
-**Worked example.** `specialize_tenant(neural-gtm, "Buuuk") = outbound-pipeline_Buuuk`, where `outbound-pipeline_Buuuk` is the v0 outbound-pipeline plus Buuuk-specific manifest fields.
+**Worked example.** `specialize_tenant(neural-gtm, "AgencyA") = outbound-pipeline_AgencyA`, where `outbound-pipeline_AgencyA` is the v0 outbound-pipeline plus AgencyA-specific manifest fields.
 
 ### E.5 Derivation graph for v0.2
 
@@ -382,14 +382,14 @@ First derivations needed for the current Neural portfolio:
 ```
 neural-gtm                 = lift_tenant(outbound-pipeline)
 LSD                        = compose(content-pipeline, product-saas)
-TUHH                       = restrict_scope(product-saas, single_tenant)
+UniversityC                       = restrict_scope(product-saas, single_tenant)
 sheetal-gs-engine          = compose(audit-pipeline, content-pipeline)
 si-global-intel            = intel-pipeline                              (base, no derivation)
 personal-twin              = compose(research-memory, intel-pipeline)
-Healome                    = compose(product-saas, content-pipeline)
-Buuuk                      = specialize_tenant(neural-gtm, "Buuuk")
+ClinicE                    = compose(product-saas, content-pipeline)
+AgencyA                      = specialize_tenant(neural-gtm, "AgencyA")
                           ≡ outbound-pipeline                            (round-trip)
-MAIKAI                     = product-marketing                          (base, no derivation)
+BrandB                     = product-marketing                          (base, no derivation)
 ```
 
 This is the full lattice needed today. Eight projects, four base classes, four derivations.
@@ -440,24 +440,24 @@ This works in principle but requires significantly more infrastructure (clusteri
 
 ## Part G - Empirical Fit: Per-Project Table (Task 6)
 
-I sanity-checked the eight Neural projects by listing top-level layouts (Buuuk has `audits/ briefs/ catalog/ contracts/ leads/ scripts/ sequences/ voice/`; MAIKAI has `brand_twin/ creatives_analysis/ artisan_cloud/ db.sqlite3/ frontend/`; tuhh-dashboard-app has `src/ docs/ playwright-report/ scripts/ RBAC_MOCKUP_*.html`; personal-twin has dozens of `MEMORY_V2_*.md`, `GRAPH_SCHEMA_DESIGN.md`; sheetal-gs-engine has `audit/ deals/ evidence/ feedback/ kb/ parsers/ rules/`; Healome has many `Phase_*.md`, `SARAH_*.md`, `TELEPHONY_*.md`; Longevity-Science-Daily has `web/ drafts/ quiz/ supabase/`; neural-gtm has just `waterfall/` with all the engine phase folders).
+I sanity-checked the eight Neural projects by listing top-level layouts (AgencyA has `audits/ briefs/ catalog/ contracts/ leads/ scripts/ sequences/ voice/`; BrandB has `brand_twin/ creatives_analysis/ artisan_cloud/ db.sqlite3/ frontend/`; universityc-dashboard-app has `src/ docs/ playwright-report/ scripts/ RBAC_MOCKUP_*.html`; personal-twin has dozens of `MEMORY_V2_*.md`, `GRAPH_SCHEMA_DESIGN.md`; sheetal-gs-engine has `audit/ deals/ evidence/ feedback/ kb/ parsers/ rules/`; ClinicE has many `Phase_*.md`, `SARAH_*.md`, `TELEPHONY_*.md`; Longevity-Science-Daily has `web/ drafts/ quiz/ supabase/`; neural-gtm has just `waterfall/` with all the engine phase folders).
 
 The fit per project under each form:
 
 | Project | Top-level shape | Fixed taxonomy fit | Lattice derivation | Free-bag verdict |
 |---|---|---|---|---|
-| **Buuuk** | leads, sequences, contracts, voice; tenant-scoped outbound | outbound-pipeline (clean) | `specialize_tenant(neural-gtm, "Buuuk")` or base | clean but loses W_K prior |
-| **MAIKAI** | brand_twin, creatives_analysis, shopify-to-sheets, sqlite | product-marketing (clean) | product-marketing (base) | clean but loses W_K prior |
-| **TUHH** | src, RBAC_MOCKUP_*.html, playwright, single client | product-saas (mostly; single-tenant is awkward) | `restrict_scope(product-saas, single_tenant)` (clean) | clean but loses W_K prior |
+| **AgencyA** | leads, sequences, contracts, voice; tenant-scoped outbound | outbound-pipeline (clean) | `specialize_tenant(neural-gtm, "AgencyA")` or base | clean but loses W_K prior |
+| **BrandB** | brand_twin, creatives_analysis, shopify-to-sheets, sqlite | product-marketing (clean) | product-marketing (base) | clean but loses W_K prior |
+| **UniversityC** | src, RBAC_MOCKUP_*.html, playwright, single client | product-saas (mostly; single-tenant is awkward) | `restrict_scope(product-saas, single_tenant)` (clean) | clean but loses W_K prior |
 | **Personal Twin** | MEMORY_V2_*, GRAPH_SCHEMA, dozens of memory docs, intel briefings | research-memory (mostly; intel is extra) | `compose(research-memory, intel-pipeline)` (clean) | clean but loses W_K prior |
 | **sheetal-gs-engine** | audit, deals, evidence, rules, rf_writer | audit-pipeline (mostly; rule-engine generates content) | `compose(audit-pipeline, content-pipeline)` (clean) | clean but loses W_K prior |
 | **si-global-intel** | (sibling repo; per memory: PR_0001 schema, 6-layer pipeline, intel briefs) | intel-pipeline (clean) | intel-pipeline (base) | clean but loses W_K prior |
 | **Longevity-Science-Daily** | web, drafts, quiz, supabase; both content publishing and SaaS surface | hybrid (no single class); v0 noted as 0.65 content + 0.35 saas | `compose(content-pipeline, product-saas)` (clean) | clean but loses W_K prior |
-| **Healome** | Phase_*, SARAH_*, TELEPHONY_*; product-saas plus content pipeline | hybrid (no single class) | `compose(product-saas, content-pipeline)` (clean) | clean but loses W_K prior |
+| **ClinicE** | Phase_*, SARAH_*, TELEPHONY_*; product-saas plus content pipeline | hybrid (no single class) | `compose(product-saas, content-pipeline)` (clean) | clean but loses W_K prior |
 | **neural-gtm** (engine layer) | waterfall/ + phase_w0..phase_wv engine code | **no fit** (trigger for RQ9) | `lift_tenant(outbound-pipeline)` (clean) | clean but loses W_K prior |
 
 **Summary.**
-- Fixed taxonomy fits cleanly for **4 of 9** (Buuuk, MAIKAI, si-global-intel; arguably sheetal-gs-engine). Forces hybrids for **3 of 9** (LSD, Healome, Personal Twin). Forces an awkward restriction for **1 of 9** (TUHH). **Fails outright for 1 of 9** (neural-gtm).
+- Fixed taxonomy fits cleanly for **4 of 9** (AgencyA, BrandB, si-global-intel; arguably sheetal-gs-engine). Forces hybrids for **3 of 9** (LSD, ClinicE, Personal Twin). Forces an awkward restriction for **1 of 9** (UniversityC). **Fails outright for 1 of 9** (neural-gtm).
 - Lattice fits cleanly for **9 of 9**, with derivations limited to one operator deep for 7 of 9 and two operators deep for none (composition counts as one operator).
 - Free-bag fits cleanly for all 9 by definition, but loses the calibrated H_simp prior for all 9.
 
@@ -483,11 +483,11 @@ The function takes K as a string, looks up KProfile from the registry, and uses 
 
 ```python
 def build_model(facts, k_class: str = "outbound-pipeline"):
-    profile = get_profile(k_class)              # dict lookup; O(1)
+    profile = get_profile(k_class)  # dict lookup; O(1)
     ...
 ```
 
-**Z3 model size.** Unchanged. ~5-6 hard constraints, ~10-12 soft constraints per folder (current Buuuk run produces ~70 folders -> ~700 soft clauses).
+**Z3 model size.** Unchanged. ~5-6 hard constraints, ~10-12 soft constraints per folder (current AgencyA run produces ~70 folders -> ~700 soft clauses).
 
 **Soft objective shape.** Unchanged: one weighted sum.
 
@@ -497,7 +497,7 @@ def build_model(facts, k_class: str = "outbound-pipeline"):
 
 ```python
 def build_model(facts, k_expr: KExpr = KExpr.base("outbound-pipeline")):
-    profile = materialize(k_expr)                # traverse lattice; O(depth)
+    profile = materialize(k_expr)  # traverse lattice; O(depth)
     ...
 ```
 
@@ -507,11 +507,12 @@ Where `KExpr` is a small algebraic type:
 @dataclass(frozen=True)
 class KExpr:
     op: Literal["base", "lift_tenant", "restrict_scope", "compose", "specialize_tenant"]
-    args: tuple                                  # base name | (KExpr,) | (KExpr, pred) | (KExpr, KExpr) | (KExpr, tenant_id)
+    args: tuple  # base name | (KExpr,) | (KExpr, pred) | (KExpr, KExpr) | (KExpr, tenant_id)
 
     @classmethod
     def base(cls, name: str) -> "KExpr":
         return cls("base", (name,))
+
 
 def materialize(expr: KExpr) -> KProfile:
     if expr.op == "base":
@@ -550,7 +551,7 @@ def build_model(facts, manifest_path: str | None = None):
     ...
 ```
 
-**Z3 model size.** Potentially explodes. Every folder may declare its own constraints, so the constraint count scales as O(folders × per-folder-constraints) rather than O(folders × W_K size). Estimated 3-5x larger model on a Buuuk-sized repo.
+**Z3 model size.** Potentially explodes. Every folder may declare its own constraints, so the constraint count scales as O(folders × per-folder-constraints) rather than O(folders × W_K size). Estimated 3-5x larger model on a AgencyA-sized repo.
 
 **Soft objective shape.** Either flat (one global sum) or per-folder (lots of small sums). Either way, the **calibration** is unclear because there is no shared prior to anchor weights.
 
@@ -564,9 +565,9 @@ The lattice form costs roughly zero in solver time and small constant in builder
 
 A K-profile is not static. A project's profile evolves as the project grows. Three common patterns:
 
-1. **Pure outbound becomes outbound + UI.** Buuuk started as a pure outbound pipeline; if we add a customer-facing dashboard, the K-profile should grow from outbound-pipeline to `compose(outbound-pipeline, product-saas)`.
+1. **Pure outbound becomes outbound + UI.** AgencyA started as a pure outbound pipeline; if we add a customer-facing dashboard, the K-profile should grow from outbound-pipeline to `compose(outbound-pipeline, product-saas)`.
 2. **Content becomes content + RBAC.** LSD is already at `compose(content-pipeline, product-saas)`; if a paid subscription tier with seat management is added, the product-saas component dominates and we may want `compose(compose(content-pipeline, product-saas), product-marketing)` to capture the spend optimization.
-3. **Tenant becomes engine.** Buuuk was a single repo; v0.1 split it into neural-gtm engine + Buuuk tenant. The engine is `lift_tenant(outbound-pipeline)`; Buuuk is the residual tenant.
+3. **Tenant becomes engine.** AgencyA was a single repo; v0.1 split it into neural-gtm engine + AgencyA tenant. The engine is `lift_tenant(outbound-pipeline)`; AgencyA is the residual tenant.
 
 Each form handles lifecycle differently:
 
@@ -621,7 +622,7 @@ Under the recommended form, the following observations would force a revision:
 3. **`compose(K_1, K_2)` produces an unsatisfiable `H_1 ∪ H_2` for a real project pair.** This would mean some K classes have incompatible hard constraints and cannot be combined. The current v0 catalog should be safe (the v0 §K note explicitly says "union hard constraints (never average)" works for the LSD = 0.65 content + 0.35 saas case), but a real failure would force a precedence operator or a constraint-relaxation operator.
 4. **`specialize_tenant ∘ lift_tenant ≠ id` on real data.** If the round-trip loses information (which it can, in our current spec, because `lift_tenant` discards H constraints), then `lift_tenant` is destructive and the lattice is not a true lattice. The mitigation is to make `lift_tenant` archival (preserve dropped constraints in a side channel) at the cost of slightly larger profiles.
 5. **The free-bag form turns out to be necessary for a single project.** If one project genuinely requires per-folder constraint declarations that cannot be expressed as a single K-profile (perhaps a megarepo with truly heterogeneous subprojects), then the lattice is insufficient and we must support both forms (lattice for the top-level K, free-bag at folder level inside that K). v0.2 leaves the door open for this by treating the folder manifest schema as orthogonal to K.
-6. **Solver runs take significantly longer with materialized derived profiles.** If `materialize` introduces non-trivial overhead (>10% of solve time) on Buuuk-scale repos, the cache is insufficient and we may need to pre-materialize and persist derived profiles.
+6. **Solver runs take significantly longer with materialized derived profiles.** If `materialize` introduces non-trivial overhead (>10% of solve time) on AgencyA-scale repos, the cache is insufficient and we may need to pre-materialize and persist derived profiles.
 7. **The simplicity-prior inheritance produces miscalibrated weights for a real derived profile.** If `lift_amplification = 1.5` (Part F.5) drives c_modify weights so high that the engine becomes effectively frozen, we have over-corrected. Calibrate from observed cost deltas (which is the RQ12 measurement plan output).
 8. **Engineering review of derived K-profiles becomes a bottleneck.** If more than one new derivation per week needs review, the operator is too tight; if zero need review per quarter, the operator is too loose. Target one review per month at steady state.
 

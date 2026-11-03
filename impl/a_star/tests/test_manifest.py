@@ -4,7 +4,6 @@ import json
 from pathlib import Path
 
 import pytest
-
 from a_star.manifest import scan_repo, validate_manifest
 
 MINIMAL_OK = {

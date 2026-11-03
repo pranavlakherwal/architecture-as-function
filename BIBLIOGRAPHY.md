@@ -125,6 +125,17 @@ Annotated citations grouped by research question. Full source list lives in each
 - **Stojanovic & Motik** — Ontology Evolution.
 - **Klein & Noy** — Ontology Versioning: logs / diffs / minimal transformation sets.
 
+## Foundational lineage and adversarial neighbors (added 2026-06-06, the look-back)
+
+These were missing and they reshape the novelty claim. Cite them; lead with the threats.
+
+- **Suh, Nam P. (1990, *The Principles of Design*; 2001, *Axiomatic Design*).** A*(I, L, K, T) → (A, D) is structurally Axiomatic Design: map functional requirements to design parameters. His **Independence Axiom** (keep functional requirements decoupled) is our IC3 seam logic and the engine/tenant split; his **Information Axiom** (minimize information content) is our H_simp / MDL prior. Honest consequence: A* did not invent the framing. The defensible novelty narrows to "a calibrated cost model plus an SMT encoding." State it that way.
+- **MacCormack, Rusnak & Baldwin (2006), *Exploring the Structure of Complex Software Designs* (Design Structure Matrices, propagation cost).** The redundancy threat to the headline equation: propagation cost already measures how change propagates as coupling grows, on real codebases, with human-replicable metrics. Test whether propagation cost predicts modification cost better than α·√N. If it does, the modification law is not just under-evidenced, it is redundant. Lead with this.
+- **Baldwin & Clark (2000), *Design Rules: The Power of Modularity*.** Modular operators and **Net Option Value**. NOV is the principled "when does a seam pay off" formalism, stronger than our hand-set R1/R2/R3 thresholds.
+- **Harman & Jones (2001); Harman (2007) — Search-Based Software Engineering.** The umbrella the A* framing sits inside (architecture as optimization / design-space search). Cite for legitimacy and for the NSGA-II vs Z3 question.
+- **Lehman (1980), Laws of Software Evolution.** The Second Law (a system's complexity increases unless work is spent reducing it) flags that c_drift ≈ 1/N and c_loss ≈ 1/N may be sign-wrong. Mark them "hypothesized, sign unverified."
+- (Already cited and relevant: Parnas 1972 on decomposition, Burnham & Anderson on AIC/BIC, Rissanen MDL. The free-power N^p refit, RQ14, uses the AIC/BIC machinery already in RQ8.)
+
 ---
 
 *Format: full URLs and source quality notes per RQ are preserved in `protocols/wave{N}_state.json` and `research/wave{N}/RQ*_raw.json`.*

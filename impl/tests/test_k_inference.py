@@ -8,7 +8,6 @@ Strategy:
 
 from __future__ import annotations
 
-import os
 import sys
 from pathlib import Path
 
@@ -28,7 +27,6 @@ from tools.k_inference import (  # noqa: E402
     score_features,
     top_k_with_confidence,
 )
-
 
 # ---- Fixture builders -------------------------------------------------------
 
@@ -152,8 +150,7 @@ def test_classifier_top1_on_synthetic_fixtures(tmp_path, expected_k):
     repo = builder(tmp_path / expected_k)
     result = classify(str(repo))
     assert result["prediction"] == expected_k, (
-        f"expected top-1 {expected_k}, got top3="
-        f"{[(t['k'], t['score']) for t in result['top3']]}"
+        f"expected top-1 {expected_k}, got top3={[(t['k'], t['score']) for t in result['top3']]}"
     )
 
 
@@ -163,9 +160,7 @@ def test_top3_contains_correct_class_for_all_fixtures(tmp_path):
         repo = builder(tmp_path / expected_k)
         result = classify(str(repo))
         top3_classes = [t["k"] for t in result["top3"]]
-        assert expected_k in top3_classes, (
-            f"{expected_k} not in top3 {top3_classes}"
-        )
+        assert expected_k in top3_classes, f"{expected_k} not in top3 {top3_classes}"
 
 
 def test_scoring_is_deterministic_and_sorted(tmp_path):

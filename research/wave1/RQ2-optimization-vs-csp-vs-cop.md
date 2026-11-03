@@ -11,7 +11,7 @@
 - **Solver Maturity Is High at Our Scale**: MiniZinc targets multiple backends (Gecode, Chuffed, OR-Tools, HiGHS, CPLEX, Gurobi) and Z3 is production-grade MiniZinc Solvers [38] Z3 - Microsoft Research [19] -> Expect sub-second to minutes at 5-200 primitives.
 - **Learning-Guided Solving Is a v1 Upgrade**: FastSMT reports up to 100x speedups on Z3 by learning strategies on domain formulas FastSMT [25] -> Plan to learn solver strategies from A* logs if latency becomes a bottleneck.
 - **Closest Adjacent Applications Confirm Feasibility**: MaxSAT-based product (re-)configuration and industrial feature-model SAT evaluations demonstrate viability for discrete configuration problems ReMax Product Re-Configurator [26] Industrial Feature-Model SAT Evaluation [41] -> Adopt config-style modeling of architecture primitives and constraints.
-- **Gap: Direct Folder Hierarchy Optimization**: No paper optimizes folder/naming/persistence end-to-end; ontology and configuration work are adjacent Integration of Ontologies and CSP [63] -> Prototype on Buuuk and refine objectives and soft constraints empirically.
+- **Gap: Direct Folder Hierarchy Optimization**: No paper optimizes folder/naming/persistence end-to-end; ontology and configuration work are adjacent Integration of Ontologies and CSP [63] -> Prototype on AgencyA and refine objectives and soft constraints empirically.
 
 ## Family 1: Continuous Optimization - Mature Multi-Objective Tooling, Weak Discrete Guarantee
 
@@ -137,7 +137,7 @@ Conclusion. S(M,T) is a special case of Hybrid COP/MaxSMT A* where gates are enc
 
 Recommendation. Adopt Hybrid COP/MaxSMT for v0; reserve continuous exploration for optional operator-facing what-ifs; plan a v1 that learns solver strategies and preference weights without weakening hard guarantees.
 
-## Unanswered Questions for Buuuk v0 Testbed
+## Unanswered Questions for AgencyA v0 Testbed
 
 - Objective shaping. Which subset of the 9D costs truly drives operator acceptance? Empirically estimate effective rank and set lexicographic tiers.
 - Weights and priorities. What weight schedules produce stable, interpretable outcomes across intents and lifecycle stages?
@@ -196,7 +196,7 @@ Recommendation. Adopt Hybrid COP/MaxSMT for v0; reserve continuous exploration f
 45. *Answer Set Programming and Knowledge Representation*. https://link.springer.com/subjects/answer-set-programming-and-knowledge-representation
 46. *A Tutorial on Hybrid Answer Set Solving with clingo*. https://www.cs.uni-potsdam.de/~torsten/hybris.pdf
 47. *Answer Set Programming and Knowledge Representation*. https://www.nature.com/nature-index/topics/l4/answer-set-programming-and-knowledge-representation
-48. *Programming with CLINGO*. https://www.cs.utexas.edu/~vl/teaching/378/pwc.pdf
+48. *Programming with CLINGO*. https://www.cs.utexas.edu/~vl/teaching/378/firmf.pdf
 49. *Satisfiability modulo theories - Wikipedia*. http://en.wikipedia.org/wiki/Satisfiability_modulo_theories
 50. *Objective functions in Z3 - Hey There Buddo!*. https://www.philipzucker.com/z3-rise4fun/optimization.html
 51. *Z3.Optimize - GitHub Pages*. https://z3prover.github.io/api/html/ml/Z3.Optimize.html
