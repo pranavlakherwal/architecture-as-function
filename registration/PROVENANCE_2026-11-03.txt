@@ -1,0 +1,12 @@
+P0P (PnotP) RESEARCH PROVENANCE RECORD
+Date claimed: 2026-11-03
+Repository: github.com/pranavlakherwal/architecture-as-function  commit: b4a4f0d3b1681db1d352dae5f8d6508e2d3d04e9  tag: v0.2.1
+Statement: the files below, identified by SHA256, are the A* specification and its bibliography as published on this date. Only hashes are listed; the proofs anchor this record's hash in the Bitcoin blockchain through OpenTimestamps.
+
+--- FILES (sha256) ---
+file: A_STAR_v0.md  sha256: f03ecbea13d36a24e3602a731a7acfcf44c13904a9d1a6a3d338f041de8e4e41
+file: A_STAR_v0_1_1.md  sha256: 12ec8c64cd7881afc0c796121156cba4056287863c4a64cf82be9d455959751c
+file: A_STAR_v0_2.md  sha256: 9b3b3b3efad01abfa861d9bd6a922a0d244579be3821ee278d20947a2b2cf651
+file: BIBLIOGRAPHY.md  sha256: 5988c6bc35e67a70cfc3219187f2fad013768c35c89fdcd4992a2f34a64ff277
+file: README.md  sha256: b60def6a0d73dbbc33ef7f48c97603867dead02e83b6a37d3ca0e6e4ea2b49cc
+file: ROADMAP.md  sha256: 6392b6b10d9bb7e07bbb55741ee3f1c159e2cace7e393c28281fef159a1b945f
