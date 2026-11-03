@@ -1,7 +1,6 @@
 """Smoke tests for K-class profiles."""
 
 import pytest
-
 from a_star.profiles import (
     CORE_AXES,
     H_K,

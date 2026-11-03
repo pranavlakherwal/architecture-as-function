@@ -453,10 +453,7 @@ def measure_c_derive(root: Path) -> Measurement:
         )
     files = [f for f in out.split("\0") if f]
     total = len(files)
-    derived = sum(
-        1 for f in files
-        if any(part in derived_dirs for part in f.split("/"))
-    )
+    derived = sum(1 for f in files if any(part in derived_dirs for part in f.split("/")))
     if total == 0:
         return Measurement(axis="c_derive", value=0.0, confidence="low", notes=["empty git index"])
     ratio = derived / total
@@ -505,7 +502,6 @@ def measure_repo(
 def _main() -> int:
     import argparse
     import json
-    import sys
 
     parser = argparse.ArgumentParser(description="A* passive C_core measurement.")
     parser.add_argument("root", type=Path)

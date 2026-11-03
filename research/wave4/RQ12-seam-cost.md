@@ -3,7 +3,7 @@
 **Wave:** 4
 **Thread ID:** RQ12-seam-cost
 **Question:** What is the net cost of two-layer separation? Does `c_modify` rise more than `c_drift` falls?
-**Trigger:** v0.1 consolidation (2026-05-22) split one repo (`/Core/Neural/PnotP/ogilvy/...` + AgencyA tenant root) into Layer A engine `/Core/Neural/neural-gtm/` (41 folders, ~809 files, 43 MB) and Layer B tenant `/Core/Neural/AgencyA/` (56 folders, ~280 files, 8.2 MB). Primitive count dropped 111 -> 71 (~36%). The primitive drop is necessary but not sufficient evidence of net `C_core` reduction. This memo isolates the per-axis deltas.
+**Trigger:** v0.1 consolidation (2026-05-22) split one repo (`/Core/Neural/PnotP/outbound_pipeline/...` + AgencyA tenant root) into Layer A engine `/Core/Neural/neural-gtm/` (41 folders, ~809 files, 43 MB) and Layer B tenant `/Core/Neural/AgencyA/` (56 folders, ~280 files, 8.2 MB). Primitive count dropped 111 -> 71 (~36%). The primitive drop is necessary but not sufficient evidence of net `C_core` reduction. This memo isolates the per-axis deltas.
 **Date frozen:** 2026-05-24
 **Source policy:** after 2010-01-01 unless cited classics (Parnas 1972, Conway 1968)
 **Companion artifact:** measurement plan in §5 is runnable against `/impl/a_star/measurement/core_vector.py`
@@ -341,7 +341,13 @@ def compare_pre_post_split(pre_root: Path, post_engine: Path, post_tenant: Path)
     post_tenant_v = measure_core_vector(post_tenant, label="post-tenant")
     post_combined = combine_measurements(post_engine_v, post_tenant_v, mode="weighted-by-file-count")
     deltas = {axis: post_combined[axis].value - pre[axis].value for axis in AXIS_SPECS}
-    return {"pre": pre, "post_engine": post_engine_v, "post_tenant": post_tenant_v, "post_combined": post_combined, "deltas": deltas}
+    return {
+        "pre": pre,
+        "post_engine": post_engine_v,
+        "post_tenant": post_tenant_v,
+        "post_combined": post_combined,
+        "deltas": deltas,
+    }
 ```
 
 **Confidence summary:** `c_storage` high (direct measure), `c_find`/`c_modify`/`c_loss` medium (proxies are well-validated by literature), `c_drift`/`c_derive`/`c_money` low (require external inputs or longer time windows to be defensible).

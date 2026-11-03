@@ -131,77 +131,89 @@ A* should model destruction primarily as a **declarative retention schedule atta
 
 ```python
 # Sorts
-Artifact, Operation, Time = DeclareSorts('Artifact Operation Time')
-Category = EnumSort('Category', [
-  'secret', 'pii', 'phi', 'payment', 'raw_event', 'derived',
-  'source_doc', 'ugc', 'audit_record'
-])
-RetentionClass = EnumSort('RetentionClass', [
-  'active', 'archived', 'scheduled_for_destruction', 'destroyed'
-])
-DestructionPolicy = EnumSort('DestructionPolicy', [
-  'none', 'soft', 'hard', 'sanitize'
-])
-StorageTier = EnumSort('StorageTier', ['hot', 'warm', 'cold', 'glacier', 'worm'])
-KClass = EnumSort('KClass', [
-  'outbound_pipeline', 'content_pipeline', 'product_marketing',
-  'product_saas', 'research_memory', 'audit_pipeline', 'intel_pipeline'
-])
+Artifact, Operation, Time = DeclareSorts("Artifact Operation Time")
+Category = EnumSort(
+    "Category", ["secret", "pii", "phi", "payment", "raw_event", "derived", "source_doc", "ugc", "audit_record"]
+)
+RetentionClass = EnumSort("RetentionClass", ["active", "archived", "scheduled_for_destruction", "destroyed"])
+DestructionPolicy = EnumSort("DestructionPolicy", ["none", "soft", "hard", "sanitize"])
+StorageTier = EnumSort("StorageTier", ["hot", "warm", "cold", "glacier", "worm"])
+KClass = EnumSort(
+    "KClass",
+    [
+        "outbound_pipeline",
+        "content_pipeline",
+        "product_marketing",
+        "product_saas",
+        "research_memory",
+        "audit_pipeline",
+        "intel_pipeline",
+    ],
+)
 
-cat = Function('cat', Artifact, Category)
-kclass = Function('kclass', Artifact, KClass)
-retention_class = Function('retention_class', Artifact, RetentionClass)
-policy = Function('policy', Artifact, DestructionPolicy)
-retention_until = Function('retention_until', Artifact, Time)
-legal_hold = Function('legal_hold', Artifact, BoolSort())
-erasure_valid = Function('erasure_valid', Artifact, BoolSort())
-anonymized = Function('anonymized', Artifact, BoolSort())
-pseudonymized = Function('pseudonymized', Artifact, BoolSort())
-archive_exists = Function('archive_exists', Artifact, BoolSort())
-archive_recoverable = Function('archive_recoverable', Artifact, BoolSort())
-destruction_cert = Function('destruction_cert', Artifact, BoolSort())
-residual_record = Function('residual_record', Artifact, BoolSort())
-contains_plaintext_secret = Function('contains_plaintext_secret', Artifact, BoolSort())
-destructive = Function('destructive', Operation, BoolSort())
-target = Function('target', Operation, Artifact)
-produces_archive = Function('produces_archive', Operation, BoolSort())
-produces_cert = Function('produces_cert', Operation, BoolSort())
-restore_reapplies_deletes = Function('restore_reapplies_deletes', Artifact, BoolSort())
+cat = Function("cat", Artifact, Category)
+kclass = Function("kclass", Artifact, KClass)
+retention_class = Function("retention_class", Artifact, RetentionClass)
+policy = Function("policy", Artifact, DestructionPolicy)
+retention_until = Function("retention_until", Artifact, Time)
+legal_hold = Function("legal_hold", Artifact, BoolSort())
+erasure_valid = Function("erasure_valid", Artifact, BoolSort())
+anonymized = Function("anonymized", Artifact, BoolSort())
+pseudonymized = Function("pseudonymized", Artifact, BoolSort())
+archive_exists = Function("archive_exists", Artifact, BoolSort())
+archive_recoverable = Function("archive_recoverable", Artifact, BoolSort())
+destruction_cert = Function("destruction_cert", Artifact, BoolSort())
+residual_record = Function("residual_record", Artifact, BoolSort())
+contains_plaintext_secret = Function("contains_plaintext_secret", Artifact, BoolSort())
+destructive = Function("destructive", Operation, BoolSort())
+target = Function("target", Operation, Artifact)
+produces_archive = Function("produces_archive", Operation, BoolSort())
+produces_cert = Function("produces_cert", Operation, BoolSort())
+restore_reapplies_deletes = Function("restore_reapplies_deletes", Artifact, BoolSort())
 
 # 1. Every artifact has declared lifecycle and policy.
 ForAll([a], And(retention_class(a) != None, policy(a) != None, cat(a) != None, kclass(a) != None))
 
 # 2. A destructive operation must prove either recoverability or verified destruction.
-ForAll([op], Implies(destructive(op),
-  Or(
-    And(produces_archive(op), archive_exists(target(op)), archive_recoverable(target(op))),
-    And(produces_cert(op), destruction_cert(target(op)), residual_record(target(op)))
-  )
-))
+ForAll(
+    [op],
+    Implies(
+        destructive(op),
+        Or(
+            And(produces_archive(op), archive_exists(target(op)), archive_recoverable(target(op))),
+            And(produces_cert(op), destruction_cert(target(op)), residual_record(target(op))),
+        ),
+    ),
+)
 
 # 3. Secrets cannot have recoverable plaintext archives.
-ForAll([a], Implies(cat(a) == secret,
-  And(policy(a) == sanitize,
-      Not(contains_plaintext_secret(a)),
-      destruction_cert(a))))
+ForAll(
+    [a], Implies(cat(a) == secret, And(policy(a) == sanitize, Not(contains_plaintext_secret(a)), destruction_cert(a)))
+)
 
 # 4. Valid erasure requests require hard delete, sanitization, or irreversible anonymization.
-ForAll([a], Implies(erasure_valid(a),
-  And(Not(legal_hold(a)),
-      Or(policy(a) == hard, policy(a) == sanitize, anonymized(a)),
-      destruction_cert(a))))
+ForAll(
+    [a],
+    Implies(
+        erasure_valid(a),
+        And(Not(legal_hold(a)), Or(policy(a) == hard, policy(a) == sanitize, anonymized(a)), destruction_cert(a)),
+    ),
+)
 
 # 5. Pseudonymization is not anonymization.
 ForAll([a], Implies(pseudonymized(a), Not(anonymized(a))))
 
 # 6. Audit records cannot be destroyed before retention expiry or hold release.
-ForAll([a], Implies(Or(cat(a) == audit_record, legal_hold(a)),
-  And(retention_class(a) != destroyed,
-      archive_exists(a), archive_recoverable(a))))
+ForAll(
+    [a],
+    Implies(
+        Or(cat(a) == audit_record, legal_hold(a)),
+        And(retention_class(a) != destroyed, archive_exists(a), archive_recoverable(a)),
+    ),
+)
 
 # 7. Soft delete must resolve by a deadline.
-ForAll([a], Implies(policy(a) == soft,
-  retention_class(a) == scheduled_for_destruction))
+ForAll([a], Implies(policy(a) == soft, retention_class(a) == scheduled_for_destruction))
 
 # 8. Restores must not resurrect erased data.
 ForAll([a], Implies(erasure_valid(a), restore_reapplies_deletes(a)))

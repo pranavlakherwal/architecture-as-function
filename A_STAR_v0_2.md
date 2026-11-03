@@ -269,9 +269,16 @@ typical_K: research-memory, content-pipeline (high link density)
 ```python
 SCOPES = {
     "outbound-pipeline": ["lead_records", "delivery_proof", "consent_receipt", "suppression_record", ...],
-    "research-memory":   ["project_context", "capture_partial", "identity_record", "embedding_corpus", "consent_record", ...],
-    "content-pipeline":  ["draft", "publication", "source_doc", "rights_record", "review_signoff", ...],
-    "audit-pipeline":    ["workpaper", "evidence", "review_artifact", "signoff_record", ...],
+    "research-memory": [
+        "project_context",
+        "capture_partial",
+        "identity_record",
+        "embedding_corpus",
+        "consent_record",
+        ...,
+    ],
+    "content-pipeline": ["draft", "publication", "source_doc", "rights_record", "review_signoff", ...],
+    "audit-pipeline": ["workpaper", "evidence", "review_artifact", "signoff_record", ...],
     # ... etc per K
 }
 ```

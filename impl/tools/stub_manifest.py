@@ -164,6 +164,7 @@ class StubReport:
 # Inference helpers
 # ---------------------------------------------------------------------------
 
+
 def _has_manifest(folder: Path) -> bool:
     return any((folder / n).is_file() for n in MANIFEST_FILE_NAMES)
 
@@ -247,9 +248,8 @@ def infer_allowed_types(files: list[Path]) -> list[str]:
 # Parent-manifest inheritance
 # ---------------------------------------------------------------------------
 
-def load_nearest_parent_manifest(
-    folder: Path, root: Path
-) -> tuple[dict[str, Any] | None, Path | None]:
+
+def load_nearest_parent_manifest(folder: Path, root: Path) -> tuple[dict[str, Any] | None, Path | None]:
     """Walk up from `folder` to `root` and return the first manifest found.
 
     Skips the folder itself; we want the *parent* contract.
@@ -275,6 +275,7 @@ def load_nearest_parent_manifest(
 # ---------------------------------------------------------------------------
 # Manifest construction
 # ---------------------------------------------------------------------------
+
 
 def build_stub(
     folder: Path,
@@ -344,6 +345,7 @@ def render_manifest_yaml(manifest: dict[str, Any], header: dict[str, Any]) -> st
 # Core walk
 # ---------------------------------------------------------------------------
 
+
 def generate(
     root: Path,
     apply: bool = False,
@@ -405,9 +407,7 @@ def generate(
         header = {
             "generated_by": "stub_manifest.py",
             "generated_at": today,
-            "inherited_from": (
-                str(parent_path.relative_to(root)) if parent_path else None
-            ),
+            "inherited_from": (str(parent_path.relative_to(root)) if parent_path else None),
         }
         text = render_manifest_yaml(manifest, header)
 
@@ -445,6 +445,7 @@ def _walk(root: Path):
 # ---------------------------------------------------------------------------
 # CLI
 # ---------------------------------------------------------------------------
+
 
 def _print_summary(report: StubReport) -> None:
     totals: dict[str, int] = {}

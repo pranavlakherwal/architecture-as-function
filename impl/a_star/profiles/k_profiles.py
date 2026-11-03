@@ -15,7 +15,7 @@ A K profile is a 5-tuple:
 Plus archival policy excerpted from §10.
 """
 
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from typing import Literal
 
 # ---- Type aliases -----------------------------------------------------------
@@ -87,9 +87,7 @@ class KProfile:
     def __post_init__(self) -> None:
         total = sum(self.soft_weights.values())
         if not (0.99 <= total <= 1.01):
-            raise ValueError(
-                f"{self.name}: soft_weights must sum to 1.0, got {total:.4f}"
-            )
+            raise ValueError(f"{self.name}: soft_weights must sum to 1.0, got {total:.4f}")
         missing = set(CORE_AXES) - set(self.soft_weights)
         if missing:
             raise ValueError(f"{self.name}: missing axes {missing}")
@@ -370,9 +368,7 @@ AUDIT_PIPELINE = KProfile(
         "fingerprint_drift_alerts",
     ),
     archival=ArchivalPolicy(
-        must_irreversibly_destroy=(
-            "convenience_copies_after_authoritative_archive_plus_retention_expiry",
-        ),
+        must_irreversibly_destroy=("convenience_copies_after_authoritative_archive_plus_retention_expiry",),
         must_archive=(
             "audit_logs",
             "workpapers",

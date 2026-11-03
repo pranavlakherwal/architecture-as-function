@@ -6,12 +6,12 @@ ownership, lifecycle, or execution boundary declares a manifest.
 Schema lives in `schema.py`. Validator lives in `validator.py`.
 """
 
-from .schema import MANIFEST_SCHEMA, MANIFEST_FILE_NAMES
+from .schema import MANIFEST_FILE_NAMES, MANIFEST_SCHEMA
 from .validator import (
     ManifestViolation,
     ValidationResult,
-    validate_manifest,
     scan_repo,
+    validate_manifest,
 )
 
 __all__ = [

@@ -211,9 +211,7 @@ def introspect_repo(
             looks_canonical=_name_matches(name, _CANONICAL_HINTS),
             scopes_matched=_scopes_for(name),
         )
-        fact.is_stable_boundary = (
-            depth >= 1 and file_count >= min_files_for_stable_boundary and not fact.looks_derived
-        )
+        fact.is_stable_boundary = depth >= 1 and file_count >= min_files_for_stable_boundary and not fact.looks_derived
         facts.append(fact)
 
     return facts

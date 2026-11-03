@@ -93,9 +93,7 @@ class RepoFeatures:
             "total_files": self.total_files,
             "max_depth": self.max_depth,
             "avg_fanout": round(self.avg_fanout, 2),
-            "ext_histogram_top10": dict(
-                Counter(self.ext_histogram).most_common(10)
-            ),
+            "ext_histogram_top10": dict(Counter(self.ext_histogram).most_common(10)),
             "presence": self.presence,
             "filename_hits": self.filename_hits,
         }
@@ -128,12 +126,8 @@ PRESENCE_PATTERNS: dict[str, tuple[str, ...]] = {
 
 # Filename keyword regexes. Each pattern is counted across all paths.
 FILENAME_PATTERNS: dict[str, re.Pattern[str]] = {
-    "outbound_kw": re.compile(
-        r"(email|sequence|smartlead|outbound|cold|lead|drip|cadence)", re.I
-    ),
-    "content_kw": re.compile(
-        r"(article|publish|topic|draft|substack|wordpress|seo|geo|aeo)", re.I
-    ),
+    "outbound_kw": re.compile(r"(email|sequence|smartlead|outbound|cold|lead|drip|cadence)", re.I),
+    "content_kw": re.compile(r"(article|publish|topic|draft|substack|wordpress|seo|geo|aeo)", re.I),
     "marketing_kw": re.compile(
         r"(campaign|creative|brand|persona|ugc|reels|story|carousel|ad[_\-\.]?set)",
         re.I,
@@ -142,15 +136,9 @@ FILENAME_PATTERNS: dict[str, re.Pattern[str]] = {
         r"(tenant|rls|rbac|role|auth|migration|edge[_\-]?function|user[_\-]?management)",
         re.I,
     ),
-    "memory_kw": re.compile(
-        r"(memory|context|persona|recall|reflection|episode|twin)", re.I
-    ),
-    "audit_kw": re.compile(
-        r"(audit|review|sop|finding|rule|panel|compliance|attest)", re.I
-    ),
-    "intel_kw": re.compile(
-        r"(ingest|enrich|scrape|harvest|crawl|signal|observer|briefing)", re.I
-    ),
+    "memory_kw": re.compile(r"(memory|context|persona|recall|reflection|episode|twin)", re.I),
+    "audit_kw": re.compile(r"(audit|review|sop|finding|rule|panel|compliance|attest)", re.I),
+    "intel_kw": re.compile(r"(ingest|enrich|scrape|harvest|crawl|signal|observer|briefing)", re.I),
 }
 
 
@@ -444,17 +432,13 @@ def score_features(features: RepoFeatures) -> list[Score]:
                 contribs[f"exclude:{flag}"] = penalty
                 score += penalty
 
-        results.append(
-            Score(k_class=k_name, score=round(score, 3), raw_contributions=contribs)
-        )
+        results.append(Score(k_class=k_name, score=round(score, 3), raw_contributions=contribs))
 
     results.sort(key=lambda s: s.score, reverse=True)
     return results
 
 
-def top_k_with_confidence(
-    scores: list[Score], k: int = 3
-) -> list[tuple[str, float, float]]:
+def top_k_with_confidence(scores: list[Score], k: int = 3) -> list[tuple[str, float, float]]:
     """Return [(class, score, confidence)] for top k.
 
     Confidence = softmax-ish: score_i / sum(max(0, score_j)). Pure ordering
@@ -464,9 +448,7 @@ def top_k_with_confidence(
     pos_total = sum(max(0.0, s.score) for s in scores)
     if pos_total <= 0:
         return [(s.k_class, s.score, 0.0) for s in top]
-    return [
-        (s.k_class, s.score, round(max(0.0, s.score) / pos_total, 3)) for s in top
-    ]
+    return [(s.k_class, s.score, round(max(0.0, s.score) / pos_total, 3)) for s in top]
 
 
 # ---- CLI --------------------------------------------------------------------
@@ -480,13 +462,8 @@ def classify(root: str) -> dict:
     return {
         "root": features.root,
         "features": features.as_dict(),
-        "scores": [
-            {"k": s.k_class, "score": s.score, "contributions": s.raw_contributions}
-            for s in scores
-        ],
-        "top3": [
-            {"k": k, "score": s, "confidence": c} for (k, s, c) in top3
-        ],
+        "scores": [{"k": s.k_class, "score": s.score, "contributions": s.raw_contributions} for s in scores],
+        "top3": [{"k": k, "score": s, "confidence": c} for (k, s, c) in top3],
         "prediction": top3[0][0] if top3 else None,
     }
 
@@ -496,10 +473,7 @@ def _format_explain(result: dict) -> str:
     lines.append(f"# K-inference for {result['root']}")
     lines.append("")
     f = result["features"]
-    lines.append(
-        f"Files: {f['total_files']}  max_depth: {f['max_depth']}  "
-        f"avg_fanout: {f['avg_fanout']}"
-    )
+    lines.append(f"Files: {f['total_files']}  max_depth: {f['max_depth']}  avg_fanout: {f['avg_fanout']}")
     lines.append(f"Top extensions: {f['ext_histogram_top10']}")
     present = [k for k, v in f["presence"].items() if v]
     lines.append(f"Presence flags ON: {present}")
@@ -508,16 +482,11 @@ def _format_explain(result: dict) -> str:
     lines.append("")
     lines.append("## Top-3 predictions")
     for entry in result["top3"]:
-        lines.append(
-            f"  {entry['k']:22s}  score={entry['score']:>7.2f}  "
-            f"conf={entry['confidence']:.2f}"
-        )
+        lines.append(f"  {entry['k']:22s}  score={entry['score']:>7.2f}  conf={entry['confidence']:.2f}")
     lines.append("")
     lines.append("## Why (top-1 contributions)")
     top1 = result["scores"][0]
-    for name, val in sorted(
-        top1["contributions"].items(), key=lambda kv: -abs(kv[1])
-    ):
+    for name, val in sorted(top1["contributions"].items(), key=lambda kv: -abs(kv[1])):
         lines.append(f"  {val:+7.2f}  {name}")
     return "\n".join(lines)
 
@@ -525,12 +494,8 @@ def _format_explain(result: dict) -> str:
 def main(argv: Iterable[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="A* K-class inference classifier")
     parser.add_argument("--root", required=True, help="Path to the repo to classify")
-    parser.add_argument(
-        "--explain", action="store_true", help="Print a readable explanation"
-    )
-    parser.add_argument(
-        "--json", action="store_true", help="Print full result as JSON"
-    )
+    parser.add_argument("--explain", action="store_true", help="Print a readable explanation")
+    parser.add_argument("--json", action="store_true", help="Print full result as JSON")
     args = parser.parse_args(list(argv) if argv is not None else None)
 
     try:
@@ -546,10 +511,7 @@ def main(argv: Iterable[str] | None = None) -> int:
     else:
         # Default: terse top-3 line.
         for entry in result["top3"]:
-            print(
-                f"{entry['k']:22s}  score={entry['score']:>7.2f}  "
-                f"conf={entry['confidence']:.2f}"
-            )
+            print(f"{entry['k']:22s}  score={entry['score']:>7.2f}  conf={entry['confidence']:.2f}")
     return 0
 
 

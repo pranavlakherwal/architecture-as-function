@@ -11,7 +11,7 @@ from dataclasses import dataclass, field
 from typing import Any
 
 from .introspect import FolderFact
-from .model import FolderDecision, SolveResult
+from .model import SolveResult
 
 PRIMITIVE_OPS: tuple[str, ...] = (
     "CREATE_FOLDER",

@@ -483,7 +483,7 @@ The function takes K as a string, looks up KProfile from the registry, and uses 
 
 ```python
 def build_model(facts, k_class: str = "outbound-pipeline"):
-    profile = get_profile(k_class)              # dict lookup; O(1)
+    profile = get_profile(k_class)  # dict lookup; O(1)
     ...
 ```
 
@@ -497,7 +497,7 @@ def build_model(facts, k_class: str = "outbound-pipeline"):
 
 ```python
 def build_model(facts, k_expr: KExpr = KExpr.base("outbound-pipeline")):
-    profile = materialize(k_expr)                # traverse lattice; O(depth)
+    profile = materialize(k_expr)  # traverse lattice; O(depth)
     ...
 ```
 
@@ -507,11 +507,12 @@ Where `KExpr` is a small algebraic type:
 @dataclass(frozen=True)
 class KExpr:
     op: Literal["base", "lift_tenant", "restrict_scope", "compose", "specialize_tenant"]
-    args: tuple                                  # base name | (KExpr,) | (KExpr, pred) | (KExpr, KExpr) | (KExpr, tenant_id)
+    args: tuple  # base name | (KExpr,) | (KExpr, pred) | (KExpr, KExpr) | (KExpr, tenant_id)
 
     @classmethod
     def base(cls, name: str) -> "KExpr":
         return cls("base", (name,))
+
 
 def materialize(expr: KExpr) -> KProfile:
     if expr.op == "base":

@@ -1,9 +1,11 @@
 """Solver smoke tests on synthetic fixtures."""
 
+import pytest
+
+pytest.importorskip("z3")  # the solver tests need z3-solver; pip install z3-solver
 from pathlib import Path
 
 import pytest
-
 from a_star.solver import build_model, emit_plan, introspect_repo, solve
 
 
@@ -141,9 +143,7 @@ def test_existing_manifest_is_preserved(tmp_path: Path):
     result = solve(opt, state)
     plan = emit_plan(result, facts, k_class="outbound-pipeline")
     # No UPDATE_MANIFEST targeting `leads` should appear.
-    leads_manifest_ops = [
-        p for p in plan.primitives if p.op == "UPDATE_MANIFEST" and p.target == "leads"
-    ]
+    leads_manifest_ops = [p for p in plan.primitives if p.op == "UPDATE_MANIFEST" and p.target == "leads"]
     assert leads_manifest_ops == []
 
 

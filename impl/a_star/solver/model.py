@@ -37,9 +37,7 @@ import z3
 from ..profiles import KProfile, get_profile
 from .introspect import SCOPES, FolderFact
 
-RetentionClass = Literal[
-    "active", "archived", "scheduled_for_destruction", "destroyed"
-]
+RetentionClass = Literal["active", "archived", "scheduled_for_destruction", "destroyed"]
 RETENTION_VALUES: tuple[RetentionClass, ...] = (
     "active",
     "archived",
@@ -221,9 +219,7 @@ def solve(opt: z3.Optimize, state: dict, timeout_ms: int = 30_000) -> SolveResul
         retention_class = RETENTION_VALUES[r_val]
         mp_val = bool(model.eval(manifest_present[rel_path], model_completion=True))
         scopes = [
-            scope
-            for (p, scope), v in canonical.items()
-            if p == rel_path and bool(model.eval(v, model_completion=True))
+            scope for (p, scope), v in canonical.items() if p == rel_path and bool(model.eval(v, model_completion=True))
         ]
         decisions.append(
             FolderDecision(
@@ -238,9 +234,7 @@ def solve(opt: z3.Optimize, state: dict, timeout_ms: int = 30_000) -> SolveResul
     obj: dict[str, int] = {}
     obj["folders_total"] = len(decisions)
     obj["manifests_required"] = sum(1 for d in decisions if d.manifest_present)
-    obj["scheduled_destruction"] = sum(
-        1 for d in decisions if d.retention == "scheduled_for_destruction"
-    )
+    obj["scheduled_destruction"] = sum(1 for d in decisions if d.retention == "scheduled_for_destruction")
     obj["archived"] = sum(1 for d in decisions if d.retention == "archived")
     obj["canonical_assignments"] = sum(len(d.canonical_for) for d in decisions)
 

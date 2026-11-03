@@ -10,3 +10,6 @@ build/
 target/
 Cargo.lock
 .DS_Store
+.env
+.env.*
+.ruff_cache/

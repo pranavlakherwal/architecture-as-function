@@ -189,9 +189,7 @@ def _walk(root: Path):
 
 
 def _main() -> int:
-    parser = argparse.ArgumentParser(
-        description="A* folder-as-contract manifest validator (IC2 + IC3)."
-    )
+    parser = argparse.ArgumentParser(description="A* folder-as-contract manifest validator (IC2 + IC3).")
     parser.add_argument("root", type=Path, help="Repo root to scan.")
     parser.add_argument(
         "--require-depth",
