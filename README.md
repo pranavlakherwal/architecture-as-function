@@ -78,7 +78,7 @@ thinking/             the first-principles notes behind the spec
 
 Cite as: Lakherwal, P. (2026). Architecture as a function: A*, version 0.2. github.com/pranavlakherwal/architecture-as-function.
 
-The specification's hash will be registered on a public blockchain, the way the S(M,T) router paper was; the record will sit beside the spec as `REGISTRATION.md`.
+The specification's hash is registered on the Bitcoin blockchain through OpenTimestamps, the way the S(M,T) router paper was: the record of 3 November 2026 sits in block 974395, the specification's own proof in blocks 974395, 974423 and 974430, and the signed tag `provenance-2026-11-03` marks the commit. The record, the proofs and the verification steps are in `registration/REGISTRATION.md`.
 
 ## License
 
