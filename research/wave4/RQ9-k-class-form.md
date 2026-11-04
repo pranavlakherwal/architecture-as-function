@@ -248,7 +248,7 @@ Recall the seven v0 base classes (from `A_STAR_v0.md` §K):
 | product-saas | UniversityC |
 | research-memory | Personal Twin |
 | audit-pipeline | SI Engine |
-| intel-pipeline | si-global-intel |
+| intel-pipeline | tenant-a-intel |
 
 ### E.1 `lift_tenant(K_in) -> K_out`
 
@@ -384,7 +384,7 @@ neural-gtm                 = lift_tenant(outbound-pipeline)
 LSD                        = compose(content-pipeline, product-saas)
 UniversityC                       = restrict_scope(product-saas, single_tenant)
 sheetal-gs-engine          = compose(audit-pipeline, content-pipeline)
-si-global-intel            = intel-pipeline                              (base, no derivation)
+tenant-a-intel            = intel-pipeline                              (base, no derivation)
 personal-twin              = compose(research-memory, intel-pipeline)
 ClinicE                    = compose(product-saas, content-pipeline)
 AgencyA                      = specialize_tenant(neural-gtm, "AgencyA")
@@ -451,13 +451,13 @@ The fit per project under each form:
 | **UniversityC** | src, RBAC_MOCKUP_*.html, playwright, single client | product-saas (mostly; single-tenant is awkward) | `restrict_scope(product-saas, single_tenant)` (clean) | clean but loses W_K prior |
 | **Personal Twin** | MEMORY_V2_*, GRAPH_SCHEMA, dozens of memory docs, intel briefings | research-memory (mostly; intel is extra) | `compose(research-memory, intel-pipeline)` (clean) | clean but loses W_K prior |
 | **sheetal-gs-engine** | audit, deals, evidence, rules, rf_writer | audit-pipeline (mostly; rule-engine generates content) | `compose(audit-pipeline, content-pipeline)` (clean) | clean but loses W_K prior |
-| **si-global-intel** | (sibling repo; per memory: PR_0001 schema, 6-layer pipeline, intel briefs) | intel-pipeline (clean) | intel-pipeline (base) | clean but loses W_K prior |
+| **tenant-a-intel** | (sibling repo; per memory: PR_0001 schema, 6-layer pipeline, intel briefs) | intel-pipeline (clean) | intel-pipeline (base) | clean but loses W_K prior |
 | **Longevity-Science-Daily** | web, drafts, quiz, supabase; both content publishing and SaaS surface | hybrid (no single class); v0 noted as 0.65 content + 0.35 saas | `compose(content-pipeline, product-saas)` (clean) | clean but loses W_K prior |
 | **ClinicE** | Phase_*, SARAH_*, TELEPHONY_*; product-saas plus content pipeline | hybrid (no single class) | `compose(product-saas, content-pipeline)` (clean) | clean but loses W_K prior |
 | **neural-gtm** (engine layer) | waterfall/ + phase_w0..phase_wv engine code | **no fit** (trigger for RQ9) | `lift_tenant(outbound-pipeline)` (clean) | clean but loses W_K prior |
 
 **Summary.**
-- Fixed taxonomy fits cleanly for **4 of 9** (AgencyA, BrandB, si-global-intel; arguably sheetal-gs-engine). Forces hybrids for **3 of 9** (LSD, ClinicE, Personal Twin). Forces an awkward restriction for **1 of 9** (UniversityC). **Fails outright for 1 of 9** (neural-gtm).
+- Fixed taxonomy fits cleanly for **4 of 9** (AgencyA, BrandB, tenant-a-intel; arguably sheetal-gs-engine). Forces hybrids for **3 of 9** (LSD, ClinicE, Personal Twin). Forces an awkward restriction for **1 of 9** (UniversityC). **Fails outright for 1 of 9** (neural-gtm).
 - Lattice fits cleanly for **9 of 9**, with derivations limited to one operator deep for 7 of 9 and two operators deep for none (composition counts as one operator).
 - Free-bag fits cleanly for all 9 by definition, but loses the calibrated H_simp prior for all 9.
 

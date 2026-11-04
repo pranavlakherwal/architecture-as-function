@@ -46,7 +46,7 @@ def test_seed_mapping():
         "product-saas": "UniversityC",
         "research-memory": "Personal Twin",
         "audit-pipeline": "DeskD Engine",
-        "intel-pipeline": "si-global-intel",
+        "intel-pipeline": "tenant-a-intel",
     }
     for k, seed in expected.items():
         assert get_profile(k).seed == seed

@@ -84,7 +84,7 @@ The H_simp regularizer (inherited from S(M,T)) attaches to the bootstrap class a
 | UniversityC dashboard | product-saas with caveats | `restrict_scope(product-saas, predicate=internal-only)` |
 | Personal Twin | research-memory | research-memory |
 | Sheetal GS Engine | audit-pipeline | audit-pipeline |
-| si-global-intel | intel-pipeline | intel-pipeline |
+| tenant-a-intel | intel-pipeline | intel-pipeline |
 | BrandB | product-marketing | `compose(product-marketing, product-saas, w=0.7/0.3)` |
 | ClinicE | hybrid forced | `compose(research-memory, content-pipeline, w=0.6/0.4)` |
 

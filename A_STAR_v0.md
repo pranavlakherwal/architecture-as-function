@@ -109,7 +109,7 @@ The seven v0 classes, mapped to the Neural ecosystem seeds:
 | `product-saas` | RBAC-PII-isolation, schema-migration-safety, output-correctness | c_modify > c_loss > c_find | high T_human, med T_agent_* | UniversityC (LSD secondary) |
 | `research-memory` | provenance + link-integrity, memory-isolation/consent, reversible/append-only updates | c_find > c_storage > c_derive | high T_human, high T_agent_internal | Personal Twin |
 | `audit-pipeline` | immutable-source-retention, append-only audit log, reviewer-signoff | c_loss > c_find > c_derive | high T_human, high T_agent_internal | DeskD Engine |
-| `intel-pipeline` | fresh-data-by-cutoff, source-timestamp-dedupe, distribution SLA | c_drift > c_find > c_derive | low/med T_human, high T_agent_internal/external | si-global-intel |
+| `intel-pipeline` | fresh-data-by-cutoff, source-timestamp-dedupe, distribution SLA | c_drift > c_find > c_derive | low/med T_human, high T_agent_internal/external | tenant-a-intel |
 
 **Hybrids** (e.g., LSD = 0.65 content-pipeline + 0.35 product-saas): decompose into bounded contexts first (DDD), **union** hard constraints (never average), then blend soft weights. Never blend away a hard constraint.
 

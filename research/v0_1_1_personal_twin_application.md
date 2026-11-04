@@ -28,7 +28,7 @@ The `.json` dominance comes almost entirely from `data/raw/open_llm_leaderboard/
 
 Top by cost-reduction signal:
 1. SCHEDULE_DESTRUCTION `<root>` (IC2 secret-at-rest, +30d sanitize, approval required)
-2. SCHEDULE_DESTRUCTION `memory/projects/the_advisor-claude-code-mastery/si-global-intel` (same)
+2. SCHEDULE_DESTRUCTION `memory/projects/the_advisor-claude-code-mastery/tenant-a-intel` (same)
 3. SET_SOURCE_OF_TRUTH `data/raw/open_llm_leaderboard` for scope `lead_records` (**FALSE POSITIVE**: HF leaderboard ≠ leads)
 4. SET_SOURCE_OF_TRUTH `data/raw/open_llm_leaderboard/SentientAGI` for `delivery_proof` (**FALSE POSITIVE**)
 5-77. ARCHIVE_FOLDER on `data/qdrant/collections/build_improvements_auto_search` and 72 HF-leaderboard model dirs (clearly stale derived data, correct)
@@ -43,7 +43,7 @@ For comparison: AgencyA plan = 111 primitives over 110 folders. Personal-twin is
 ## 4. IC violations
 
 - **IC1 canonicality**: 2 SET_SOURCE_OF_TRUTH primitives, both wrong (matched on filename hints for `lead_records` / `delivery_proof` against a HuggingFace model dump). True IC1 work for personal-twin would be: duplicate context across `memory/projects/*` and `memory/contexts/`, duplicate identity files (`identity.json`, `people.json`, `patterns.json` exist both at root and inside projects). The solver did NOT detect this because IC1 scopes are still bootstrap-outbound-pipeline (`SCOPES` in `introspect.py` lines 76-90).
-- **IC2 retention**: 10 hits. Real positives include `memory/prospects` (PII), `<root>` (secret-at-rest from `.env`-style files), and `memory/projects/the_advisor-claude-code-mastery/si-global-intel` (nested credential surface). False positives: HF `data/raw/open_llm_leaderboard/*` flagged as "contact" PII because of substring match on "Contact" in repo names.
+- **IC2 retention**: 10 hits. Real positives include `memory/prospects` (PII), `<root>` (secret-at-rest from `.env`-style files), and `memory/projects/the_advisor-claude-code-mastery/tenant-a-intel` (nested credential surface). False positives: HF `data/raw/open_llm_leaderboard/*` flagged as "contact" PII because of substring match on "Contact" in repo names.
 - **IC3 manifest**: 2,145 stable-boundary violations (folders ≥ `min_stable_files=3` with no manifest). This is the dominant signal and it's correct. Personal-twin has near-zero `.manifest.yaml` coverage.
 
 ## 5. AgencyA vs personal-twin axis profile

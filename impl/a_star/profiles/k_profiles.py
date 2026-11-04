@@ -385,7 +385,7 @@ AUDIT_PIPELINE = KProfile(
 
 INTEL_PIPELINE = KProfile(
     name="intel-pipeline",
-    seed="si-global-intel",
+    seed="tenant-a-intel",
     hard_constraints=(
         "fresh_data_by_cutoff",
         "source_timestamp_dedupe",
