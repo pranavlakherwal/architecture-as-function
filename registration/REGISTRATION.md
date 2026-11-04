@@ -25,4 +25,6 @@ shasum -a 256 A_STAR_v0_2.md                            # must equal the hash in
 
 **Attested 4 November 2026 (IST).** The record's proof sits in Bitcoin block 974395; the specification's proof in block 974395,974423,974430. Both `.ots` files in this folder are the upgraded proofs; `ots info` on either prints the block.
 
+**Signed tag, 4 November 2026.** `provenance-2026-11-03`, signed with GPG key E3A76EA3104DCD86 (Pranav Lakherwal), wraps the `v0.2.1` tag and resolves to commit b4a4f0d, the commit the record names. Verify with `git fetch --tags && git tag -v provenance-2026-11-03` after importing the public key in this folder's parent record.
+
 Registered by P0P (PnotP), Pranav Lakherwal. Method: OpenTimestamps and a GPG-signed git tag, first used on 13 July 2026.
