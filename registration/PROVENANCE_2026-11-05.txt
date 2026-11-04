@@ -1,0 +1,12 @@
+P0P (PnotP) RESEARCH PROVENANCE RECORD
+Date claimed: 2026-11-05
+Repository: github.com/pranavlakherwal/architecture-as-function  commit: 83c0758598ed4f17bad5b74d17289e5a2e4b2282  tag: v0.2.2
+Statement: the files below, identified by SHA256, are the A* specification and its bibliography as published on this date. They are the files of the record of 2026-11-03 with one private label replaced by a neutral one, in one line of A_STAR_v0.md and one line of A_STAR_v0_2.md, and with the README's provenance paragraph brought up to date. Only hashes are listed; the proofs and the method are in registration/REGISTRATION.md.
+
+--- FILES (sha256) ---
+file: A_STAR_v0.md  sha256: 6e3c3e25eba9f6ab8d1ca518f9138784379d04da1efed7428b0b5a50d1163b08
+file: A_STAR_v0_1_1.md  sha256: 12ec8c64cd7881afc0c796121156cba4056287863c4a64cf82be9d455959751c
+file: A_STAR_v0_2.md  sha256: 57cc06b72383e83cbe5d271a58987367d6461a61e3056ca2f6e8d9244e6b8f43
+file: BIBLIOGRAPHY.md  sha256: 5988c6bc35e67a70cfc3219187f2fad013768c35c89fdcd4992a2f34a64ff277
+file: README.md  sha256: 38d8eafcea6b57d2334dda1b1e97ff09c2e0ffd87477a3d36f8405d71e39bae9
+file: ROADMAP.md  sha256: 6392b6b10d9bb7e07bbb55741ee3f1c159e2cace7e393c28281fef159a1b945f
