@@ -1,10 +1,66 @@
 # Architecture as a function: A*
 
+Run one command on a repository and read seven numbers, each ranked against repositories we have measured, with the three fixes to make first.
+
+```
+git clone https://github.com/pranavlakherwal/architecture-as-function
+cd architecture-as-function
+PYTHONPATH=impl python3 -m a_star measure /path/to/your/repo
+PYTHONPATH=impl python3 -m a_star measure /path/to/your/repo --json
+```
+
+The first line prints the plain report, the second the same content as JSON. From inside `impl/` the prefix drops: `python3 -m a_star measure PATH`. Python 3.9 or later, standard library only, nothing to install.
+
+Here is what we got on [smt-router](https://github.com/pranavlakherwal/smt-router), our public routing repository, on 7 November 2026:
+
+```
+A* measure: /Users/pranavlakherwal/Core/Neural/PnotP/smt-router
+Read 7 November 2026, against 58 repos measured 7 November 2026. Lower is better on every line.
+
+How deep a reader digs to find a file             1.131 weighted folder levels  higher than 6 of 58 measured repos  fine
+How often a changed file changes again in a year  2.025 touches per file        higher than 48 of 58 measured repos  act
+How much the repository stores                    2,458,418 bytes (2.3 MB)      higher than 19 of 58 measured repos  fine
+What the system costs to run each month           0 USD per month               higher than 0 of 58 measured repos  fine
+How many kinds of file the repository mixes       0.757 of 1                    higher than 43 of 58 measured repos  fine
+How many links inside the docs point nowhere      0.000 of 1                    higher than 0 of 58 measured repos  fine
+How much of what is tracked is a build output     0.000 of 1                    higher than 0 of 58 measured repos  fine
+
+Top three fixes (1 reading sits above three quarters of the measured repos; the rest are the next by rank)
+1. Split the files that take most of the changes.
+   The 5 most touched files take 28 of 160 touches (18%): README.md (7), CHANGELOG.md (6), paper/main.pdf (6), paper/main.tex (5), router/config.py (4). Split the ones that change for more than one reason.
+2. Cut the odd file types.
+   13 file types across 69 files. The rarest: .bak (1, e.g. registration/SMT_Router_Paper_v1.4.pdf.ots.bak), .bib (1, e.g. paper/bibliography.bib), .example (1, e.g. .env.example), .lock (1, e.g. uv.lock), .yml (1, e.g. .github/workflows/ci.yml). Each odd type is a tool a new reader has to learn; drop or consolidate the ones nobody runs.
+3. Move the largest files out.
+   The 5 largest files hold 1.6 MB of 2.3 MB (69%): uv.lock (784.4 KB), SMT_Router_Paper_v1.5.pdf (249.5 KB), paper/main.pdf (249.5 KB), SMT_Router_Paper_v1.4.pdf (239.5 KB), SMT_Scoring_AI_Endpoints.pdf (125.4 KB). Move the ones that are outputs, not sources, out of the repository.
+```
+
+The command took 0.17 seconds on that run, measured with `time` on 7 November 2026.
+
+## What the seven readings are
+
+Each reading is a cost, so lower is better. "Act" means the repository is higher than at least three quarters of the 58 repositories we measured on 7 November 2026. Those sit in `impl/a_star/measurement/fleet_reference.json` as numbers only.
+
+1. **How deep a reader digs to find a file.** Mean folder depth, times a penalty we add when sibling files share their first four letters. Unit: weighted folder levels.
+2. **How often a changed file changes again in a year.** Commits in the last 365 days, divided by the files they touched. Unit: touches per file.
+3. **How much the repository stores.** Bytes on disk. We skip `.git`, `node_modules` and build folders. Unit: bytes.
+4. **What the system costs to run each month.** You supply it with the --monthly-usd flag. Without it the reading is 0 and we call it a stand-in. Unit: USD per month.
+5. **How many kinds of file the repository mixes.** The spread of file extensions, as a share of the most mixed it could be. Unit: 0 to 1.
+6. **How many links inside the docs point nowhere.** Relative links in markdown files that we could not resolve to a file. Unit: share of links, 0 to 1.
+7. **How much of what is tracked is a build output.** Tracked files under `build`, `dist`, `generated` or cache folders. A stand-in until we have a lineage graph. Unit: share of tracked files, 0 to 1.
+
+Each fix is built from the reading's own internals. Depth names the deep paths and the look-alike files. Change names the most touched files. Storage names the largest files. Links names the ones that point nowhere. Mix names the odd file types. The two stand-ins (money, build outputs) say so and get no invented fix.
+
+The fleet reference is 58 repositories measured on 7 November 2026, numbers only: one sorted list per reading, the count and the date. No path and no name leaves the machine that builds it. `impl/a_star/measurement/build_fleet_reference.py` rebuilds it from any folder of repositories you point it at.
+
+## Work with us
+
+The first three readings we do with a team are free, in return for permission to quote the before and after.
+
+## The function
+
 A* derives an AI system from the job it has to do. The architecture is the intelligence. The model is one input, and a swappable one.
 
 Public since June 2026. Rewritten 3 November 2026: the status below is current, one June result is marked retracted, and the research notes carry no client names.
-
-## The function
 
 In practice we write the function with six inputs:
 
@@ -51,7 +107,7 @@ Every deployment is a measurement. The storage law came from counting what two s
 1. Write your system as the function. Fill all six inputs in one page before you build. If an input is empty, the system is not derived yet.
 2. Type the knowledge. Pick the bootstrap class, then derive with the four operators (`A_STAR_v0_2.md`, section 2). Depth three is the cap.
 3. Declare the manifest. `impl/a_star/manifest` holds the schema and the validator for the two information conditions it checks.
-4. Measure before you optimise. `impl/a_star/measurement` reads the seven axes from a repository without changing it.
+4. Measure before you optimise. `PYTHONPATH=impl python3 -m a_star measure .` reads the seven readings from a repository without changing it, and names the three fixes.
 5. Let the solver propose. `impl/a_star/solver` runs Z3 Optimize over a declared system and emits primitive operations, never actions.
 6. Run the tests: `python3 -m pytest impl -q`.
 7. Open an issue with your derivation. A derivation that disagrees with the spec is the most useful thing you can send.
@@ -66,7 +122,7 @@ A_STAR_v0_1_1.md      the interim note from the first application
 A_STAR_v0_2.md        the frozen specification, 22 May 2026: read this first
 BIBLIOGRAPHY.md       the papers, with what each gave
 ROADMAP.md            status and the open questions, with every correction dated
-impl/a_star/          profiles, manifest schema and validator, measurement, solver, tests
+impl/a_star/          the measure command, profiles, manifest schema and validator, solver, tests
 impl/examples/        one derived plan, client terms removed
 impl/tests/           tests for the tools
 protocols/            the launch records of the four research waves
@@ -86,6 +142,7 @@ See `LICENSE`.
 
 ## Changelog
 
+- 7 November 2026: `python -m a_star measure PATH` added. Seven readings ranked against 58 repositories, with the three fixes to make first. README opens with the command.
 - 3 November 2026: README rewritten to the current status. The June modification-law headline marked retracted. Client names removed from the research notes and the example plan. Lint and test workflow added.
 - 11 June 2026: the storage law held under jackknife and bootstrap; roadmap updated.
 - 1 June 2026: first public release.
