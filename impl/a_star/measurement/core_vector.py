@@ -1,4 +1,4 @@
-"""Passive C_core measurement instrument.
+"""Passive C_core measurement tool.
 
 Implements §11 measurement-gap row: per axis declares unit, range,
 normalization, source, confidence, owner, update cadence.
@@ -73,7 +73,7 @@ AXIS_SPECS: dict[str, AxisSpec] = {
         unit="seconds (estimated)",
         range="[0, +inf)",
         normalization="log(1+x) capped at 99th percentile",
-        source="fs depth + filename entropy (Sinha 2023 task instrumentation if available)",
+        source="fs depth + filename entropy (Sinha 2023 task timing if available)",
         default_confidence="medium",
         owner="architecture",
         update_cadence="weekly",
@@ -515,7 +515,7 @@ def measure_repo(
     """Produce a full C_core vector for `root`.
 
     `external_inputs`:
-      - monthly_usd: float — for c_money
+      - monthly_usd: float, for c_money
     `measured_at`:
       - ISO-8601 UTC timestamp. Used by c_modify to freeze the 365d window
         against a logical clock. Bench callers MUST pass this.

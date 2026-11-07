@@ -207,7 +207,7 @@ def test_plain_text_has_seven_reading_lines_and_three_fixes(tmp_path: Path):
     assert "Top three fixes" in text
     assert "\n1. " in text and "\n2. " in text and "\n3. " in text
     assert "Read 7 November 2026, against 20 repos measured 7 November 2026" in text
-    for bad in ("—", "–"):
+    for bad in (chr(0x2014), chr(0x2013)):  # em dash, en dash
         assert bad not in text
 
 
