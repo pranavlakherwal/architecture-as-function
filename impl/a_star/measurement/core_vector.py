@@ -19,6 +19,7 @@ Sources used (all cheap, all passive):
 from __future__ import annotations
 
 import math
+import re
 import subprocess
 from collections import Counter
 from dataclasses import dataclass, field
@@ -204,6 +205,26 @@ def _git(cmd: list[str], cwd: Path) -> str | None:
         return None
 
 
+def prefix_key(name: str) -> str:
+    """The first four letters of a file name before its first dot or underscore.
+
+    Sibling files that share this key read as look-alikes to a person scanning a folder.
+    The report uses the same key, so the fix it names matches the reading.
+    """
+    return name.split(".")[0].split("_")[0][:4]
+
+
+def folder_distinctness(names: list[str]) -> float:
+    """How distinct the leading tokens of sibling file names are, 0 to 1. One file scores 1."""
+    if len(names) <= 1:
+        return 1.0
+    ctr = Counter(prefix_key(n) for n in names)
+    total = sum(ctr.values())
+    h = -sum((c / total) * math.log2(c / total) for c in ctr.values())
+    max_h = math.log2(len(ctr)) if len(ctr) > 1 else 1.0
+    return h / max_h if max_h > 0 else 0.0
+
+
 def measure_c_find(root: Path) -> Measurement:
     """Proxy: mean folder depth + filename-entropy-per-folder.
 
@@ -223,18 +244,7 @@ def measure_c_find(root: Path) -> Measurement:
     mean_depth = sum(depths) / len(depths)
 
     # Average uniqueness of leading filename token per folder.
-    distinctness_scores: list[float] = []
-    for names in by_folder.values():
-        if len(names) <= 1:
-            distinctness_scores.append(1.0)
-            continue
-        prefixes = [n.split(".")[0].split("_")[0][:4] for n in names]
-        ctr = Counter(prefixes)
-        # Shannon entropy of prefix distribution, normalized to [0,1]
-        total = sum(ctr.values())
-        h = -sum((c / total) * math.log2(c / total) for c in ctr.values())
-        max_h = math.log2(len(ctr)) if len(ctr) > 1 else 1.0
-        distinctness_scores.append(h / max_h if max_h > 0 else 0.0)
+    distinctness_scores: list[float] = [folder_distinctness(names) for names in by_folder.values()]
 
     avg_distinct = sum(distinctness_scores) / len(distinctness_scores)
     # c_find proxy: depth penalizes, distinctness rewards.
@@ -250,6 +260,22 @@ def measure_c_find(root: Path) -> Measurement:
     )
 
 
+def touch_counts(root: Path, until: str | None = None) -> Counter | None:
+    """How many commits touched each file in the 365 day window ending `until`.
+
+    Returns None when git is unavailable or `root` is not a repository.
+    The report reads the same counter, so the files it names are the ones the reading counted.
+    """
+    cmd = ["log", "--since=365.days"]
+    if until is not None:
+        cmd.append(f"--until={until}")
+    cmd.extend(["--name-only", "--pretty=format:"])
+    out = _git(cmd, root)
+    if out is None:
+        return None
+    return Counter(line.strip() for line in out.splitlines() if line.strip())
+
+
 def measure_c_modify(root: Path, until: str | None = None) -> Measurement:
     """Proxy: commits per touched file over the 365d window ending `until`.
 
@@ -258,12 +284,8 @@ def measure_c_modify(root: Path, until: str | None = None) -> Measurement:
     record's `measured_at`; this freezes the window relative to a logical
     clock rather than wall-clock.
     """
-    cmd = ["log", "--since=365.days"]
-    if until is not None:
-        cmd.append(f"--until={until}")
-    cmd.extend(["--name-only", "--pretty=format:"])
-    out = _git(cmd, root)
-    if out is None:
+    ctr = touch_counts(root, until=until)
+    if ctr is None:
         return Measurement(
             axis="c_modify",
             value=0.0,
@@ -271,8 +293,7 @@ def measure_c_modify(root: Path, until: str | None = None) -> Measurement:
             notes=["git unavailable or not a repo"],
         )
 
-    files = [line.strip() for line in out.splitlines() if line.strip()]
-    if not files:
+    if not ctr:
         return Measurement(
             axis="c_modify",
             value=0.0,
@@ -280,7 +301,6 @@ def measure_c_modify(root: Path, until: str | None = None) -> Measurement:
             notes=["no commits in last 365d"],
         )
 
-    ctr = Counter(files)
     avg_churn = sum(ctr.values()) / len(ctr)
     # Higher churn-per-file = harder to modify safely (proxy).
     return Measurement(
@@ -357,18 +377,18 @@ def measure_c_drift(root: Path) -> Measurement:
     )
 
 
-def measure_c_loss(root: Path) -> Measurement:
-    """Proxy: orphan markdown links inside .md files.
+_LINK_PATTERN = re.compile(r"\[([^\]]+)\]\(([^)]+)\)")
 
-    Counts relative links inside .md files that point to non-existent paths
-    within the same repo. Cheap and surprisingly informative for memory and
-    docs-heavy K classes.
+
+def relative_links(root: Path) -> list[tuple[Path, str, bool | None]]:
+    """Every relative markdown link under `root`: (source file, target text, points to a file).
+
+    The third item is True when the target exists, False when it points nowhere inside the
+    repository, and None when the link could not be judged (empty path, outside the repository,
+    or a path the file system refused). The c_loss reading counts the False ones.
     """
-    import re
-
-    link_pattern = re.compile(r"\[([^\]]+)\]\(([^)]+)\)")
-    total = 0
-    orphans = 0
+    found: list[tuple[Path, str, bool | None]] = []
+    root_resolved = root.resolve()
     for f in _walk_files(root):
         if f.suffix.lower() != ".md":
             continue
@@ -376,31 +396,46 @@ def measure_c_loss(root: Path) -> Measurement:
             text = f.read_text(encoding="utf-8", errors="ignore")
         except OSError:
             continue
-        for _, target in link_pattern.findall(text):
+        for _, target in _LINK_PATTERN.findall(text):
             if target.startswith(("http://", "https://", "mailto:", "#", "<")):
                 continue
-            total += 1
             # Strip anchor + query
             target_path = target.split("#", 1)[0].split("?", 1)[0]
             if not target_path:
+                found.append((f, target, None))
                 continue
             try:
                 resolved = (f.parent / target_path).resolve()
             except OSError:
                 # Pathological link target (e.g. embedded data: URI). Skip.
+                found.append((f, target, None))
                 continue
             try:
-                resolved.relative_to(root.resolve())
+                resolved.relative_to(root_resolved)
             except ValueError:
                 # Points outside repo. Don't count as orphan.
+                found.append((f, target, None))
                 continue
             try:
                 exists = resolved.exists()
             except OSError:
                 # File-name-too-long, etc. Treat as not-an-orphan (skip).
+                found.append((f, target, None))
                 continue
-            if not exists:
-                orphans += 1
+            found.append((f, target, exists))
+    return found
+
+
+def measure_c_loss(root: Path) -> Measurement:
+    """Proxy: orphan markdown links inside .md files.
+
+    Counts relative links inside .md files that point to non-existent paths
+    within the same repo. Cheap and surprisingly informative for memory and
+    docs-heavy K classes.
+    """
+    links = relative_links(root)
+    total = len(links)
+    orphans = sum(1 for _, _, exists in links if exists is False)
 
     rate = (orphans / total) if total else 0.0
     return Measurement(
