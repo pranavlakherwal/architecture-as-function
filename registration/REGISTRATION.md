@@ -7,8 +7,8 @@ OpenTimestamps proofs tie the SHA256 hash of a document to a Bitcoin block, so a
 | 13 July 2026, GPG-signed tag `provenance-2026-07-13` on this repository (then private), commit aa1a66c | the A* files as they stood that day | the signed tag, and the signer's record in P0P's own files | the day's record is anchored at block 957846 |
 | `PROVENANCE_2026-11-03.txt` | the six files as they stood on 3 November 2026, before the change of 5 November described below | `PROVENANCE_2026-11-03.txt.ots` | 974395 |
 | `A_STAR_v0_2.md` as it stood on 3 November 2026 | the frozen specification, earlier bytes | `A_STAR_v0_2.md.2026-11-03.ots` | 974395, 974423, 974430 |
-| `PROVENANCE_2026-11-05.txt` | the six files as published now, at commit 83c0758 (tag v0.2.2) | `PROVENANCE_2026-11-05.txt.ots` | pending on 5 November 2026; upgraded once the calendar's Bitcoin transaction confirms |
-| `A_STAR_v0_2.md` as published now | the frozen specification, current bytes | `A_STAR_v0_2.md.ots` | pending, as above |
+| `PROVENANCE_2026-11-05.txt` | the six files as published now, at commit 83c0758 (tag v0.2.2) | `PROVENANCE_2026-11-05.txt.ots` | 974600 (upgraded 9 November 2026) |
+| `A_STAR_v0_2.md` as published now | the frozen specification, current bytes | `A_STAR_v0_2.md.ots` | 974600 (upgraded 9 November 2026) |
 
 ## What changed on 5 November 2026
 
@@ -36,9 +36,11 @@ Signed tag: `provenance-2026-11-03` was signed with GPG key E3A76EA3104DCD86 (Pr
 ```
 pip install opentimestamps-client
 ots upgrade registration/PROVENANCE_2026-11-05.txt.ots
-ots info registration/PROVENANCE_2026-11-05.txt.ots      # the block height appears once upgraded
+ots info registration/PROVENANCE_2026-11-05.txt.ots      # prints Bitcoin block 974600
 shasum -a 256 A_STAR_v0_2.md                            # must equal the hash in the 5 November record
 ```
+
+**Attested 9 November 2026 (IST).** The 5 November record's proof sits in Bitcoin block 974600; the current specification's proof in block 974600. The public history was rewritten on 8 November 2026 (every commit hash changed; `main` is now dc4180d at the record, 1e59965 with the measure command), so the record names the files by hash, which the rewrite did not touch.
 
 **Attested 4 November 2026 (IST).** The 3 November record's proof sits in Bitcoin block 974395; the earlier specification's proof in blocks 974395, 974423 and 974430. `ots info` on `PROVENANCE_2026-11-03.txt.ots` or `A_STAR_v0_2.md.2026-11-03.ots` prints the block.
 
