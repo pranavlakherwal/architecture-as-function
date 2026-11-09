@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import io
 import json
+import os
 import re
 import subprocess
 import sys
@@ -12,6 +13,7 @@ from pathlib import Path
 
 import pytest
 from a_star.measurement import build_fleet_reference as bfr
+from a_star.measurement import core_vector as core
 from a_star.measurement import report as rpt
 
 IMPL = Path(__file__).resolve().parents[2]
@@ -362,3 +364,98 @@ def test_command_plain_prints_seven_lines(tmp_path: Path):
 
 def test_main_module_file_exists():
     assert (IMPL / "a_star" / "__main__.py").is_file()
+
+
+# ---- As of: the change window ends on the date given ---------------------------------
+
+
+def _git(repo: Path, *args: str, when: str | None = None) -> None:
+    env = dict(os.environ)
+    env.update(GIT_AUTHOR_NAME="t", GIT_AUTHOR_EMAIL="t@t", GIT_COMMITTER_NAME="t", GIT_COMMITTER_EMAIL="t@t")
+    env["GIT_CONFIG_GLOBAL"] = os.devnull  # the machine's own git settings stay out of the test
+    if when:
+        env["GIT_AUTHOR_DATE"] = env["GIT_COMMITTER_DATE"] = f"{when}T12:00:00+00:00"
+    subprocess.run(["git", "-C", str(repo), *args], check=True, capture_output=True, env=env)
+
+
+def _dated_repo(tmp_path: Path) -> Path:
+    """Three dated commits: 2025-01-15 touches a.md, 2025-07-15 touches a.md and b.md, 2026-03-15 touches c.md."""
+    root = tmp_path / "dated"
+    root.mkdir()
+    _git(root, "init", "-q")
+    for when, names in (("2025-01-15", ["a.md"]), ("2025-07-15", ["a.md", "b.md"]), ("2026-03-15", ["c.md"])):
+        for name in names:
+            (root / name).write_text(f"{name} at {when}\n")
+        _git(root, "add", "-A")
+        _git(root, "commit", "-q", "-m", f"work on {when}", when=when)
+    return root
+
+
+def _value(report: dict, key: str) -> float:
+    return {r["key"]: r["value"] for r in report["readings"]}[key]
+
+
+def test_touch_counts_window_is_the_365_days_ending_at_until(tmp_path: Path):
+    root = _dated_repo(tmp_path)
+    early = core.touch_counts(root, until="2025-08-01")  # the first two commits
+    assert early == {"a.md": 2, "b.md": 1}
+    late = core.touch_counts(root, until="2026-04-01")  # the last two commits
+    assert late == {"a.md": 1, "b.md": 1, "c.md": 1}
+    # An ISO datetime reads the same as the date.
+    assert core.touch_counts(root, until="2025-08-01T23:59:59") == early
+
+
+def test_touch_counts_without_until_is_relative_to_today(tmp_path: Path):
+    # The flipped world: no `until`, so the window ends now and the 2025 commits sit outside it.
+    root = _dated_repo(tmp_path)
+    ctr = core.touch_counts(root)
+    assert ctr is not None
+    assert "a.md" not in ctr and "b.md" not in ctr
+
+
+def test_build_report_as_of_labels_the_json_and_moves_the_window(tmp_path: Path):
+    root = _dated_repo(tmp_path)
+    early = rpt.build_report(root, fleet=_fleet(), as_of="2025-08-01")
+    late = rpt.build_report(root, fleet=_fleet(), as_of="2026-04-01")
+    today = rpt.build_report(root, fleet=_fleet())
+    assert early["as_of"] == "2025-08-01" and _value(early, "c_modify") == 1.5  # 3 touches over 2 files
+    assert late["as_of"] == "2026-04-01" and _value(late, "c_modify") == 1.0  # 3 touches over 3 files
+    assert today["as_of"] == time.strftime("%Y-%m-%d") and _value(today, "c_modify") <= 1.0
+
+
+def test_fix_text_reads_the_same_window_as_the_reading(tmp_path: Path):
+    root = _dated_repo(tmp_path)
+    huge = [1000.0] * 20
+    fleet = _fleet(
+        20, c_find=huge, c_storage=huge, c_money=huge, c_drift=huge, c_loss=huge, c_derive=huge, c_modify=[0.0] * 20
+    )
+    early = rpt.build_report(root, fleet=fleet, as_of="2025-08-01")
+    late = rpt.build_report(root, fleet=fleet, as_of="2026-04-01")
+    for report in (early, late):
+        assert report["fixes"][0]["title"] == "Split the files that take most of the changes"
+    assert "a.md (2)" in early["fixes"][0]["detail"] and "c.md" not in early["fixes"][0]["detail"]
+    assert "c.md (1)" in late["fixes"][0]["detail"] and "a.md (1)" in late["fixes"][0]["detail"]
+
+
+def test_command_as_of_matches_the_function(tmp_path: Path):
+    root = _dated_repo(tmp_path)
+    proc = _run("measure", str(root), "--json", "--as-of", "2025-08-01")
+    assert proc.returncode == 0, proc.stderr
+    data = json.loads(proc.stdout)
+    assert data["as_of"] == "2025-08-01"
+    assert _value(data, "c_modify") == core.measure_c_modify(root, until="2025-08-01T23:59:59").value == 1.5
+    # The flipped world: no flag, the window ends today and the 2025 commits fall outside it.
+    proc = _run("measure", str(root), "--json")
+    assert proc.returncode == 0, proc.stderr
+    data = json.loads(proc.stdout)
+    assert data["as_of"] == time.strftime("%Y-%m-%d")
+    assert _value(data, "c_modify") <= 1.0
+
+
+def test_command_rejects_a_date_not_written_yyyy_mm_dd(tmp_path: Path):
+    root = _clean_repo(tmp_path)
+    for bad in ("01/08/2025", "2025-13-01", "yesterday", "2025-8-1"):
+        proc = _run("measure", str(root), "--as-of", bad)
+        assert proc.returncode == 2
+        assert proc.stdout == ""
+        assert proc.stderr.count("\n") == 1 and "YYYY-MM-DD" in proc.stderr

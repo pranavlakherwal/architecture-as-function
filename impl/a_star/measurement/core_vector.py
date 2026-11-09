@@ -18,6 +18,7 @@ Sources used (all cheap, all passive):
 
 from __future__ import annotations
 
+import datetime as _dt
 import math
 import re
 import subprocess
@@ -260,15 +261,35 @@ def measure_c_find(root: Path) -> Measurement:
     )
 
 
+def _window(until: str) -> tuple[str, str]:
+    """The start and the end of the 365 day window that ends at `until`, as ISO timestamps.
+
+    `until` is a date (YYYY-MM-DD, read as the end of that day) or an ISO datetime.
+    Both ends go to git as full timestamps, so the window does not move with the clock.
+    """
+    text = until.strip().replace("Z", "+00:00")
+    if len(text) == 10:
+        end = _dt.datetime.combine(_dt.date.fromisoformat(text), _dt.time(23, 59, 59))
+    else:
+        end = _dt.datetime.fromisoformat(text)
+    start = end - _dt.timedelta(days=365)
+    return start.isoformat(), end.isoformat()
+
+
 def touch_counts(root: Path, until: str | None = None) -> Counter | None:
     """How many commits touched each file in the 365 day window ending `until`.
 
+    With no `until` the window is the 365 days before now. With `until` (a date
+    YYYY-MM-DD or an ISO datetime) it is the 365 days ending there, so a past
+    snapshot reads the churn of its own year and not the year before today.
     Returns None when git is unavailable or `root` is not a repository.
     The report reads the same counter, so the files it names are the ones the reading counted.
     """
-    cmd = ["log", "--since=365.days"]
-    if until is not None:
-        cmd.append(f"--until={until}")
+    if until is None:
+        cmd = ["log", "--since=365.days"]
+    else:
+        since, end = _window(until)
+        cmd = ["log", f"--since={since}", f"--until={end}"]
     cmd.extend(["--name-only", "--pretty=format:"])
     out = _git(cmd, root)
     if out is None:

@@ -11,6 +11,8 @@ PYTHONPATH=impl python3 -m a_star measure /path/to/your/repo --json
 
 The first line prints the plain report, the second the same content as JSON. From inside `impl/` the prefix drops: `python3 -m a_star measure PATH`. Python 3.9 or later, standard library only, nothing to install.
 
+Add `--as-of YYYY-MM-DD` to read the repository as of that date: the 365 day change window ends there and the report carries the date. The other readings come from the files on disk, so check out the commit of that date first.
+
 Here is what we got on [smt-router](https://github.com/pranavlakherwal/smt-router), our public routing repository, on 7 November 2026:
 
 ```
@@ -141,6 +143,7 @@ See `LICENSE`.
 
 ## Changelog
 
+- 10 November 2026: `--as-of YYYY-MM-DD` added to `measure`. The 365 day change window ends on that date, so a past checkout reads its own year.
 - 7 November 2026: `python -m a_star measure PATH` added. Seven readings ranked against 58 repositories, with the three fixes to make first. README opens with the command.
 - 3 November 2026: README rewritten to the current status. The June modification-law headline marked retracted. Client names removed from the research notes and the example plan. Lint and test workflow added.
 - 11 June 2026: the storage law held under jackknife and bootstrap; roadmap updated.

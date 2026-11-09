@@ -1,6 +1,6 @@
 """Command line entry for the A* reference implementation.
 
-    python -m a_star measure PATH [--json] [--monthly-usd N]
+    python -m a_star measure PATH [--json] [--monthly-usd N] [--as-of YYYY-MM-DD]
 
 From the repository root: PYTHONPATH=impl python3 -m a_star measure PATH
 From the impl/ folder:    python3 -m a_star measure PATH
@@ -36,6 +36,12 @@ def build_parser() -> argparse.ArgumentParser:
         default=None,
         help="what the system costs to run each month, if you know it",
     )
+    measure.add_argument(
+        "--as-of",
+        metavar="YYYY-MM-DD",
+        default=None,
+        help="read the repository as of this date; the 365 day change window ends there",
+    )
     return parser
 
 
@@ -44,7 +50,14 @@ def main(argv: list[str] | None = None) -> int:
     if args.command == "measure":
         from a_star.measurement.report import run_measure
 
-        return run_measure(args.path, as_json=args.json, monthly_usd=args.monthly_usd, out=sys.stdout, err=sys.stderr)
+        return run_measure(
+            args.path,
+            as_json=args.json,
+            monthly_usd=args.monthly_usd,
+            as_of=args.as_of,
+            out=sys.stdout,
+            err=sys.stderr,
+        )
     return 2
 
 

@@ -14,6 +14,7 @@ from __future__ import annotations
 
 import datetime as _dt
 import json
+import re
 import sys
 from collections import Counter
 from pathlib import Path
@@ -166,10 +167,12 @@ def fix_c_find(root: Path, cv: CoreVector) -> tuple[str, str]:
     return title, " ".join(parts)
 
 
-def fix_c_modify(root: Path, cv: CoreVector) -> tuple[str, str]:
-    ctr = touch_counts(root)
+def fix_c_modify(root: Path, cv: CoreVector, until: str | None = None) -> tuple[str, str]:
+    """`until` is the end of the change window the reading used, so the fix names the same year."""
+    ctr = touch_counts(root, until=until)
+    window = f"the 365 days ending {until[:10]}" if until else "the last 365 days"
     if not ctr:
-        return ("No commit history to read", "git found no commits in the last 365 days, so there is nothing to split.")
+        return ("No commit history to read", f"git found no commits in {window}, so there is nothing to split.")
     total = sum(ctr.values())
     top = ctr.most_common(TOP_N)
     top_total = sum(c for _, c in top)
@@ -286,13 +289,20 @@ def build_report(
     as_of: str | None = None,
     monthly_usd: float | None = None,
 ) -> dict:
-    """Measure `path` and return the report as a dict in the published JSON shape."""
+    """Measure `path` and return the report as a dict in the published JSON shape.
+
+    With `as_of` (YYYY-MM-DD) the 365 day change window ends at the close of that day and the
+    JSON carries the date. The other readings come from the files as they stand on disk.
+    """
     root = Path(path).resolve()
     if fleet is None:
         fleet = load_fleet_reference()
+    measured_at = None
     if as_of is None:
         as_of = _dt.date.today().isoformat()
-    cv = measure_repo(root, {"monthly_usd": monthly_usd} if monthly_usd is not None else None)
+    else:
+        measured_at = f"{as_of}T23:59:59"
+    cv = measure_repo(root, {"monthly_usd": monthly_usd} if monthly_usd is not None else None, measured_at=measured_at)
 
     readings = []
     shares = []
@@ -318,7 +328,10 @@ def build_report(
     fixes = []
     for i in order[:3]:
         key = READING_KEYS[i]
-        title, detail = FIXES[key](root, cv)
+        if key == "c_modify":
+            title, detail = fix_c_modify(root, cv, until=measured_at)
+        else:
+            title, detail = FIXES[key](root, cv)
         fixes.append({"rank": len(fixes) + 1, "title": title, "detail": detail})
 
     return {
@@ -387,20 +400,38 @@ def format_plain(report: dict, fleet: dict | None = None) -> str:
     return "\n".join(lines) + "\n"
 
 
+_AS_OF_RE = re.compile(r"\d{4}-\d{2}-\d{2}")
+
+
+def valid_as_of(text: str) -> bool:
+    """True for a real calendar date written YYYY-MM-DD, and for nothing else."""
+    if not _AS_OF_RE.fullmatch(text or ""):
+        return False
+    try:
+        _dt.date.fromisoformat(text)
+    except ValueError:
+        return False
+    return True
+
+
 def run_measure(
     path: Path,
     as_json: bool = False,
     monthly_usd: float | None = None,
+    as_of: str | None = None,
     out: TextIO = sys.stdout,
     err: TextIO = sys.stderr,
 ) -> int:
-    """The command body. Returns the exit code: 0 on success, 2 when `path` is not a directory."""
+    """The command body. Returns 0 on success, 2 when `path` is not a directory or `as_of` is not a date."""
     path = Path(path)
     if not path.is_dir():
         print(f"a_star measure: {path} is not a directory", file=err)
         return 2
+    if as_of is not None and not valid_as_of(as_of):
+        print(f"a_star measure: --as-of wants a date written YYYY-MM-DD, got {as_of}", file=err)
+        return 2
     fleet = load_fleet_reference()
-    report = build_report(path, fleet=fleet, monthly_usd=monthly_usd)
+    report = build_report(path, fleet=fleet, as_of=as_of, monthly_usd=monthly_usd)
     if as_json:
         out.write(json.dumps(report, indent=2) + "\n")
     else:

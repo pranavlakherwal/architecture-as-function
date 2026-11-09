@@ -211,7 +211,6 @@ def solve(opt: z3.Optimize, state: dict, timeout_ms: int = 30_000) -> SolveResul
     retention = state["retention"]
     manifest_present = state["manifest_present"]
     canonical = state["canonical"]
-    facts_by_path = state["facts_by_path"]
 
     decisions: list[FolderDecision] = []
     for rel_path, r_var in retention.items():

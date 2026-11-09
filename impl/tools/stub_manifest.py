@@ -289,7 +289,6 @@ def build_stub(
 
     parent = parent or {}
     inherited_owner = parent.get("owner")
-    inherited_lifecycle = parent.get("lifecycle_status")
     inherited_k_class = parent.get("k_class")
     inherited_review = parent.get("review_cadence")
 
