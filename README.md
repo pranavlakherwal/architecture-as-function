@@ -14,7 +14,6 @@ The first line prints the plain report, the second the same content as JSON. Fro
 Here is what we got on [smt-router](https://github.com/pranavlakherwal/smt-router), our public routing repository, on 7 November 2026:
 
 ```
-A* measure: /Users/pranavlakherwal/Core/Neural/PnotP/smt-router
 Read 7 November 2026, against 58 repos measured 7 November 2026. Lower is better on every line.
 
 How deep a reader digs to find a file             1.131 weighted folder levels  higher than 6 of 58 measured repos  fine
